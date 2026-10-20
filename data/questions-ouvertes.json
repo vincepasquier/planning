@@ -23,13 +23,13 @@
     },
     {
       "id": "Q-24",
-      "priorite": "haute",
+      "priorite": "critique",
       "statut": "ouverte",
       "sujet": "Ordre de passage dans les locaux où l'on travaille chacun son tour",
-      "question": "Dans le local variateurs N-2.08, dans quel ordre passent Groupe E Tech, Entretec et Hälg ? Et la règle « chacun son tour » vaut-elle aussi pour les autres petits locaux techniques ?",
-      "pourquoi": "Le local fait 66 m² et n'admet qu'une entreprise à la fois. Mon réseau ne sait pas encore l'exprimer : les tâches de réseaux — ventilation, froid des locaux, chemins de câbles — sont décrites à l'échelle du bâtiment et non du local, donc rien ne les empêche de s'y superposer. Les découper par local est possible, mais il faut d'abord connaître l'ordre.",
+      "question": "Dans quel ordre passent les lots des quatre locaux où vous avez déclaré « chacun son tour » — MT, TGBT, variateurs, refroidissement des locaux élec. — et la règle vaut-elle ailleurs ?",
+      "pourquoi": "Le relevé des locaux étant achevé, les conflits sont maintenant mesurables : 20 locaux se chevauchent, 192 semaines-locaux au total. Le local TGBT porte six lots simultanés sur 17 semaines, les variateurs cinq sur 15, alors que ces deux locaux n'en admettent qu'un à la fois. Le planning les additionne au lieu de les enchaîner, et sous-estime donc leur durée.",
       "destinataire": "Maître d'ouvrage",
-      "impact": "Sans cet ordre, les durées des petits locaux techniques sont sous-estimées : trois passages successifs ne tiennent pas dans le temps d'un seul."
+      "impact": "Jusqu'ici invisible, désormais chiffré : ces chevauchements sont du temps qui manque au planning."
     },
     {
       "id": "Q-23",

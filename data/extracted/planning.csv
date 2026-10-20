@@ -24,6 +24,8 @@ ENTRETEC;CENT.N-2.24;Raccordement hydraulique sur accumulateur;T-ENT-050;2026-12
 GE;CENT.N-2.24;Raccordement des sondes de l'accumulateur;T-GE-010;2026-12-07;2026-12-11;1;P4;a_confirmer;245;
 BILFINGER;CENT.N-2.24;Calorifugeage de l'accumulateur;T-CAL-010;2026-12-14;2027-01-22;6;P5;a_confirmer;245;
 ANSERMOT;CENT.N-2.21;Fenêtres;T-ANS-010;2026-12-21;2027-01-08;3;P0;non_adjuge;273;
+ANSERMOT;CENT.N+0.01;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;266;
+ANSERMOT;CENT.N+0.02;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;266;
 ANSERMOT;CENT.N-2.02;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;266;
 ANSERMOT;CENT.N-2.17;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;266;
 ANSERMOT;CENT.N-2.18;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;266;
@@ -32,6 +34,8 @@ DESPRAZ;CENT.N-1.02;Tuyauterie CO2 jusqu'aux echangeurs froid;T-DES-010;2026-12-
 DESPRAZ;CENT.N-1.03;Tuyauterie CO2 jusqu'aux echangeurs froid;T-DES-010;2026-12-21;2027-03-12;12;P2;a_confirmer;28;
 DESPRAZ;CENT.N-2.05;Tuyauterie CO2 jusqu'aux echangeurs froid;T-DES-010;2026-12-21;2027-03-12;12;P2;a_confirmer;28;
 ENTRETEC;CENT.N-2.09;Centrale froid n°1 (hydraulique);T-DES-005;2026-12-21;2027-01-22;5;P1;a_confirmer;28;
+GETECH-IEG;CENT.N+0.01;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
+GETECH-IEG;CENT.N+0.02;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
 GETECH-IEG;CENT.N-1.01;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
 GETECH-IEG;CENT.N-1.02;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
 GETECH-IEG;CENT.N-1.03;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;

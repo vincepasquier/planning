@@ -1,5 +1,5 @@
 {
-  "version": "1.4",
+  "version": "1.5",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -849,7 +849,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "LEVIER DE PLANNING : échangeurs PN6/PN25 sur le synoptique chaud. Les chaufferies mobiles permettent d'alimenter le CAD avant que les PAC soient en service, donc de découpler la date de livraison de chaleur de celle de la mise en service des machines. Voir Q-15.",
+      "notes": "LEVIER DE PLANNING : échangeurs PN6/PN25 sur le synoptique chaud. Les chaufferies mobiles permettent d'alimenter le CAD avant que les PAC soient en service, donc de découpler la date de livraison de chaleur de celle de la mise en service des machines. Voir Q-15. La surface bituminée N+0.03 n'est pas encore relevée : affectation déduite, à reprendre.",
       "duree_semaines": 3
     },
     {
@@ -1148,6 +1148,8 @@
       "systeme": "IEG",
       "phase": "P2",
       "locaux": [
+        "CENT.N+0.01",
+        "CENT.N+0.02",
         "CENT.N-1.01",
         "CENT.N-1.02",
         "CENT.N-1.03",
@@ -1408,7 +1410,7 @@
       "date_connue": null,
       "predecesseurs": [],
       "statut": "a_confirmer",
-      "notes": "À coordonner avec la surface bituminée (3'352 m2) et la rampe, qui sert aussi d'itinéraire de manutention.",
+      "notes": "À coordonner avec la surface bituminée (3'352 m2) et la rampe, qui sert aussi d'itinéraire de manutention. La surface bituminée N+0.03 n'est pas encore relevée : affectation déduite, à reprendre.",
       "duree_semaines": 12
     },
     {
@@ -1608,6 +1610,8 @@
       "systeme": "SER",
       "phase": "P2",
       "locaux": [
+        "CENT.N+0.01",
+        "CENT.N+0.02",
         "CENT.N-2.02",
         "CENT.N-2.17",
         "CENT.N-2.18",
@@ -1623,7 +1627,7 @@
         }
       ],
       "statut": "non_adjuge",
-      "notes": "À scinder : garde-corps au plus tôt pour la sécurité des autres lots, caillebotis après les réseaux qu'ils surplombent.",
+      "notes": "À scinder : garde-corps au plus tôt pour la sécurité des autres lots, caillebotis après les réseaux qu'ils surplombent. Les sorties N+0.01 et N+0.02 ne reçoivent que de l'éclairage et de la serrurerie (MO, 20.10.2026).",
       "duree_semaines": 4
     },
     {
@@ -1802,5 +1806,8 @@
     "Niveau N-1 relevé : 7 locaux. L'hydraulique chaud emprunte la circulation N-1.04, la galerie N-1.03 portant le froid.",
     "Le CO2 passe par la galerie N-1.03 et dessert quelques soupapes en local technique N-1.02.",
     "Les quais 1 et 2 sont modélisés comme « tout un étage » avec le code SIA SEP, et non comme des pièces : ils ne figurent ni dans la géométrie ni dans le relevé."
+  ],
+  "corrections_v15": [
+    "Niveau N+0 : les sorties ne reçoivent que de l'éclairage et de la serrurerie. La surface bituminée reste à relever."
   ]
 }

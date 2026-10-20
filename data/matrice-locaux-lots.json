@@ -1,5 +1,5 @@
 {
-  "note": "Qui passe où. Les niveaux N-2 et N-1 sont relevés exhaustivement avec le maître d'ouvrage (20.10.2026). Le niveau N+0 reste déduit.",
+  "note": "Qui passe où, relevé exhaustivement avec le maître d'ouvrage (20.10.2026). Seule la surface bituminée N+0.03 reste déduite, laissée de côté pour l'instant.",
   "lots_declares_globaux": [
     "ANSERMOT",
     "ANTIGLIO",
@@ -16,16 +16,42 @@
       "niveau": "N+0",
       "surface_m2": 13.534,
       "hauteur_m": 3.21,
-      "statut_releve": "a_remplir",
-      "lots": {}
+      "statut_releve": "relevé",
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-020"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030"
+          ],
+          "source": "relevé"
+        }
+      }
     },
     "CENT.N+0.02": {
       "designation": "Sortie 2",
       "niveau": "N+0",
       "surface_m2": 10.559,
       "hauteur_m": 3.21,
-      "statut_releve": "a_remplir",
-      "lots": {}
+      "statut_releve": "relevé",
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-020"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030"
+          ],
+          "source": "relevé"
+        }
+      }
     },
     "CENT.N+0.03": {
       "designation": "Surface bituminée",
@@ -53,7 +79,7 @@
       "niveau": "N-1",
       "surface_m2": 44.857,
       "hauteur_m": 2.62,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -83,7 +109,7 @@
       "niveau": "N-1",
       "surface_m2": 104.813,
       "hauteur_m": 2.62,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "DESPRAZ": {
           "taches": [
@@ -120,7 +146,7 @@
       "niveau": "N-1",
       "surface_m2": 207.834,
       "hauteur_m": 2.62,
-      "statut_releve": "rempli",
+      "statut_releve": "relevé",
       "lots": {
         "CALORIFUGEAGE": {
           "taches": [
@@ -169,7 +195,7 @@
       "niveau": "N-1",
       "surface_m2": 422.199,
       "hauteur_m": 2.62,
-      "statut_releve": "rempli",
+      "statut_releve": "relevé",
       "lots": {
         "CALORIFUGEAGE": {
           "taches": [
@@ -212,7 +238,7 @@
       "niveau": "N-1",
       "surface_m2": 26.8,
       "hauteur_m": 2.62,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -234,7 +260,7 @@
       "niveau": "N-1",
       "surface_m2": 30.519,
       "hauteur_m": 2.62,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -264,7 +290,7 @@
       "niveau": "N-1",
       "surface_m2": 37.791,
       "hauteur_m": 2.62,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -295,7 +321,7 @@
       "niveau": "N-2",
       "surface_m2": 172.999,
       "hauteur_m": 7.0,
-      "statut_releve": "rempli",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -332,7 +358,7 @@
       "niveau": "N-2",
       "surface_m2": 44.502,
       "hauteur_m": 4.1,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -355,7 +381,7 @@
       "niveau": "N-2",
       "surface_m2": 104.34,
       "hauteur_m": 4.1,
-      "statut_releve": "rempli",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -393,7 +419,7 @@
       "niveau": "N-2",
       "surface_m2": 85.971,
       "hauteur_m": 7.0,
-      "statut_releve": "rempli",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -450,7 +476,7 @@
       "niveau": "N-2",
       "surface_m2": 127.995,
       "hauteur_m": 7.0,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -509,7 +535,7 @@
       "niveau": "N-2",
       "surface_m2": 209.074,
       "hauteur_m": 4.1,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -538,7 +564,7 @@
       "niveau": "N-2",
       "surface_m2": 191.584,
       "hauteur_m": 7.0,
-      "statut_releve": "rempli",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -607,7 +633,7 @@
       "niveau": "N-2",
       "surface_m2": 65.7,
       "hauteur_m": 4.1,
-      "statut_releve": "rempli",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -652,7 +678,7 @@
       "niveau": "N-2",
       "surface_m2": 32.219,
       "hauteur_m": 4.1,
-      "statut_releve": "rempli",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -702,7 +728,7 @@
       "niveau": "N-2",
       "surface_m2": 191.584,
       "hauteur_m": 7.0,
-      "statut_releve": "rempli",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -771,7 +797,7 @@
       "niveau": "N-2",
       "surface_m2": 30.126,
       "hauteur_m": 4.1,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -787,7 +813,7 @@
       "niveau": "N-2",
       "surface_m2": 191.584,
       "hauteur_m": 7.0,
-      "statut_releve": "hors_marche",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -809,7 +835,7 @@
       "niveau": "N-2",
       "surface_m2": 65.701,
       "hauteur_m": 4.1,
-      "statut_releve": "hors_marche",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -831,7 +857,7 @@
       "niveau": "N-2",
       "surface_m2": 32.219,
       "hauteur_m": 4.1,
-      "statut_releve": "hors_marche",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -853,7 +879,7 @@
       "niveau": "N-2",
       "surface_m2": 193.037,
       "hauteur_m": 7.0,
-      "statut_releve": "hors_marche",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -875,7 +901,7 @@
       "niveau": "N-2",
       "surface_m2": 220.025,
       "hauteur_m": 4.1,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -897,7 +923,7 @@
       "niveau": "N-2",
       "surface_m2": 26.726,
       "hauteur_m": 4.1,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -920,7 +946,7 @@
       "niveau": "N-2",
       "surface_m2": 159.069,
       "hauteur_m": 7.0,
-      "statut_releve": "rempli",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -972,7 +998,7 @@
       "niveau": "N-2",
       "surface_m2": 251.816,
       "hauteur_m": 7.0,
-      "statut_releve": "rempli",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -1043,7 +1069,7 @@
       "niveau": "N-2",
       "surface_m2": 19.564,
       "hauteur_m": 4.1,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -1066,7 +1092,7 @@
       "niveau": "N-2",
       "surface_m2": 34.383,
       "hauteur_m": 4.1,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -1116,7 +1142,7 @@
       "niveau": "N-2",
       "surface_m2": 9.065,
       "hauteur_m": 4.1,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -1153,7 +1179,7 @@
       "niveau": "N-2",
       "surface_m2": 3.478,
       "hauteur_m": 4.1,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -1190,7 +1216,7 @@
       "niveau": "N-2",
       "surface_m2": 211.846,
       "hauteur_m": 7.0,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -1236,7 +1262,7 @@
       "niveau": "N-2",
       "surface_m2": 298.832,
       "hauteur_m": 7.0,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
@@ -1265,7 +1291,7 @@
       "niveau": "N-2",
       "surface_m2": 137.243,
       "hauteur_m": 7.0,
-      "statut_releve": "a_remplir",
+      "statut_releve": "relevé",
       "lots": {
         "ANSERMOT": {
           "taches": [
