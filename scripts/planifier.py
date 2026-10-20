@@ -52,6 +52,10 @@ def planifier(taches, debut):
             # Fin-Debut : on demarre la semaine suivant la fin du predecesseur.
             # Debut-Debut : on demarre au plus tot en meme temps que lui.
             d0 = max(d0, pf + timedelta(days=3) if p["lien"] == "FD" else pd)
+        # Une tache peut etre retenue par une livraison : elle ne peut pas demarrer avant.
+        if t.get("debut_au_plus_tot"):
+            an, mo, jo = map(int, t["debut_au_plus_tot"].split("-"))
+            d0 = max(d0, date(an, mo, jo))
         if t.get("date_connue"):
             a, m, j = map(int, t["date_connue"].split("-"))
             fixe = date(a, m, j)

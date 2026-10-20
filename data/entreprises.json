@@ -79,17 +79,6 @@
       "statut": "adjugé"
     },
     {
-      "code": "GETECH",
-      "nom": "Groupe E Tech",
-      "prestations": [
-        "IEG",
-        "Tableaux électriques TGBT",
-        "Infrastructures MT/BT",
-        "Détection incendie"
-      ],
-      "statut": "adjugé"
-    },
-    {
       "code": "GE",
       "nom": "Groupe E",
       "prestations": [
@@ -145,6 +134,36 @@
       ],
       "statut": "PÉRIMÈTRE NON COMMUNIQUÉ",
       "alerte": "La STAP figure au titre du synoptique chaud, dans la liste des armoires et au concept MCR, mais n'apparaît ni dans la maquette architecturale ni dans la liste des adjudications. Voir Q-18."
+    },
+    {
+      "code": "GETECH-INFRA",
+      "nom": "Groupe E Tech — INFRA",
+      "prestations": [
+        "Cellules et transformateurs MT/BT",
+        "Rails d'énergie jusque dans les locaux TGBT",
+        "Mise sous tension"
+      ],
+      "statut": "adjugé"
+    },
+    {
+      "code": "GETECH-TABLEAU",
+      "nom": "Groupe E Tech — TABLEAU",
+      "prestations": [
+        "Pose des tableaux TGBT",
+        "Armoires variateurs et de commande (à confirmer)"
+      ],
+      "statut": "adjugé"
+    },
+    {
+      "code": "GETECH-IEG",
+      "nom": "Groupe E Tech — IEG",
+      "prestations": [
+        "Chemins de câbles",
+        "Tout le câblage hors rail d'énergie",
+        "Éclairage",
+        "Détection incendie et gaz"
+      ],
+      "statut": "adjugé"
     }
   ],
   "conventions": {

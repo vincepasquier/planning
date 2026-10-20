@@ -1,5 +1,5 @@
 {
-  "version": "0.7",
+  "version": "0.8",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -418,7 +418,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Circuit hydraulique froid 16/21 degres en aval des echangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Conditionne la mise en charge nominale des variateurs. Locaux des PAC 3 et 4 retirés : équipements reportés.",
+      "notes": "Circuit hydraulique froid 16/21 degres en aval des echangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Conditionne la mise en charge nominale des variateurs. Locaux des PAC 3 et 4 retirés : équipements reportés. Dans N-2.03 : ventilation par Hälg, hydraulique froid par Entretec, câblage par IEG, chacun son tour (MO, 20.10.2026).",
       "duree_semaines": 12
     },
     {
@@ -967,8 +967,8 @@
     },
     {
       "id": "T-GET-010",
-      "designation": "Infrastructure MT et transformateurs",
-      "entreprise": "GETECH",
+      "designation": "Cellules et transformateurs MT/BT, rails d'énergie",
+      "entreprise": "GETECH-INFRA",
       "systeme": "ELEC-MT",
       "phase": "P3",
       "locaux": [
@@ -978,13 +978,14 @@
       "date_connue": null,
       "predecesseurs": [],
       "statut": "a_confirmer",
-      "notes": "Délai de livraison du transformateur à renseigner : candidat n°1 au chemin critique. Voir Q-04.",
-      "duree_semaines": 12
+      "notes": "Groupe E Tech INFRA pose les cellules et transformateurs MT/BT, ainsi que les rails d'énergie jusque dans le local TGBT — c'est là que s'arrête sa prestation. Matériel livré dès février 2027 (MO, 20.10.2026).",
+      "duree_semaines": 8,
+      "debut_au_plus_tot": "2027-02-01"
     },
     {
       "id": "T-GET-020",
-      "designation": "Tableaux TGBT",
-      "entreprise": "GETECH",
+      "designation": "Pose des tableaux TGBT",
+      "entreprise": "GETECH-TABLEAU",
       "systeme": "TGBT",
       "phase": "P3",
       "locaux": [
@@ -992,15 +993,22 @@
       ],
       "duree_classe": "mois",
       "date_connue": null,
-      "predecesseurs": [],
+      "predecesseurs": [
+        {
+          "id": "T-GET-010",
+          "lien": "FD",
+          "raison": "Chacun son tour dans le local TGBT ; les rails d'énergie d'INFRA y aboutissent (ordre à confirmer, Q-25)"
+        }
+      ],
       "statut": "a_confirmer",
-      "notes": "Délai de livraison à renseigner. Même contrainte de gabarit que les PAC : local à 7,00 m, circulation à 4,10 m.",
-      "duree_semaines": 12
+      "notes": "Groupe E Tech TABLEAU pose les TGBT dans le local TGBT. Cellules livrées dès février 2027 (MO, 20.10.2026).",
+      "duree_semaines": 8,
+      "debut_au_plus_tot": "2027-02-01"
     },
     {
       "id": "T-GET-030",
-      "designation": "Chemins de câbles et IEG",
-      "entreprise": "GETECH",
+      "designation": "Chemins de câbles et câblage IEG",
+      "entreprise": "GETECH-IEG",
       "systeme": "IEG",
       "phase": "P2",
       "locaux": [
@@ -1016,13 +1024,13 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "905 segments de chemin de câbles, 615 accessoires, 647 luminaires (maquette ELE). Les réseaux ne sont plus asservis à la manutention des machines, celles-ci étant montées sur place pièce par pièce.",
+      "notes": "Groupe E Tech IEG câble tout ce qui n'est pas du rail d'énergie. 905 segments de chemin de câbles, 615 accessoires, 647 luminaires.",
       "duree_semaines": 16
     },
     {
       "id": "T-GET-040",
       "designation": "Armoires variateurs 1 et 2",
-      "entreprise": "GETECH",
+      "entreprise": "GETECH-TABLEAU",
       "systeme": "TGBT",
       "phase": "P3",
       "locaux": [
@@ -1039,12 +1047,12 @@
       ],
       "statut": "a_confirmer",
       "duree_semaines": 6,
-      "notes": "Les variateurs 3 et 4 (N-2.13) ne sont pas équipés dans ce marché, les PAC 3 et 4 étant reportées (MO, 20.10.2026). La fosse CO2 du local est déjà réalisée."
+      "notes": "Les variateurs 3 et 4 (N-2.13) ne sont pas équipés dans ce marché, les PAC 3 et 4 étant reportées (MO, 20.10.2026). La fosse CO2 du local est déjà réalisée. Attribution INFRA / TABLEAU / IEG à confirmer (Q-25)."
     },
     {
       "id": "T-GET-050",
       "designation": "Armoires et coffrets de commande (15 unités)",
-      "entreprise": "GETECH",
+      "entreprise": "GETECH-TABLEAU",
       "systeme": "MCR",
       "phase": "P3",
       "locaux": [
@@ -1069,13 +1077,13 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Voir data/armoires.json. 5 armoires sur 15 n'ont pas encore de local attribué, dont celle de la ventilation de secours et celle de l'accumulateur. Voir Q-16. Locaux des PAC 3 et 4 retirés : équipements reportés. Les coffrets PAC 3 et 4 (armoires 11 et 12, local N-2.13) sortent du marché.",
+      "notes": "Voir data/armoires.json. 5 armoires sur 15 n'ont pas encore de local attribué, dont celle de la ventilation de secours et celle de l'accumulateur. Voir Q-16. Locaux des PAC 3 et 4 retirés : équipements reportés. Les coffrets PAC 3 et 4 (armoires 11 et 12, local N-2.13) sortent du marché. Attribution INFRA / TABLEAU / IEG à confirmer (Q-25).",
       "duree_semaines": 4
     },
     {
       "id": "T-GET-060",
       "designation": "Câblage de puissance des PAC",
-      "entreprise": "GETECH",
+      "entreprise": "GETECH-IEG",
       "systeme": "IEG",
       "phase": "P4",
       "locaux": [
@@ -1107,7 +1115,7 @@
     {
       "id": "T-GET-070",
       "designation": "Détection incendie et détection gaz NH3 / CO2",
-      "entreprise": "GETECH",
+      "entreprise": "GETECH-IEG",
       "systeme": "DI",
       "phase": "P4",
       "locaux": [
@@ -1129,7 +1137,7 @@
     {
       "id": "T-GET-080",
       "designation": "Mise sous tension MT/BT et TGBT",
-      "entreprise": "GETECH",
+      "entreprise": "GETECH-INFRA",
       "systeme": "TGBT",
       "phase": "P5",
       "locaux": [
@@ -1167,7 +1175,7 @@
     {
       "id": "T-GET-090",
       "designation": "Mise en charge nominale des variateurs",
-      "entreprise": "GETECH",
+      "entreprise": "GETECH-TABLEAU",
       "systeme": "TGBT",
       "phase": "P6",
       "locaux": [
@@ -1522,5 +1530,10 @@
     "N-2.09 et N-2.14 sont les centrales froid n°1 et n°2 : les schémas Groupe E avaient raison contre la maquette architecturale (Q-13 tranchée).",
     "Quatre locaux sortent du marché : N-2.12 et N-2.15 (PAC 3 et 4), N-2.13 (variateurs 3 et 4), N-2.14 (centrale froid n°2).",
     "Centrale froid n°1 : 5 semaines. Armoires variateurs 1 et 2 : 6 semaines. La fosse CO2 du local variateurs est déjà réalisée."
+  ],
+  "corrections_v08": [
+    "Groupe E Tech se scinde en trois : INFRA (cellules, transformateurs MT/BT et rails d'énergie jusqu'aux locaux TGBT), TABLEAU (pose des TGBT) et IEG (tout le câblage qui n'est pas du rail).",
+    "MT et TGBT : 8 semaines par local, matériel livré dès février 2027.",
+    "N-2.03 : Hälg, Entretec puis IEG, chacun son tour."
   ]
 }

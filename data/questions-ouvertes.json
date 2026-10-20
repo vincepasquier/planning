@@ -2,6 +2,16 @@
   "note": "Questions classées par priorité. Les questions résolues sont conservées avec leur réponse : l'historique des décisions fait partie du document.",
   "questions": [
     {
+      "id": "Q-25",
+      "priorite": "moyenne",
+      "statut": "ouverte",
+      "sujet": "Répartition INFRA / TABLEAU / IEG sur les armoires",
+      "question": "Qui pose les armoires variateurs 1-2 et les 15 armoires et coffrets de commande : TABLEAU ou IEG ? Et dans le local TGBT, les rails d'énergie d'INFRA arrivent-ils avant ou après la pose des tableaux par TABLEAU ?",
+      "pourquoi": "La répartition est claire pour les cellules MT, les TGBT et le câblage, mais pas pour les armoires intermédiaires. Et puisque chacun passe son tour dans le local TGBT, l'ordre entre INFRA et TABLEAU détermine qui attend qui — le réseau suppose aujourd'hui INFRA en premier.",
+      "destinataire": "Groupe E Tech",
+      "impact": "Affectation de 6 tâches et ordre de passage dans le local TGBT."
+    },
+    {
       "id": "Q-24",
       "priorite": "haute",
       "statut": "ouverte",
@@ -116,13 +126,14 @@
     },
     {
       "id": "Q-04",
-      "priorite": "haute",
-      "statut": "ouverte",
+      "priorite": "moyenne",
+      "statut": "partielle",
       "sujet": "Délais de livraison",
-      "question": "Quels sont les délais annoncés pour le transformateur MT, les cellules TGBT, les variateurs, les PAC NH3 et les groupes froid CO2 ?",
+      "question": "Restent inconnus : les délais de la PAC et de ses composants, des groupes froid CO2 et des variateurs.",
       "pourquoi": "Sur une centrale, le chemin critique passe généralement par les commandes et non par les travaux. Sans ces délais, le réseau n'a pas d'échelle de temps.",
       "destinataire": "Groupe E Tech / Wettstein / Despraz",
-      "impact": "Détermine le chemin critique réel."
+      "impact": "Détermine le chemin critique réel.",
+      "reponse": "Cellules MT et TGBT livrées rapidement, disponibles dès février 2027 (MO, 20.10.2026). La contrainte est intégrée au calcul : le bloc électrique conserve 77 jours de marge."
     },
     {
       "id": "Q-05",

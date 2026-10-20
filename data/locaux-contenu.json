@@ -541,7 +541,7 @@
       "famille": "D",
       "famille_titre": "MT, TGBT, refroidissement locaux élec.",
       "rang_priorite": 3,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "rempli",
       "hypothese_actuelle": [
         {
           "lot": "ENTRETEC",
@@ -569,11 +569,19 @@
         }
       ],
       "reponse": {
-        "contenu": null,
-        "interventions": [],
-        "manutention": null,
-        "co_activite_possible": null,
-        "remarques": null
+        "contenu": "Cellules et transformateurs MT/BT, et départ des rails d'énergie vers le local TGBT.",
+        "interventions": [
+          {
+            "lot": "GETECH-INFRA",
+            "prestation": "Cellules, transformateurs MT/BT, rails d'énergie",
+            "duree_semaines": 8,
+            "ordre": 1,
+            "remarque": "La prestation INFRA s'arrête dans le local TGBT"
+          }
+        ],
+        "manutention": "Cellules livrées assemblées : gabarit à vérifier (Q-02).",
+        "co_activite_possible": "Chacun son tour",
+        "remarques": "Matériel livré dès février 2027."
       }
     },
     {
@@ -585,7 +593,7 @@
       "famille": "D",
       "famille_titre": "MT, TGBT, refroidissement locaux élec.",
       "rang_priorite": 3,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "rempli",
       "hypothese_actuelle": [
         {
           "lot": "ENTRETEC",
@@ -607,11 +615,33 @@
         }
       ],
       "reponse": {
-        "contenu": null,
-        "interventions": [],
+        "contenu": "Refroidissement des locaux électriques. Coffret « Auxiliaires 5 — MT-BT ».",
+        "interventions": [
+          {
+            "lot": "HALG",
+            "prestation": "Ventilation",
+            "duree_semaines": null,
+            "ordre": 1,
+            "remarque": null
+          },
+          {
+            "lot": "ENTRETEC",
+            "prestation": "Hydraulique froid",
+            "duree_semaines": null,
+            "ordre": 2,
+            "remarque": null
+          },
+          {
+            "lot": "GETECH-IEG",
+            "prestation": "Câblage",
+            "duree_semaines": null,
+            "ordre": 3,
+            "remarque": null
+          }
+        ],
         "manutention": null,
-        "co_activite_possible": null,
-        "remarques": null
+        "co_activite_possible": "Chacun son tour",
+        "remarques": "Durées de chaque passage encore inconnues."
       }
     },
     {
@@ -623,7 +653,7 @@
       "famille": "D",
       "famille_titre": "MT, TGBT, refroidissement locaux élec.",
       "rang_priorite": 3,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "rempli",
       "hypothese_actuelle": [
         {
           "lot": "ANTIGLIO",
@@ -663,11 +693,26 @@
         }
       ],
       "reponse": {
-        "contenu": null,
-        "interventions": [],
-        "manutention": null,
-        "co_activite_possible": null,
-        "remarques": null
+        "contenu": "Tableaux TGBT, armoire UPS, arrivée des rails d'énergie depuis le local MT.",
+        "interventions": [
+          {
+            "lot": "GETECH-INFRA",
+            "prestation": "Arrivée des rails d'énergie",
+            "duree_semaines": null,
+            "ordre": 1,
+            "remarque": "Ordre à confirmer"
+          },
+          {
+            "lot": "GETECH-TABLEAU",
+            "prestation": "Pose des tableaux TGBT",
+            "duree_semaines": 8,
+            "ordre": 2,
+            "remarque": null
+          }
+        ],
+        "manutention": "Cellules TGBT livrées assemblées. Local à 7,00 m, circulations à 4,10 m, porte 3,50 x 4,00 m.",
+        "co_activite_possible": "Chacun son tour",
+        "remarques": "Matériel livré dès février 2027. Interface INFRA / TABLEAU dans ce local."
       }
     },
     {
