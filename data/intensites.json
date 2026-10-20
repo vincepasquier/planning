@@ -1,5 +1,5 @@
 {
-  "note": "Intensité de présence d'un lot dans un local. « principal » : le gros du travail s'y fait. « ponctuel » : passage, raccord, quelques appareils. Sans valeur, l'intensité est inconnue et comptée comme principale, par prudence. Une porte vaut deux jours : Ansermot est donc ponctuel partout où il ne pose que des portes. Les locaux où il fait aussi de la serrurerie restent à qualifier.",
+  "note": "Intensité de présence d'un lot dans un local. « principal » : le gros du travail s'y fait. « ponctuel » : passage, raccord, quelques appareils. Sans valeur, l'intensité est inconnue et comptée comme principale, par prudence. Une porte vaut deux jours, donc Ansermot est ponctuel là où il ne pose que des portes. Hälg n'a de vrai travail que dans quatre locaux.",
   "effet": "Les lots ponctuels ne comptent pas dans la teinte du plan ni dans les conflits de co-activité : ce sont des passages, pas des occupations.",
   "locaux": {
     "CENT.N-2.04": {
@@ -10,40 +10,50 @@
       "ANSERMOT": "ponctuel"
     },
     "CENT.N-1.01": {
-      "ANSERMOT": "ponctuel"
+      "ANSERMOT": "ponctuel",
+      "HALG": "ponctuel"
     },
     "CENT.N-1.05": {
       "ANSERMOT": "ponctuel"
     },
     "CENT.N-1.06": {
-      "ANSERMOT": "ponctuel"
+      "ANSERMOT": "ponctuel",
+      "HALG": "ponctuel"
     },
     "CENT.N-1.07": {
-      "ANSERMOT": "ponctuel"
+      "ANSERMOT": "ponctuel",
+      "HALG": "ponctuel"
     },
     "CENT.N-2.01": {
-      "ANSERMOT": "ponctuel"
+      "ANSERMOT": "ponctuel",
+      "HALG": "ponctuel"
     },
     "CENT.N-2.03": {
-      "ANSERMOT": "ponctuel"
+      "ANSERMOT": "ponctuel",
+      "HALG": "principal"
     },
     "CENT.N-2.05": {
-      "ANSERMOT": "ponctuel"
+      "ANSERMOT": "ponctuel",
+      "HALG": "ponctuel"
     },
     "CENT.N-2.06": {
       "ANSERMOT": "ponctuel"
     },
     "CENT.N-2.07": {
-      "ANSERMOT": "ponctuel"
+      "ANSERMOT": "ponctuel",
+      "HALG": "ponctuel"
     },
     "CENT.N-2.08": {
-      "ANSERMOT": "ponctuel"
+      "ANSERMOT": "ponctuel",
+      "HALG": "ponctuel"
     },
     "CENT.N-2.09": {
-      "ANSERMOT": "ponctuel"
+      "ANSERMOT": "ponctuel",
+      "HALG": "ponctuel"
     },
     "CENT.N-2.10": {
-      "ANSERMOT": "ponctuel"
+      "ANSERMOT": "ponctuel",
+      "HALG": "ponctuel"
     },
     "CENT.N-2.11": {
       "ANSERMOT": "ponctuel"
@@ -64,16 +74,20 @@
       "ANSERMOT": "ponctuel"
     },
     "CENT.N-2.19": {
-      "ANSERMOT": "ponctuel"
+      "ANSERMOT": "ponctuel",
+      "HALG": "ponctuel"
     },
     "CENT.N-2.21": {
-      "ANSERMOT": "ponctuel"
+      "ANSERMOT": "ponctuel",
+      "HALG": "ponctuel"
     },
     "CENT.N-2.22": {
-      "ANSERMOT": "ponctuel"
+      "ANSERMOT": "ponctuel",
+      "HALG": "ponctuel"
     },
     "CENT.N-2.23": {
-      "ANSERMOT": "ponctuel"
+      "ANSERMOT": "ponctuel",
+      "HALG": "ponctuel"
     },
     "CENT.N-2.24": {
       "ANSERMOT": "ponctuel"
@@ -83,6 +97,21 @@
     },
     "CENT.N-2.26": {
       "ANSERMOT": "ponctuel"
+    },
+    "CENT.N-1.02": {
+      "HALG": "principal"
+    },
+    "CENT.N-1.03": {
+      "HALG": "principal"
+    },
+    "CENT.N-1.04": {
+      "HALG": "principal"
+    },
+    "CENT.N-2.18": {
+      "HALG": "ponctuel"
     }
+  },
+  "lots_toujours_principaux": {
+    "GETECH-IEG": "Dans chaque local : luminaires, détection incendie, et raccordement des périphériques et des pompes. Ce n'est pas un passage, c'est de la pose, donc IEG reste principal partout (MO, 20.10.2026)."
   }
 }
