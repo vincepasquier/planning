@@ -164,6 +164,24 @@
         "Détection incendie et gaz"
       ],
       "statut": "adjugé"
+    },
+    {
+      "code": "SPIROTEC",
+      "nom": "Spirotec",
+      "prestations": [
+        "Fourniture des vases d'expansion (7 x 5'000 L)"
+      ],
+      "statut": "adjugé",
+      "note": "Fournisseur : pas d'intervention sur site au-delà de la livraison."
+    },
+    {
+      "code": "LEVAGE",
+      "nom": "À désigner",
+      "prestations": [
+        "Mise en place des vases d'expansion"
+      ],
+      "statut": "NON ADJUGÉ",
+      "alerte": "Entreprise de levage non désignée, alors qu'elle conditionne le raccordement de l'expansion, lui-même préalable à la mise en eau des réseaux."
     }
   ],
   "conventions": {

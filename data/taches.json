@@ -1,5 +1,5 @@
 {
-  "version": "0.8",
+  "version": "0.9",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -615,7 +615,10 @@
       "systeme": "HYD-CHAUD",
       "phase": "P2",
       "locaux": [
-        "CENT.N-2.19"
+        "CENT.N-2.19",
+        "CENT.N-1.03",
+        "CENT.N-1.04",
+        "CENT.N-2.24"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -627,34 +630,61 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "PN16, pression statique 11 bars. Circulateurs Grundfos NBG 484 kg, vannes de régulation RTK 401 kg : manutention interne à prévoir.",
+      "notes": "PN16, pression statique 11 bars. Le réseau part du local hydraulique chaud, traverse les galeries techniques de N-1 et rejoint l'accumulateur (MO, 20.10.2026). Il croise donc la ventilation de sécurité, qui emprunte les mêmes galeries. Circulateurs Grundfos NBG de 484 kg et vannes RTK de 401 kg à manutentionner dans les locaux.",
       "duree_semaines": 16
     },
     {
-      "id": "T-ENT-020",
-      "designation": "Vases d'expansion (section 07)",
-      "entreprise": "ENTRETEC",
+      "id": "T-LEV-010",
+      "designation": "Mise en place des vases d'expansion (7 x 5'000 L)",
+      "entreprise": "LEVAGE",
       "systeme": "EXPANSION",
       "phase": "P1",
       "locaux": [
         "CENT.N-2.19"
       ],
       "duree_classe": "quinzaine",
+      "duree_semaines": 2,
       "date_connue": null,
       "predecesseurs": [
         {
           "id": "T-ANT-010",
           "lien": "FD",
-          "raison": "Local disponible"
+          "raison": "Local hydraulique chaud disponible"
+        }
+      ],
+      "statut": "non_adjuge",
+      "notes": "Vases fournis par SPIROTEC, mis en place par une entreprise de levage, raccordés par Entretec (MO, 20.10.2026). Entreprise de levage à désigner. Les vases arrivent assemblés : c'est pour eux que la question de gabarit reste posée (Q-02)."
+    },
+    {
+      "id": "T-ENT-020",
+      "designation": "Raccordement hydraulique des vases d'expansion",
+      "entreprise": "ENTRETEC",
+      "systeme": "EXPANSION",
+      "phase": "P2",
+      "locaux": [
+        "CENT.N-2.19"
+      ],
+      "duree_classe": "quinzaine",
+      "duree_semaines": 3,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-LEV-010",
+          "lien": "FD",
+          "raison": "Vases en place avant raccordement"
+        },
+        {
+          "id": "T-ENT-010",
+          "lien": "DD",
+          "raison": "Même local, même entreprise"
         }
       ],
       "statut": "a_confirmer",
-      "notes": "7 vases de 5'000 L. À traiter comme de la manutention lourde, pas comme de la tuyauterie : même contrainte de gabarit que les PAC. Voir Q-02.",
-      "duree_semaines": 3
+      "notes": "Section 07 du synoptique : 7 vases de 5'000 L, 0.5 bar, DN20/40/65."
     },
     {
       "id": "T-ENT-030",
-      "designation": "Pompage PAC",
+      "designation": "Pompes et collecteur de circulation des locaux PAC",
       "entreprise": "ENTRETEC",
       "systeme": "HYD-CHAUD",
       "phase": "P2",
@@ -671,7 +701,8 @@
         }
       ],
       "statut": "a_confirmer",
-      "duree_semaines": 4
+      "duree_semaines": 4,
+      "notes": "Pompes et collecteur faisant circuler l'eau dans les locaux PAC (MO, 20.10.2026)."
     },
     {
       "id": "T-ENT-050",
@@ -825,13 +856,7 @@
       "systeme": "VENT-HYG",
       "phase": "P2",
       "locaux": [
-        "CENT.N-2.01",
-        "CENT.N-2.03",
-        "CENT.N-2.04",
-        "CENT.N-2.08",
-        "CENT.N-2.18",
-        "CENT.N-2.19",
-        "CENT.N-1.02"
+        "*"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -843,7 +868,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Premier des réseaux : le plus encombrant et le moins déformable. Débits : MT 1'240, hydraulique chaud 890, TGBT 790 m3/h. Comprend le free-cooling du local MT. Locaux des PAC 3 et 4 retirés : équipements reportés.",
+      "notes": "Premier des réseaux : le plus encombrant et le moins déformable. Débits : MT 1'240, hydraulique chaud 890, TGBT 790 m3/h. Comprend le free-cooling du local MT. Locaux des PAC 3 et 4 retirés : équipements reportés. Hälg intervient globalement dans tous les locaux (MO, 20.10.2026), ce qui le met en concurrence avec les autres lots partout où l'on passe chacun son tour.",
       "duree_semaines": 12
     },
     {
@@ -1024,7 +1049,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Groupe E Tech IEG câble tout ce qui n'est pas du rail d'énergie. 905 segments de chemin de câbles, 615 accessoires, 647 luminaires.",
+      "notes": "Groupe E Tech IEG câble tout ce qui n'est pas du rail d'énergie. 905 segments de chemin de câbles, 615 accessoires, 647 luminaires. IEG intervient globalement dans tous les locaux (MO, 20.10.2026), ce qui le met en concurrence avec les autres lots partout où l'on passe chacun son tour.",
       "duree_semaines": 16
     },
     {
@@ -1535,5 +1560,11 @@
     "Groupe E Tech se scinde en trois : INFRA (cellules, transformateurs MT/BT et rails d'énergie jusqu'aux locaux TGBT), TABLEAU (pose des TGBT) et IEG (tout le câblage qui n'est pas du rail).",
     "MT et TGBT : 8 semaines par local, matériel livré dès février 2027.",
     "N-2.03 : Hälg, Entretec puis IEG, chacun son tour."
+  ],
+  "corrections_v09": [
+    "L'hydraulique chaud traverse les galeries techniques de N-1 pour rejoindre l'accumulateur.",
+    "Les vases d'expansion se partagent entre trois intervenants : SPIROTEC fournit, une entreprise de levage met en place, Entretec raccorde.",
+    "Pompage PAC : pompes et collecteur de circulation des locaux PAC.",
+    "IEG et Hälg interviennent dans tous les locaux."
   ]
 }

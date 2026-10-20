@@ -2,6 +2,16 @@
   "note": "Questions classées par priorité. Les questions résolues sont conservées avec leur réponse : l'historique des décisions fait partie du document.",
   "questions": [
     {
+      "id": "Q-26",
+      "priorite": "haute",
+      "statut": "ouverte",
+      "sujet": "Entreprise de levage pour les vases d'expansion",
+      "question": "Quelle entreprise met en place les 7 vases d'expansion, et quand sera-t-elle désignée ?",
+      "pourquoi": "Spirotec fournit, Entretec raccorde, mais la mise en place revient à une entreprise de levage qui n'est pas désignée. Elle s'intercale entre les deux et conditionne le raccordement de l'expansion, lui-même préalable à la mise en eau des réseaux. C'est le troisième lot non adjugé du dossier, après le calorifugeage et Ansermot.",
+      "destinataire": "Maître d'ouvrage",
+      "impact": "Bloque le remplissage des réseaux hydrauliques, donc les épreuves et la mise en service."
+    },
+    {
       "id": "Q-25",
       "priorite": "moyenne",
       "statut": "ouverte",

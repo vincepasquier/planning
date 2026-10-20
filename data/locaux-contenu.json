@@ -724,7 +724,7 @@
       "famille": "E",
       "famille_titre": "Hydraulique chaud et pompage",
       "rang_priorite": 4,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "partiel",
       "hypothese_actuelle": [
         {
           "lot": "ENTRETEC",
@@ -746,11 +746,19 @@
         }
       ],
       "reponse": {
-        "contenu": null,
-        "interventions": [],
-        "manutention": null,
+        "contenu": "Pompes et collecteur faisant circuler l'eau dans les locaux PAC.",
+        "interventions": [
+          {
+            "lot": "ENTRETEC",
+            "prestation": "Pompes et collecteur",
+            "duree_semaines": null,
+            "ordre": 1,
+            "remarque": null
+          }
+        ],
+        "manutention": "Circulateurs Grundfos NBG de 484 kg.",
         "co_activite_possible": null,
-        "remarques": null
+        "remarques": "Durée encore inconnue."
       }
     },
     {
@@ -762,7 +770,7 @@
       "famille": "E",
       "famille_titre": "Hydraulique chaud et pompage",
       "rang_priorite": 4,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "partiel",
       "hypothese_actuelle": [
         {
           "lot": "ANTIGLIO",
@@ -808,11 +816,54 @@
         }
       ],
       "reponse": {
-        "contenu": null,
-        "interventions": [],
-        "manutention": null,
+        "contenu": "Collecteurs et tuyauterie d'hydraulique chaud, les 7 vases d'expansion de 5'000 L, et l'armoire « Départ CAD ». Le réseau part d'ici, traverse les galeries techniques de N-1 et rejoint l'accumulateur.",
+        "interventions": [
+          {
+            "lot": "SPIROTEC",
+            "prestation": "Fourniture des vases d'expansion",
+            "duree_semaines": null,
+            "ordre": 1,
+            "remarque": "Livraison"
+          },
+          {
+            "lot": "LEVAGE",
+            "prestation": "Mise en place des vases",
+            "duree_semaines": 2,
+            "ordre": 2,
+            "remarque": "Entreprise à désigner"
+          },
+          {
+            "lot": "ENTRETEC",
+            "prestation": "Tuyauterie hydraulique chaud et raccordement de l'expansion",
+            "duree_semaines": null,
+            "ordre": 3,
+            "remarque": "Durée encore inconnue"
+          },
+          {
+            "lot": "GETECH-TABLEAU",
+            "prestation": "Armoire Départ CAD",
+            "duree_semaines": null,
+            "ordre": null,
+            "remarque": null
+          },
+          {
+            "lot": "GETECH-IEG",
+            "prestation": "Câblage",
+            "duree_semaines": null,
+            "ordre": null,
+            "remarque": "Passe dans tous les locaux"
+          },
+          {
+            "lot": "HALG",
+            "prestation": "Ventilation (890 m3/h)",
+            "duree_semaines": null,
+            "ordre": null,
+            "remarque": "Passe dans tous les locaux"
+          }
+        ],
+        "manutention": "7 vases de 5'000 L livrés assemblés, mis en place par une entreprise de levage.",
         "co_activite_possible": null,
-        "remarques": null
+        "remarques": "Durées Entretec et ordre de passage encore à relever."
       }
     },
     {
@@ -1270,7 +1321,7 @@
       "famille": "K",
       "famille_titre": "Niveau N-1",
       "rang_priorite": 10,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "partiel",
       "hypothese_actuelle": [
         {
           "lot": "HALG",
@@ -1280,11 +1331,11 @@
         }
       ],
       "reponse": {
-        "contenu": null,
+        "contenu": "Galerie technique : l'hydraulique chaud y transite du local hydraulique chaud vers l'accumulateur. La ventilation de sécurité CO2/NH3 y passe également, ainsi que les chemins de câbles.",
         "interventions": [],
         "manutention": null,
         "co_activite_possible": null,
-        "remarques": null
+        "remarques": "Volume partagé : c'est là que l'ordre de passage des réseaux compte le plus."
       }
     },
     {
@@ -1296,14 +1347,14 @@
       "famille": "K",
       "famille_titre": "Niveau N-1",
       "rang_priorite": 10,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "partiel",
       "hypothese_actuelle": [],
       "reponse": {
-        "contenu": null,
+        "contenu": "Galerie technique : l'hydraulique chaud y transite du local hydraulique chaud vers l'accumulateur. La ventilation de sécurité CO2/NH3 y passe également, ainsi que les chemins de câbles.",
         "interventions": [],
         "manutention": null,
         "co_activite_possible": null,
-        "remarques": null
+        "remarques": "Volume partagé : c'est là que l'ordre de passage des réseaux compte le plus."
       }
     },
     {
