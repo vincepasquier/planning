@@ -1,0 +1,491 @@
+{
+  "version": "0.1",
+  "date_etablissement": "2026-10-20",
+  "avertissement": "Ossature d'ordonnancement établie à partir des maquettes IFC ARC et ELE et de la liste des adjudications. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document : elles doivent être discutées avec les entreprises.",
+  "taches": [
+    {
+      "id": "T-ANT-010",
+      "designation": "Achèvement béton, étanchéité et enveloppe",
+      "entreprise": "ANTIGLIO", "systeme": "GC", "phase": "P0",
+      "locaux": ["*"], "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [], "statut": "en_cours"
+    },
+    {
+      "id": "T-ANT-020",
+      "designation": "Socles et massifs PAC 1 à 4",
+      "entreprise": "ANTIGLIO", "systeme": "GC", "phase": "P0",
+      "locaux": ["CENT.N-2.07", "CENT.N-2.10", "CENT.N-2.12", "CENT.N-2.15"],
+      "duree_classe": "semaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-ANT-010", "lien": "DD", "raison": "Travaux de même nature, même entreprise"}],
+      "statut": "a_confirmer",
+      "notes": "Les socles doivent être mûrs avant mise en charge par les machines. Vérifier le délai de cure exigé par Wettstein."
+    },
+    {
+      "id": "T-ANT-030",
+      "designation": "Réservations, percements et rebouchages",
+      "entreprise": "ANTIGLIO", "systeme": "GC", "phase": "P0",
+      "locaux": ["*"], "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [],
+      "statut": "a_confirmer",
+      "notes": "Les rebouchages (coupe-feu compris) ne peuvent se faire qu'après passage de tous les réseaux. À scinder en deux tâches : réservations avant, rebouchages après."
+    },
+    {
+      "id": "T-ANT-040",
+      "designation": "Fermeture de la trémie / accès de manutention",
+      "entreprise": "ANTIGLIO", "systeme": "GC", "phase": "P1",
+      "locaux": ["CENT.N-2.25", "CENT.N-2.26"], "duree_classe": "semaine", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-WET-040", "lien": "FD", "raison": "Dernier colis lourd rentré : la dernière PAC"}
+      ],
+      "statut": "a_confirmer",
+      "notes": "POINT À VALIDER : existe-t-il réellement une trémie, ou l'accès se fait-il par la rampe extérieure et le couvert ? Voir questions-ouvertes.json Q-01."
+    },
+
+    {
+      "id": "T-BIL-010",
+      "designation": "Montage de l'accumulateur",
+      "entreprise": "BILFINGER", "systeme": "ACC", "phase": "P1",
+      "locaux": ["CENT.N-2.24"], "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [],
+      "statut": "en_cours"
+    },
+    {
+      "id": "T-BIL-020",
+      "designation": "Épreuve de pression de l'accumulateur",
+      "entreprise": "BILFINGER", "systeme": "ACC", "phase": "P5",
+      "locaux": ["CENT.N-2.24"], "duree_classe": "semaine",
+      "date_connue": "2026-11-30",
+      "predecesseurs": [{"id": "T-BIL-010", "lien": "FD", "raison": "Enveloppe terminée avant mise sous pression"}],
+      "statut": "date_ferme",
+      "notes": "SEULE DATE FERME DU PLANNING À CE JOUR. Sert d'ancrage."
+    },
+    {
+      "id": "T-CAL-010",
+      "designation": "Calorifugeage de l'accumulateur",
+      "entreprise": "CALORIFUGEAGE", "systeme": "ACC", "phase": "P5",
+      "locaux": ["CENT.N-2.24"], "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-BIL-020", "lien": "FD", "raison": "On n'isole pas avant d'avoir éprouvé : une reprise de fuite impose de déshabiller"}],
+      "statut": "BLOQUE",
+      "notes": "ALERTE : lot non adjugé, alors qu'il suit immédiatement une date ferme (30.11.2026). C'est le risque le plus immédiat du planning."
+    },
+    {
+      "id": "T-GE-010",
+      "designation": "Raccordement des sondes de l'accumulateur",
+      "entreprise": "GE", "systeme": "ACC", "phase": "P4",
+      "locaux": ["CENT.N-2.24"], "duree_classe": "semaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-BIL-020", "lien": "FD", "raison": "Épreuve réalisée avant instrumentation définitive"}],
+      "statut": "a_confirmer",
+      "notes": "Coordination à régler avec le calorifugeage : les doigts de gant doivent être posés et repérés avant l'isolation, sinon on la rouvre."
+    },
+
+    {
+      "id": "T-WET-010",
+      "designation": "Manutention et pose PAC 1",
+      "entreprise": "WETTSTEIN", "systeme": "PAC-1", "phase": "P1",
+      "locaux": ["CENT.N-2.07"], "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-ANT-020", "lien": "FD", "raison": "Socle béton mûr avant mise en charge"}
+      ],
+      "statut": "a_confirmer",
+      "notes": "Gabarit de passage à vérifier : circulations N-2 à 4,10 m sous plafond alors que le local fait 7,00 m. Voir Q-02."
+    },
+    {
+      "id": "T-WET-020",
+      "designation": "Manutention et pose PAC 2",
+      "entreprise": "WETTSTEIN", "systeme": "PAC-2", "phase": "P1",
+      "locaux": ["CENT.N-2.10"], "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-ANT-020", "lien": "FD", "raison": "Socle béton mûr avant mise en charge"},
+        {"id": "T-WET-010", "lien": "FD", "raison": "Même moyen de levage, enchaînement séquentiel"}
+      ],
+      "statut": "a_confirmer"
+    },
+    {
+      "id": "T-WET-030",
+      "designation": "Manutention et pose PAC 3",
+      "entreprise": "WETTSTEIN", "systeme": "PAC-3", "phase": "P1",
+      "locaux": ["CENT.N-2.12"], "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-WET-020", "lien": "FD", "raison": "Même moyen de levage, enchaînement séquentiel"}],
+      "statut": "a_confirmer"
+    },
+    {
+      "id": "T-WET-040",
+      "designation": "Manutention et pose PAC 4",
+      "entreprise": "WETTSTEIN", "systeme": "PAC-4", "phase": "P1",
+      "locaux": ["CENT.N-2.15"], "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-WET-030", "lien": "FD", "raison": "Même moyen de levage, enchaînement séquentiel"}],
+      "statut": "a_confirmer"
+    },
+
+    {
+      "id": "T-HAL-010",
+      "designation": "Gaines de ventilation - réseaux principaux",
+      "entreprise": "HALG", "systeme": "VENT", "phase": "P2",
+      "locaux": ["CENT.N-2.06", "CENT.N-2.16", "CENT.N-1.03", "CENT.N-1.04"],
+      "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-WET-040", "lien": "FD", "raison": "L'itinéraire de manutention reste libre jusqu'à la dernière machine"}
+      ],
+      "statut": "a_confirmer",
+      "notes": "Premier des réseaux : le plus encombrant et le moins déformable."
+    },
+    {
+      "id": "T-HAL-020",
+      "designation": "Ventilation et refroidissement des locaux électriques",
+      "entreprise": "HALG", "systeme": "VENT", "phase": "P2",
+      "locaux": ["CENT.N-2.03", "CENT.N-2.08", "CENT.N-2.13", "CENT.N-2.04"],
+      "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [{"id": "T-HAL-010", "lien": "DD", "raison": "Même entreprise, réseaux coordonnés"}],
+      "statut": "a_confirmer",
+      "notes": "CRITIQUE : conditionne la mise en service des variateurs, qui ne tournent pas sans leur froid."
+    },
+    {
+      "id": "T-HAL-030",
+      "designation": "Mise en service de la ventilation",
+      "entreprise": "HALG", "systeme": "VENT", "phase": "P6",
+      "locaux": ["*"], "duree_classe": "semaine", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-HAL-020", "lien": "FD", "raison": "Installation terminée"},
+        {"id": "T-GET-080", "lien": "FD", "raison": "Alimentation électrique définitive disponible"}
+      ],
+      "statut": "a_confirmer"
+    },
+
+    {
+      "id": "T-ENT-010",
+      "designation": "Tuyauterie hydraulique chaud",
+      "entreprise": "ENTRETEC", "systeme": "HYD-CHAUD", "phase": "P2",
+      "locaux": ["CENT.N-2.19"], "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-WET-040", "lien": "FD", "raison": "Itinéraire de manutention libéré"},
+        {"id": "T-HAL-010", "lien": "DD", "raison": "Passe après la ventilation dans les volumes partagés, mais peut démarrer en local dédié"}
+      ],
+      "statut": "a_confirmer"
+    },
+    {
+      "id": "T-ENT-020",
+      "designation": "Tuyauterie hydraulique circuit intérieur",
+      "entreprise": "ENTRETEC", "systeme": "HYD-FROID", "phase": "P2",
+      "locaux": ["CENT.N-2.05"], "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [{"id": "T-ENT-010", "lien": "DD", "raison": "Même entreprise, réseaux coordonnés"}],
+      "statut": "a_confirmer",
+      "notes": "Le numéro CENT.N-2.05 apparaît deux fois dans la maquette ARC (34,6 m2 et 128,0 m2). À faire corriger par l'architecte."
+    },
+    {
+      "id": "T-ENT-030",
+      "designation": "Pompage PAC",
+      "entreprise": "ENTRETEC", "systeme": "HYD-CHAUD", "phase": "P2",
+      "locaux": ["CENT.N-2.18"], "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-ENT-010", "lien": "DD", "raison": "Même entreprise, réseaux coordonnés"}],
+      "statut": "a_confirmer"
+    },
+    {
+      "id": "T-ENT-040",
+      "designation": "Raccordement hydraulique chaud sur PAC 1 à 4",
+      "entreprise": "ENTRETEC", "systeme": "HYD-CHAUD", "phase": "P4",
+      "locaux": ["CENT.N-2.07", "CENT.N-2.10", "CENT.N-2.12", "CENT.N-2.15"],
+      "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-WET-040", "lien": "FD", "raison": "Machines posées et calées : le raccordement se relève sur l'ouvrage réel"},
+        {"id": "T-ENT-010", "lien": "FD", "raison": "Réseau amont réalisé"}
+      ],
+      "statut": "a_confirmer",
+      "notes": "Limite de prestation confirmée par le MO : Wettstein livre la machine dans le local, Entretec vient s'y raccorder."
+    },
+    {
+      "id": "T-ENT-050",
+      "designation": "Raccordement hydraulique sur accumulateur",
+      "entreprise": "ENTRETEC", "systeme": "ACC", "phase": "P4",
+      "locaux": ["CENT.N-2.24"], "duree_classe": "semaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-BIL-020", "lien": "FD", "raison": "Épreuve de l'enveloppe avant raccordement des réseaux"}],
+      "statut": "a_confirmer"
+    },
+    {
+      "id": "T-ENT-060",
+      "designation": "Rinçage et remplissage des réseaux hydrauliques",
+      "entreprise": "ENTRETEC", "systeme": "HYD-CHAUD", "phase": "P5",
+      "locaux": ["*"], "duree_classe": "semaine", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-ENT-010", "lien": "FD", "raison": "Réseau complet"},
+        {"id": "T-ENT-030", "lien": "FD", "raison": "Pompes posées pour assurer la circulation de rinçage"}
+      ],
+      "statut": "a_confirmer",
+      "notes": "RÈGLE DURE : rincer AVANT de raccorder définitivement aux échangeurs des PAC, sinon on encrasse des machines neuves."
+    },
+    {
+      "id": "T-ENT-070",
+      "designation": "Épreuve de pression des réseaux hydrauliques",
+      "entreprise": "ENTRETEC", "systeme": "HYD-CHAUD", "phase": "P5",
+      "locaux": ["*"], "duree_classe": "semaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-ENT-060", "lien": "FD", "raison": "Réseau rempli"}],
+      "statut": "a_confirmer"
+    },
+    {
+      "id": "T-CAL-020",
+      "designation": "Calorifugeage des tuyauteries chaud et froid",
+      "entreprise": "CALORIFUGEAGE", "systeme": "HYD-CHAUD", "phase": "P5",
+      "locaux": ["*"], "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [{"id": "T-ENT-070", "lien": "FD", "raison": "On n'isole pas une tuyauterie non éprouvée"}],
+      "statut": "BLOQUE",
+      "notes": "ALERTE : lot non adjugé et bloquant pour la réception."
+    },
+
+    {
+      "id": "T-DES-010",
+      "designation": "Tuyauterie CO2 - réseaux",
+      "entreprise": "DESPRAZ", "systeme": "CO2", "phase": "P2",
+      "locaux": ["CENT.N-2.06", "CENT.N-2.16", "CENT.N-2.05"],
+      "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-WET-040", "lien": "FD", "raison": "Itinéraire de manutention libéré"},
+        {"id": "T-ENT-010", "lien": "DD", "raison": "Passe après les gros diamètres hydrauliques dans les volumes partagés"}
+      ],
+      "statut": "a_confirmer",
+      "notes": "Acier haute pression (CO2 transcritique) : tracé contraint, soudures, exigence de propreté."
+    },
+    {
+      "id": "T-DES-020",
+      "designation": "Raccordement CO2 sur PAC 1 à 4",
+      "entreprise": "DESPRAZ", "systeme": "CO2", "phase": "P4",
+      "locaux": ["CENT.N-2.07", "CENT.N-2.10", "CENT.N-2.12", "CENT.N-2.15"],
+      "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-WET-040", "lien": "FD", "raison": "Machines posées et calées avant relevé et soudure des liaisons"},
+        {"id": "T-DES-010", "lien": "FD", "raison": "Réseau amont réalisé"}
+      ],
+      "statut": "a_confirmer",
+      "notes": "Limite de prestation physique confirmée. Reste à régler : qui garantit l'étanchéité du circuit COMPLET, machine incluse ? Voir Q-03."
+    },
+    {
+      "id": "T-DES-030",
+      "designation": "Épreuve d'étanchéité du circuit CO2",
+      "entreprise": "DESPRAZ", "systeme": "CO2", "phase": "P5",
+      "locaux": ["*"], "duree_classe": "semaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-DES-020", "lien": "FD", "raison": "Toutes les soudures terminées : une seule reprise invalide l'épreuve"}],
+      "statut": "a_confirmer"
+    },
+    {
+      "id": "T-DES-040",
+      "designation": "Tirage au vide du circuit CO2",
+      "entreprise": "DESPRAZ", "systeme": "CO2", "phase": "P5",
+      "locaux": ["*"], "duree_classe": "semaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-DES-030", "lien": "FD", "raison": "Étanchéité prouvée avant mise sous vide"}],
+      "statut": "a_confirmer"
+    },
+    {
+      "id": "T-DES-050",
+      "designation": "Charge en CO2",
+      "entreprise": "DESPRAZ", "systeme": "CO2", "phase": "P5",
+      "locaux": ["*"], "duree_classe": "semaine", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-DES-040", "lien": "FD", "raison": "Vide tenu"},
+        {"id": "T-GET-080", "lien": "FD", "raison": "Machines alimentables : on ne charge pas une installation qu'on ne peut pas démarrer"}
+      ],
+      "statut": "a_confirmer",
+      "notes": "RÈGLE DURE : la charge vient en dernier. Produit coûteux, et toute réouverture du circuit impose un retrait."
+    },
+
+    {
+      "id": "T-GET-010",
+      "designation": "Infrastructure MT et transformateurs",
+      "entreprise": "GETECH", "systeme": "ELEC-MT", "phase": "P3",
+      "locaux": ["CENT.N-2.01"], "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [],
+      "statut": "a_confirmer",
+      "notes": "Délai de livraison du transformateur à renseigner : candidat n°1 au chemin critique. Voir Q-04."
+    },
+    {
+      "id": "T-GET-020",
+      "designation": "Tableaux TGBT",
+      "entreprise": "GETECH", "systeme": "TGBT", "phase": "P3",
+      "locaux": ["CENT.N-2.04"], "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [],
+      "statut": "a_confirmer",
+      "notes": "Délai de livraison à renseigner. Manutention en local 7,00 m via circulation 4,10 m : même contrainte de gabarit que les PAC."
+    },
+    {
+      "id": "T-GET-030",
+      "designation": "Chemins de câbles et IEG",
+      "entreprise": "GETECH", "systeme": "IEG", "phase": "P2",
+      "locaux": ["*"], "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-WET-040", "lien": "FD", "raison": "Itinéraire de manutention libéré : 905 chemins de câbles suffisent à boucher une circulation"},
+        {"id": "T-DES-010", "lien": "DD", "raison": "Dernier des réseaux : le chemin de câbles est le plus adaptable, il contourne"}
+      ],
+      "statut": "a_confirmer",
+      "notes": "Volumes issus de la maquette ELE : 905 segments de chemin de câbles, 615 accessoires, 647 luminaires."
+    },
+    {
+      "id": "T-GET-040",
+      "designation": "Armoires variateurs 1-2 et 3-4",
+      "entreprise": "GETECH", "systeme": "TGBT", "phase": "P3",
+      "locaux": ["CENT.N-2.08", "CENT.N-2.13"], "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [{"id": "T-GET-020", "lien": "DD", "raison": "Même fournisseur et même campagne de livraison, à confirmer"}],
+      "statut": "a_confirmer"
+    },
+    {
+      "id": "T-GET-050",
+      "designation": "Armoires de commande 1-2 et 3-4",
+      "entreprise": "GETECH", "systeme": "TGBT", "phase": "P3",
+      "locaux": ["CENT.N-2.09", "CENT.N-2.14"], "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-GET-040", "lien": "DD", "raison": "Même campagne"}],
+      "statut": "a_confirmer"
+    },
+    {
+      "id": "T-GET-060",
+      "designation": "Câblage de puissance des PAC",
+      "entreprise": "GETECH", "systeme": "IEG", "phase": "P4",
+      "locaux": ["CENT.N-2.07", "CENT.N-2.10", "CENT.N-2.12", "CENT.N-2.15"],
+      "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-GET-030", "lien": "FD", "raison": "Chemins de câbles posés"},
+        {"id": "T-GET-040", "lien": "FD", "raison": "Variateurs en place pour tirer les câbles aux deux extrémités"},
+        {"id": "T-WET-040", "lien": "FD", "raison": "Machines en place"}
+      ],
+      "statut": "a_confirmer"
+    },
+    {
+      "id": "T-GET-070",
+      "designation": "Détection incendie",
+      "entreprise": "GETECH", "systeme": "DI", "phase": "P4",
+      "locaux": ["*"], "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-GET-030", "lien": "FD", "raison": "Supports de câblage disponibles"}],
+      "statut": "a_confirmer",
+      "notes": "À clarifier : la détection CO2 en local machines (sécurité des personnes) est-elle dans ce lot ou chez Despraz ? Voir Q-05."
+    },
+    {
+      "id": "T-GET-080",
+      "designation": "Mise sous tension MT/BT et TGBT",
+      "entreprise": "GETECH", "systeme": "TGBT", "phase": "P5",
+      "locaux": ["CENT.N-2.01", "CENT.N-2.04"], "duree_classe": "semaine", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-GET-010", "lien": "FD", "raison": "Poste MT terminé"},
+        {"id": "T-GET-020", "lien": "FD", "raison": "TGBT terminé"},
+        {"id": "T-GE-020", "lien": "FD", "raison": "Raccordement au réseau extérieur effectif"},
+        {"id": "T-HAL-020", "lien": "FD", "raison": "Refroidissement des locaux électriques opérationnel avant mise sous tension durable"}
+      ],
+      "statut": "a_confirmer",
+      "notes": "JALON MAJEUR : rien ne démarre avant. Conditionne la charge CO2, la MES ventilation et tous les essais."
+    },
+
+    {
+      "id": "T-GE-020",
+      "designation": "Raccordement extérieur (MT réseau et conduites)",
+      "entreprise": "GE", "systeme": "RACC-EXT", "phase": "P3",
+      "locaux": ["CENT.N+0.03"], "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [],
+      "statut": "a_confirmer",
+      "notes": "Travaux hors bâtiment, à coordonner avec la surface bituminée (3352 m2) et la rampe d'accès, qui sert aussi d'itinéraire de manutention."
+    },
+    {
+      "id": "T-GE-030",
+      "designation": "Automates et régulation MCR",
+      "entreprise": "GE", "systeme": "MCR", "phase": "P4",
+      "locaux": ["CENT.N-2.09", "CENT.N-2.14", "CENT.N-2.21"],
+      "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [{"id": "T-GET-050", "lien": "FD", "raison": "Armoires de commande en place"}],
+      "statut": "a_confirmer"
+    },
+    {
+      "id": "T-GE-040",
+      "designation": "Raccordement des sondes et actionneurs (hors accumulateur)",
+      "entreprise": "GE", "systeme": "MCR", "phase": "P4",
+      "locaux": ["*"], "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-ENT-010", "lien": "FD", "raison": "Tuyauterie posée, doigts de gant disponibles"},
+        {"id": "T-DES-010", "lien": "FD", "raison": "Réseau CO2 posé"},
+        {"id": "T-GE-030", "lien": "DD", "raison": "Même entreprise"}
+      ],
+      "statut": "a_confirmer",
+      "notes": "Doit précéder le calorifugeage sous peine de rouvrir l'isolation."
+    },
+    {
+      "id": "T-GE-050",
+      "designation": "Essais de boucles et de régulation",
+      "entreprise": "GE", "systeme": "MCR", "phase": "P6",
+      "locaux": ["*"], "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-GE-040", "lien": "FD", "raison": "Instrumentation raccordée"},
+        {"id": "T-GET-080", "lien": "FD", "raison": "Alimentation disponible"}
+      ],
+      "statut": "a_confirmer"
+    },
+    {
+      "id": "T-GE-060",
+      "designation": "Essais fonctionnels intégrés et mise en service des PAC",
+      "entreprise": "GE", "systeme": "MCR", "phase": "P6",
+      "locaux": ["*"], "duree_classe": "mois", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-GE-050", "lien": "FD", "raison": "Boucles validées"},
+        {"id": "T-DES-050", "lien": "FD", "raison": "Circuit CO2 chargé"},
+        {"id": "T-ENT-070", "lien": "FD", "raison": "Hydraulique éprouvée et remplie"},
+        {"id": "T-HAL-030", "lien": "FD", "raison": "Ventilation en service"},
+        {"id": "T-GET-060", "lien": "FD", "raison": "Puissance raccordée aux machines"}
+      ],
+      "statut": "a_confirmer",
+      "notes": "Présence simultanée requise : Wettstein, Despraz, Entretec, Groupe E Tech et Groupe E. À planifier comme une campagne, pas comme une tâche."
+    },
+
+    {
+      "id": "T-RIE-010",
+      "designation": "Installations sanitaires",
+      "entreprise": "RIEDO", "systeme": "SAN", "phase": "P2",
+      "locaux": ["CENT.N-2.23", "CENT.N-2.22"], "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [],
+      "statut": "a_confirmer",
+      "notes": "Lot très localisé (3,5 m2 de sanitaire + 9,1 m2 de vestiaire). Peu de conflit avec les autres réseaux, donc large marge de calage."
+    },
+
+    {
+      "id": "T-ANS-010",
+      "designation": "Fenêtres",
+      "entreprise": "ANSERMOT", "systeme": "MEN", "phase": "P0",
+      "locaux": ["*"], "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-ANT-010", "lien": "FD", "raison": "Supports et tableaux terminés"}],
+      "statut": "non_adjuge",
+      "notes": "Mise hors d'air nécessaire avant mise sous tension durable des équipements électriques."
+    },
+    {
+      "id": "T-ANS-020",
+      "designation": "Serrurerie : garde-corps, échelles, caillebotis",
+      "entreprise": "ANSERMOT", "systeme": "SER", "phase": "P2",
+      "locaux": ["*"], "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-ANT-010", "lien": "FD", "raison": "Supports béton disponibles"}],
+      "statut": "non_adjuge",
+      "notes": "À scinder : les garde-corps au plus tôt (sécurité des intervenants des autres lots), les caillebotis après les réseaux qu'ils surplombent."
+    },
+    {
+      "id": "T-ANS-030",
+      "designation": "Portes intérieures",
+      "entreprise": "ANSERMOT", "systeme": "MEN", "phase": "P4",
+      "locaux": ["*"], "duree_classe": "quinzaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-GET-030", "lien": "FD", "raison": "Réseaux passés : une porte posée tôt est une porte abîmée ou démontée"}],
+      "statut": "non_adjuge"
+    },
+    {
+      "id": "T-ANS-040",
+      "designation": "Portes du chemin de manutention",
+      "entreprise": "ANSERMOT", "systeme": "MEN", "phase": "P5",
+      "locaux": ["CENT.N-2.25", "CENT.N-2.26", "CENT.N-2.11"],
+      "duree_classe": "semaine", "date_connue": null,
+      "predecesseurs": [{"id": "T-WET-040", "lien": "FD", "raison": "Après le dernier colis lourd"}],
+      "statut": "non_adjuge",
+      "notes": "RÈGLE DURE : en dernier. Inclut le sas N-2.11 s'il est sur l'itinéraire."
+    },
+
+    {
+      "id": "T-REC-010",
+      "designation": "Réception de l'installation",
+      "entreprise": "GE", "systeme": "RECEPTION", "phase": "P6",
+      "locaux": ["*"], "duree_classe": "semaine", "date_connue": null,
+      "predecesseurs": [
+        {"id": "T-GE-060", "lien": "FD", "raison": "Essais fonctionnels concluants"},
+        {"id": "T-CAL-010", "lien": "FD", "raison": "Accumulateur isolé"},
+        {"id": "T-CAL-020", "lien": "FD", "raison": "Tuyauteries calorifugées"},
+        {"id": "T-ANS-040", "lien": "FD", "raison": "Bâtiment refermé"},
+        {"id": "T-GET-070", "lien": "FD", "raison": "Détection incendie réceptionnée"}
+      ],
+      "statut": "a_confirmer"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Maquettes brutes : jamais versionnées (GitHub bloque à 100 Mio par fichier,
+# et un IFC n'a aucun intérêt à être suivi en git — seules les données
+# extraites méritent de l'être).
+data/raw/*
+!data/raw/.gitkeep
+
+# Plans PDF
+docs/plans/*
+!docs/plans/.gitkeep
+
+__pycache__/
+*.pyc
+.DS_Store

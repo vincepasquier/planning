@@ -1,0 +1,91 @@
+{
+  "projet": {
+    "numero": "20.133",
+    "site": "ENGLISBERG",
+    "batiment": "CENTRALE",
+    "phase_sia": "51 - Projet d'exécution",
+    "architecte": "Riforma Architecture SA",
+    "bureau_electricite": "Groupe E Connect SA"
+  },
+  "entreprises": [
+    {
+      "code": "ANTIGLIO",
+      "nom": "Antiglio",
+      "prestations": ["Gros œuvre béton", "Étanchéité", "Socles et massifs", "Réservations"],
+      "statut": "adjugé",
+      "avancement": "quasiment terminé"
+    },
+    {
+      "code": "BILFINGER",
+      "nom": "Bilfinger",
+      "prestations": ["Fourniture et montage de l'accumulateur"],
+      "statut": "adjugé",
+      "avancement": "en cours - épreuve de pression fin novembre 2026"
+    },
+    {
+      "code": "WETTSTEIN",
+      "nom": "Walter Wettstein",
+      "prestations": ["Fourniture et pose des PAC 1 à 4"],
+      "statut": "adjugé",
+      "limite_prestation": "Machines dans leurs locaux uniquement. Le CO2 et l'hydraulique chaud viennent se raccorder sur les PAC dans le local."
+    },
+    {
+      "code": "DESPRAZ",
+      "nom": "Despraz",
+      "prestations": ["Installation CO2", "Tuyauterie frigorifique", "Épreuve, tirage au vide, charge"],
+      "statut": "adjugé"
+    },
+    {
+      "code": "ENTRETEC",
+      "nom": "Groupe E Entretec",
+      "prestations": ["Hydraulique chaud", "Hydraulique froid", "Pompage"],
+      "statut": "adjugé"
+    },
+    {
+      "code": "GETECH",
+      "nom": "Groupe E Tech",
+      "prestations": ["IEG", "Tableaux électriques TGBT", "Infrastructures MT/BT", "Détection incendie"],
+      "statut": "adjugé"
+    },
+    {
+      "code": "GE",
+      "nom": "Groupe E",
+      "prestations": ["Régulation MCR", "Raccordement extérieur"],
+      "statut": "adjugé"
+    },
+    {
+      "code": "HALG",
+      "nom": "Hälg",
+      "prestations": ["Installations de ventilation"],
+      "statut": "adjugé"
+    },
+    {
+      "code": "RIEDO",
+      "nom": "Riedo Clima",
+      "prestations": ["Installations sanitaires"],
+      "statut": "adjugé"
+    },
+    {
+      "code": "ANSERMOT",
+      "nom": "Ansermot",
+      "prestations": ["Portes", "Fenêtres", "Serrurerie"],
+      "statut": "probable - non confirmé"
+    },
+    {
+      "code": "CALORIFUGEAGE",
+      "nom": "À adjuger",
+      "prestations": ["Calorifugeage accumulateur", "Calorifugeage tuyauteries chaud et froid"],
+      "statut": "NON ADJUGÉ",
+      "alerte": "Lot situé tard dans la séquence et bloquant pour la mise en service. L'isolation de l'accumulateur suit directement l'épreuve de pression de fin novembre 2026."
+    }
+  ],
+  "conventions": {
+    "liens": {
+      "FD": "Fin-Début : le successeur commence quand le prédécesseur est fini",
+      "DD": "Début-Début : les deux commencent ensemble",
+      "FF": "Fin-Fin : les deux finissent ensemble"
+    },
+    "classes_duree": ["semaine", "quinzaine", "mois", "trimestre"],
+    "note_duree": "Les durées sont des ordres de grandeur à valider par les entreprises. Seules les dates du champ date_connue sont fermes."
+  }
+}

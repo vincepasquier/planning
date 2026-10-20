@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "id": "Q-02",
+      "priorite": "critique",
+      "sujet": "Gabarit de passage des PAC",
+      "question": "Quelles sont les dimensions hors-tout et le poids des PAC de Wettstein, et des cellules TGBT ?",
+      "pourquoi": "Les locaux PAC et TGBT font 7,00 m sous plafond, mais les circulations N-2 qui y mènent n'en font que 4,10 m. Les quais 1 et 2 à N-1 sont à 2,62 m. Le gabarit limite n'est donc pas la hauteur du local de destination mais celle de l'itinéraire. Si une machine dépasse ~4 m hors-tout, elle ne passe pas par la circulation : il faut soit une trémie depuis le couvert, soit un montage sur place.",
+      "destinataire": "Wettstein / Groupe E Tech",
+      "impact": "Peut inverser toute la phase P1 et imposer une intervention du gros œuvre avant son achèvement."
+    },
+    {
+      "id": "Q-01",
+      "priorite": "critique",
+      "sujet": "Itinéraire de manutention",
+      "question": "Par où entrent réellement les PAC et l'accumulateur : rampe extérieure + couvert à N-2, trémie, ou quais à N-1 ?",
+      "pourquoi": "La maquette montre une rampe extérieure (137 m2) et un couvert (299 m2) à N-2, tous deux à 7,00 m, ce qui suggère un accès direct au niveau bas. Mais les quais 1 et 2 sont à N-1 sous 2,62 m. L'itinéraire conditionne l'ordre de tous les réseaux.",
+      "destinataire": "Maître d'ouvrage / Antiglio",
+      "impact": "Détermine le jalon pivot T-WET-040 et la date de libération des circulations."
+    },
+    {
+      "id": "Q-06",
+      "priorite": "critique",
+      "sujet": "Adjudication du calorifugeage",
+      "question": "Quand le lot calorifugeage sera-t-il adjugé ?",
+      "pourquoi": "L'épreuve de pression de l'accumulateur est ferme au 30.11.2026 et l'isolation suit immédiatement. Le lot n'est pas adjugé. C'est la seule tâche bloquée qui se situe juste après une date ferme.",
+      "destinataire": "Maître d'ouvrage",
+      "impact": "Retard direct sur l'accumulateur, puis sur la réception."
+    },
+    {
+      "id": "Q-03",
+      "priorite": "haute",
+      "sujet": "Garantie du circuit CO2",
+      "question": "La limite physique est claire (Wettstein livre la machine dans le local, Despraz s'y raccorde). Mais qui réalise l'épreuve d'étanchéité du circuit COMPLET, machine incluse, et qui en porte la garantie ?",
+      "pourquoi": "En CO2 transcritique, l'étanchéité est une performance du circuit entier. Une limite de prestation physique nette ne dit rien de la responsabilité d'ensemble. C'est le point de litige classique.",
+      "destinataire": "Wettstein / Despraz",
+      "impact": "Blocage possible de T-DES-030 et de la mise en service."
+    },
+    {
+      "id": "Q-04",
+      "priorite": "haute",
+      "sujet": "Délais de livraison",
+      "question": "Quels sont les délais de livraison annoncés pour : transformateur MT, cellules TGBT, variateurs, PAC 1 à 4 ?",
+      "pourquoi": "Sur une centrale, le chemin critique passe généralement par les commandes et non par les travaux. Sans ces délais, le planning n'a pas d'échelle de temps.",
+      "destinataire": "Groupe E Tech / Wettstein",
+      "impact": "Détermine le chemin critique réel."
+    },
+    {
+      "id": "Q-07",
+      "priorite": "haute",
+      "sujet": "Alimentation provisoire de chantier",
+      "question": "De quelle alimentation disposent les entreprises avant la mise sous tension définitive du TGBT, et suffit-elle à faire tourner le refroidissement des locaux électriques ?",
+      "pourquoi": "Le modèle distingue l'installation du refroidissement (T-HAL-020, avant mise sous tension) de sa mise en service (T-HAL-030, après). C'est ce qui évite une boucle. Mais il faut vérifier que le TGBT peut être mis sous tension sans que son refroidissement soit déjà alimenté en définitif.",
+      "destinataire": "Groupe E Tech / Hälg",
+      "impact": "Peut créer une dépendance circulaire réelle entre T-GET-080 et T-HAL-020."
+    },
+    {
+      "id": "Q-10",
+      "priorite": "haute",
+      "sujet": "Pilotage de la mise en service",
+      "question": "Qui coordonne la campagne d'essais fonctionnels, qui exige la présence simultanée de Wettstein, Despraz, Entretec, Groupe E Tech et Groupe E ?",
+      "pourquoi": "T-GE-060 n'est pas une tâche mais une campagne à cinq entreprises. Sans pilote désigné, elle glisse.",
+      "destinataire": "Maître d'ouvrage",
+      "impact": "Risque de glissement en fin de chantier, là où il n'y a plus de marge."
+    },
+    {
+      "id": "Q-05",
+      "priorite": "moyenne",
+      "sujet": "Détection CO2",
+      "question": "La détection de fuite CO2 en local machines est-elle dans le lot détection incendie de Groupe E Tech, ou chez Despraz ?",
+      "pourquoi": "C'est une sécurité des personnes, distincte de la détection incendie. Quatre locaux PAC de 191 m2 sous 7 m avec circuit haute pression.",
+      "destinataire": "Groupe E Tech / Despraz",
+      "impact": "Lot potentiellement orphelin, bloquant pour la réception."
+    },
+    {
+      "id": "Q-09",
+      "priorite": "moyenne",
+      "sujet": "Désenfumage",
+      "question": "Y a-t-il un lot désenfumage, et chez qui ?",
+      "pourquoi": "Absent de la liste des adjudications. Bâtiment à deux niveaux enterrés avec local MT.",
+      "destinataire": "Maître d'ouvrage",
+      "impact": "Lot potentiellement orphelin."
+    },
+    {
+      "id": "Q-11",
+      "priorite": "moyenne",
+      "sujet": "Date de mise en service visée",
+      "question": "Y a-t-il une date de mise en service contractuelle ou saisonnière à respecter ?",
+      "pourquoi": "Une centrale de chauffage se met en service avant la saison de chauffe. Cette contrainte, si elle existe, est le vrai point de départ du calage des dates.",
+      "destinataire": "Maître d'ouvrage",
+      "impact": "Transforme l'ordonnancement en planning daté."
+    },
+    {
+      "id": "Q-12",
+      "priorite": "basse",
+      "sujet": "Usage des quais",
+      "question": "À quoi servent les quais 1 et 2 (N-1, 2,62 m sous plafond) ?",
+      "pourquoi": "Trop bas pour les gros équipements. Livraisons courantes, ou exploitation ?",
+      "destinataire": "Maître d'ouvrage",
+      "impact": "Clarifie l'itinéraire de manutention."
+    },
+    {
+      "id": "Q-08",
+      "priorite": "basse",
+      "sujet": "Qualité de la maquette ARC",
+      "question": "Le numéro de local CENT.N-2.05 est attribué deux fois dans la maquette (34,6 m2 et 128,0 m2). Lequel est le bon ?",
+      "pourquoi": "Un numéro en doublon empêche tout rattachement fiable des tâches aux locaux.",
+      "destinataire": "Riforma Architecture",
+      "impact": "Qualité des données, sans effet sur la séquence."
+    }
+  ]
+}

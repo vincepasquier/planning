@@ -1,0 +1,46 @@
+{
+  "phases": [
+    {
+      "code": "P0",
+      "titre": "Gros œuvre, enveloppe et préparation",
+      "description": "Béton, étanchéité, socles et massifs, réservations. Quasiment terminé.",
+      "pilote": "ANTIGLIO"
+    },
+    {
+      "code": "P1",
+      "titre": "Manutention et mise en place des équipements lourds",
+      "description": "Descente et pose des PAC 1 à 4 et de l'accumulateur. Jalon pivot : tant que les machines ne sont pas en place, l'itinéraire de manutention doit rester libre.",
+      "pilote": "WETTSTEIN + BILFINGER"
+    },
+    {
+      "code": "P2",
+      "titre": "Réseaux primaires",
+      "description": "Ordre de passage dans les volumes partagés : le plus encombrant et le moins déformable d'abord. Ventilation, puis hydraulique, puis CO2, puis chemins de câbles.",
+      "pilote": "HALG, ENTRETEC, DESPRAZ, GETECH"
+    },
+    {
+      "code": "P3",
+      "titre": "Électricité de puissance",
+      "description": "MT/BT, transformateurs, TGBT, armoires variateurs et commande. Mené en parallèle de P2 car conditionné par les délais de livraison.",
+      "pilote": "GETECH"
+    },
+    {
+      "code": "P4",
+      "titre": "Raccordements aux machines",
+      "description": "CO2, hydraulique, puissance et régulation sur les PAC et l'accumulateur, dans les locaux.",
+      "pilote": "DESPRAZ, ENTRETEC, GETECH, GE"
+    },
+    {
+      "code": "P5",
+      "titre": "Épreuves et essais",
+      "description": "Rinçage, épreuves de pression, étanchéité CO2, tirage au vide, charge, mise sous tension.",
+      "pilote": "Toutes"
+    },
+    {
+      "code": "P6",
+      "titre": "Mise en service et réception",
+      "description": "Essais de régulation, essais fonctionnels intégrés, réception.",
+      "pilote": "GE (MCR)"
+    }
+  ]
+}
