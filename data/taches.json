@@ -1,5 +1,5 @@
 {
-  "version": "0.4",
+  "version": "0.5",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -99,7 +99,7 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-WET-040",
+          "id": "T-WET-020",
           "lien": "FD",
           "raison": "Dernier colis lourd rentré"
         }
@@ -240,59 +240,15 @@
       "notes": "Socle préfabriqué, amené dans le local au moment utile (MO, 20.10.2026). Supprime la contrainte de maturation du béton qui retenait la pose des machines. Fournisseur du préfabriqué à confirmer."
     },
     {
-      "id": "T-ANT-023",
-      "designation": "Pose du socle préfabriqué PAC 3",
-      "entreprise": "ANTIGLIO",
-      "systeme": "PAC-3",
-      "phase": "P0",
-      "locaux": [
-        "CENT.N-2.12"
-      ],
-      "duree_classe": "semaine",
-      "duree_semaines": 1,
-      "date_connue": null,
-      "predecesseurs": [
-        {
-          "id": "T-ANT-010",
-          "lien": "DD",
-          "raison": "Local disponible ; le socle préfabriqué ne demande pas de cure"
-        }
-      ],
-      "statut": "a_confirmer",
-      "notes": "Socle préfabriqué, amené dans le local au moment utile (MO, 20.10.2026). Supprime la contrainte de maturation du béton qui retenait la pose des machines. Fournisseur du préfabriqué à confirmer."
-    },
-    {
-      "id": "T-ANT-024",
-      "designation": "Pose du socle préfabriqué PAC 4",
-      "entreprise": "ANTIGLIO",
-      "systeme": "PAC-4",
-      "phase": "P0",
-      "locaux": [
-        "CENT.N-2.15"
-      ],
-      "duree_classe": "semaine",
-      "duree_semaines": 1,
-      "date_connue": null,
-      "predecesseurs": [
-        {
-          "id": "T-ANT-010",
-          "lien": "DD",
-          "raison": "Local disponible ; le socle préfabriqué ne demande pas de cure"
-        }
-      ],
-      "statut": "a_confirmer",
-      "notes": "Socle préfabriqué, amené dans le local au moment utile (MO, 20.10.2026). Supprime la contrainte de maturation du béton qui retenait la pose des machines. Fournisseur du préfabriqué à confirmer."
-    },
-    {
       "id": "T-WET-010",
-      "designation": "Manutention et pose PAC 1 (NH3)",
+      "designation": "Montage de la PAC 1 (NH3) dans le local",
       "entreprise": "WETTSTEIN",
       "systeme": "PAC-1",
       "phase": "P1",
       "locaux": [
         "CENT.N-2.07"
       ],
-      "duree_classe": "quinzaine",
+      "duree_classe": "trimestre",
       "date_connue": null,
       "predecesseurs": [
         {
@@ -302,19 +258,19 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Premier local construit (MO, 20.10.2026). Accès par la rampe extérieure, le couvert N-2.25 puis la porte 20 (type B, EI60) de 3.50 x 4.00 m. Dimensions et poids de la machine toujours inconnus : voir Q-02.",
-      "duree_semaines": 3
+      "notes": "3,5 mois par local (MO, 20.10.2026). Il ne s'agit pas d'une machine livrée d'un bloc mais d'un montage complet sur place : les composants entrent pièce par pièce, ce qui lève la contrainte de gabarit à l'entrée. En revanche le local reste occupé par Wettstein pendant toute la durée du montage.",
+      "duree_semaines": 15
     },
     {
       "id": "T-WET-020",
-      "designation": "Manutention et pose PAC 2 (NH3)",
+      "designation": "Montage de la PAC 2 (NH3) dans le local",
       "entreprise": "WETTSTEIN",
       "systeme": "PAC-2",
       "phase": "P1",
       "locaux": [
         "CENT.N-2.10"
       ],
-      "duree_classe": "quinzaine",
+      "duree_classe": "trimestre",
       "date_connue": null,
       "predecesseurs": [
         {
@@ -329,62 +285,8 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Deuxième local construit, après PAC 1 (MO, 20.10.2026).",
-      "duree_semaines": 3
-    },
-    {
-      "id": "T-WET-030",
-      "designation": "Manutention et pose PAC 3 (NH3)",
-      "entreprise": "WETTSTEIN",
-      "systeme": "PAC-3",
-      "phase": "P1",
-      "locaux": [
-        "CENT.N-2.12"
-      ],
-      "duree_classe": "quinzaine",
-      "date_connue": null,
-      "predecesseurs": [
-        {
-          "id": "T-ANT-023",
-          "lien": "FD",
-          "raison": "Socle préfabriqué en place dans le local"
-        },
-        {
-          "id": "T-WET-020",
-          "lien": "FD",
-          "raison": "Même moyen de levage"
-        }
-      ],
-      "statut": "a_confirmer",
-      "notes": "Rang à confirmer : les schémas marquent les départs froid PAC 3 et 4 « (réserve) » et le concept MCR ne détaille que les PAC 1 et 2. Ces machines relèvent-elles de l'étape 1 ? Voir Q-21.",
-      "duree_semaines": 3
-    },
-    {
-      "id": "T-WET-040",
-      "designation": "Manutention et pose PAC 4 (NH3)",
-      "entreprise": "WETTSTEIN",
-      "systeme": "PAC-4",
-      "phase": "P1",
-      "locaux": [
-        "CENT.N-2.15"
-      ],
-      "duree_classe": "quinzaine",
-      "date_connue": null,
-      "predecesseurs": [
-        {
-          "id": "T-ANT-024",
-          "lien": "FD",
-          "raison": "Socle préfabriqué en place dans le local"
-        },
-        {
-          "id": "T-WET-030",
-          "lien": "FD",
-          "raison": "Même moyen de levage"
-        }
-      ],
-      "statut": "a_confirmer",
-      "notes": "Rang à confirmer : les schémas marquent les départs froid PAC 3 et 4 « (réserve) » et le concept MCR ne détaille que les PAC 1 et 2. Ces machines relèvent-elles de l'étape 1 ? Voir Q-21.",
-      "duree_semaines": 3
+      "notes": "3,5 mois par local (MO, 20.10.2026). Il ne s'agit pas d'une machine livrée d'un bloc mais d'un montage complet sur place : les composants entrent pièce par pièce, ce qui lève la contrainte de gabarit à l'entrée. En revanche le local reste occupé par Wettstein pendant toute la durée du montage.",
+      "duree_semaines": 15
     },
     {
       "id": "T-WET-050",
@@ -394,15 +296,13 @@
       "phase": "P5",
       "locaux": [
         "CENT.N-2.07",
-        "CENT.N-2.10",
-        "CENT.N-2.12",
-        "CENT.N-2.15"
+        "CENT.N-2.10"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-WET-040",
+          "id": "T-WET-020",
           "lien": "FD",
           "raison": "Machines en place et assemblées"
         }
@@ -412,15 +312,13 @@
     },
     {
       "id": "T-WET-060",
-      "designation": "Charge en NH3 des PAC 1 à 4",
+      "designation": "Charge en NH3 des PAC 1 et 2",
       "entreprise": "WETTSTEIN",
       "systeme": "NH3",
       "phase": "P5",
       "locaux": [
         "CENT.N-2.07",
-        "CENT.N-2.10",
-        "CENT.N-2.12",
-        "CENT.N-2.15"
+        "CENT.N-2.10"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -483,11 +381,6 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-WET-040",
-          "lien": "FD",
-          "raison": "Itinéraire de manutention libéré"
-        },
-        {
           "id": "T-DES-005",
           "lien": "DD",
           "raison": "Même entreprise, réseau tiré depuis les centrales froid"
@@ -504,27 +397,30 @@
     },
     {
       "id": "T-DES-015",
-      "designation": "Echangeurs froid PAC 1 a 4",
+      "designation": "Echangeurs froid PAC 1 et 2",
       "entreprise": "DESPRAZ",
       "systeme": "FROID-CO2",
       "phase": "P2",
       "locaux": [
         "CENT.N-2.07",
-        "CENT.N-2.10",
-        "CENT.N-2.12",
-        "CENT.N-2.15"
+        "CENT.N-2.10"
       ],
       "duree_classe": "mois",
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-DES-010",
+          "id": "T-ENT-040",
           "lien": "DD",
-          "raison": "Même campagne de tuyauterie"
+          "raison": "Entretec et Despraz interviennent en même temps dans le local (MO, 20.10.2026)"
+        },
+        {
+          "id": "T-DES-010",
+          "lien": "FD",
+          "raison": "Réseau CO2 amont réalisé"
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Fournis et poses par Despraz. 180 kW par echangeur pour PAC 1-2, 110 kW pour PAC 3-4. Interface directe avec le circuit hydraulique froid d'Entretec (T-ENT-090).",
+      "notes": "Les locaux PAC reçoivent aussi de l'hydraulique chaud et du CO2 (MO). 180 kW par échangeur. Les départs froid PAC 3 et 4 restent en réserve.",
       "duree_semaines": 6
     },
     {
@@ -647,11 +543,6 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-WET-040",
-          "lien": "FD",
-          "raison": "Itinéraire de manutention libéré"
-        },
-        {
           "id": "T-HAL-010",
           "lien": "DD",
           "raison": "Passe après la ventilation dans les volumes partagés, mais peut démarrer en local dédié"
@@ -706,23 +597,21 @@
     },
     {
       "id": "T-ENT-040",
-      "designation": "Raccordement hydraulique chaud sur PAC 1 à 4",
+      "designation": "Raccordement hydraulique chaud sur PAC 1 et 2",
       "entreprise": "ENTRETEC",
       "systeme": "HYD-CHAUD",
       "phase": "P4",
       "locaux": [
         "CENT.N-2.07",
-        "CENT.N-2.10",
-        "CENT.N-2.12",
-        "CENT.N-2.15"
+        "CENT.N-2.10"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-WET-040",
+          "id": "T-WET-020",
           "lien": "FD",
-          "raison": "Machines posées et calées : le raccordement se relève sur l'ouvrage réel"
+          "raison": "Wettstein libère le local après montage (MO, 20.10.2026)"
         },
         {
           "id": "T-ENT-010",
@@ -899,9 +788,9 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-WET-040",
-          "lien": "FD",
-          "raison": "L'itinéraire de manutention reste libre jusqu'à la dernière machine"
+          "id": "T-ANT-010",
+          "lien": "DD",
+          "raison": "Locaux livrés par le gros œuvre au fur et à mesure"
         }
       ],
       "statut": "a_confirmer",
@@ -1074,18 +963,13 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-WET-040",
-          "lien": "FD",
-          "raison": "Itinéraire libéré : 905 chemins de câbles suffisent à boucher une circulation"
-        },
-        {
           "id": "T-DES-010",
           "lien": "DD",
           "raison": "Dernier des réseaux : le chemin de câbles est le plus adaptable, il contourne"
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Maquette ELE : 905 segments de chemin de câbles, 615 accessoires, 647 luminaires, 34 appareillages.",
+      "notes": "905 segments de chemin de câbles, 615 accessoires, 647 luminaires (maquette ELE). Les réseaux ne sont plus asservis à la manutention des machines, celles-ci étant montées sur place pièce par pièce.",
       "duree_semaines": 16
     },
     {
@@ -1150,9 +1034,7 @@
       "phase": "P4",
       "locaux": [
         "CENT.N-2.07",
-        "CENT.N-2.10",
-        "CENT.N-2.12",
-        "CENT.N-2.15"
+        "CENT.N-2.10"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
@@ -1168,7 +1050,7 @@
           "raison": "Variateurs en place pour tirer aux deux extrémités"
         },
         {
-          "id": "T-WET-040",
+          "id": "T-WET-020",
           "lien": "FD",
           "raison": "Machines en place"
         }
@@ -1522,7 +1404,7 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-WET-040",
+          "id": "T-WET-020",
           "lien": "FD",
           "raison": "Après le dernier colis lourd"
         }
@@ -1581,5 +1463,11 @@
   "corrections_v04": [
     "Socles préfabriqués, posés local par local au moment utile : la contrainte de maturation du béton disparaît (MO, 20.10.2026).",
     "Séquence confirmée : local PAC 1 construit avant local PAC 2 (MO, 20.10.2026)."
+  ],
+  "corrections_v05": [
+    "Les PAC 3 et 4 sont reportées de 5 à 10 ans : elles sortent du marché, avec leurs socles. Les réserves prévues aux schémas les accueilleront plus tard.",
+    "La PAC n'arrive pas d'un bloc : c'est un montage complet dans le local, 3,5 mois par machine. La contrainte de gabarit à l'entrée tombe ; l'occupation du local devient la contrainte.",
+    "Les réseaux ne sont plus asservis à la libération d'un itinéraire de manutention, qui n'a plus lieu d'être.",
+    "Dans un local PAC : Wettstein, puis Entretec et Despraz ensemble."
   ]
 }

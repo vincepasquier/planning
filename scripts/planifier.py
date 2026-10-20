@@ -65,13 +65,39 @@ def planifier(taches, debut):
     return dates
 
 
+def marges(taches, dates, fin_projet):
+    """Passe arriere : date au plus tard et marge totale de chaque tache.
+
+    Une tache de marge nulle est sur le chemin critique : tout jour perdu
+    dessus est un jour perdu sur la fin du projet.
+    """
+    succ = {i: [] for i in taches}
+    for i, t in taches.items():
+        for p in t["predecesseurs"]:
+            succ[p["id"]].append((i, p["lien"]))
+    tard = {}
+    for tid in reversed(ordonner(taches)):
+        d0, f0 = dates[tid]
+        if not succ[tid]:
+            tard[tid] = fin_projet
+        else:
+            butoirs = []
+            for s_id, lien in succ[tid]:
+                sd, sf = dates[s_id]
+                # FD : finir avant le debut du successeur. DD : demarrer avec lui.
+                butoirs.append(tard[s_id] - (sf - sd) - timedelta(days=3)
+                               if lien == "FD" else tard[s_id] - (sf - sd) + (f0 - d0))
+            tard[tid] = min(butoirs)
+    return {i: (tard[i], (tard[i] - dates[i][1]).days) for i in taches}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--taches", default="data/taches.json")
     ap.add_argument("--debut", default=date.today().isoformat(),
                     help="date de demarrage du planning (AAAA-MM-JJ)")
     ap.add_argument("--csv", help="exporte le resultat en CSV")
-    ap.add_argument("--par", choices=["date", "lot", "local"], default="date")
+    ap.add_argument("--par", choices=["date", "lot", "local", "critique"], default="date")
     args = ap.parse_args()
 
     taches, _ = charger(args.taches)
@@ -90,13 +116,29 @@ def main():
             })
 
     cles = {"date": lambda r: (r["debut"], r["lot"]),
+            "critique": lambda r: (r["debut"], r["lot"]),
             "lot": lambda r: (r["lot"], r["debut"]),
             "local": lambda r: (r["local"], r["debut"])}
     lignes.sort(key=cles[args.par])
 
     fin_projet = max(f for _, f in dates.values())
+    mg = marges(taches, dates, fin_projet)
+    critiques = [i for i, (_, m) in mg.items() if m <= 0]
+    for r in lignes:
+        r["marge_jours"] = mg[r["id"]][1]
+        r["critique"] = "oui" if mg[r["id"]][1] <= 0 else ""
+    semaines = round((fin_projet - date(a, m, j)).days / 7)
     print(f"Demarrage {args.debut}  ->  fin au plus tot {fin_projet.isoformat()}  "
-          f"({len(taches)} taches)\n")
+          f"({semaines} semaines, {len(taches)} taches)")
+    print(f"Chemin critique : {len(critiques)} taches de marge nulle\n")
+    if args.par == "critique":
+        print(f"{'LOT':<14}{'DEBUT':<12}{'FIN':<12}{'SEM':>4}  TACHE")
+        print("-" * 96)
+        for tid in sorted(critiques, key=lambda i: dates[i][0]):
+            t, (d0, f) = taches[tid], dates[tid]
+            print(f"{t['entreprise']:<14}{d0.isoformat():<12}{f.isoformat():<12}"
+                  f"{t.get('duree_semaines'):>4}  {t['designation'][:54]}")
+        return 0
     print(f"{'LOT':<14}{'LOCAL':<16}{'DEBUT':<12}{'FIN':<12}{'SEM':>4}  TACHE")
     print("-" * 118)
     vus = set()

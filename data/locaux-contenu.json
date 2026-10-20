@@ -17,7 +17,7 @@
       "famille": "A",
       "famille_titre": "Locaux PAC",
       "rang_priorite": 1,
-      "statut_fiche": "partiel",
+      "statut_fiche": "rempli",
       "hypothese_actuelle": [
         {
           "lot": "ANTIGLIO",
@@ -69,11 +69,40 @@
         }
       ],
       "reponse": {
-        "contenu": null,
-        "interventions": [],
-        "manutention": null,
-        "co_activite_possible": null,
-        "remarques": "Socles préfabriqués, amenés dans le local au moment utile : pas de maturation de béton à attendre. Local construit en 1er position."
+        "contenu": "Montage complet de la PAC sur place — la machine n'arrive pas d'un bloc. Quelques installations d'hydraulique chaud et de CO2 également.",
+        "interventions": [
+          {
+            "lot": "ANTIGLIO",
+            "prestation": "Pose du socle préfabriqué",
+            "duree_semaines": 1,
+            "ordre": 1,
+            "remarque": "Préfabriqué, amené au moment utile : pas de maturation à attendre"
+          },
+          {
+            "lot": "WETTSTEIN",
+            "prestation": "Montage de la PAC 1",
+            "duree_semaines": 15,
+            "ordre": 2,
+            "remarque": "3,5 mois par local. Le local est occupé pendant toute la durée"
+          },
+          {
+            "lot": "ENTRETEC",
+            "prestation": "Raccordement hydraulique chaud",
+            "duree_semaines": null,
+            "ordre": 3,
+            "remarque": "En même temps que Despraz"
+          },
+          {
+            "lot": "DESPRAZ",
+            "prestation": "Échangeur froid et CO2",
+            "duree_semaines": null,
+            "ordre": 3,
+            "remarque": "En même temps qu'Entretec"
+          }
+        ],
+        "manutention": "Pas de colis hors gabarit : la machine entre en pièces détachées et se monte dans le local. La porte 20 (3,50 x 4,00 m) ne limite donc pas la PAC.",
+        "co_activite_possible": "Wettstein seul pendant le montage, puis Entretec et Despraz ensemble",
+        "remarques": "Local construit en 1er position."
       }
     },
     {
@@ -85,7 +114,7 @@
       "famille": "A",
       "famille_titre": "Locaux PAC",
       "rang_priorite": 1,
-      "statut_fiche": "partiel",
+      "statut_fiche": "rempli",
       "hypothese_actuelle": [
         {
           "lot": "ANTIGLIO",
@@ -137,11 +166,40 @@
         }
       ],
       "reponse": {
-        "contenu": null,
-        "interventions": [],
-        "manutention": null,
-        "co_activite_possible": null,
-        "remarques": "Socles préfabriqués, amenés dans le local au moment utile : pas de maturation de béton à attendre. Local construit en 2e position."
+        "contenu": "Montage complet de la PAC sur place — la machine n'arrive pas d'un bloc. Quelques installations d'hydraulique chaud et de CO2 également.",
+        "interventions": [
+          {
+            "lot": "ANTIGLIO",
+            "prestation": "Pose du socle préfabriqué",
+            "duree_semaines": 1,
+            "ordre": 1,
+            "remarque": "Préfabriqué, amené au moment utile : pas de maturation à attendre"
+          },
+          {
+            "lot": "WETTSTEIN",
+            "prestation": "Montage de la PAC 2",
+            "duree_semaines": 15,
+            "ordre": 2,
+            "remarque": "3,5 mois par local. Le local est occupé pendant toute la durée"
+          },
+          {
+            "lot": "ENTRETEC",
+            "prestation": "Raccordement hydraulique chaud",
+            "duree_semaines": null,
+            "ordre": 3,
+            "remarque": "En même temps que Despraz"
+          },
+          {
+            "lot": "DESPRAZ",
+            "prestation": "Échangeur froid et CO2",
+            "duree_semaines": null,
+            "ordre": 3,
+            "remarque": "En même temps qu'Entretec"
+          }
+        ],
+        "manutention": "Pas de colis hors gabarit : la machine entre en pièces détachées et se monte dans le local. La porte 20 (3,50 x 4,00 m) ne limite donc pas la PAC.",
+        "co_activite_possible": "Wettstein seul pendant le montage, puis Entretec et Despraz ensemble",
+        "remarques": "Local construit en 2e position."
       }
     },
     {
@@ -153,7 +211,7 @@
       "famille": "A",
       "famille_titre": "Locaux PAC",
       "rang_priorite": 1,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "hors_marche",
       "hypothese_actuelle": [
         {
           "lot": "ANTIGLIO",
@@ -209,7 +267,7 @@
         "interventions": [],
         "manutention": null,
         "co_activite_possible": null,
-        "remarques": "Socles préfabriqués, amenés dans le local au moment utile : pas de maturation de béton à attendre."
+        "remarques": "PAC 3 et 4 posées dans 5 à 10 ans (MO, 20.10.2026). Hors du présent marché. Les schémas prévoient les réserves correspondantes."
       }
     },
     {
@@ -221,7 +279,7 @@
       "famille": "A",
       "famille_titre": "Locaux PAC",
       "rang_priorite": 1,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "hors_marche",
       "hypothese_actuelle": [
         {
           "lot": "ANTIGLIO",
@@ -277,7 +335,7 @@
         "interventions": [],
         "manutention": null,
         "co_activite_possible": null,
-        "remarques": "Socles préfabriqués, amenés dans le local au moment utile : pas de maturation de béton à attendre."
+        "remarques": "PAC 3 et 4 posées dans 5 à 10 ans (MO, 20.10.2026). Hors du présent marché. Les schémas prévoient les réserves correspondantes."
       }
     },
     {

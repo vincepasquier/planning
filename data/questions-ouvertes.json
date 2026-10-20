@@ -2,14 +2,25 @@
   "note": "Questions classées par priorité. Les questions résolues sont conservées avec leur réponse : l'historique des décisions fait partie du document.",
   "questions": [
     {
-      "id": "Q-21",
+      "id": "Q-22",
       "priorite": "critique",
       "statut": "ouverte",
+      "sujet": "Les montages PAC 1 et PAC 2 peuvent-ils se recouvrir ?",
+      "question": "Le montage de la PAC 2 doit-il attendre la fin de celui de la PAC 1, ou les deux équipes peuvent-elles se recouvrir partiellement ?",
+      "pourquoi": "C'est devenu le premier levier du planning. Les deux montages de 3,5 mois sont aujourd'hui enchaînés bout à bout, soit 30 semaines qui tiennent à elles seules la moitié du chemin critique. Un recouvrement, même partiel, raccourcirait le projet d'autant. La question est de savoir si Wettstein dispose de deux équipes, et si les deux locaux peuvent être approvisionnés en parallèle.",
+      "destinataire": "Wettstein / Maître d'ouvrage",
+      "impact": "Jusqu'à 15 semaines sur la date de réception."
+    },
+    {
+      "id": "Q-21",
+      "priorite": "resolue",
+      "statut": "resolue",
       "sujet": "Les PAC 3 et 4 relèvent-elles de l'étape 1 ?",
       "question": "Les PAC 3 et 4 sont-elles installées dans ce marché, ou reportées à une étape ultérieure ?",
       "pourquoi": "Trois indices convergent. Le maître d'ouvrage construit d'abord le local PAC 1 puis le local PAC 2. Le schéma de froid process marque les départs froid des PAC 3 et 4 « (réserve) ». Le concept MCR ne détaille que les RIO des PAC 1 et 2, les PAC 3 et 4 étant notées « idem ». Si ces deux machines sont différées, la moitié du jalon pivot disparaît du planning et la phase de manutention se raccourcit d'autant.",
       "destinataire": "Maître d'ouvrage / Groupe E",
-      "impact": "Change le périmètre du marché et retire potentiellement 6 semaines de manutention du chemin critique."
+      "impact": "Deux montages de 3,5 mois retirés du planning, ainsi que leurs socles et raccordements.",
+      "reponse": "Les PAC 3 et 4 sont posées dans 5 à 10 ans. Hors du présent marché (MO, 20.10.2026)."
     },
     {
       "id": "Q-13",
@@ -23,13 +34,13 @@
     },
     {
       "id": "Q-02",
-      "priorite": "critique",
+      "priorite": "moyenne",
       "statut": "ouverte",
-      "sujet": "Gabarit de passage des équipements lourds",
-      "question": "Quelles sont les dimensions hors-tout et le poids des PAC NH3, des cellules TGBT et des 7 vases d'expansion de 5'000 L ?",
-      "pourquoi": "Les locaux PAC, TGBT, MT et accumulateur font 7,00 m sous plafond, mais les circulations N-2 qui y mènent n'en font que 4,10 m, et les quais à N-1 2,62 m. Le gabarit limite est celui de l'itinéraire, pas celui du local de destination. S'y ajoutent les vases d'expansion, les circulateurs Grundfos NBG (484 kg) et les vannes de régulation RTK (401 kg).",
-      "destinataire": "Wettstein / Groupe E Tech / Entretec",
-      "impact": "Peut inverser toute la phase P1 et imposer une intervention du gros œuvre avant son achèvement."
+      "sujet": "Gabarit de passage des équipements restants",
+      "question": "Quelles sont les dimensions hors-tout des cellules TGBT et des 7 vases d'expansion de 5'000 L ?",
+      "pourquoi": "La question ne porte plus sur les PAC : elles sont montées sur place, pièce par pièce, et ne passent donc jamais en gabarit complet. Restent les cellules TGBT et les vases d'expansion, qui arrivent eux assemblés. Les locaux font 7,00 m sous plafond, les circulations 4,10 m, et la porte d'accès 3,50 x 4,00 m.",
+      "destinataire": "Groupe E Tech / Entretec",
+      "impact": "Limité au calage de deux tâches, et non plus à toute la phase de manutention."
     },
     {
       "id": "Q-06",
