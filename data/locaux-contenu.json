@@ -88,20 +88,20 @@
           {
             "lot": "ENTRETEC",
             "prestation": "Raccordement hydraulique chaud",
-            "duree_semaines": null,
+            "duree_semaines": 4,
             "ordre": 3,
-            "remarque": "En même temps que Despraz"
+            "remarque": "4 semaines confondues pour les deux lots, dès que Wettstein a quitté le local"
           },
           {
             "lot": "DESPRAZ",
             "prestation": "Échangeur froid et CO2",
-            "duree_semaines": null,
+            "duree_semaines": 4,
             "ordre": 3,
-            "remarque": "En même temps qu'Entretec"
+            "remarque": "4 semaines confondues pour les deux lots, dès que Wettstein a quitté le local"
           }
         ],
         "manutention": "Pas de colis hors gabarit : la machine entre en pièces détachées et se monte dans le local. La porte 20 (3,50 x 4,00 m) ne limite donc pas la PAC.",
-        "co_activite_possible": "Wettstein seul pendant le montage, puis Entretec et Despraz ensemble",
+        "co_activite_possible": "Wettstein seul pendant les 3,5 mois de montage, puis Entretec et Despraz ensemble pendant 4 semaines",
         "remarques": "Local construit en 1er position."
       }
     },
@@ -185,20 +185,20 @@
           {
             "lot": "ENTRETEC",
             "prestation": "Raccordement hydraulique chaud",
-            "duree_semaines": null,
+            "duree_semaines": 4,
             "ordre": 3,
-            "remarque": "En même temps que Despraz"
+            "remarque": "4 semaines confondues pour les deux lots, dès que Wettstein a quitté le local"
           },
           {
             "lot": "DESPRAZ",
             "prestation": "Échangeur froid et CO2",
-            "duree_semaines": null,
+            "duree_semaines": 4,
             "ordre": 3,
-            "remarque": "En même temps qu'Entretec"
+            "remarque": "4 semaines confondues pour les deux lots, dès que Wettstein a quitté le local"
           }
         ],
         "manutention": "Pas de colis hors gabarit : la machine entre en pièces détachées et se monte dans le local. La porte 20 (3,50 x 4,00 m) ne limite donc pas la PAC.",
-        "co_activite_possible": "Wettstein seul pendant le montage, puis Entretec et Despraz ensemble",
+        "co_activite_possible": "Wettstein seul pendant les 3,5 mois de montage, puis Entretec et Despraz ensemble pendant 4 semaines",
         "remarques": "Local construit en 2e position."
       }
     },

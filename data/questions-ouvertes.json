@@ -2,14 +2,25 @@
   "note": "Questions classées par priorité. Les questions résolues sont conservées avec leur réponse : l'historique des décisions fait partie du document.",
   "questions": [
     {
-      "id": "Q-22",
+      "id": "Q-23",
       "priorite": "critique",
       "statut": "ouverte",
+      "sujet": "Le refroidissement des locaux dépend-il vraiment de l'échangeur de la PAC 2 ?",
+      "question": "Le circuit hydraulique froid qui alimente les armoires de refroidissement des locaux techniques peut-il être réalisé dès que le réseau CO2 et les centrales froid sont en place, sans attendre l'échangeur froid de la PAC 2 ?",
+      "pourquoi": "Le réseau fait aujourd'hui dépendre le froid des locaux de l'échangeur de la PAC 2, ce qui le place sur le chemin critique derrière 30 semaines de montage. Or le schéma de froid process distingue deux branches : les échangeurs des PAC d'un côté, le refroidissement des locaux de l'autre, alimentés par les mêmes centrales froid. Si les deux branches sont indépendantes, le froid des locaux peut démarrer bien plus tôt.",
+      "destinataire": "Despraz / Groupe E Entretec",
+      "impact": "12 semaines sur la date de réception : fin au 01.10.2027 au lieu du 24.12.2027."
+    },
+    {
+      "id": "Q-22",
+      "priorite": "resolue",
+      "statut": "resolue",
       "sujet": "Les montages PAC 1 et PAC 2 peuvent-ils se recouvrir ?",
       "question": "Le montage de la PAC 2 doit-il attendre la fin de celui de la PAC 1, ou les deux équipes peuvent-elles se recouvrir partiellement ?",
       "pourquoi": "C'est devenu le premier levier du planning. Les deux montages de 3,5 mois sont aujourd'hui enchaînés bout à bout, soit 30 semaines qui tiennent à elles seules la moitié du chemin critique. Un recouvrement, même partiel, raccourcirait le projet d'autant. La question est de savoir si Wettstein dispose de deux équipes, et si les deux locaux peuvent être approvisionnés en parallèle.",
       "destinataire": "Wettstein / Maître d'ouvrage",
-      "impact": "Jusqu'à 15 semaines sur la date de réception."
+      "impact": "Les deux montages de 15 semaines restent bout à bout sur le chemin critique.",
+      "reponse": "Non : Wettstein passe directement d'un local à l'autre, sans recouvrement (MO, 20.10.2026). En revanche Entretec et Despraz raccordent la PAC 1 pendant le montage de la PAC 2, ce qui récupère 2 semaines."
     },
     {
       "id": "Q-21",

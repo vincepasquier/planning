@@ -1,5 +1,5 @@
 {
-  "version": "0.5",
+  "version": "0.6",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -285,7 +285,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "3,5 mois par local (MO, 20.10.2026). Il ne s'agit pas d'une machine livrée d'un bloc mais d'un montage complet sur place : les composants entrent pièce par pièce, ce qui lève la contrainte de gabarit à l'entrée. En revanche le local reste occupé par Wettstein pendant toute la durée du montage.",
+      "notes": "Deuxième local monté. Wettstein passe directement du local PAC 1 au local PAC 2, sans recouvrement (MO, 20.10.2026) — les raccordements de la PAC 1 se font donc pendant ce montage.",
       "duree_semaines": 15
     },
     {
@@ -396,34 +396,6 @@
       "duree_semaines": 12
     },
     {
-      "id": "T-DES-015",
-      "designation": "Echangeurs froid PAC 1 et 2",
-      "entreprise": "DESPRAZ",
-      "systeme": "FROID-CO2",
-      "phase": "P2",
-      "locaux": [
-        "CENT.N-2.07",
-        "CENT.N-2.10"
-      ],
-      "duree_classe": "mois",
-      "date_connue": null,
-      "predecesseurs": [
-        {
-          "id": "T-ENT-040",
-          "lien": "DD",
-          "raison": "Entretec et Despraz interviennent en même temps dans le local (MO, 20.10.2026)"
-        },
-        {
-          "id": "T-DES-010",
-          "lien": "FD",
-          "raison": "Réseau CO2 amont réalisé"
-        }
-      ],
-      "statut": "a_confirmer",
-      "notes": "Les locaux PAC reçoivent aussi de l'hydraulique chaud et du CO2 (MO). 180 kW par échangeur. Les départs froid PAC 3 et 4 restent en réserve.",
-      "duree_semaines": 6
-    },
-    {
       "id": "T-ENT-090",
       "designation": "Froid process hydraulique et armoires de refroidissement des locaux",
       "entreprise": "ENTRETEC",
@@ -442,7 +414,7 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-DES-015",
+          "id": "T-DES-017",
           "lien": "FD",
           "raison": "Echangeurs froid poses : l'hydraulique se raccorde dessus"
         }
@@ -450,6 +422,114 @@
       "statut": "a_confirmer",
       "notes": "Circuit hydraulique froid 16/21 degres en aval des echangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Conditionne la mise en charge nominale des variateurs.",
       "duree_semaines": 12
+    },
+    {
+      "id": "T-ENT-041",
+      "designation": "Raccordement hydraulique chaud PAC 1",
+      "entreprise": "ENTRETEC",
+      "systeme": "HYD-CHAUD",
+      "phase": "P4",
+      "locaux": [
+        "CENT.N-2.07"
+      ],
+      "duree_classe": "mois",
+      "duree_semaines": 4,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-WET-010",
+          "lien": "FD",
+          "raison": "Wettstein libère le local et passe directement au suivant ; Entretec et Despraz y interviennent ensemble, 4 semaines confondues (MO, 20.10.2026)."
+        },
+        {
+          "id": "T-ENT-010",
+          "lien": "FD",
+          "raison": "Réseau amont réalisé"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Limite de prestation : Wettstein monte la machine dans le local, Entretec vient s'y raccorder."
+    },
+    {
+      "id": "T-DES-016",
+      "designation": "Échangeur froid et CO2 PAC 1",
+      "entreprise": "DESPRAZ",
+      "systeme": "FROID-CO2",
+      "phase": "P4",
+      "locaux": [
+        "CENT.N-2.07"
+      ],
+      "duree_classe": "mois",
+      "duree_semaines": 4,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ENT-041",
+          "lien": "DD",
+          "raison": "Entretec et Despraz interviennent en même temps dans le local (MO, 20.10.2026)"
+        },
+        {
+          "id": "T-DES-010",
+          "lien": "FD",
+          "raison": "Réseau CO2 amont réalisé"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "180 kW par échangeur. Les locaux PAC reçoivent aussi de l'hydraulique chaud et du CO2."
+    },
+    {
+      "id": "T-ENT-042",
+      "designation": "Raccordement hydraulique chaud PAC 2",
+      "entreprise": "ENTRETEC",
+      "systeme": "HYD-CHAUD",
+      "phase": "P4",
+      "locaux": [
+        "CENT.N-2.10"
+      ],
+      "duree_classe": "mois",
+      "duree_semaines": 4,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-WET-020",
+          "lien": "FD",
+          "raison": "Wettstein libère le local et passe directement au suivant ; Entretec et Despraz y interviennent ensemble, 4 semaines confondues (MO, 20.10.2026)."
+        },
+        {
+          "id": "T-ENT-010",
+          "lien": "FD",
+          "raison": "Réseau amont réalisé"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Limite de prestation : Wettstein monte la machine dans le local, Entretec vient s'y raccorder."
+    },
+    {
+      "id": "T-DES-017",
+      "designation": "Échangeur froid et CO2 PAC 2",
+      "entreprise": "DESPRAZ",
+      "systeme": "FROID-CO2",
+      "phase": "P4",
+      "locaux": [
+        "CENT.N-2.10"
+      ],
+      "duree_classe": "mois",
+      "duree_semaines": 4,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ENT-042",
+          "lien": "DD",
+          "raison": "Entretec et Despraz interviennent en même temps dans le local (MO, 20.10.2026)"
+        },
+        {
+          "id": "T-DES-010",
+          "lien": "FD",
+          "raison": "Réseau CO2 amont réalisé"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "180 kW par échangeur. Les locaux PAC reçoivent aussi de l'hydraulique chaud et du CO2."
     },
     {
       "id": "T-DES-030",
@@ -464,7 +544,7 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-DES-015",
+          "id": "T-DES-017",
           "lien": "FD",
           "raison": "Toutes les soudures terminées : une seule reprise invalide l'épreuve"
         },
@@ -593,34 +673,6 @@
         }
       ],
       "statut": "a_confirmer",
-      "duree_semaines": 4
-    },
-    {
-      "id": "T-ENT-040",
-      "designation": "Raccordement hydraulique chaud sur PAC 1 et 2",
-      "entreprise": "ENTRETEC",
-      "systeme": "HYD-CHAUD",
-      "phase": "P4",
-      "locaux": [
-        "CENT.N-2.07",
-        "CENT.N-2.10"
-      ],
-      "duree_classe": "quinzaine",
-      "date_connue": null,
-      "predecesseurs": [
-        {
-          "id": "T-WET-020",
-          "lien": "FD",
-          "raison": "Wettstein libère le local après montage (MO, 20.10.2026)"
-        },
-        {
-          "id": "T-ENT-010",
-          "lien": "FD",
-          "raison": "Réseau amont réalisé"
-        }
-      ],
-      "statut": "a_confirmer",
-      "notes": "Limite de prestation confirmée : Wettstein livre la machine dans le local, Entretec vient s'y raccorder.",
       "duree_semaines": 4
     },
     {
@@ -1469,5 +1521,9 @@
     "La PAC n'arrive pas d'un bloc : c'est un montage complet dans le local, 3,5 mois par machine. La contrainte de gabarit à l'entrée tombe ; l'occupation du local devient la contrainte.",
     "Les réseaux ne sont plus asservis à la libération d'un itinéraire de manutention, qui n'a plus lieu d'être.",
     "Dans un local PAC : Wettstein, puis Entretec et Despraz ensemble."
+  ],
+  "corrections_v06": [
+    "Raccordements découpés par local : Entretec et Despraz interviennent 4 semaines confondues dans chaque local PAC, dès que Wettstein l'a quitté.",
+    "Wettstein passe directement d'un local à l'autre, sans recouvrement : les raccordements de la PAC 1 se déroulent donc pendant le montage de la PAC 2."
   ]
 }
