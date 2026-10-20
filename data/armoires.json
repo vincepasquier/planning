@@ -1,0 +1,21 @@
+{
+  "source": "CADFR - Centrale Conforma (Englisberg) - Liste des armoires de commandes, V1, 10.02.2025",
+  "note": "15 armoires et coffrets. Les emplacements 'A définir' sont des points ouverts : cinq armoires sur quinze n'ont pas de local attribué.",
+  "armoires": [
+    {"nr": 1, "description": "Master local MCR", "type": "Armoire", "rn_v": 230, "rs_v": 230, "dim_mm": [1000, 2000, 400], "socle_mm": 100, "local": "N-2.21"},
+    {"nr": 2, "description": "UPS - RS230", "type": "Armoire", "rn_v": 400, "rs_v": null, "dim_mm": [1000, 2000, 400], "socle_mm": 100, "local": "N-2.04"},
+    {"nr": 3, "description": "Réseau IP - Télécom", "type": "Armoire", "rn_v": 230, "rs_v": 230, "dim_mm": [1000, 2000, 400], "socle_mm": 100, "local": "N-2.21"},
+    {"nr": 4, "description": "Auxiliaires 1 - Refroidissement des locaux", "type": "À définir", "rn_v": 400, "rs_v": null, "dim_mm": null, "socle_mm": null, "local": "A DEFINIR"},
+    {"nr": 5, "description": "Auxiliaires 2 - Refroidissement des locaux", "type": "À définir", "rn_v": 400, "rs_v": null, "dim_mm": null, "socle_mm": null, "local": "A DEFINIR"},
+    {"nr": 6, "description": "Auxiliaires 3 - Ventilation hygiénique", "type": "À définir", "rn_v": 400, "rs_v": null, "dim_mm": null, "socle_mm": null, "local": "A DEFINIR"},
+    {"nr": 7, "description": "Auxiliaires 4 - Ventilation secours", "type": "À définir", "rn_v": 400, "rs_v": 230, "dim_mm": null, "socle_mm": null, "local": "A DEFINIR", "alerte": "Armoire d'un système de sécurité, sans local attribué."},
+    {"nr": 8, "description": "Auxiliaires 5 - MT-BT", "type": "Coffret déporté", "rn_v": 230, "rs_v": null, "dim_mm": [800, 600, 300], "socle_mm": null, "local": "N-2.03", "remarque": "Ventilation locaux MT et BT et reprise infos TGBT"},
+    {"nr": 9, "description": "PAC 1 + refroidissement local PAC", "type": "Coffret déporté", "rn_v": 230, "rs_v": null, "dim_mm": [800, 600, 300], "socle_mm": null, "local": "N-2.08", "remarque": "À voir si on doit séparer la partie refroidissement"},
+    {"nr": 10, "description": "PAC 2 + refroidissement local PAC", "type": "Coffret déporté", "rn_v": 230, "rs_v": null, "dim_mm": [800, 600, 300], "socle_mm": null, "local": "N-2.08", "remarque": "À voir si on doit séparer la partie refroidissement"},
+    {"nr": 11, "description": "PAC 3 + refroidissement local PAC", "type": "Coffret déporté", "rn_v": 230, "rs_v": null, "dim_mm": [800, 600, 300], "socle_mm": null, "local": "N-2.13", "remarque": "À voir si on doit séparer la partie refroidissement"},
+    {"nr": 12, "description": "PAC 4 + refroidissement local PAC", "type": "Coffret déporté", "rn_v": 230, "rs_v": null, "dim_mm": [800, 600, 300], "socle_mm": null, "local": "N-2.13", "remarque": "À voir si on doit séparer la partie refroidissement"},
+    {"nr": 13, "description": "Accumulateur chaud", "type": "Coffret déporté", "rn_v": 230, "rs_v": null, "dim_mm": [800, 600, 300], "socle_mm": null, "local": "A DEFINIR", "alerte": "L'accumulateur est éprouvé le 30.11.2026 et son coffret n'a pas de local."},
+    {"nr": 14, "description": "Départ CAD", "type": "Armoire", "rn_v": 400, "rs_v": null, "dim_mm": [1000, 2000, 400], "socle_mm": 100, "local": "N-2.19"},
+    {"nr": 15, "description": "STAP", "type": "Armoire", "rn_v": 400, "rs_v": 230, "dim_mm": [1200, 2000, 400], "socle_mm": 100, "local": "STAP", "remarque": "Hors bâtiment CENTRALE : la STAP est un ouvrage distinct, absent de la maquette architecturale."}
+  ]
+}

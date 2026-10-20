@@ -1,0 +1,83 @@
+{
+  "note": "Registre des documents reçus, avec leur niveau de maturité. La maturité est un indicateur de risque : un système dont le schéma est encore en appel d'offres ne peut pas être exécuté.",
+  "projet_complet": "CADFR - GP - Z17 - Centrale Conforama - 20133",
+  "designation": "Centrale PAC 18 MW (STAP et Centrale)",
+  "lieu": "1763 Granges-Paccot - Parcelles 404 / 113",
+  "auteur_technique": "Groupe E SA - Direction Solutions Energie - Efficience Energétique",
+  "documents": [
+    {
+      "fichier": "20133_EXE_schema_synoptique_hydraulique_chaud_20260918.pdf",
+      "no_dessin": null, "section": "00 à 09", "systeme": "HYD-CHAUD",
+      "phase": "Exécution", "maturite": 5, "date": "2026-09-18",
+      "format": "A1", "pages": 4,
+      "contenu": "Synoptique chaud complet, STAP et Centrale, avec liste d'appareils (fabricant, type, DN, PN, poids)"
+    },
+    {
+      "fichier": "20133_EXE_schema_synoptique_expansion_20261012.pdf",
+      "no_dessin": null, "section": "07", "systeme": "EXPANSION",
+      "phase": "Exécution", "maturite": 5, "date": "2026-10-12",
+      "format": "A3", "pages": 1,
+      "contenu": "7 vases d'expansion de 5'000 L, 0.5 bar, DN20/40/65"
+    },
+    {
+      "fichier": "20133_PRE-EXE_Schema_Ventilation_Securite_CO2-NH3_20261016.pdf",
+      "no_dessin": "20133-SV_Secu_001", "section": "43", "systeme": "VENT-SECU",
+      "phase": "Pré-exécution", "maturite": 4, "date": "2026-10-16",
+      "format": "A1 (84x59.4)", "pages": 1,
+      "contenu": "Ventilation de sécurité CO2/NH3, cheminée d'extraction de secours dédiée, clapets coupe-feu",
+      "alerte": "Système de sécurité encore en pré-exécution, alors qu'il conditionne la charge des fluides frigorigènes."
+    },
+    {
+      "fichier": "20133_AO_schema_synoptique_froid_process_20260609.pdf",
+      "no_dessin": null, "section": "25 à 29", "systeme": "FROID-CO2",
+      "phase": "Appel d'offres", "maturite": 2, "date": "2026-06-09",
+      "format": "A2", "pages": 1,
+      "contenu": "Froid process CO2 (gazeux et liquide), PN6, 3 bars. Échangeurs froid PAC 1-2 (180 kW chacun) et PAC 3-4 (110 kW chacun). Refroidissement des locaux : PAC 55 kW, var/com 70 kW, MT 97 kW, TGBT 10 kW, pompage 25 kW, hydraulique chaud 15 kW. Régime 16/21 °C",
+      "alerte": "Encore au stade appel d'offres alors que ce circuit alimente le refroidissement des locaux électriques, qui conditionne la mise sous tension."
+    },
+    {
+      "fichier": "20133_AO_Schema_Ventilation_hygienique_20260522.pdf",
+      "no_dessin": null, "section": "42", "systeme": "VENT-HYG",
+      "phase": "SIA 41 - Appel d'offres", "maturite": 2, "date": "2026-03-25",
+      "format": "grand format", "pages": 1,
+      "contenu": "Ventilation hygiénique des locaux techniques. Débits : MT 1'240, hydraulique chaud 890, TGBT 790, pompage PAC 560, refroid. loc. élec. 350, variateurs 280 chacun, centrales froid 140 chacune, loc. tech. N-1.02 200 m3/h"
+    },
+    {
+      "fichier": "20133_AO_Schema_Ventilation_WC_20260522.pdf",
+      "no_dessin": "20133-SV_WC_002", "section": "41", "systeme": "VENT-WC",
+      "phase": "SIA 41 - Appel d'offres", "maturite": 2, "date": "2026-05-22",
+      "format": "A3", "pages": 1,
+      "contenu": "Ventilation bureau/poste de commande, vestiaire, sanitaires, local technique N-1.07. Débits 75 m3/h vestiaire et sanitaires"
+    },
+    {
+      "fichier": "20133_AO_schema_VR_local_MT_20250710.pdf",
+      "no_dessin": "20133-VF_MT-01", "section": null, "systeme": "FROID-LOCAUX",
+      "phase": "Mise à l'enquête", "maturite": 1, "date": "2025-07-10",
+      "format": "A3", "pages": 1,
+      "contenu": "Refroidissement local MT (N-2.01) et local refroid. loc. élec. (N-2.03) : armoires de refroidissement à brassage d'air sur circuit hydraulique froid, ventilation hygiénique et free-cooling, 2 sondes de température",
+      "alerte": "Document le moins mûr du dossier (mise à l'enquête, juillet 2025) alors qu'il décrit un système sur le chemin critique de la mise sous tension."
+    },
+    {
+      "fichier": "CADFR_-_ZI_Englisberg_-_Concept_MCR_V1.pdf",
+      "no_dessin": null, "section": "99", "systeme": "MCR",
+      "phase": "Concept V1.0", "maturite": 2, "date": "2024-02-22",
+      "format": "A4", "pages": 1,
+      "contenu": "Architecture MCR : Scada CAD (IEC 104), API General, HMI, RIO 1 Distribution, RIO 2 Accu, RIO 3 PAC 1, RIO 4 PAC 2, API STAP. Réseaux Profinet/Modbus IP et MBUS/Modbus RTU. Codes 99.COM-UPS, 99.DIST.C, 99.ACCU, 99.GEN-SUP, 99.PROD.PAC1 à 4",
+      "alerte": "Concept de février 2024, antérieur de plus de deux ans aux schémas d'exécution. À confirmer comme encore valide."
+    },
+    {
+      "fichier": "CADFR_-_Centrale_Conforma_Englisberg_-_Liste_des_armoires_de_commandes.pdf",
+      "no_dessin": null, "section": null, "systeme": "MCR",
+      "phase": "V1", "maturite": 3, "date": "2025-02-10",
+      "format": "A3", "pages": 1,
+      "contenu": "15 armoires et coffrets de commande, avec codes KKS, tensions, dimensions et emplacements"
+    }
+  ],
+  "echelle_maturite": {
+    "1": "Mise à l'enquête",
+    "2": "Appel d'offres (SIA 41)",
+    "3": "Liste ou document de travail",
+    "4": "Pré-exécution",
+    "5": "Exécution (SIA 51)"
+  }
+}

@@ -1,82 +1,150 @@
 {
   "projet": {
     "numero": "20.133",
-    "site": "ENGLISBERG",
-    "batiment": "CENTRALE",
+    "designation_complete": "CADFR - GP - Z17 - Centrale Conforama - 20133",
+    "ouvrage": "Centrale PAC 18 MW (STAP et Centrale)",
+    "lieu": "1763 Granges-Paccot - Parcelles 404 / 113 (ZI Englisberg)",
+    "site_ifc": "ENGLISBERG",
+    "batiment_ifc": "CENTRALE",
     "phase_sia": "51 - Projet d'exécution",
     "architecte": "Riforma Architecture SA",
-    "bureau_electricite": "Groupe E Connect SA"
+    "ingenierie_technique": "Groupe E SA - Direction Solutions Energie - Efficience Energétique",
+    "bureau_electricite": "Groupe E Connect SA",
+    "reseaux_alimentes": [
+      "CADFR (chauffage à distance)",
+      "ZI 19.119"
+    ],
+    "puissance": "18 MW, Pmax limitée à 25 MW",
+    "fluides": {
+      "NH3": "Ammoniac - fluide des PAC 1 à 4 (Wettstein)",
+      "CO2": "Fluide du froid process et du refroidissement des locaux (Despraz)",
+      "eau": "Hydraulique chaud PN16, pression statique 11 bars (Entretec)"
+    },
+    "phasage": "Etape 1 puis Final, sur les départs ZI et CADFR (à préciser, voir Q-14)"
   },
   "entreprises": [
     {
       "code": "ANTIGLIO",
       "nom": "Antiglio",
-      "prestations": ["Gros œuvre béton", "Étanchéité", "Socles et massifs", "Réservations"],
+      "prestations": [
+        "Gros œuvre béton",
+        "Étanchéité",
+        "Socles et massifs",
+        "Réservations"
+      ],
       "statut": "adjugé",
       "avancement": "quasiment terminé"
     },
     {
       "code": "BILFINGER",
       "nom": "Bilfinger",
-      "prestations": ["Fourniture et montage de l'accumulateur"],
+      "prestations": [
+        "Fourniture et montage de l'accumulateur chaud (5'000 kW, 2 x 2.5 MW)"
+      ],
       "statut": "adjugé",
       "avancement": "en cours - épreuve de pression fin novembre 2026"
     },
     {
       "code": "WETTSTEIN",
       "nom": "Walter Wettstein",
-      "prestations": ["Fourniture et pose des PAC 1 à 4"],
+      "prestations": [
+        "Fourniture et pose des PAC 1 à 4 (NH3)",
+        "Épreuve et charge des circuits ammoniac"
+      ],
       "statut": "adjugé",
       "limite_prestation": "Machines dans leurs locaux uniquement. Le CO2 et l'hydraulique chaud viennent se raccorder sur les PAC dans le local."
     },
     {
       "code": "DESPRAZ",
       "nom": "Despraz",
-      "prestations": ["Installation CO2", "Tuyauterie frigorifique", "Épreuve, tirage au vide, charge"],
-      "statut": "adjugé"
+      "prestations": [
+        "Centrales froid CO2 n°1 et n°2",
+        "Froid process CO2 (gazeux et liquide), PN6",
+        "Échangeurs froid PAC 1 à 4",
+        "Armoires de refroidissement des locaux techniques",
+        "Épreuve, tirage au vide et charge CO2"
+      ],
+      "statut": "adjugé",
+      "note": "Le refroidissement des locaux électriques et machines passe par ce lot, pas par la ventilation."
     },
     {
       "code": "ENTRETEC",
       "nom": "Groupe E Entretec",
-      "prestations": ["Hydraulique chaud", "Hydraulique froid", "Pompage"],
+      "prestations": [
+        "Hydraulique chaud (sections 00 à 06)",
+        "Vases d'expansion (section 07, 7 x 5'000 L)",
+        "Pompage PAC",
+        "Raccordement des chaufferies mobiles gaz 2 x 2.5 MW"
+      ],
       "statut": "adjugé"
     },
     {
       "code": "GETECH",
       "nom": "Groupe E Tech",
-      "prestations": ["IEG", "Tableaux électriques TGBT", "Infrastructures MT/BT", "Détection incendie"],
+      "prestations": [
+        "IEG",
+        "Tableaux électriques TGBT",
+        "Infrastructures MT/BT",
+        "Détection incendie"
+      ],
       "statut": "adjugé"
     },
     {
       "code": "GE",
       "nom": "Groupe E",
-      "prestations": ["Régulation MCR", "Raccordement extérieur"],
+      "prestations": [
+        "Régulation MCR",
+        "Raccordement extérieur"
+      ],
       "statut": "adjugé"
     },
     {
       "code": "HALG",
       "nom": "Hälg",
-      "prestations": ["Installations de ventilation"],
-      "statut": "adjugé"
+      "prestations": [
+        "Ventilation hygiénique (section 42)",
+        "Ventilation commande/WC/vestiaire (section 41)",
+        "Ventilation de sécurité CO2/NH3 (section 43)"
+      ],
+      "statut": "adjugé",
+      "note": "La ventilation de sécurité est un système de sécurité : cheminée d'extraction dédiée, 5'500 m3/h par local en fuite NH3, 12'100 m3/h en fuite CO2."
     },
     {
       "code": "RIEDO",
       "nom": "Riedo Clima",
-      "prestations": ["Installations sanitaires"],
+      "prestations": [
+        "Installations sanitaires"
+      ],
       "statut": "adjugé"
     },
     {
       "code": "ANSERMOT",
       "nom": "Ansermot",
-      "prestations": ["Portes", "Fenêtres", "Serrurerie"],
+      "prestations": [
+        "Portes",
+        "Fenêtres",
+        "Serrurerie"
+      ],
       "statut": "probable - non confirmé"
     },
     {
       "code": "CALORIFUGEAGE",
       "nom": "À adjuger",
-      "prestations": ["Calorifugeage accumulateur", "Calorifugeage tuyauteries chaud et froid"],
+      "prestations": [
+        "Calorifugeage accumulateur",
+        "Calorifugeage tuyauteries chaud et froid"
+      ],
       "statut": "NON ADJUGÉ",
       "alerte": "Lot situé tard dans la séquence et bloquant pour la mise en service. L'isolation de l'accumulateur suit directement l'épreuve de pression de fin novembre 2026."
+    },
+    {
+      "code": "STAP",
+      "nom": "À déterminer",
+      "prestations": [
+        "Station de pompage - génie civil, équipements, armoire de commande, API"
+      ],
+      "statut": "PÉRIMÈTRE NON COMMUNIQUÉ",
+      "alerte": "La STAP figure au titre du synoptique chaud, dans la liste des armoires et au concept MCR, mais n'apparaît ni dans la maquette architecturale ni dans la liste des adjudications. Voir Q-18."
     }
   ],
   "conventions": {
@@ -85,7 +153,12 @@
       "DD": "Début-Début : les deux commencent ensemble",
       "FF": "Fin-Fin : les deux finissent ensemble"
     },
-    "classes_duree": ["semaine", "quinzaine", "mois", "trimestre"],
+    "classes_duree": [
+      "semaine",
+      "quinzaine",
+      "mois",
+      "trimestre"
+    ],
     "note_duree": "Les durées sont des ordres de grandeur à valider par les entreprises. Seules les dates du champ date_connue sont fermes."
   }
 }
