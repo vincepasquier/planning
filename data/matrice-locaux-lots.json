@@ -1,5 +1,5 @@
 {
-  "note": "Qui passe où. Le niveau N-2 est relevé exhaustivement avec le maître d'ouvrage (20.10.2026), écarts compris. Les niveaux N-1 et N+0 restent déduits.",
+  "note": "Qui passe où. Les niveaux N-2 et N-1 sont relevés exhaustivement avec le maître d'ouvrage (20.10.2026). Le niveau N+0 reste déduit.",
   "lots_declares_globaux": [
     "ANSERMOT",
     "ANTIGLIO",
@@ -54,7 +54,29 @@
       "surface_m2": 44.857,
       "hauteur_m": 2.62,
       "statut_releve": "a_remplir",
-      "lots": {}
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-010",
+            "T-HAL-040",
+            "T-HAL-050"
+          ],
+          "source": "relevé"
+        }
+      }
     },
     "CENT.N-1.02": {
       "designation": "Technique",
@@ -63,11 +85,33 @@
       "hauteur_m": 2.62,
       "statut_releve": "a_remplir",
       "lots": {
+        "DESPRAZ": {
+          "taches": [
+            "T-DES-010"
+          ],
+          "source": "relevé"
+        },
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-010"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        },
         "HALG": {
           "taches": [
-            "T-HAL-030"
+            "T-HAL-010",
+            "T-HAL-030",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
-          "source": "supposé"
+          "source": "relevé"
         }
       }
     },
@@ -82,25 +126,41 @@
           "taches": [
             "T-CAL-020"
           ],
-          "source": "supposé"
+          "source": "relevé"
+        },
+        "DESPRAZ": {
+          "taches": [
+            "T-DES-010"
+          ],
+          "source": "relevé"
         },
         "ENTRETEC": {
           "taches": [
-            "T-ENT-010"
+            "T-ENT-090"
           ],
-          "source": "supposé"
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
         },
         "HALG": {
           "taches": [
-            "T-HAL-030"
+            "T-HAL-010",
+            "T-HAL-030",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
-          "source": "supposé"
+          "source": "relevé"
         },
         "RIEDO": {
           "taches": [
             "T-RIE-010"
           ],
-          "source": "supposé"
+          "source": "relevé"
         }
       }
     },
@@ -115,19 +175,35 @@
           "taches": [
             "T-CAL-020"
           ],
-          "source": "supposé"
+          "source": "relevé"
         },
         "ENTRETEC": {
           "taches": [
+            "T-ENT-090",
             "T-ENT-010"
           ],
-          "source": "supposé"
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-010",
+            "T-HAL-040",
+            "T-HAL-050"
+          ],
+          "source": "relevé"
         },
         "RIEDO": {
           "taches": [
             "T-RIE-010"
           ],
-          "source": "supposé"
+          "source": "relevé"
         }
       }
     },
@@ -137,7 +213,21 @@
       "surface_m2": 26.8,
       "hauteur_m": 2.62,
       "statut_releve": "a_remplir",
-      "lots": {}
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        }
+      }
     },
     "CENT.N-1.06": {
       "designation": "Escaliers",
@@ -145,7 +235,29 @@
       "surface_m2": 30.519,
       "hauteur_m": 2.62,
       "statut_releve": "a_remplir",
-      "lots": {}
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-010",
+            "T-HAL-040",
+            "T-HAL-050"
+          ],
+          "source": "relevé"
+        }
+      }
     },
     "CENT.N-1.07": {
       "designation": "Technique",
@@ -154,11 +266,27 @@
       "hauteur_m": 2.62,
       "statut_releve": "a_remplir",
       "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        },
         "HALG": {
           "taches": [
-            "T-HAL-020"
+            "T-HAL-010",
+            "T-HAL-020",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
-          "source": "supposé"
+          "source": "relevé"
         }
       }
     },
@@ -1162,5 +1290,17 @@
       }
     }
   },
-  "ecarts_a_trancher": []
+  "ecarts_a_trancher": [],
+  "hors_maquette": [
+    {
+      "numero": "CENT.N-1.08",
+      "designation": "Quai 1",
+      "note": "Modélisé comme « tout un étage » avec le code SIA SEP, et non comme une pièce : absent de la géométrie et du relevé."
+    },
+    {
+      "numero": "CENT.N-1.09",
+      "designation": "Quai 2",
+      "note": "Idem Quai 1."
+    }
+  ]
 }

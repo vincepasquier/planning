@@ -615,10 +615,10 @@ RAISONS DES LIENS :
       <Finish>2027-02-05T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-ENT-010]  Lot : ENTRETEC  |  Systeme : HYD-CHAUD
-Locaux : CENT.N-2.19, CENT.N-1.03, CENT.N-1.04, CENT.N-2.24
+Locaux : CENT.N-1.02, CENT.N-1.04, CENT.N-2.19, CENT.N-2.24
 Statut : a_confirmer
 
-PN16, pression statique 11 bars. Le réseau part du local hydraulique chaud, traverse les galeries techniques de N-1 et rejoint l'accumulateur (MO, 20.10.2026). Il croise donc la ventilation de sécurité, qui emprunte les mêmes galeries. Circulateurs Grundfos NBG de 484 kg et vannes RTK de 401 kg à manutentionner dans les locaux.
+PN16, pression statique 11 bars. Le réseau part du local hydraulique chaud, traverse les galeries techniques de N-1 et rejoint l'accumulateur (MO, 20.10.2026). Il croise donc la ventilation de sécurité, qui emprunte les mêmes galeries. Circulateurs Grundfos NBG de 484 kg et vannes RTK de 401 kg à manutentionner dans les locaux. Au niveau N-1, le chaud emprunte la circulation N-1.04 ; la galerie N-1.03 porte le froid. Quelques soupapes en local technique N-1.02 (MO, 20.10.2026).
 
 RAISONS DES LIENS :
   &lt;- T-ANT-010 (DD) : Locaux livrés par le gros œuvre au fur et à mesure</Notes>
@@ -677,7 +677,7 @@ RAISONS DES LIENS :
       <Finish>2026-11-13T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-RIE-010]  Lot : RIEDO  |  Systeme : SAN
-Locaux : CENT.N-2.23, CENT.N-2.22, CENT.N-1.03, CENT.N-1.04
+Locaux : CENT.N-1.03, CENT.N-1.04, CENT.N-2.22, CENT.N-2.23
 Statut : a_confirmer
 
 Lot localisé en N-2, mais la tuyauterie sanitaire transite par les galeries techniques de N-1 et passe avant la ventilation (MO, 20.10.2026).</Notes>
@@ -698,10 +698,10 @@ Lot localisé en N-2, mais la tuyauterie sanitaire transite par les galeries tec
       <Finish>2027-03-12T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-DES-010]  Lot : DESPRAZ  |  Systeme : FROID-CO2
-Locaux : CENT.N-2.05
+Locaux : CENT.N-1.02, CENT.N-1.03, CENT.N-2.05
 Statut : a_confirmer
 
-Limite de prestation : Despraz pose les conduites CO2 jusqu'aux echangeurs froid. L'hydraulique en aval est chez Entretec. Local d'introduction CO2 : N-2.05. PN6, 3 bars.
+Limite de prestation : Despraz pose les conduites CO2 jusqu'aux echangeurs froid. L'hydraulique en aval est chez Entretec. Local d'introduction CO2 : N-2.05. PN6, 3 bars. Le CO2 emprunte la galerie N-1.03 et dessert quelques soupapes en N-1.02 (MO, 20.10.2026).
 
 RAISONS DES LIENS :
   &lt;- T-DES-005 (DD) : Même entreprise, réseau tiré depuis les centrales froid
@@ -737,7 +737,7 @@ RAISONS DES LIENS :
       <Finish>2027-04-09T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-GET-030]  Lot : GETECH-IEG  |  Systeme : IEG
-Locaux : CENT.N-2.01, CENT.N-2.02, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.06, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.12, CENT.N-2.13, CENT.N-2.14, CENT.N-2.15, CENT.N-2.16, CENT.N-2.17, CENT.N-2.18, CENT.N-2.19, CENT.N-2.20, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23, CENT.N-2.24, CENT.N-2.25, CENT.N-2.26
+Locaux : CENT.N-1.01, CENT.N-1.02, CENT.N-1.03, CENT.N-1.04, CENT.N-1.05, CENT.N-1.06, CENT.N-1.07, CENT.N-2.01, CENT.N-2.02, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.06, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.12, CENT.N-2.13, CENT.N-2.14, CENT.N-2.15, CENT.N-2.16, CENT.N-2.17, CENT.N-2.18, CENT.N-2.19, CENT.N-2.20, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23, CENT.N-2.24, CENT.N-2.25, CENT.N-2.26
 Statut : a_confirmer
 
 Groupe E Tech IEG câble tout ce qui n'est pas du rail d'énergie. 905 segments de chemin de câbles, 615 accessoires, 647 luminaires. IEG intervient globalement dans tous les locaux (MO, 20.10.2026), ce qui le met en concurrence avec les autres lots partout où l'on passe chacun son tour. IEG ne passe pas par les galeries techniques mais par en dessous (MO, 20.10.2026) : son cheminement n'entre donc pas en concurrence avec l'hydraulique et la ventilation.
@@ -838,7 +838,7 @@ RAISONS DES LIENS :
       <Finish>2027-04-30T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-HAL-010]  Lot : HALG  |  Systeme : VENT-HYG
-Locaux : CENT.N-2.01, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.18, CENT.N-2.19, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23
+Locaux : CENT.N-1.01, CENT.N-1.02, CENT.N-1.03, CENT.N-1.04, CENT.N-1.06, CENT.N-1.07, CENT.N-2.01, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.18, CENT.N-2.19, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23
 Statut : a_confirmer
 
 Premier des réseaux : le plus encombrant et le moins déformable. Débits : MT 1'240, hydraulique chaud 890, TGBT 790 m3/h. Comprend le free-cooling du local MT. Locaux des PAC 3 et 4 retirés : équipements reportés. Hälg intervient globalement dans tous les locaux (MO, 20.10.2026), ce qui le met en concurrence avec les autres lots partout où l'on passe chacun son tour.
@@ -916,7 +916,7 @@ RAISONS DES LIENS :
       <Finish>2027-04-16T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-HAL-030]  Lot : HALG  |  Systeme : VENT-SECU
-Locaux : CENT.N-2.05, CENT.N-2.07, CENT.N-2.10, CENT.N-1.02, CENT.N-1.03
+Locaux : CENT.N-1.02, CENT.N-1.03, CENT.N-2.05, CENT.N-2.07, CENT.N-2.10
 Statut : a_confirmer
 
 SYSTÈME DE SÉCURITÉ. Cheminée d'extraction de secours dédiée, gaines galvanisées étanchéité classe D, clapets coupe-feu. Extraction fuite NH3 5'500 m3/h et fuite CO2 12'100 m3/h par local. Schéma encore en pré-exécution (16.10.2026). Locaux des PAC 3 et 4 retirés : équipements reportés.
@@ -963,7 +963,7 @@ RAISONS DES LIENS :
       <Finish>2027-06-04T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-ENT-090]  Lot : ENTRETEC  |  Systeme : FROID-HYD
-Locaux : CENT.N-2.03, CENT.N-2.04, CENT.N-2.08, CENT.N-2.18, CENT.N-2.19
+Locaux : CENT.N-1.03, CENT.N-1.04, CENT.N-2.03, CENT.N-2.04, CENT.N-2.08, CENT.N-2.18, CENT.N-2.19
 Statut : a_confirmer
 
 Circuit hydraulique froid 16/21 degrés en aval des échangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Réalisable dès que le réseau CO2 et la centrale froid n°1 sont en place, sans attendre l'échangeur de la PAC 2 (MO, 20.10.2026) : c'est une branche distincte du froid process. Conditionne la mise en charge nominale des variateurs. Le local MT est refroidi par l'air depuis N-2.03, et non par un piquage hydraulique direct (MO, 20.10.2026).
@@ -1392,7 +1392,7 @@ RAISONS DES LIENS :
       <Finish>2027-05-07T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-GET-070]  Lot : GETECH-IEG  |  Systeme : DI
-Locaux : CENT.N-2.01, CENT.N-2.02, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.06, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.12, CENT.N-2.13, CENT.N-2.14, CENT.N-2.15, CENT.N-2.16, CENT.N-2.17, CENT.N-2.18, CENT.N-2.19, CENT.N-2.20, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23, CENT.N-2.24, CENT.N-2.25, CENT.N-2.26
+Locaux : CENT.N-1.01, CENT.N-1.02, CENT.N-1.03, CENT.N-1.04, CENT.N-1.05, CENT.N-1.06, CENT.N-1.07, CENT.N-2.01, CENT.N-2.02, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.06, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.12, CENT.N-2.13, CENT.N-2.14, CENT.N-2.15, CENT.N-2.16, CENT.N-2.17, CENT.N-2.18, CENT.N-2.19, CENT.N-2.20, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23, CENT.N-2.24, CENT.N-2.25, CENT.N-2.26
 Statut : a_confirmer
 
 À TRANCHER : la détection gaz NH3 et CO2 est-elle dans ce lot, chez Wettstein, ou chez Despraz ? C'est une sécurité des personnes qui pilote la ventilation de secours. Voir Q-05.
@@ -1423,7 +1423,7 @@ RAISONS DES LIENS :
       <Finish>2027-04-30T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-ANS-030]  Lot : ANSERMOT  |  Systeme : MEN
-Locaux : CENT.N-2.01, CENT.N-2.02, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.06, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.11, CENT.N-2.12, CENT.N-2.13, CENT.N-2.14, CENT.N-2.15, CENT.N-2.16, CENT.N-2.17, CENT.N-2.18, CENT.N-2.19, CENT.N-2.20, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23, CENT.N-2.24, CENT.N-2.25, CENT.N-2.26
+Locaux : CENT.N-1.01, CENT.N-1.05, CENT.N-1.06, CENT.N-1.07, CENT.N-2.01, CENT.N-2.02, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.06, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.11, CENT.N-2.12, CENT.N-2.13, CENT.N-2.14, CENT.N-2.15, CENT.N-2.16, CENT.N-2.17, CENT.N-2.18, CENT.N-2.19, CENT.N-2.20, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23, CENT.N-2.24, CENT.N-2.25, CENT.N-2.26
 Statut : non_adjuge
 
 Des portes sont posées dans tous les locaux (MO, 20.10.2026).
@@ -1959,7 +1959,7 @@ RAISONS DES LIENS :
       <Finish>2027-06-25T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-HAL-050]  Lot : HALG  |  Systeme : VENT-SECU
-Locaux : CENT.N-2.01, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.18, CENT.N-2.19, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23
+Locaux : CENT.N-1.01, CENT.N-1.02, CENT.N-1.03, CENT.N-1.04, CENT.N-1.06, CENT.N-1.07, CENT.N-2.01, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.18, CENT.N-2.19, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23
 Statut : a_confirmer
 
 JALON DE SÉCURITÉ : conditionne la charge NH3 et la charge CO2. Aucun fluide frigorigène n'entre dans le bâtiment avant que ce système soit éprouvé.
@@ -2014,7 +2014,7 @@ RAISONS DES LIENS :
       <Finish>2027-08-27T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-CAL-020]  Lot : CALORIFUGEAGE  |  Systeme : HYD-CHAUD
-Locaux : CENT.N-2.05, CENT.N-2.07, CENT.N-2.09, CENT.N-2.10, CENT.N-2.18, CENT.N-2.19, CENT.N-1.03, CENT.N-1.04
+Locaux : CENT.N-1.03, CENT.N-1.04, CENT.N-2.05, CENT.N-2.07, CENT.N-2.09, CENT.N-2.10, CENT.N-2.18, CENT.N-2.19
 Statut : BLOQUE
 
 ALERTE : lot non adjugé et bloquant pour la réception. Porte sur les conduites d'hydraulique chaud, l'accumulateur étant isolé par Bilfinger.
@@ -2226,7 +2226,7 @@ RAISONS DES LIENS :
       <Finish>2027-06-18T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-HAL-040]  Lot : HALG  |  Systeme : VENT-HYG
-Locaux : CENT.N-2.01, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.18, CENT.N-2.19, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23
+Locaux : CENT.N-1.01, CENT.N-1.02, CENT.N-1.03, CENT.N-1.04, CENT.N-1.06, CENT.N-1.07, CENT.N-2.01, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.18, CENT.N-2.19, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23
 Statut : a_confirmer
 
 RAISONS DES LIENS :

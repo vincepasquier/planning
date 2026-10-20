@@ -1,5 +1,5 @@
 {
-  "version": "1.3",
+  "version": "1.4",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -372,6 +372,8 @@
       "systeme": "FROID-CO2",
       "phase": "P2",
       "locaux": [
+        "CENT.N-1.02",
+        "CENT.N-1.03",
         "CENT.N-2.05"
       ],
       "duree_classe": "mois",
@@ -389,7 +391,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Limite de prestation : Despraz pose les conduites CO2 jusqu'aux echangeurs froid. L'hydraulique en aval est chez Entretec. Local d'introduction CO2 : N-2.05. PN6, 3 bars.",
+      "notes": "Limite de prestation : Despraz pose les conduites CO2 jusqu'aux echangeurs froid. L'hydraulique en aval est chez Entretec. Local d'introduction CO2 : N-2.05. PN6, 3 bars. Le CO2 emprunte la galerie N-1.03 et dessert quelques soupapes en N-1.02 (MO, 20.10.2026).",
       "duree_semaines": 12
     },
     {
@@ -399,6 +401,8 @@
       "systeme": "FROID-HYD",
       "phase": "P2",
       "locaux": [
+        "CENT.N-1.03",
+        "CENT.N-1.04",
         "CENT.N-2.03",
         "CENT.N-2.04",
         "CENT.N-2.08",
@@ -621,9 +625,9 @@
       "systeme": "HYD-CHAUD",
       "phase": "P2",
       "locaux": [
-        "CENT.N-2.19",
-        "CENT.N-1.03",
+        "CENT.N-1.02",
         "CENT.N-1.04",
+        "CENT.N-2.19",
         "CENT.N-2.24"
       ],
       "duree_classe": "mois",
@@ -636,7 +640,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "PN16, pression statique 11 bars. Le réseau part du local hydraulique chaud, traverse les galeries techniques de N-1 et rejoint l'accumulateur (MO, 20.10.2026). Il croise donc la ventilation de sécurité, qui emprunte les mêmes galeries. Circulateurs Grundfos NBG de 484 kg et vannes RTK de 401 kg à manutentionner dans les locaux.",
+      "notes": "PN16, pression statique 11 bars. Le réseau part du local hydraulique chaud, traverse les galeries techniques de N-1 et rejoint l'accumulateur (MO, 20.10.2026). Il croise donc la ventilation de sécurité, qui emprunte les mêmes galeries. Circulateurs Grundfos NBG de 484 kg et vannes RTK de 401 kg à manutentionner dans les locaux. Au niveau N-1, le chaud emprunte la circulation N-1.04 ; la galerie N-1.03 porte le froid. Quelques soupapes en local technique N-1.02 (MO, 20.10.2026).",
       "duree_semaines": 15
     },
     {
@@ -855,14 +859,14 @@
       "systeme": "HYD-CHAUD",
       "phase": "P5",
       "locaux": [
+        "CENT.N-1.03",
+        "CENT.N-1.04",
         "CENT.N-2.05",
         "CENT.N-2.07",
         "CENT.N-2.09",
         "CENT.N-2.10",
         "CENT.N-2.18",
-        "CENT.N-2.19",
-        "CENT.N-1.03",
-        "CENT.N-1.04"
+        "CENT.N-2.19"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -889,6 +893,12 @@
       "systeme": "VENT-HYG",
       "phase": "P2",
       "locaux": [
+        "CENT.N-1.01",
+        "CENT.N-1.02",
+        "CENT.N-1.03",
+        "CENT.N-1.04",
+        "CENT.N-1.06",
+        "CENT.N-1.07",
         "CENT.N-2.01",
         "CENT.N-2.03",
         "CENT.N-2.04",
@@ -958,11 +968,11 @@
       "systeme": "VENT-SECU",
       "phase": "P2",
       "locaux": [
+        "CENT.N-1.02",
+        "CENT.N-1.03",
         "CENT.N-2.05",
         "CENT.N-2.07",
-        "CENT.N-2.10",
-        "CENT.N-1.02",
-        "CENT.N-1.03"
+        "CENT.N-2.10"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -994,6 +1004,12 @@
       "systeme": "VENT-HYG",
       "phase": "P6",
       "locaux": [
+        "CENT.N-1.01",
+        "CENT.N-1.02",
+        "CENT.N-1.03",
+        "CENT.N-1.04",
+        "CENT.N-1.06",
+        "CENT.N-1.07",
         "CENT.N-2.01",
         "CENT.N-2.03",
         "CENT.N-2.04",
@@ -1037,6 +1053,12 @@
       "systeme": "VENT-SECU",
       "phase": "P5",
       "locaux": [
+        "CENT.N-1.01",
+        "CENT.N-1.02",
+        "CENT.N-1.03",
+        "CENT.N-1.04",
+        "CENT.N-1.06",
+        "CENT.N-1.07",
         "CENT.N-2.01",
         "CENT.N-2.03",
         "CENT.N-2.04",
@@ -1126,6 +1148,13 @@
       "systeme": "IEG",
       "phase": "P2",
       "locaux": [
+        "CENT.N-1.01",
+        "CENT.N-1.02",
+        "CENT.N-1.03",
+        "CENT.N-1.04",
+        "CENT.N-1.05",
+        "CENT.N-1.06",
+        "CENT.N-1.07",
         "CENT.N-2.01",
         "CENT.N-2.02",
         "CENT.N-2.03",
@@ -1255,6 +1284,13 @@
       "systeme": "DI",
       "phase": "P4",
       "locaux": [
+        "CENT.N-1.01",
+        "CENT.N-1.02",
+        "CENT.N-1.03",
+        "CENT.N-1.04",
+        "CENT.N-1.05",
+        "CENT.N-1.06",
+        "CENT.N-1.07",
         "CENT.N-2.01",
         "CENT.N-2.02",
         "CENT.N-2.03",
@@ -1531,10 +1567,10 @@
       "systeme": "SAN",
       "phase": "P2",
       "locaux": [
-        "CENT.N-2.23",
-        "CENT.N-2.22",
         "CENT.N-1.03",
-        "CENT.N-1.04"
+        "CENT.N-1.04",
+        "CENT.N-2.22",
+        "CENT.N-2.23"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
@@ -1597,6 +1633,10 @@
       "systeme": "MEN",
       "phase": "P4",
       "locaux": [
+        "CENT.N-1.01",
+        "CENT.N-1.05",
+        "CENT.N-1.06",
+        "CENT.N-1.07",
         "CENT.N-2.01",
         "CENT.N-2.02",
         "CENT.N-2.03",
@@ -1757,5 +1797,10 @@
     "Les tableaux variateurs sont fournis par Wettstein et Exergo, nouveau lot.",
     "Ansermot pose des portes dans tous les locaux, et des fenêtres en N-2.21.",
     "Le local MT est refroidi par l'air depuis N-2.03."
+  ],
+  "corrections_v14": [
+    "Niveau N-1 relevé : 7 locaux. L'hydraulique chaud emprunte la circulation N-1.04, la galerie N-1.03 portant le froid.",
+    "Le CO2 passe par la galerie N-1.03 et dessert quelques soupapes en local technique N-1.02.",
+    "Les quais 1 et 2 sont modélisés comme « tout un étage » avec le code SIA SEP, et non comme des pièces : ils ne figurent ni dans la géométrie ni dans le relevé."
   ]
 }
