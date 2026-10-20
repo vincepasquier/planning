@@ -32,6 +32,7 @@ def main():
     phases = json.load(open("data/phases.json", encoding="utf-8"))["phases"]
     entreprises = json.load(open("data/entreprises.json", encoding="utf-8"))
     questions = json.load(open("data/questions-ouvertes.json", encoding="utf-8"))["questions"]
+    geometrie = json.load(open("data/extracted/geometrie.json", encoding="utf-8"))
     locaux = {x["numero"]: x for x in
               json.load(open("data/extracted/locaux.json", encoding="utf-8"))["locaux"]
               if x["est_local"]}
@@ -62,6 +63,7 @@ def main():
         "taches": sortie_taches,
         "lots": entreprises["entreprises"],
         "questions": questions,
+        "geometrie": geometrie,
         "locaux": {k: {"designation": v["designation"], "niveau": v["niveau"],
                        "surface": v.get("surface_nette_m2"),
                        "hauteur": v.get("hauteur_sous_plafond_m")}

@@ -16,6 +16,7 @@
   --p4:#1c5cab; --p5:#184f95; --p6:#104281;
   --critical:#d03b3b; --warning:#fab219; --good:#0ca30c;
   --critical-wash:#fbeaea; --warning-wash:#fdf4e0;
+  --o0:#f2f1ed; --o1:#b7d3f6; --o2:#86b6ef; --o3:#3987e5; --o4:#1c5cab;
   --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
   --label-w:316px;
@@ -29,6 +30,7 @@
   --p0:#cde2fb; --p1:#9ec5f4; --p2:#6da7ec; --p3:#3987e5;
   --p4:#2a78d6; --p5:#256abf; --p6:#1c5cab;
   --critical-wash:#2e1717; --warning-wash:#2b2210;
+  --o0:#201f1e; --o1:#184f95; --o2:#256abf; --o3:#3987e5; --o4:#86b6ef;
 }}
 :root[data-theme="dark"]{
   color-scheme:dark;
@@ -39,6 +41,8 @@
   --p0:#cde2fb; --p1:#9ec5f4; --p2:#6da7ec; --p3:#3987e5;
   --p4:#2a78d6; --p5:#256abf; --p6:#1c5cab;
   --critical-wash:#2e1717; --warning-wash:#2b2210;
+  --o0:#201f1e; --o1:#184f95; --o2:#256abf; --o3:#3987e5; --o4:#86b6ef;
+
 }
 *{box-sizing:border-box}
 body{background:var(--plane);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.5}
@@ -169,6 +173,31 @@ section.bloc>p{color:var(--ink-2);margin-block:0 14px;max-width:62ch}
 footer{border-top:1px solid var(--grid);padding-block:18px 30px;color:var(--ink-muted);font-size:12px}
 footer p{margin:0 0 5px}
 
+.plan-outils{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+.curseur{flex:1 1 260px;display:flex;align-items:center;gap:11px;min-width:0}
+.curseur input[type=range]{flex:1;min-width:0;accent-color:var(--accent)}
+.semaine{font-family:var(--mono);font-size:13px;white-space:nowrap;min-width:92px;text-align:right}
+.pas{appearance:none;border:1px solid var(--ring);background:var(--surface);color:var(--ink-2);
+  border-radius:7px;width:30px;height:30px;font-size:15px;cursor:pointer;flex:none;line-height:1}
+.pas:hover{color:var(--ink)}
+.plans{display:grid;gap:14px;align-items:start;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr))}
+.niveau{background:var(--surface);border:1px solid var(--ring);border-radius:11px;padding:13px 15px 15px}
+.niveau h3{font-size:13px;display:flex;align-items:baseline;gap:8px;margin-bottom:9px}
+.niveau h3 span{font-weight:400;font-size:11.5px;color:var(--ink-muted)}
+.niveau svg{width:100%;height:clamp(210px,31vw,330px);display:block}
+.piece{cursor:pointer;stroke:var(--surface);vector-effect:non-scaling-stroke;stroke-width:1.2;transition:opacity .12s}
+.piece:hover{opacity:.78}
+.piece.actif{stroke:var(--ink);stroke-width:2}
+.etiq{font-family:var(--mono);fill:var(--ink);paint-order:stroke fill;
+  stroke:var(--surface);stroke-linejoin:round;pointer-events:none;text-anchor:middle;dominant-baseline:middle}
+.coact{fill:none;stroke:var(--critical);vector-effect:non-scaling-stroke;stroke-width:1.8;stroke-dasharray:5 3;pointer-events:none}
+.global{background:var(--plane);border:1px solid var(--ring);border-radius:9px;padding:11px 14px;
+  font-size:12.5px;color:var(--ink-2);margin-bottom:13px}
+.global b{color:var(--ink);font-weight:500}
+.occ-leg{display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:12px;color:var(--ink-2);margin-top:12px}
+.occ-leg i{font-style:normal;display:inline-flex;align-items:center;gap:6px}
+.occ-leg .sw{width:15px;height:11px;border-radius:2px;border:1px solid var(--ring);flex:none}
+
 /* ---------- infobulle ---------- */
 #bulle{position:fixed;z-index:50;pointer-events:none;background:var(--surface);color:var(--ink);
   border:1px solid var(--ring);border-radius:8px;padding:8px 11px;font-size:12px;max-width:290px;
@@ -218,6 +247,25 @@ footer p{margin:0 0 5px}
   <div class="legende" id="legende"></div>
 
   <div class="detail" id="detail"></div>
+
+  <section class="bloc">
+    <h2>Plan d'occupation</h2>
+    <p>Qui occupe quel local, et à quelle date. Déplacez le curseur pour parcourir le chantier
+      semaine par semaine. La teinte donne le nombre d'entreprises présentes dans le local :
+      c'est la co-activité qui fait les conflits, pas l'occupation seule.</p>
+    <div class="plan-outils">
+      <button class="pas" id="p-prec" aria-label="Semaine précédente">‹</button>
+      <div class="curseur">
+        <input type="range" id="p-curseur" min="0" value="0" aria-label="Semaine affichée">
+        <span class="semaine" id="p-date"></span>
+      </div>
+      <button class="pas" id="p-suiv" aria-label="Semaine suivante">›</button>
+    </div>
+    <div class="global" id="p-global"></div>
+    <div class="plans" id="p-plans"></div>
+    <div class="occ-leg" id="p-legende"></div>
+    <div class="detail" id="p-detail"></div>
+  </section>
 
   <section class="bloc">
     <h2>Questions à trancher</h2>
@@ -454,5 +502,103 @@ bascule(["v-gantt","v-table"], v => vue = v === "gantt" ? "gantt" : "table");
 bascule(["g-phase","g-lot","g-local"], g => groupe = g);
 ["f-lot","f-phase","f-txt"].forEach(id => $("#" + id).addEventListener("input", rendre));
 
+/* ---------- plan d'occupation ---------- */
+const G = D.geometrie, NIVEAUX = Object.keys(G.niveaux).sort().reverse();
+const SEMAINES = Math.max(1, Math.ceil(TOTAL / 7));
+let sem = 0, pieceActive = null;
+
+const lundiDe = i => new Date(D0.getTime() + i * 7 * jour);
+const couvre = (t, d) => dt(t.debut) <= d && d <= dt(t.fin);
+
+function occupantsDe(numero, d){
+  return D.taches.filter(t => t.locaux.includes(numero) && couvre(t, d));
+}
+function globales(d){ return D.taches.filter(t => t.locaux.includes("*") && couvre(t, d)); }
+const teinte = n => n === 0 ? "var(--o0)" : n === 1 ? "var(--o1)" : n === 2 ? "var(--o2)"
+  : n === 3 ? "var(--o3)" : "var(--o4)";
+
+function rendrePlan(){
+  const d = lundiDe(sem); d.setHours(0,0,0,0);
+  const fin = new Date(Math.min(d.getTime() + 6 * jour, D1.getTime()));
+  $("#p-date").textContent = `${fdate(d.toISOString().slice(0,10))}`;
+  $("#p-curseur").value = sem;
+
+  const gl = globales(d);
+  $("#p-global").innerHTML = gl.length
+    ? `<b>${gl.length} tâche${gl.length>1?"s":""} sur l'ensemble du bâtiment</b> cette semaine : `
+      + gl.map(t => `${esc(t.lot)} (${esc(t.nom.toLowerCase())})`).join(", ")
+      + `. Ces tâches ne sont pas comptées dans les locaux ci-dessous.`
+    : `<b>Aucune tâche transversale</b> cette semaine.`;
+
+  let h = "";
+  for (const niv of NIVEAUX){
+    const n = G.niveaux[niv]; if (!n) continue;
+    const [x0, y0, x1, y1] = n.bbox, L = x1 - x0, H = y1 - y0, m = Math.max(L, H) * .02;
+    const ft = Math.max(L, H) / 48;
+    let pieces = "", labels = "", occupes = 0, maxOcc = 0;
+    for (const loc of n.locaux){
+      const occ = occupantsDe(loc.numero, d);
+      if (occ.length) occupes++;
+      maxOcc = Math.max(maxOcc, occ.length);
+      const pts = loc.polygone.map(([x, y]) => `${(x - x0).toFixed(2)},${(y1 - y).toFixed(2)}`).join(" ");
+      const lots = [...new Set(occ.map(t => t.lot))];
+      pieces += `<polygon class="piece${pieceActive === loc.numero ? " actif" : ""}" points="${pts}"
+        fill="${teinte(occ.length)}" data-loc="${esc(loc.numero)}"
+        data-info="${esc(loc.designation)} — ${occ.length ? esc(lots.join(", ")) : "libre"}"><title>${esc(loc.numero)} ${esc(loc.designation)} — ${occ.length ? esc(lots.join(", ")) : "libre"}</title></polygon>`;
+      if (occ.length >= 3) pieces += `<polygon class="coact" points="${pts}"></polygon>`;
+      const cx = loc.polygone.reduce((a, p) => a + p[0], 0) / loc.polygone.length - x0;
+      const cy = y1 - loc.polygone.reduce((a, p) => a + p[1], 0) / loc.polygone.length;
+      const court = (loc.numero || "").split(".").pop();
+      labels += `<text class="etiq" x="${cx.toFixed(2)}" y="${cy.toFixed(2)}" font-size="${ft.toFixed(2)}" stroke-width="${(ft*.3).toFixed(2)}">${esc(court)}</text>`;
+    }
+    h += `<div class="niveau"><h3>Niveau ${esc(niv)}<span>${occupes} local${occupes>1?"aux":""} occupé${occupes>1?"s":""} sur ${n.locaux.length}${maxOcc>=3?" · co-activité":""}</span></h3>
+      <svg viewBox="${-m} ${-m} ${L+2*m} ${H+2*m}" role="img"
+        aria-label="Plan du niveau ${esc(niv)}, ${occupes} locaux occupés">${pieces}${labels}</svg></div>`;
+  }
+  $("#p-plans").innerHTML = h;
+  rendrePieceDetail(d, fin);
+}
+
+function rendrePieceDetail(d, fin){
+  const cible = $("#p-detail");
+  if (!pieceActive){
+    cible.innerHTML = `<p class="eyebrow">Local</p><p class="vide">Cliquez sur un local du plan pour voir qui y intervient et quand, sur toute la durée du chantier.</p>`;
+    return;
+  }
+  const info = D.locaux[pieceActive] || {};
+  const toutes = D.taches.filter(t => t.locaux.includes(pieceActive))
+    .sort((a, b) => a.debut < b.debut ? -1 : 1);
+  const ici = toutes.filter(t => couvre(t, d));
+  cible.innerHTML = `<p class="eyebrow">${esc(pieceActive)} · niveau ${esc(info.niveau || "?")}</p>
+    <h2>${esc(info.designation || pieceActive)}</h2>
+    <div class="meta">
+      ${info.surface ? `<span class="tag">${info.surface.toFixed(1)} m²</span>` : ""}
+      ${info.hauteur ? `<span class="tag">${info.hauteur.toFixed(2)} m sous plafond</span>` : ""}
+      <span class="tag">${toutes.length} tâche${toutes.length>1?"s":""} au total</span>
+      ${ici.length >= 3 ? `<span class="tag fort">co-activité : ${ici.length} entreprises cette semaine</span>` : ""}
+    </div>
+    <div class="liens"><div><p class="eyebrow">Interventions dans ce local</p>
+      ${toutes.length ? `<ul>${toutes.map(t => {
+        const a = couvre(t, d);
+        return `<li style="border-left-color:${a ? "var(--accent)" : "var(--grid)"}">
+          <b>${esc(t.lot)}</b> ${esc(t.nom)}<br>
+          <span style="color:var(--ink-muted)">${fdate(t.debut)} → ${fdate(t.fin)} · ${t.semaines} sem.${a ? " · en cours cette semaine" : ""}</span></li>`;
+      }).join("")}</ul>` : `<p class="vide">Aucune tâche n'est rattachée à ce local.</p>`}</div></div>`;
+}
+
+$("#p-curseur").max = SEMAINES - 1;
+$("#p-legende").innerHTML = [[0,"libre"],[1,"1 entreprise"],[2,"2"],[3,"3"],[4,"4 et plus"]]
+  .map(([n,l]) => `<i><span class="sw" style="background:${teinte(n)}"></span>${esc(l)}</i>`).join("")
+  + `<i><span class="sw" style="background:transparent;border:1.5px dashed var(--critical)"></span>co-activité (3 entreprises ou plus)</i>`;
+$("#p-curseur").addEventListener("input", e => { sem = +e.target.value; rendrePlan(); });
+$("#p-prec").addEventListener("click", () => { sem = Math.max(0, sem - 1); rendrePlan(); });
+$("#p-suiv").addEventListener("click", () => { sem = Math.min(SEMAINES - 1, sem + 1); rendrePlan(); });
+$("#p-plans").addEventListener("click", e => {
+  const p = e.target.closest("[data-loc]"); if (!p) return;
+  pieceActive = p.dataset.loc === pieceActive ? null : p.dataset.loc;
+  rendrePlan(); $("#p-detail").scrollIntoView({block:"nearest", behavior:"smooth"});
+});
+
 rendre();
+rendrePlan();
 </script>
