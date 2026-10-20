@@ -14,13 +14,15 @@ surtout **pourquoi**. Chaque lien entre deux tâches porte sa justification.
 | Tâches | 59 |
 | Liens de dépendance | 90 |
 | Rangs d'ordonnancement | 15, sans cycle |
+| Durée calculée | 55 semaines (fin au plus tôt 12.11.2027) |
 | Dates fermes | 1 (épreuve accumulateur, 30.11.2026) |
 | Questions ouvertes | 19, dont 4 critiques |
 | Lots non adjugés | 2 (calorifugeage, Ansermot) |
 | Périmètre non communiqué | 1 (STAP) |
 
-Version 0.2 — intègre 9 schémas Groupe E. Ossature à valider avec les
-entreprises.
+Version 0.3 — ossature datée. Les durées sont des propositions à corriger par
+les entreprises : c'est le seul paramètre à reprendre pour que les dates
+deviennent justes.
 
 ### Corrections apportées en v0.2
 
@@ -45,6 +47,7 @@ data/
   documents.json          Les 9 schémas reçus, avec leur niveau de maturité
   armoires.json           Les 15 armoires de commande et leurs emplacements
   extracted/locaux.json   37 locaux extraits de la maquette ARC, avec métrés
+  extracted/planning.csv  Le planning daté, une ligne par lot et par local
   raw/                    Maquettes IFC brutes (non versionnées)
 docs/
   regles-enchainement.md  La logique du réseau, expliquée
@@ -52,6 +55,7 @@ docs/
 scripts/
   extract_locaux.py       IFC -> liste des locaux + métrés
   valider.py              Contrôle du réseau et calcul des rangs
+  planifier.py            Calcul des dates au plus tôt, export CSV
 ```
 
 ## Utilisation
@@ -66,6 +70,14 @@ Valider le réseau et afficher l'ordonnancement par rangs :
 
 ```bash
 python3 -I scripts/valider.py data/taches.json
+```
+
+Calculer les dates et exporter le planning par lot et par local :
+
+```bash
+python3 -I scripts/planifier.py --debut 2026-10-26 --csv data/extracted/planning.csv
+python3 -I scripts/planifier.py --par lot      # regroupé par entreprise
+python3 -I scripts/planifier.py --par local    # regroupé par local
 ```
 
 Aucune dépendance externe : un fichier IFC est du texte STEP (ISO-10303-21),

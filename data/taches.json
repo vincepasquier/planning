@@ -1,5 +1,5 @@
 {
-  "version": "0.2",
+  "version": "0.3",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -9,277 +9,1500 @@
     "Ajout de la STAP, des vases d'expansion et des chaufferies mobiles gaz, absents de la v0.1."
   ],
   "taches": [
-    {"id": "T-ANT-010", "designation": "Achèvement béton, étanchéité et enveloppe", "entreprise": "ANTIGLIO", "systeme": "GC", "phase": "P0", "locaux": ["*"], "duree_classe": "mois", "date_connue": null, "predecesseurs": [], "statut": "en_cours"},
-
-    {"id": "T-ANT-020", "designation": "Socles et massifs PAC 1 à 4", "entreprise": "ANTIGLIO", "systeme": "GC", "phase": "P0", "locaux": ["CENT.N-2.07", "CENT.N-2.10", "CENT.N-2.12", "CENT.N-2.15"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-ANT-010", "lien": "DD", "raison": "Travaux de même nature, même entreprise"}],
-     "statut": "a_confirmer", "notes": "Socles mûrs avant mise en charge. Délai de cure à faire confirmer par Wettstein."},
-
-    {"id": "T-ANT-025", "designation": "Socles armoires et coffrets (100 mm)", "entreprise": "ANTIGLIO", "systeme": "GC", "phase": "P0", "locaux": ["CENT.N-2.21", "CENT.N-2.04", "CENT.N-2.19"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-ANT-010", "lien": "DD", "raison": "Même entreprise"}],
-     "statut": "a_confirmer", "notes": "Les armoires 1, 2, 3, 14 et 15 reposent sur socle 100 mm (liste des armoires)."},
-
-    {"id": "T-ANT-030", "designation": "Réservations et percements", "entreprise": "ANTIGLIO", "systeme": "GC", "phase": "P0", "locaux": ["*"], "duree_classe": "quinzaine", "date_connue": null, "predecesseurs": [], "statut": "a_confirmer"},
-
-    {"id": "T-ANT-035", "designation": "Rebouchages et calfeutrements coupe-feu", "entreprise": "ANTIGLIO", "systeme": "GC", "phase": "P5", "locaux": ["*"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-GET-030", "lien": "FD", "raison": "Dernier réseau passé : on ne rebouche qu'une fois tous les percements traversés"}],
-     "statut": "a_confirmer", "notes": "Les clapets coupe-feu (CCF) des schémas 41, 42 et 43 supposent une sectorisation achevée et contrôlée."},
-
-    {"id": "T-ANT-040", "designation": "Fermeture de l'accès de manutention", "entreprise": "ANTIGLIO", "systeme": "GC", "phase": "P1", "locaux": ["CENT.N-2.25", "CENT.N-2.26"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-WET-040", "lien": "FD", "raison": "Dernier colis lourd rentré"}],
-     "statut": "a_confirmer", "notes": "Voir Q-01 : l'itinéraire réel reste à confirmer."},
-
-    {"id": "T-BIL-010", "designation": "Montage de l'accumulateur chaud", "entreprise": "BILFINGER", "systeme": "ACC", "phase": "P1", "locaux": ["CENT.N-2.24"], "duree_classe": "mois", "date_connue": null, "predecesseurs": [], "statut": "en_cours",
-     "notes": "Accumulateur 5'000 kW, 2 x 2.5 MW selon le synoptique chaud."},
-
-    {"id": "T-BIL-020", "designation": "Épreuve de pression de l'accumulateur", "entreprise": "BILFINGER", "systeme": "ACC", "phase": "P5", "locaux": ["CENT.N-2.24"], "duree_classe": "semaine", "date_connue": "2026-11-30",
-     "predecesseurs": [{"id": "T-BIL-010", "lien": "FD", "raison": "Enveloppe terminée avant mise sous pression"}],
-     "statut": "date_ferme", "notes": "SEULE DATE FERME DU DOSSIER. Sert d'ancrage au calage."},
-
-    {"id": "T-GE-010", "designation": "Raccordement des sondes de l'accumulateur", "entreprise": "GE", "systeme": "ACC", "phase": "P4", "locaux": ["CENT.N-2.24"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-BIL-020", "lien": "FD", "raison": "Épreuve réalisée avant instrumentation définitive"}],
-     "statut": "a_confirmer", "notes": "RIO 2 - Accu du concept MCR : 6 circuits instrumentés. Les doigts de gant doivent être posés et repérés avant calorifugeage."},
-
-    {"id": "T-CAL-010", "designation": "Calorifugeage de l'accumulateur", "entreprise": "CALORIFUGEAGE", "systeme": "ACC", "phase": "P5", "locaux": ["CENT.N-2.24"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-BIL-020", "lien": "FD", "raison": "On n'isole pas avant d'avoir éprouvé : une reprise de fuite impose de déshabiller"},
-       {"id": "T-GE-010", "lien": "FD", "raison": "Sondes et doigts de gant posés, sinon on rouvre l'isolation"}],
-     "statut": "BLOQUE", "notes": "ALERTE : lot non adjugé, qui suit immédiatement une date ferme à six semaines."},
-
-    {"id": "T-WET-010", "designation": "Manutention et pose PAC 1 (NH3)", "entreprise": "WETTSTEIN", "systeme": "PAC-1", "phase": "P1", "locaux": ["CENT.N-2.07"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-ANT-020", "lien": "FD", "raison": "Socle béton mûr avant mise en charge"}],
-     "statut": "a_confirmer", "notes": "Gabarit : circulations N-2 à 4,10 m alors que le local fait 7,00 m. Voir Q-02."},
-    {"id": "T-WET-020", "designation": "Manutention et pose PAC 2 (NH3)", "entreprise": "WETTSTEIN", "systeme": "PAC-2", "phase": "P1", "locaux": ["CENT.N-2.10"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-ANT-020", "lien": "FD", "raison": "Socle béton mûr"}, {"id": "T-WET-010", "lien": "FD", "raison": "Même moyen de levage"}], "statut": "a_confirmer"},
-    {"id": "T-WET-030", "designation": "Manutention et pose PAC 3 (NH3)", "entreprise": "WETTSTEIN", "systeme": "PAC-3", "phase": "P1", "locaux": ["CENT.N-2.12"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-WET-020", "lien": "FD", "raison": "Même moyen de levage"}], "statut": "a_confirmer"},
-    {"id": "T-WET-040", "designation": "Manutention et pose PAC 4 (NH3)", "entreprise": "WETTSTEIN", "systeme": "PAC-4", "phase": "P1", "locaux": ["CENT.N-2.15"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-WET-030", "lien": "FD", "raison": "Même moyen de levage"}], "statut": "a_confirmer",
-     "notes": "JALON PIVOT : libère l'itinéraire de manutention pour tous les réseaux."},
-
-    {"id": "T-WET-050", "designation": "Épreuve d'étanchéité des circuits NH3", "entreprise": "WETTSTEIN", "systeme": "NH3", "phase": "P5", "locaux": ["CENT.N-2.07", "CENT.N-2.10", "CENT.N-2.12", "CENT.N-2.15"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-WET-040", "lien": "FD", "raison": "Machines en place et assemblées"}],
-     "statut": "a_confirmer"},
-
-    {"id": "T-WET-060", "designation": "Charge en NH3 des PAC 1 à 4", "entreprise": "WETTSTEIN", "systeme": "NH3", "phase": "P5", "locaux": ["CENT.N-2.07", "CENT.N-2.10", "CENT.N-2.12", "CENT.N-2.15"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-WET-050", "lien": "FD", "raison": "Étanchéité prouvée"},
-       {"id": "T-HAL-050", "lien": "FD", "raison": "RÈGLE DE SÉCURITÉ : ventilation de secours et détection NH3 en service avant toute introduction d'ammoniac dans le bâtiment"},
-       {"id": "T-GET-080", "lien": "FD", "raison": "Machines alimentables"}],
-     "statut": "a_confirmer", "notes": "L'ammoniac est toxique et inflammable. La ventilation de secours extrait 5'500 m3/h par local PAC en cas de fuite NH3."},
-
-    {"id": "T-DES-005", "designation": "Centrales froid CO2 n°1 et n°2", "entreprise": "DESPRAZ", "systeme": "FROID-CO2", "phase": "P1", "locaux": ["CENT.N-2.09", "CENT.N-2.14"], "duree_classe": "mois", "date_connue": null,
-     "predecesseurs": [{"id": "T-ANT-010", "lien": "FD", "raison": "Locaux disponibles"}],
-     "statut": "a_confirmer", "notes": "CONTRADICTION DE DOCUMENTS : la maquette ARC nomme N-2.09 et N-2.14 'Commande 1-2' et 'Commande 3-4', les schémas Groupe E les nomment 'Centrale froid n°1' et 'n°2'. Voir Q-13."},
-
-    {"id": "T-DES-010", "designation": "Tuyauterie CO2 - réseaux (gazeux et liquide)", "entreprise": "DESPRAZ", "systeme": "FROID-CO2", "phase": "P2", "locaux": ["CENT.N-2.05", "CENT.N-2.06", "CENT.N-2.16"], "duree_classe": "mois", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-WET-040", "lien": "FD", "raison": "Itinéraire de manutention libéré"},
-       {"id": "T-DES-005", "lien": "DD", "raison": "Même entreprise, réseau tiré depuis les centrales froid"},
-       {"id": "T-ENT-010", "lien": "DD", "raison": "Passe après les gros diamètres hydrauliques dans les volumes partagés"}],
-     "statut": "a_confirmer", "notes": "N-2.05 est le local d'introduction CO2 selon le schéma 43. PN6, 3 bars."},
-
-    {"id": "T-DES-015", "designation": "Échangeurs froid PAC 1 à 4 et circuit 16/21 °C", "entreprise": "DESPRAZ", "systeme": "FROID-CO2", "phase": "P2", "locaux": ["CENT.N-2.07", "CENT.N-2.10", "CENT.N-2.12", "CENT.N-2.15"], "duree_classe": "mois", "date_connue": null,
-     "predecesseurs": [{"id": "T-DES-010", "lien": "DD", "raison": "Même campagne de tuyauterie"}],
-     "statut": "a_confirmer", "notes": "180 kW par échangeur pour PAC 1-2, 110 kW pour PAC 3-4 (dont deux en réserve)."},
-
-    {"id": "T-DES-020", "designation": "Armoires de refroidissement des locaux (brassage d'air)", "entreprise": "DESPRAZ", "systeme": "FROID-LOCAUX", "phase": "P2", "locaux": ["CENT.N-2.01", "CENT.N-2.03", "CENT.N-2.04", "CENT.N-2.08", "CENT.N-2.13", "CENT.N-2.18", "CENT.N-2.19"], "duree_classe": "mois", "date_connue": null,
-     "predecesseurs": [{"id": "T-DES-010", "lien": "FD", "raison": "Circuit froid disponible"}],
-     "statut": "a_confirmer", "notes": "CRITIQUE : MT 97 kW, var/com 70 kW, PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. C'est ce système, et non la ventilation, qui conditionne la mise sous tension durable."},
-
-    {"id": "T-DES-030", "designation": "Épreuve d'étanchéité du circuit CO2", "entreprise": "DESPRAZ", "systeme": "FROID-CO2", "phase": "P5", "locaux": ["*"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-DES-015", "lien": "FD", "raison": "Toutes les soudures terminées : une seule reprise invalide l'épreuve"},
-       {"id": "T-DES-020", "lien": "FD", "raison": "Circuit complet, armoires de refroidissement raccordées"}],
-     "statut": "a_confirmer"},
-
-    {"id": "T-DES-040", "designation": "Tirage au vide du circuit CO2", "entreprise": "DESPRAZ", "systeme": "FROID-CO2", "phase": "P5", "locaux": ["*"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-DES-030", "lien": "FD", "raison": "Étanchéité prouvée avant mise sous vide"}], "statut": "a_confirmer"},
-
-    {"id": "T-DES-050", "designation": "Charge en CO2", "entreprise": "DESPRAZ", "systeme": "FROID-CO2", "phase": "P5", "locaux": ["CENT.N-2.05"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-DES-040", "lien": "FD", "raison": "Vide tenu"},
-       {"id": "T-HAL-050", "lien": "FD", "raison": "RÈGLE DE SÉCURITÉ : ventilation de secours et détection CO2 en service avant charge (12'100 m3/h d'extraction par local en cas de fuite)"},
-       {"id": "T-GET-080", "lien": "FD", "raison": "Centrales froid alimentables"}],
-     "statut": "a_confirmer", "notes": "Charge par le local d'introduction CO2 N-2.05."},
-
-    {"id": "T-ENT-010", "designation": "Tuyauterie hydraulique chaud (sections 00 à 06)", "entreprise": "ENTRETEC", "systeme": "HYD-CHAUD", "phase": "P2", "locaux": ["CENT.N-2.19"], "duree_classe": "mois", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-WET-040", "lien": "FD", "raison": "Itinéraire de manutention libéré"},
-       {"id": "T-HAL-010", "lien": "DD", "raison": "Passe après la ventilation dans les volumes partagés, mais peut démarrer en local dédié"}],
-     "statut": "a_confirmer", "notes": "PN16, pression statique 11 bars. Circulateurs Grundfos NBG 484 kg, vannes de régulation RTK 401 kg : manutention interne à prévoir."},
-
-    {"id": "T-ENT-020", "designation": "Vases d'expansion (section 07)", "entreprise": "ENTRETEC", "systeme": "EXPANSION", "phase": "P1", "locaux": ["CENT.N-2.19"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-ANT-010", "lien": "FD", "raison": "Local disponible"}],
-     "statut": "a_confirmer", "notes": "7 vases de 5'000 L. À traiter comme de la manutention lourde, pas comme de la tuyauterie : même contrainte de gabarit que les PAC. Voir Q-02."},
-
-    {"id": "T-ENT-030", "designation": "Pompage PAC", "entreprise": "ENTRETEC", "systeme": "HYD-CHAUD", "phase": "P2", "locaux": ["CENT.N-2.18"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-ENT-010", "lien": "DD", "raison": "Même entreprise, réseaux coordonnés"}], "statut": "a_confirmer"},
-
-    {"id": "T-ENT-040", "designation": "Raccordement hydraulique chaud sur PAC 1 à 4", "entreprise": "ENTRETEC", "systeme": "HYD-CHAUD", "phase": "P4", "locaux": ["CENT.N-2.07", "CENT.N-2.10", "CENT.N-2.12", "CENT.N-2.15"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-WET-040", "lien": "FD", "raison": "Machines posées et calées : le raccordement se relève sur l'ouvrage réel"},
-       {"id": "T-ENT-010", "lien": "FD", "raison": "Réseau amont réalisé"}],
-     "statut": "a_confirmer", "notes": "Limite de prestation confirmée : Wettstein livre la machine dans le local, Entretec vient s'y raccorder."},
-
-    {"id": "T-ENT-050", "designation": "Raccordement hydraulique sur accumulateur", "entreprise": "ENTRETEC", "systeme": "ACC", "phase": "P4", "locaux": ["CENT.N-2.24"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-BIL-020", "lien": "FD", "raison": "Épreuve de l'enveloppe avant raccordement des réseaux"}], "statut": "a_confirmer"},
-
-    {"id": "T-ENT-055", "designation": "Départ CAD et départ ZI (étape 1)", "entreprise": "ENTRETEC", "systeme": "HYD-CHAUD", "phase": "P4", "locaux": ["CENT.N-2.19"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-ENT-010", "lien": "FD", "raison": "Collecteurs réalisés"}],
-     "statut": "a_confirmer", "notes": "Le synoptique distingue 'Départ ZI 19.119 - Etape 1 / Final' et 'Départ CADFR - Etape 1 / Final'. Le projet est phasé. Voir Q-14."},
-
-    {"id": "T-ENT-060", "designation": "Rinçage et remplissage des réseaux hydrauliques", "entreprise": "ENTRETEC", "systeme": "HYD-CHAUD", "phase": "P5", "locaux": ["*"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-ENT-010", "lien": "FD", "raison": "Réseau complet"},
-       {"id": "T-ENT-030", "lien": "FD", "raison": "Pompes posées pour assurer la circulation de rinçage"},
-       {"id": "T-ENT-020", "lien": "FD", "raison": "Expansion en service avant mise en eau"}],
-     "statut": "a_confirmer", "notes": "RÈGLE DURE : rincer AVANT de raccorder définitivement aux échangeurs des PAC."},
-
-    {"id": "T-ENT-070", "designation": "Épreuve de pression des réseaux hydrauliques", "entreprise": "ENTRETEC", "systeme": "HYD-CHAUD", "phase": "P5", "locaux": ["*"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-ENT-060", "lien": "FD", "raison": "Réseau rempli"}], "statut": "a_confirmer"},
-
-    {"id": "T-ENT-080", "designation": "Raccordement des chaufferies mobiles gaz (2 x 2.5 MW)", "entreprise": "ENTRETEC", "systeme": "HYD-CHAUD", "phase": "P4", "locaux": ["CENT.N+0.03"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-ENT-055", "lien": "FD", "raison": "Collecteurs de départ disponibles"}],
-     "statut": "a_confirmer", "notes": "LEVIER DE PLANNING : échangeurs PN6/PN25 sur le synoptique chaud. Les chaufferies mobiles permettent d'alimenter le CAD avant que les PAC soient en service, donc de découpler la date de livraison de chaleur de celle de la mise en service des machines. Voir Q-15."},
-
-    {"id": "T-CAL-020", "designation": "Calorifugeage des tuyauteries chaud et froid", "entreprise": "CALORIFUGEAGE", "systeme": "HYD-CHAUD", "phase": "P5", "locaux": ["*"], "duree_classe": "mois", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-ENT-070", "lien": "FD", "raison": "On n'isole pas une tuyauterie non éprouvée"},
-       {"id": "T-GE-040", "lien": "FD", "raison": "Instrumentation posée avant habillage"}],
-     "statut": "BLOQUE", "notes": "ALERTE : lot non adjugé et bloquant pour la réception."},
-
-    {"id": "T-HAL-010", "designation": "Ventilation hygiénique - réseaux (section 42)", "entreprise": "HALG", "systeme": "VENT-HYG", "phase": "P2", "locaux": ["CENT.N-2.01", "CENT.N-2.03", "CENT.N-2.04", "CENT.N-2.08", "CENT.N-2.13", "CENT.N-2.18", "CENT.N-2.19", "CENT.N-1.02"], "duree_classe": "mois", "date_connue": null,
-     "predecesseurs": [{"id": "T-WET-040", "lien": "FD", "raison": "L'itinéraire de manutention reste libre jusqu'à la dernière machine"}],
-     "statut": "a_confirmer", "notes": "Premier des réseaux : le plus encombrant et le moins déformable. Débits : MT 1'240, hydraulique chaud 890, TGBT 790 m3/h. Comprend le free-cooling du local MT."},
-
-    {"id": "T-HAL-020", "designation": "Ventilation commande, WC, vestiaire (section 41)", "entreprise": "HALG", "systeme": "VENT-WC", "phase": "P2", "locaux": ["CENT.N-2.21", "CENT.N-2.22", "CENT.N-2.23", "CENT.N-1.07"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-HAL-010", "lien": "DD", "raison": "Même entreprise"}],
-     "statut": "a_confirmer", "notes": "75 m3/h vestiaire et sanitaires. Lot localisé, large marge de calage."},
-
-    {"id": "T-HAL-030", "designation": "Ventilation de sécurité CO2/NH3 - réseaux (section 43)", "entreprise": "HALG", "systeme": "VENT-SECU", "phase": "P2", "locaux": ["CENT.N-2.05", "CENT.N-2.07", "CENT.N-2.10", "CENT.N-2.12", "CENT.N-2.15", "CENT.N-1.02", "CENT.N-1.03"], "duree_classe": "mois", "date_connue": null,
-     "predecesseurs": [{"id": "T-HAL-010", "lien": "DD", "raison": "Même entreprise, réseaux coordonnés"}],
-     "statut": "a_confirmer", "notes": "SYSTÈME DE SÉCURITÉ. Cheminée d'extraction de secours dédiée, gaines galvanisées étanchéité classe D, clapets coupe-feu. Extraction fuite NH3 5'500 m3/h et fuite CO2 12'100 m3/h par local. Schéma encore en pré-exécution (16.10.2026)."},
-
-    {"id": "T-HAL-040", "designation": "Mise en service de la ventilation hygiénique et WC", "entreprise": "HALG", "systeme": "VENT-HYG", "phase": "P6", "locaux": ["*"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-HAL-010", "lien": "FD", "raison": "Installation terminée"},
-       {"id": "T-HAL-020", "lien": "FD", "raison": "Installation terminée"},
-       {"id": "T-GET-080", "lien": "FD", "raison": "Alimentation définitive disponible"}],
-     "statut": "a_confirmer"},
-
-    {"id": "T-HAL-050", "designation": "Mise en service et essais de la ventilation de secours et de la détection gaz", "entreprise": "HALG", "systeme": "VENT-SECU", "phase": "P5", "locaux": ["*"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-HAL-030", "lien": "FD", "raison": "Installation terminée"},
-       {"id": "T-GET-070", "lien": "FD", "raison": "Détection NH3 et CO2 raccordée et fonctionnelle"},
-       {"id": "T-GET-080", "lien": "FD", "raison": "Alimentation secourue disponible"},
-       {"id": "T-ANT-035", "lien": "FD", "raison": "Sectorisation coupe-feu achevée : les clapets ne valent que dans une paroi étanche"}],
-     "statut": "a_confirmer", "notes": "JALON DE SÉCURITÉ : conditionne la charge NH3 et la charge CO2. Aucun fluide frigorigène n'entre dans le bâtiment avant que ce système soit éprouvé."},
-
-    {"id": "T-GET-010", "designation": "Infrastructure MT et transformateurs", "entreprise": "GETECH", "systeme": "ELEC-MT", "phase": "P3", "locaux": ["CENT.N-2.01"], "duree_classe": "mois", "date_connue": null, "predecesseurs": [], "statut": "a_confirmer",
-     "notes": "Délai de livraison du transformateur à renseigner : candidat n°1 au chemin critique. Voir Q-04."},
-
-    {"id": "T-GET-020", "designation": "Tableaux TGBT", "entreprise": "GETECH", "systeme": "TGBT", "phase": "P3", "locaux": ["CENT.N-2.04"], "duree_classe": "mois", "date_connue": null, "predecesseurs": [], "statut": "a_confirmer",
-     "notes": "Délai de livraison à renseigner. Même contrainte de gabarit que les PAC : local à 7,00 m, circulation à 4,10 m."},
-
-    {"id": "T-GET-030", "designation": "Chemins de câbles et IEG", "entreprise": "GETECH", "systeme": "IEG", "phase": "P2", "locaux": ["*"], "duree_classe": "mois", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-WET-040", "lien": "FD", "raison": "Itinéraire libéré : 905 chemins de câbles suffisent à boucher une circulation"},
-       {"id": "T-DES-010", "lien": "DD", "raison": "Dernier des réseaux : le chemin de câbles est le plus adaptable, il contourne"}],
-     "statut": "a_confirmer", "notes": "Maquette ELE : 905 segments de chemin de câbles, 615 accessoires, 647 luminaires, 34 appareillages."},
-
-    {"id": "T-GET-040", "designation": "Armoires variateurs 1-2 et 3-4", "entreprise": "GETECH", "systeme": "TGBT", "phase": "P3", "locaux": ["CENT.N-2.08", "CENT.N-2.13"], "duree_classe": "mois", "date_connue": null,
-     "predecesseurs": [{"id": "T-GET-020", "lien": "DD", "raison": "Même campagne de livraison, à confirmer"}], "statut": "a_confirmer"},
-
-    {"id": "T-GET-050", "designation": "Armoires et coffrets de commande (15 unités)", "entreprise": "GETECH", "systeme": "MCR", "phase": "P3", "locaux": ["CENT.N-2.21", "CENT.N-2.04", "CENT.N-2.19", "CENT.N-2.03", "CENT.N-2.08", "CENT.N-2.13"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-ANT-025", "lien": "FD", "raison": "Socles de 100 mm coulés"},
-       {"id": "T-GET-040", "lien": "DD", "raison": "Même campagne"}],
-     "statut": "a_confirmer", "notes": "Voir data/armoires.json. 5 armoires sur 15 n'ont pas encore de local attribué, dont celle de la ventilation de secours et celle de l'accumulateur. Voir Q-16."},
-
-    {"id": "T-GET-060", "designation": "Câblage de puissance des PAC", "entreprise": "GETECH", "systeme": "IEG", "phase": "P4", "locaux": ["CENT.N-2.07", "CENT.N-2.10", "CENT.N-2.12", "CENT.N-2.15"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-GET-030", "lien": "FD", "raison": "Chemins de câbles posés"},
-       {"id": "T-GET-040", "lien": "FD", "raison": "Variateurs en place pour tirer aux deux extrémités"},
-       {"id": "T-WET-040", "lien": "FD", "raison": "Machines en place"}],
-     "statut": "a_confirmer"},
-
-    {"id": "T-GET-070", "designation": "Détection incendie et détection gaz NH3 / CO2", "entreprise": "GETECH", "systeme": "DI", "phase": "P4", "locaux": ["*"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-GET-030", "lien": "FD", "raison": "Supports de câblage disponibles"}],
-     "statut": "a_confirmer", "notes": "À TRANCHER : la détection gaz NH3 et CO2 est-elle dans ce lot, chez Wettstein, ou chez Despraz ? C'est une sécurité des personnes qui pilote la ventilation de secours. Voir Q-05."},
-
-    {"id": "T-GET-080", "designation": "Mise sous tension MT/BT et TGBT", "entreprise": "GETECH", "systeme": "TGBT", "phase": "P5", "locaux": ["CENT.N-2.01", "CENT.N-2.04"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-GET-010", "lien": "FD", "raison": "Poste MT terminé"},
-       {"id": "T-GET-020", "lien": "FD", "raison": "TGBT terminé"},
-       {"id": "T-GE-020", "lien": "FD", "raison": "Raccordement au réseau extérieur effectif"},
-       {"id": "T-HAL-010", "lien": "FD", "raison": "Ventilation hygiénique et free-cooling du local MT disponibles : c'est ce qui permet la première mise sous tension avant que le froid CO2 ne soit en service"}],
-     "statut": "a_confirmer", "notes": "JALON MAJEUR. Voir Q-07 : le free-cooling suffit-il à la première mise sous tension, le froid CO2 ne venant qu'ensuite pour la pleine charge ?"},
-
-    {"id": "T-GET-090", "designation": "Mise en charge nominale des variateurs", "entreprise": "GETECH", "systeme": "TGBT", "phase": "P6", "locaux": ["CENT.N-2.08", "CENT.N-2.13"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-GET-080", "lien": "FD", "raison": "Tension disponible"},
-       {"id": "T-DES-020", "lien": "FD", "raison": "RÈGLE DURE : les variateurs ne tournent pas en charge sans leur refroidissement (70 kW par local var/com)"}],
-     "statut": "a_confirmer"},
-
-    {"id": "T-GE-020", "designation": "Raccordement extérieur (MT réseau et conduites CAD)", "entreprise": "GE", "systeme": "RACC-EXT", "phase": "P3", "locaux": ["CENT.N+0.03"], "duree_classe": "mois", "date_connue": null, "predecesseurs": [], "statut": "a_confirmer",
-     "notes": "À coordonner avec la surface bituminée (3'352 m2) et la rampe, qui sert aussi d'itinéraire de manutention."},
-
-    {"id": "T-GE-030", "designation": "Automates et régulation MCR (API, RIO, HMI, Scada)", "entreprise": "GE", "systeme": "MCR", "phase": "P4", "locaux": ["CENT.N-2.21", "CENT.N-2.09", "CENT.N-2.14"], "duree_classe": "mois", "date_connue": null,
-     "predecesseurs": [{"id": "T-GET-050", "lien": "FD", "raison": "Armoires en place"}],
-     "statut": "a_confirmer", "notes": "Concept MCR : API General, HMI, RIO 1 Distribution, RIO 2 Accu, RIO 3 PAC 1, RIO 4 PAC 2, API STAP. Profinet/Modbus IP, MBUS/Modbus RTU, Scada IEC 104. Concept daté de février 2024, à revalider. Voir Q-17."},
-
-    {"id": "T-GE-040", "designation": "Raccordement des sondes et actionneurs (hors accumulateur)", "entreprise": "GE", "systeme": "MCR", "phase": "P4", "locaux": ["*"], "duree_classe": "mois", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-ENT-010", "lien": "FD", "raison": "Tuyauterie posée, doigts de gant disponibles"},
-       {"id": "T-DES-010", "lien": "FD", "raison": "Réseau CO2 posé"},
-       {"id": "T-GE-030", "lien": "DD", "raison": "Même entreprise"}],
-     "statut": "a_confirmer", "notes": "Comprend les 4 sondes de température intérieure centrale (rez et galerie) du synoptique chaud. Doit précéder le calorifugeage."},
-
-    {"id": "T-GE-050", "designation": "Essais de boucles et de régulation", "entreprise": "GE", "systeme": "MCR", "phase": "P6", "locaux": ["*"], "duree_classe": "mois", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-GE-040", "lien": "FD", "raison": "Instrumentation raccordée"},
-       {"id": "T-GET-080", "lien": "FD", "raison": "Alimentation disponible"}],
-     "statut": "a_confirmer"},
-
-    {"id": "T-GE-060", "designation": "Essais fonctionnels intégrés et mise en service des PAC", "entreprise": "GE", "systeme": "MCR", "phase": "P6", "locaux": ["*"], "duree_classe": "mois", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-GE-050", "lien": "FD", "raison": "Boucles validées"},
-       {"id": "T-WET-060", "lien": "FD", "raison": "Circuits NH3 chargés"},
-       {"id": "T-DES-050", "lien": "FD", "raison": "Circuit CO2 chargé"},
-       {"id": "T-ENT-070", "lien": "FD", "raison": "Hydraulique éprouvée et remplie"},
-       {"id": "T-HAL-040", "lien": "FD", "raison": "Ventilation en service"},
-       {"id": "T-GET-090", "lien": "FD", "raison": "Variateurs en charge nominale"}],
-     "statut": "a_confirmer", "notes": "Campagne à cinq entreprises simultanées (Wettstein, Despraz, Entretec, Groupe E Tech, Groupe E). À planifier comme une campagne, pas comme une tâche. Pilote à désigner, voir Q-10."},
-
-    {"id": "T-STA-010", "designation": "STAP - génie civil, équipements et armoire de commande", "entreprise": "A DEFINIR", "systeme": "STAP", "phase": "P3", "locaux": ["STAP"], "duree_classe": "trimestre", "date_connue": null, "predecesseurs": [], "statut": "HORS_PERIMETRE_CONNU",
-     "notes": "Le synoptique chaud s'intitule 'Centrale PAC 18MW (STAP et Centrale)' et la liste des armoires comporte une armoire STAP (1200x2000x400, 400/230 V, socle 100 mm, API STAP au concept MCR). La STAP est donc dans le périmètre du projet, mais absente de la maquette architecturale et de la liste des adjudications communiquée. Voir Q-18."},
-
-    {"id": "T-RIE-010", "designation": "Installations sanitaires", "entreprise": "RIEDO", "systeme": "SAN", "phase": "P2", "locaux": ["CENT.N-2.23", "CENT.N-2.22"], "duree_classe": "quinzaine", "date_connue": null, "predecesseurs": [], "statut": "a_confirmer",
-     "notes": "Lot très localisé : 3,5 m2 de sanitaire et 9,1 m2 de vestiaire. Large marge de calage."},
-
-    {"id": "T-ANS-010", "designation": "Fenêtres", "entreprise": "ANSERMOT", "systeme": "MEN", "phase": "P0", "locaux": ["*"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-ANT-010", "lien": "FD", "raison": "Supports et tableaux terminés"}], "statut": "non_adjuge",
-     "notes": "Mise hors d'air nécessaire avant mise sous tension durable des équipements électriques."},
-
-    {"id": "T-ANS-020", "designation": "Serrurerie : garde-corps, échelles, caillebotis", "entreprise": "ANSERMOT", "systeme": "SER", "phase": "P2", "locaux": ["*"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-ANT-010", "lien": "FD", "raison": "Supports béton disponibles"}], "statut": "non_adjuge",
-     "notes": "À scinder : garde-corps au plus tôt pour la sécurité des autres lots, caillebotis après les réseaux qu'ils surplombent."},
-
-    {"id": "T-ANS-030", "designation": "Portes intérieures", "entreprise": "ANSERMOT", "systeme": "MEN", "phase": "P4", "locaux": ["*"], "duree_classe": "quinzaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-GET-030", "lien": "FD", "raison": "Réseaux passés : une porte posée tôt est une porte abîmée ou démontée"}], "statut": "non_adjuge",
-     "notes": "Les locaux NH3 et CO2 ont probablement des exigences spécifiques (sens d'ouverture, résistance, étanchéité). À vérifier avec le concept de sécurité."},
-
-    {"id": "T-ANS-040", "designation": "Portes du chemin de manutention", "entreprise": "ANSERMOT", "systeme": "MEN", "phase": "P5", "locaux": ["CENT.N-2.25", "CENT.N-2.26", "CENT.N-2.11"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [{"id": "T-WET-040", "lien": "FD", "raison": "Après le dernier colis lourd"}], "statut": "non_adjuge"},
-
-    {"id": "T-REC-010", "designation": "Réception de l'installation", "entreprise": "GE", "systeme": "RECEPTION", "phase": "P6", "locaux": ["*"], "duree_classe": "semaine", "date_connue": null,
-     "predecesseurs": [
-       {"id": "T-GE-060", "lien": "FD", "raison": "Essais fonctionnels concluants"},
-       {"id": "T-CAL-010", "lien": "FD", "raison": "Accumulateur isolé"},
-       {"id": "T-CAL-020", "lien": "FD", "raison": "Tuyauteries calorifugées"},
-       {"id": "T-ANS-040", "lien": "FD", "raison": "Bâtiment refermé"},
-       {"id": "T-HAL-050", "lien": "FD", "raison": "Systèmes de sécurité réceptionnés"}],
-     "statut": "a_confirmer"}
+    {
+      "id": "T-ANT-010",
+      "designation": "Achèvement béton, étanchéité et enveloppe",
+      "entreprise": "ANTIGLIO",
+      "systeme": "GC",
+      "phase": "P0",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [],
+      "statut": "en_cours",
+      "duree_semaines": 8
+    },
+    {
+      "id": "T-ANT-020",
+      "designation": "Socles et massifs PAC 1 à 4",
+      "entreprise": "ANTIGLIO",
+      "systeme": "GC",
+      "phase": "P0",
+      "locaux": [
+        "CENT.N-2.07",
+        "CENT.N-2.10",
+        "CENT.N-2.12",
+        "CENT.N-2.15"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ANT-010",
+          "lien": "DD",
+          "raison": "Travaux de même nature, même entreprise"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Socles mûrs avant mise en charge. Délai de cure à faire confirmer par Wettstein.",
+      "duree_semaines": 3
+    },
+    {
+      "id": "T-ANT-025",
+      "designation": "Socles armoires et coffrets (100 mm)",
+      "entreprise": "ANTIGLIO",
+      "systeme": "GC",
+      "phase": "P0",
+      "locaux": [
+        "CENT.N-2.21",
+        "CENT.N-2.04",
+        "CENT.N-2.19"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ANT-010",
+          "lien": "DD",
+          "raison": "Même entreprise"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Les armoires 1, 2, 3, 14 et 15 reposent sur socle 100 mm (liste des armoires).",
+      "duree_semaines": 2
+    },
+    {
+      "id": "T-ANT-030",
+      "designation": "Réservations et percements",
+      "entreprise": "ANTIGLIO",
+      "systeme": "GC",
+      "phase": "P0",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [],
+      "statut": "a_confirmer",
+      "duree_semaines": 3
+    },
+    {
+      "id": "T-ANT-035",
+      "designation": "Rebouchages et calfeutrements coupe-feu",
+      "entreprise": "ANTIGLIO",
+      "systeme": "GC",
+      "phase": "P5",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-GET-030",
+          "lien": "FD",
+          "raison": "Dernier réseau passé : on ne rebouche qu'une fois tous les percements traversés"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Les clapets coupe-feu (CCF) des schémas 41, 42 et 43 supposent une sectorisation achevée et contrôlée.",
+      "duree_semaines": 3
+    },
+    {
+      "id": "T-ANT-040",
+      "designation": "Fermeture de l'accès de manutention",
+      "entreprise": "ANTIGLIO",
+      "systeme": "GC",
+      "phase": "P1",
+      "locaux": [
+        "CENT.N-2.25",
+        "CENT.N-2.26"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-WET-040",
+          "lien": "FD",
+          "raison": "Dernier colis lourd rentré"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Voir Q-01 : l'itinéraire réel reste à confirmer.",
+      "duree_semaines": 1
+    },
+    {
+      "id": "T-BIL-010",
+      "designation": "Montage de l'accumulateur chaud",
+      "entreprise": "BILFINGER",
+      "systeme": "ACC",
+      "phase": "P1",
+      "locaux": [
+        "CENT.N-2.24"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [],
+      "statut": "en_cours",
+      "notes": "Accumulateur chaud 5'000 kW, 2 x 2.5 MW. PLAN N-2 : diametre 8 m (9 m une fois isole), HAUTEUR 19 m. Il traverse donc plusieurs niveaux et se monte sur place : ce n'est pas un colis de manutention.",
+      "duree_semaines": 12
+    },
+    {
+      "id": "T-BIL-020",
+      "designation": "Épreuve de pression de l'accumulateur",
+      "entreprise": "BILFINGER",
+      "systeme": "ACC",
+      "phase": "P5",
+      "locaux": [
+        "CENT.N-2.24"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": "2026-11-30",
+      "predecesseurs": [
+        {
+          "id": "T-BIL-010",
+          "lien": "FD",
+          "raison": "Enveloppe terminée avant mise sous pression"
+        }
+      ],
+      "statut": "date_ferme",
+      "notes": "SEULE DATE FERME DU DOSSIER. Sert d'ancrage au calage.",
+      "duree_semaines": 1
+    },
+    {
+      "id": "T-GE-010",
+      "designation": "Raccordement des sondes de l'accumulateur",
+      "entreprise": "GE",
+      "systeme": "ACC",
+      "phase": "P4",
+      "locaux": [
+        "CENT.N-2.24"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-BIL-020",
+          "lien": "FD",
+          "raison": "Épreuve réalisée avant instrumentation définitive"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "RIO 2 - Accu du concept MCR : 6 circuits instrumentés. Les doigts de gant doivent être posés et repérés avant calorifugeage.",
+      "duree_semaines": 1
+    },
+    {
+      "id": "T-CAL-010",
+      "designation": "Calorifugeage de l'accumulateur",
+      "entreprise": "CALORIFUGEAGE",
+      "systeme": "ACC",
+      "phase": "P5",
+      "locaux": [
+        "CENT.N-2.24"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-BIL-020",
+          "lien": "FD",
+          "raison": "On n'isole pas avant d'avoir éprouvé : une reprise de fuite impose de déshabiller"
+        },
+        {
+          "id": "T-GE-010",
+          "lien": "FD",
+          "raison": "Sondes et doigts de gant posés, sinon on rouvre l'isolation"
+        }
+      ],
+      "statut": "BLOQUE",
+      "notes": "ALERTE : lot non adjuge, qui suit immediatement une date ferme. PLAN N-2 : l'accumulateur fait 19 m de haut pour 8 m de diametre, soit environ 500 m2 d'isolation en hauteur (passage de 8 a 9 m isole). C'est un chantier d'acces en hauteur, pas un appoint de calorifugeage.",
+      "duree_semaines": 6
+    },
+    {
+      "id": "T-WET-010",
+      "designation": "Manutention et pose PAC 1 (NH3)",
+      "entreprise": "WETTSTEIN",
+      "systeme": "PAC-1",
+      "phase": "P1",
+      "locaux": [
+        "CENT.N-2.07"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ANT-020",
+          "lien": "FD",
+          "raison": "Socle béton mûr avant mise en charge"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "PLAN N-2 : l'acces se fait par la rampe exterieure (12% puis 6%), le couvert N-2.25, puis la porte 20 (type B, EI60) de 3.50 m de large sur 4.00 m de haut donnant dans PAC 4. Gabarit limite : 3.50 x 4.00 m. Q-01 et Q-02 repondues pour l'itineraire ; restent les dimensions hors-tout des machines.",
+      "duree_semaines": 3
+    },
+    {
+      "id": "T-WET-020",
+      "designation": "Manutention et pose PAC 2 (NH3)",
+      "entreprise": "WETTSTEIN",
+      "systeme": "PAC-2",
+      "phase": "P1",
+      "locaux": [
+        "CENT.N-2.10"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ANT-020",
+          "lien": "FD",
+          "raison": "Socle béton mûr"
+        },
+        {
+          "id": "T-WET-010",
+          "lien": "FD",
+          "raison": "Même moyen de levage"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "PLAN N-2 : l'acces se fait par la rampe exterieure (12% puis 6%), le couvert N-2.25, puis la porte 20 (type B, EI60) de 3.50 m de large sur 4.00 m de haut donnant dans PAC 4. Gabarit limite : 3.50 x 4.00 m. Q-01 et Q-02 repondues pour l'itineraire ; restent les dimensions hors-tout des machines.",
+      "duree_semaines": 3
+    },
+    {
+      "id": "T-WET-030",
+      "designation": "Manutention et pose PAC 3 (NH3)",
+      "entreprise": "WETTSTEIN",
+      "systeme": "PAC-3",
+      "phase": "P1",
+      "locaux": [
+        "CENT.N-2.12"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-WET-020",
+          "lien": "FD",
+          "raison": "Même moyen de levage"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "PLAN N-2 : l'acces se fait par la rampe exterieure (12% puis 6%), le couvert N-2.25, puis la porte 20 (type B, EI60) de 3.50 m de large sur 4.00 m de haut donnant dans PAC 4. Gabarit limite : 3.50 x 4.00 m. Q-01 et Q-02 repondues pour l'itineraire ; restent les dimensions hors-tout des machines.",
+      "duree_semaines": 3
+    },
+    {
+      "id": "T-WET-040",
+      "designation": "Manutention et pose PAC 4 (NH3)",
+      "entreprise": "WETTSTEIN",
+      "systeme": "PAC-4",
+      "phase": "P1",
+      "locaux": [
+        "CENT.N-2.15"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-WET-030",
+          "lien": "FD",
+          "raison": "Même moyen de levage"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "PLAN N-2 : l'acces se fait par la rampe exterieure (12% puis 6%), le couvert N-2.25, puis la porte 20 (type B, EI60) de 3.50 m de large sur 4.00 m de haut donnant dans PAC 4. Gabarit limite : 3.50 x 4.00 m. Q-01 et Q-02 repondues pour l'itineraire ; restent les dimensions hors-tout des machines.",
+      "duree_semaines": 3
+    },
+    {
+      "id": "T-WET-050",
+      "designation": "Épreuve d'étanchéité des circuits NH3",
+      "entreprise": "WETTSTEIN",
+      "systeme": "NH3",
+      "phase": "P5",
+      "locaux": [
+        "CENT.N-2.07",
+        "CENT.N-2.10",
+        "CENT.N-2.12",
+        "CENT.N-2.15"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-WET-040",
+          "lien": "FD",
+          "raison": "Machines en place et assemblées"
+        }
+      ],
+      "statut": "a_confirmer",
+      "duree_semaines": 2
+    },
+    {
+      "id": "T-WET-060",
+      "designation": "Charge en NH3 des PAC 1 à 4",
+      "entreprise": "WETTSTEIN",
+      "systeme": "NH3",
+      "phase": "P5",
+      "locaux": [
+        "CENT.N-2.07",
+        "CENT.N-2.10",
+        "CENT.N-2.12",
+        "CENT.N-2.15"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-WET-050",
+          "lien": "FD",
+          "raison": "Étanchéité prouvée"
+        },
+        {
+          "id": "T-HAL-050",
+          "lien": "FD",
+          "raison": "RÈGLE DE SÉCURITÉ : ventilation de secours et détection NH3 en service avant toute introduction d'ammoniac dans le bâtiment"
+        },
+        {
+          "id": "T-GET-080",
+          "lien": "FD",
+          "raison": "Machines alimentables"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "L'ammoniac est toxique et inflammable. La ventilation de secours extrait 5'500 m3/h par local PAC en cas de fuite NH3.",
+      "duree_semaines": 1
+    },
+    {
+      "id": "T-DES-005",
+      "designation": "Centrales froid CO2 n°1 et n°2",
+      "entreprise": "DESPRAZ",
+      "systeme": "FROID-CO2",
+      "phase": "P1",
+      "locaux": [
+        "CENT.N-2.09",
+        "CENT.N-2.14"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ANT-010",
+          "lien": "FD",
+          "raison": "Locaux disponibles"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "CONTRADICTION DE DOCUMENTS : la maquette ARC nomme N-2.09 et N-2.14 'Commande 1-2' et 'Commande 3-4', les schémas Groupe E les nomment 'Centrale froid n°1' et 'n°2'. Voir Q-13.",
+      "duree_semaines": 10
+    },
+    {
+      "id": "T-DES-010",
+      "designation": "Tuyauterie CO2 jusqu'aux echangeurs froid",
+      "entreprise": "DESPRAZ",
+      "systeme": "FROID-CO2",
+      "phase": "P2",
+      "locaux": [
+        "CENT.N-2.05",
+        "CENT.N-2.06",
+        "CENT.N-2.16"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-WET-040",
+          "lien": "FD",
+          "raison": "Itinéraire de manutention libéré"
+        },
+        {
+          "id": "T-DES-005",
+          "lien": "DD",
+          "raison": "Même entreprise, réseau tiré depuis les centrales froid"
+        },
+        {
+          "id": "T-ENT-010",
+          "lien": "DD",
+          "raison": "Passe après les gros diamètres hydrauliques dans les volumes partagés"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Limite de prestation : Despraz pose les conduites CO2 jusqu'aux echangeurs froid. L'hydraulique en aval est chez Entretec. Local d'introduction CO2 : N-2.05. PN6, 3 bars.",
+      "duree_semaines": 12
+    },
+    {
+      "id": "T-DES-015",
+      "designation": "Echangeurs froid PAC 1 a 4",
+      "entreprise": "DESPRAZ",
+      "systeme": "FROID-CO2",
+      "phase": "P2",
+      "locaux": [
+        "CENT.N-2.07",
+        "CENT.N-2.10",
+        "CENT.N-2.12",
+        "CENT.N-2.15"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-DES-010",
+          "lien": "DD",
+          "raison": "Même campagne de tuyauterie"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Fournis et poses par Despraz. 180 kW par echangeur pour PAC 1-2, 110 kW pour PAC 3-4. Interface directe avec le circuit hydraulique froid d'Entretec (T-ENT-090).",
+      "duree_semaines": 6
+    },
+    {
+      "id": "T-ENT-090",
+      "designation": "Froid process hydraulique et armoires de refroidissement des locaux",
+      "entreprise": "ENTRETEC",
+      "systeme": "FROID-HYD",
+      "phase": "P2",
+      "locaux": [
+        "CENT.N-2.01",
+        "CENT.N-2.03",
+        "CENT.N-2.04",
+        "CENT.N-2.08",
+        "CENT.N-2.13",
+        "CENT.N-2.18",
+        "CENT.N-2.19"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-DES-015",
+          "lien": "FD",
+          "raison": "Echangeurs froid poses : l'hydraulique se raccorde dessus"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Circuit hydraulique froid 16/21 degres en aval des echangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Conditionne la mise en charge nominale des variateurs.",
+      "duree_semaines": 12
+    },
+    {
+      "id": "T-DES-030",
+      "designation": "Épreuve d'étanchéité du circuit CO2",
+      "entreprise": "DESPRAZ",
+      "systeme": "FROID-CO2",
+      "phase": "P5",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-DES-015",
+          "lien": "FD",
+          "raison": "Toutes les soudures terminées : une seule reprise invalide l'épreuve"
+        },
+        {
+          "id": "T-ENT-090",
+          "lien": "FD",
+          "raison": "Circuit complet, armoires de refroidissement raccordées"
+        }
+      ],
+      "statut": "a_confirmer",
+      "duree_semaines": 2
+    },
+    {
+      "id": "T-DES-040",
+      "designation": "Tirage au vide du circuit CO2",
+      "entreprise": "DESPRAZ",
+      "systeme": "FROID-CO2",
+      "phase": "P5",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-DES-030",
+          "lien": "FD",
+          "raison": "Étanchéité prouvée avant mise sous vide"
+        }
+      ],
+      "statut": "a_confirmer",
+      "duree_semaines": 1
+    },
+    {
+      "id": "T-DES-050",
+      "designation": "Charge en CO2",
+      "entreprise": "DESPRAZ",
+      "systeme": "FROID-CO2",
+      "phase": "P5",
+      "locaux": [
+        "CENT.N-2.05"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-DES-040",
+          "lien": "FD",
+          "raison": "Vide tenu"
+        },
+        {
+          "id": "T-HAL-050",
+          "lien": "FD",
+          "raison": "RÈGLE DE SÉCURITÉ : ventilation de secours et détection CO2 en service avant charge (12'100 m3/h d'extraction par local en cas de fuite)"
+        },
+        {
+          "id": "T-GET-080",
+          "lien": "FD",
+          "raison": "Centrales froid alimentables"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Charge par le local d'introduction CO2 N-2.05.",
+      "duree_semaines": 1
+    },
+    {
+      "id": "T-ENT-010",
+      "designation": "Tuyauterie hydraulique chaud (sections 00 à 06)",
+      "entreprise": "ENTRETEC",
+      "systeme": "HYD-CHAUD",
+      "phase": "P2",
+      "locaux": [
+        "CENT.N-2.19"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-WET-040",
+          "lien": "FD",
+          "raison": "Itinéraire de manutention libéré"
+        },
+        {
+          "id": "T-HAL-010",
+          "lien": "DD",
+          "raison": "Passe après la ventilation dans les volumes partagés, mais peut démarrer en local dédié"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "PN16, pression statique 11 bars. Circulateurs Grundfos NBG 484 kg, vannes de régulation RTK 401 kg : manutention interne à prévoir.",
+      "duree_semaines": 16
+    },
+    {
+      "id": "T-ENT-020",
+      "designation": "Vases d'expansion (section 07)",
+      "entreprise": "ENTRETEC",
+      "systeme": "EXPANSION",
+      "phase": "P1",
+      "locaux": [
+        "CENT.N-2.19"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ANT-010",
+          "lien": "FD",
+          "raison": "Local disponible"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "7 vases de 5'000 L. À traiter comme de la manutention lourde, pas comme de la tuyauterie : même contrainte de gabarit que les PAC. Voir Q-02.",
+      "duree_semaines": 3
+    },
+    {
+      "id": "T-ENT-030",
+      "designation": "Pompage PAC",
+      "entreprise": "ENTRETEC",
+      "systeme": "HYD-CHAUD",
+      "phase": "P2",
+      "locaux": [
+        "CENT.N-2.18"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ENT-010",
+          "lien": "DD",
+          "raison": "Même entreprise, réseaux coordonnés"
+        }
+      ],
+      "statut": "a_confirmer",
+      "duree_semaines": 4
+    },
+    {
+      "id": "T-ENT-040",
+      "designation": "Raccordement hydraulique chaud sur PAC 1 à 4",
+      "entreprise": "ENTRETEC",
+      "systeme": "HYD-CHAUD",
+      "phase": "P4",
+      "locaux": [
+        "CENT.N-2.07",
+        "CENT.N-2.10",
+        "CENT.N-2.12",
+        "CENT.N-2.15"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-WET-040",
+          "lien": "FD",
+          "raison": "Machines posées et calées : le raccordement se relève sur l'ouvrage réel"
+        },
+        {
+          "id": "T-ENT-010",
+          "lien": "FD",
+          "raison": "Réseau amont réalisé"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Limite de prestation confirmée : Wettstein livre la machine dans le local, Entretec vient s'y raccorder.",
+      "duree_semaines": 4
+    },
+    {
+      "id": "T-ENT-050",
+      "designation": "Raccordement hydraulique sur accumulateur",
+      "entreprise": "ENTRETEC",
+      "systeme": "ACC",
+      "phase": "P4",
+      "locaux": [
+        "CENT.N-2.24"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-BIL-020",
+          "lien": "FD",
+          "raison": "Épreuve de l'enveloppe avant raccordement des réseaux"
+        }
+      ],
+      "statut": "a_confirmer",
+      "duree_semaines": 2
+    },
+    {
+      "id": "T-ENT-055",
+      "designation": "Départ CAD et départ ZI (étape 1)",
+      "entreprise": "ENTRETEC",
+      "systeme": "HYD-CHAUD",
+      "phase": "P4",
+      "locaux": [
+        "CENT.N-2.19"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ENT-010",
+          "lien": "FD",
+          "raison": "Collecteurs réalisés"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Le synoptique distingue 'Départ ZI 19.119 - Etape 1 / Final' et 'Départ CADFR - Etape 1 / Final'. Le projet est phasé. Voir Q-14.",
+      "duree_semaines": 4
+    },
+    {
+      "id": "T-ENT-060",
+      "designation": "Rinçage et remplissage des réseaux hydrauliques",
+      "entreprise": "ENTRETEC",
+      "systeme": "HYD-CHAUD",
+      "phase": "P5",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ENT-010",
+          "lien": "FD",
+          "raison": "Réseau complet"
+        },
+        {
+          "id": "T-ENT-030",
+          "lien": "FD",
+          "raison": "Pompes posées pour assurer la circulation de rinçage"
+        },
+        {
+          "id": "T-ENT-020",
+          "lien": "FD",
+          "raison": "Expansion en service avant mise en eau"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "RÈGLE DURE : rincer AVANT de raccorder définitivement aux échangeurs des PAC.",
+      "duree_semaines": 2
+    },
+    {
+      "id": "T-ENT-070",
+      "designation": "Épreuve de pression des réseaux hydrauliques",
+      "entreprise": "ENTRETEC",
+      "systeme": "HYD-CHAUD",
+      "phase": "P5",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ENT-060",
+          "lien": "FD",
+          "raison": "Réseau rempli"
+        }
+      ],
+      "statut": "a_confirmer",
+      "duree_semaines": 1
+    },
+    {
+      "id": "T-ENT-080",
+      "designation": "Raccordement des chaufferies mobiles gaz (2 x 2.5 MW)",
+      "entreprise": "ENTRETEC",
+      "systeme": "HYD-CHAUD",
+      "phase": "P4",
+      "locaux": [
+        "CENT.N+0.03"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ENT-055",
+          "lien": "FD",
+          "raison": "Collecteurs de départ disponibles"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "LEVIER DE PLANNING : échangeurs PN6/PN25 sur le synoptique chaud. Les chaufferies mobiles permettent d'alimenter le CAD avant que les PAC soient en service, donc de découpler la date de livraison de chaleur de celle de la mise en service des machines. Voir Q-15.",
+      "duree_semaines": 3
+    },
+    {
+      "id": "T-CAL-020",
+      "designation": "Calorifugeage des tuyauteries chaud et froid",
+      "entreprise": "CALORIFUGEAGE",
+      "systeme": "HYD-CHAUD",
+      "phase": "P5",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ENT-070",
+          "lien": "FD",
+          "raison": "On n'isole pas une tuyauterie non éprouvée"
+        },
+        {
+          "id": "T-GE-040",
+          "lien": "FD",
+          "raison": "Instrumentation posée avant habillage"
+        }
+      ],
+      "statut": "BLOQUE",
+      "notes": "ALERTE : lot non adjugé et bloquant pour la réception.",
+      "duree_semaines": 10
+    },
+    {
+      "id": "T-HAL-010",
+      "designation": "Ventilation hygiénique - réseaux (section 42)",
+      "entreprise": "HALG",
+      "systeme": "VENT-HYG",
+      "phase": "P2",
+      "locaux": [
+        "CENT.N-2.01",
+        "CENT.N-2.03",
+        "CENT.N-2.04",
+        "CENT.N-2.08",
+        "CENT.N-2.13",
+        "CENT.N-2.18",
+        "CENT.N-2.19",
+        "CENT.N-1.02"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-WET-040",
+          "lien": "FD",
+          "raison": "L'itinéraire de manutention reste libre jusqu'à la dernière machine"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Premier des réseaux : le plus encombrant et le moins déformable. Débits : MT 1'240, hydraulique chaud 890, TGBT 790 m3/h. Comprend le free-cooling du local MT.",
+      "duree_semaines": 12
+    },
+    {
+      "id": "T-HAL-020",
+      "designation": "Ventilation commande, WC, vestiaire (section 41)",
+      "entreprise": "HALG",
+      "systeme": "VENT-WC",
+      "phase": "P2",
+      "locaux": [
+        "CENT.N-2.21",
+        "CENT.N-2.22",
+        "CENT.N-2.23",
+        "CENT.N-1.07"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-HAL-010",
+          "lien": "DD",
+          "raison": "Même entreprise"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "75 m3/h vestiaire et sanitaires. Lot localisé, large marge de calage.",
+      "duree_semaines": 3
+    },
+    {
+      "id": "T-HAL-030",
+      "designation": "Ventilation de sécurité CO2/NH3 - réseaux (section 43)",
+      "entreprise": "HALG",
+      "systeme": "VENT-SECU",
+      "phase": "P2",
+      "locaux": [
+        "CENT.N-2.05",
+        "CENT.N-2.07",
+        "CENT.N-2.10",
+        "CENT.N-2.12",
+        "CENT.N-2.15",
+        "CENT.N-1.02",
+        "CENT.N-1.03"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-HAL-010",
+          "lien": "DD",
+          "raison": "Même entreprise, réseaux coordonnés"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "SYSTÈME DE SÉCURITÉ. Cheminée d'extraction de secours dédiée, gaines galvanisées étanchéité classe D, clapets coupe-feu. Extraction fuite NH3 5'500 m3/h et fuite CO2 12'100 m3/h par local. Schéma encore en pré-exécution (16.10.2026).",
+      "duree_semaines": 10
+    },
+    {
+      "id": "T-HAL-040",
+      "designation": "Mise en service de la ventilation hygiénique et WC",
+      "entreprise": "HALG",
+      "systeme": "VENT-HYG",
+      "phase": "P6",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-HAL-010",
+          "lien": "FD",
+          "raison": "Installation terminée"
+        },
+        {
+          "id": "T-HAL-020",
+          "lien": "FD",
+          "raison": "Installation terminée"
+        },
+        {
+          "id": "T-GET-080",
+          "lien": "FD",
+          "raison": "Alimentation définitive disponible"
+        }
+      ],
+      "statut": "a_confirmer",
+      "duree_semaines": 2
+    },
+    {
+      "id": "T-HAL-050",
+      "designation": "Mise en service et essais de la ventilation de secours et de la détection gaz",
+      "entreprise": "HALG",
+      "systeme": "VENT-SECU",
+      "phase": "P5",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-HAL-030",
+          "lien": "FD",
+          "raison": "Installation terminée"
+        },
+        {
+          "id": "T-GET-070",
+          "lien": "FD",
+          "raison": "Détection NH3 et CO2 raccordée et fonctionnelle"
+        },
+        {
+          "id": "T-GET-080",
+          "lien": "FD",
+          "raison": "Alimentation secourue disponible"
+        },
+        {
+          "id": "T-ANT-035",
+          "lien": "FD",
+          "raison": "Sectorisation coupe-feu achevée : les clapets ne valent que dans une paroi étanche"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "JALON DE SÉCURITÉ : conditionne la charge NH3 et la charge CO2. Aucun fluide frigorigène n'entre dans le bâtiment avant que ce système soit éprouvé.",
+      "duree_semaines": 3
+    },
+    {
+      "id": "T-GET-010",
+      "designation": "Infrastructure MT et transformateurs",
+      "entreprise": "GETECH",
+      "systeme": "ELEC-MT",
+      "phase": "P3",
+      "locaux": [
+        "CENT.N-2.01"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [],
+      "statut": "a_confirmer",
+      "notes": "Délai de livraison du transformateur à renseigner : candidat n°1 au chemin critique. Voir Q-04.",
+      "duree_semaines": 12
+    },
+    {
+      "id": "T-GET-020",
+      "designation": "Tableaux TGBT",
+      "entreprise": "GETECH",
+      "systeme": "TGBT",
+      "phase": "P3",
+      "locaux": [
+        "CENT.N-2.04"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [],
+      "statut": "a_confirmer",
+      "notes": "Délai de livraison à renseigner. Même contrainte de gabarit que les PAC : local à 7,00 m, circulation à 4,10 m.",
+      "duree_semaines": 12
+    },
+    {
+      "id": "T-GET-030",
+      "designation": "Chemins de câbles et IEG",
+      "entreprise": "GETECH",
+      "systeme": "IEG",
+      "phase": "P2",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-WET-040",
+          "lien": "FD",
+          "raison": "Itinéraire libéré : 905 chemins de câbles suffisent à boucher une circulation"
+        },
+        {
+          "id": "T-DES-010",
+          "lien": "DD",
+          "raison": "Dernier des réseaux : le chemin de câbles est le plus adaptable, il contourne"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Maquette ELE : 905 segments de chemin de câbles, 615 accessoires, 647 luminaires, 34 appareillages.",
+      "duree_semaines": 16
+    },
+    {
+      "id": "T-GET-040",
+      "designation": "Armoires variateurs 1-2 et 3-4",
+      "entreprise": "GETECH",
+      "systeme": "TGBT",
+      "phase": "P3",
+      "locaux": [
+        "CENT.N-2.08",
+        "CENT.N-2.13"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-GET-020",
+          "lien": "DD",
+          "raison": "Même campagne de livraison, à confirmer"
+        }
+      ],
+      "statut": "a_confirmer",
+      "duree_semaines": 8
+    },
+    {
+      "id": "T-GET-050",
+      "designation": "Armoires et coffrets de commande (15 unités)",
+      "entreprise": "GETECH",
+      "systeme": "MCR",
+      "phase": "P3",
+      "locaux": [
+        "CENT.N-2.21",
+        "CENT.N-2.04",
+        "CENT.N-2.19",
+        "CENT.N-2.03",
+        "CENT.N-2.08",
+        "CENT.N-2.13"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ANT-025",
+          "lien": "FD",
+          "raison": "Socles de 100 mm coulés"
+        },
+        {
+          "id": "T-GET-040",
+          "lien": "DD",
+          "raison": "Même campagne"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Voir data/armoires.json. 5 armoires sur 15 n'ont pas encore de local attribué, dont celle de la ventilation de secours et celle de l'accumulateur. Voir Q-16.",
+      "duree_semaines": 4
+    },
+    {
+      "id": "T-GET-060",
+      "designation": "Câblage de puissance des PAC",
+      "entreprise": "GETECH",
+      "systeme": "IEG",
+      "phase": "P4",
+      "locaux": [
+        "CENT.N-2.07",
+        "CENT.N-2.10",
+        "CENT.N-2.12",
+        "CENT.N-2.15"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-GET-030",
+          "lien": "FD",
+          "raison": "Chemins de câbles posés"
+        },
+        {
+          "id": "T-GET-040",
+          "lien": "FD",
+          "raison": "Variateurs en place pour tirer aux deux extrémités"
+        },
+        {
+          "id": "T-WET-040",
+          "lien": "FD",
+          "raison": "Machines en place"
+        }
+      ],
+      "statut": "a_confirmer",
+      "duree_semaines": 4
+    },
+    {
+      "id": "T-GET-070",
+      "designation": "Détection incendie et détection gaz NH3 / CO2",
+      "entreprise": "GETECH",
+      "systeme": "DI",
+      "phase": "P4",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-GET-030",
+          "lien": "FD",
+          "raison": "Supports de câblage disponibles"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "À TRANCHER : la détection gaz NH3 et CO2 est-elle dans ce lot, chez Wettstein, ou chez Despraz ? C'est une sécurité des personnes qui pilote la ventilation de secours. Voir Q-05.",
+      "duree_semaines": 4
+    },
+    {
+      "id": "T-GET-080",
+      "designation": "Mise sous tension MT/BT et TGBT",
+      "entreprise": "GETECH",
+      "systeme": "TGBT",
+      "phase": "P5",
+      "locaux": [
+        "CENT.N-2.01",
+        "CENT.N-2.04"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-GET-010",
+          "lien": "FD",
+          "raison": "Poste MT terminé"
+        },
+        {
+          "id": "T-GET-020",
+          "lien": "FD",
+          "raison": "TGBT terminé"
+        },
+        {
+          "id": "T-GE-020",
+          "lien": "FD",
+          "raison": "Raccordement au réseau extérieur effectif"
+        },
+        {
+          "id": "T-HAL-010",
+          "lien": "FD",
+          "raison": "Ventilation hygiénique et free-cooling du local MT disponibles : c'est ce qui permet la première mise sous tension avant que le froid CO2 ne soit en service"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "JALON MAJEUR. Voir Q-07 : le free-cooling suffit-il à la première mise sous tension, le froid CO2 ne venant qu'ensuite pour la pleine charge ?",
+      "duree_semaines": 2
+    },
+    {
+      "id": "T-GET-090",
+      "designation": "Mise en charge nominale des variateurs",
+      "entreprise": "GETECH",
+      "systeme": "TGBT",
+      "phase": "P6",
+      "locaux": [
+        "CENT.N-2.08",
+        "CENT.N-2.13"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-GET-080",
+          "lien": "FD",
+          "raison": "Tension disponible"
+        },
+        {
+          "id": "T-ENT-090",
+          "lien": "FD",
+          "raison": "RÈGLE DURE : les variateurs ne tournent pas en charge sans leur refroidissement (70 kW par local var/com)"
+        }
+      ],
+      "statut": "a_confirmer",
+      "duree_semaines": 2
+    },
+    {
+      "id": "T-GE-020",
+      "designation": "Raccordement extérieur (MT réseau et conduites CAD)",
+      "entreprise": "GE",
+      "systeme": "RACC-EXT",
+      "phase": "P3",
+      "locaux": [
+        "CENT.N+0.03"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [],
+      "statut": "a_confirmer",
+      "notes": "À coordonner avec la surface bituminée (3'352 m2) et la rampe, qui sert aussi d'itinéraire de manutention.",
+      "duree_semaines": 12
+    },
+    {
+      "id": "T-GE-030",
+      "designation": "Automates et régulation MCR (API, RIO, HMI, Scada)",
+      "entreprise": "GE",
+      "systeme": "MCR",
+      "phase": "P4",
+      "locaux": [
+        "CENT.N-2.21",
+        "CENT.N-2.09",
+        "CENT.N-2.14"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-GET-050",
+          "lien": "FD",
+          "raison": "Armoires en place"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Concept MCR : API General, HMI, RIO 1 Distribution, RIO 2 Accu, RIO 3 PAC 1, RIO 4 PAC 2, API STAP. Profinet/Modbus IP, MBUS/Modbus RTU, Scada IEC 104. Concept daté de février 2024, à revalider. Voir Q-17.",
+      "duree_semaines": 10
+    },
+    {
+      "id": "T-GE-040",
+      "designation": "Raccordement des sondes et actionneurs (hors accumulateur)",
+      "entreprise": "GE",
+      "systeme": "MCR",
+      "phase": "P4",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ENT-010",
+          "lien": "FD",
+          "raison": "Tuyauterie posée, doigts de gant disponibles"
+        },
+        {
+          "id": "T-DES-010",
+          "lien": "FD",
+          "raison": "Réseau CO2 posé"
+        },
+        {
+          "id": "T-GE-030",
+          "lien": "DD",
+          "raison": "Même entreprise"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Comprend les 4 sondes de température intérieure centrale (rez et galerie) du synoptique chaud. Doit précéder le calorifugeage.",
+      "duree_semaines": 8
+    },
+    {
+      "id": "T-GE-050",
+      "designation": "Essais de boucles et de régulation",
+      "entreprise": "GE",
+      "systeme": "MCR",
+      "phase": "P6",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-GE-040",
+          "lien": "FD",
+          "raison": "Instrumentation raccordée"
+        },
+        {
+          "id": "T-GET-080",
+          "lien": "FD",
+          "raison": "Alimentation disponible"
+        }
+      ],
+      "statut": "a_confirmer",
+      "duree_semaines": 6
+    },
+    {
+      "id": "T-GE-060",
+      "designation": "Essais fonctionnels intégrés et mise en service des PAC",
+      "entreprise": "GE",
+      "systeme": "MCR",
+      "phase": "P6",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "mois",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-GE-050",
+          "lien": "FD",
+          "raison": "Boucles validées"
+        },
+        {
+          "id": "T-WET-060",
+          "lien": "FD",
+          "raison": "Circuits NH3 chargés"
+        },
+        {
+          "id": "T-DES-050",
+          "lien": "FD",
+          "raison": "Circuit CO2 chargé"
+        },
+        {
+          "id": "T-ENT-070",
+          "lien": "FD",
+          "raison": "Hydraulique éprouvée et remplie"
+        },
+        {
+          "id": "T-HAL-040",
+          "lien": "FD",
+          "raison": "Ventilation en service"
+        },
+        {
+          "id": "T-GET-090",
+          "lien": "FD",
+          "raison": "Variateurs en charge nominale"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Campagne à cinq entreprises simultanées (Wettstein, Despraz, Entretec, Groupe E Tech, Groupe E). À planifier comme une campagne, pas comme une tâche. Pilote à désigner, voir Q-10.",
+      "duree_semaines": 8
+    },
+    {
+      "id": "T-STA-010",
+      "designation": "STAP - génie civil, équipements et armoire de commande",
+      "entreprise": "A DEFINIR",
+      "systeme": "STAP",
+      "phase": "P3",
+      "locaux": [
+        "STAP"
+      ],
+      "duree_classe": "trimestre",
+      "date_connue": null,
+      "predecesseurs": [],
+      "statut": "HORS_PERIMETRE_CONNU",
+      "notes": "Le synoptique chaud s'intitule 'Centrale PAC 18MW (STAP et Centrale)' et la liste des armoires comporte une armoire STAP (1200x2000x400, 400/230 V, socle 100 mm, API STAP au concept MCR). La STAP est donc dans le périmètre du projet, mais absente de la maquette architecturale et de la liste des adjudications communiquée. Voir Q-18.",
+      "duree_semaines": 20
+    },
+    {
+      "id": "T-RIE-010",
+      "designation": "Installations sanitaires",
+      "entreprise": "RIEDO",
+      "systeme": "SAN",
+      "phase": "P2",
+      "locaux": [
+        "CENT.N-2.23",
+        "CENT.N-2.22"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [],
+      "statut": "a_confirmer",
+      "notes": "Lot très localisé : 3,5 m2 de sanitaire et 9,1 m2 de vestiaire. Large marge de calage.",
+      "duree_semaines": 3
+    },
+    {
+      "id": "T-ANS-010",
+      "designation": "Fenêtres",
+      "entreprise": "ANSERMOT",
+      "systeme": "MEN",
+      "phase": "P0",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ANT-010",
+          "lien": "FD",
+          "raison": "Supports et tableaux terminés"
+        }
+      ],
+      "statut": "non_adjuge",
+      "notes": "Mise hors d'air nécessaire avant mise sous tension durable des équipements électriques.",
+      "duree_semaines": 3
+    },
+    {
+      "id": "T-ANS-020",
+      "designation": "Serrurerie : garde-corps, échelles, caillebotis",
+      "entreprise": "ANSERMOT",
+      "systeme": "SER",
+      "phase": "P2",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ANT-010",
+          "lien": "FD",
+          "raison": "Supports béton disponibles"
+        }
+      ],
+      "statut": "non_adjuge",
+      "notes": "À scinder : garde-corps au plus tôt pour la sécurité des autres lots, caillebotis après les réseaux qu'ils surplombent.",
+      "duree_semaines": 4
+    },
+    {
+      "id": "T-ANS-030",
+      "designation": "Portes intérieures",
+      "entreprise": "ANSERMOT",
+      "systeme": "MEN",
+      "phase": "P4",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "quinzaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-GET-030",
+          "lien": "FD",
+          "raison": "Réseaux passés : une porte posée tôt est une porte abîmée ou démontée"
+        }
+      ],
+      "statut": "non_adjuge",
+      "notes": "Les locaux NH3 et CO2 ont probablement des exigences spécifiques (sens d'ouverture, résistance, étanchéité). À vérifier avec le concept de sécurité.",
+      "duree_semaines": 3
+    },
+    {
+      "id": "T-ANS-040",
+      "designation": "Portes du chemin de manutention",
+      "entreprise": "ANSERMOT",
+      "systeme": "MEN",
+      "phase": "P5",
+      "locaux": [
+        "CENT.N-2.25",
+        "CENT.N-2.26",
+        "CENT.N-2.11"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-WET-040",
+          "lien": "FD",
+          "raison": "Après le dernier colis lourd"
+        }
+      ],
+      "statut": "non_adjuge",
+      "duree_semaines": 1
+    },
+    {
+      "id": "T-REC-010",
+      "designation": "Réception de l'installation",
+      "entreprise": "GE",
+      "systeme": "RECEPTION",
+      "phase": "P6",
+      "locaux": [
+        "*"
+      ],
+      "duree_classe": "semaine",
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-GE-060",
+          "lien": "FD",
+          "raison": "Essais fonctionnels concluants"
+        },
+        {
+          "id": "T-CAL-010",
+          "lien": "FD",
+          "raison": "Accumulateur isolé"
+        },
+        {
+          "id": "T-CAL-020",
+          "lien": "FD",
+          "raison": "Tuyauteries calorifugées"
+        },
+        {
+          "id": "T-ANS-040",
+          "lien": "FD",
+          "raison": "Bâtiment refermé"
+        },
+        {
+          "id": "T-HAL-050",
+          "lien": "FD",
+          "raison": "Systèmes de sécurité réceptionnés"
+        }
+      ],
+      "statut": "a_confirmer",
+      "duree_semaines": 2
+    }
+  ],
+  "corrections_v03": [
+    "Le froid process hydraulique est realise par Groupe E Entretec. Despraz realise les echangeurs et les conduites CO2 jusqu'aux echangeurs froid (correction du maitre d'ouvrage, 20.10.2026).",
+    "Itineraire de manutention etabli depuis le plan N-2 : rampe exterieure, couvert N-2.25, porte 20 de 3.50 x 4.00 m donnant dans PAC 4.",
+    "Accumulateur releve au plan : diametre 8 m (9 m isole), hauteur 19 m, monte sur place.",
+    "Ajout d'une duree en semaines sur chaque tache, pour permettre le calcul de dates."
   ]
 }
