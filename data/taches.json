@@ -1,5 +1,5 @@
 {
-  "version": "1.9",
+  "version": "2.1",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -402,39 +402,6 @@
       "duree_semaines": 12
     },
     {
-      "id": "T-ENT-090",
-      "designation": "Froid process hydraulique et armoires de refroidissement des locaux",
-      "entreprise": "ENTRETEC",
-      "systeme": "FROID-HYD",
-      "phase": "P2",
-      "locaux": [
-        "CENT.N-1.03",
-        "CENT.N-1.04",
-        "CENT.N-2.03",
-        "CENT.N-2.04",
-        "CENT.N-2.08",
-        "CENT.N-2.18",
-        "CENT.N-2.19"
-      ],
-      "duree_classe": "mois",
-      "date_connue": null,
-      "predecesseurs": [
-        {
-          "id": "T-DES-010",
-          "lien": "FD",
-          "raison": "Réseau CO2 posé jusqu'aux échangeurs"
-        },
-        {
-          "id": "T-DES-005",
-          "lien": "FD",
-          "raison": "Centrale froid n°1 en service"
-        }
-      ],
-      "statut": "a_confirmer",
-      "notes": "Circuit hydraulique froid 16/21 degrés en aval des échangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Réalisable dès que le réseau CO2 et la centrale froid n°1 sont en place, sans attendre l'échangeur de la PAC 2 (MO, 20.10.2026) : c'est une branche distincte du froid process. Conditionne la mise en charge nominale des variateurs. Le local MT est refroidi par l'air depuis N-2.03, et non par un piquage hydraulique direct (MO, 20.10.2026).",
-      "duree_semaines": 12
-    },
-    {
       "id": "T-ENT-041",
       "designation": "Raccordement hydraulique chaud PAC 1",
       "entreprise": "ENTRETEC",
@@ -543,6 +510,117 @@
       "notes": "180 kW par échangeur. Les locaux PAC reçoivent aussi de l'hydraulique chaud et du CO2."
     },
     {
+      "id": "T-ENT-091",
+      "designation": "Centrale de froid des locaux",
+      "entreprise": "ENTRETEC",
+      "systeme": "FROID-LOCAUX",
+      "phase": "P2",
+      "locaux": [
+        "CENT.N-2.03"
+      ],
+      "duree_classe": "mois",
+      "duree_semaines": 4,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-DES-010",
+          "lien": "FD",
+          "raison": "Réseau CO2 posé jusqu'aux échangeurs"
+        },
+        {
+          "id": "T-DES-005",
+          "lien": "FD",
+          "raison": "Centrale froid n°1 en service"
+        },
+        {
+          "id": "T-HAL-011",
+          "lien": "FD",
+          "raison": "Local refroidissement des locaux élec. : Hälg passe avant Entretec (MO, 20.10.2026)"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Local N-2.03. Le froid des locaux part d'ici ; le local MT est refroidi par l'air depuis ce local."
+    },
+    {
+      "id": "T-ENT-092",
+      "designation": "Distribution du froid dans les galeries techniques",
+      "entreprise": "ENTRETEC",
+      "systeme": "FROID-LOCAUX",
+      "phase": "P2",
+      "locaux": [
+        "CENT.N-1.03",
+        "CENT.N-1.04"
+      ],
+      "duree_classe": "mois",
+      "duree_semaines": 4,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ENT-091",
+          "lien": "FD",
+          "raison": "La centrale alimente la distribution"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Galeries N-1.03 et N-1.04. À NOTER : cette passe froid suit la ventilation dans les galeries, alors que l'ordre relevé y place l'hydraulique avant la ventilation. L'ordre relevé vaut pour les passes principales, chaud et sanitaire ; ce troisième passage est à confirmer (Q-28)."
+    },
+    {
+      "id": "T-ENT-093",
+      "designation": "Armoires de refroidissement des locaux électriques",
+      "entreprise": "ENTRETEC",
+      "systeme": "FROID-LOCAUX",
+      "phase": "P4",
+      "locaux": [
+        "CENT.N-2.04",
+        "CENT.N-2.08"
+      ],
+      "duree_classe": "mois",
+      "duree_semaines": 2,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ENT-092",
+          "lien": "FD",
+          "raison": "Distribution réalisée"
+        },
+        {
+          "id": "T-GET-040",
+          "lien": "FD",
+          "raison": "Local variateurs : Exergo passe avant Entretec (MO, 20.10.2026)"
+        },
+        {
+          "id": "T-GET-020",
+          "lien": "FD",
+          "raison": "Local TGBT : les tableaux sont posés avant"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "TGBT 10 kW, variateurs 70 kW."
+    },
+    {
+      "id": "T-ENT-094",
+      "designation": "Armoires de refroidissement des locaux process",
+      "entreprise": "ENTRETEC",
+      "systeme": "FROID-LOCAUX",
+      "phase": "P4",
+      "locaux": [
+        "CENT.N-2.18",
+        "CENT.N-2.19"
+      ],
+      "duree_classe": "mois",
+      "duree_semaines": 2,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ENT-093",
+          "lien": "FD",
+          "raison": "Même équipe, enchaînement séquentiel (MO, 20.10.2026)"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Pompage PAC 25 kW, hydraulique chaud 15 kW."
+    },
+    {
       "id": "T-DES-030",
       "designation": "Épreuve d'étanchéité du circuit CO2",
       "entreprise": "DESPRAZ",
@@ -562,7 +640,7 @@
           "raison": "Toutes les soudures terminées : une seule reprise invalide l'épreuve"
         },
         {
-          "id": "T-ENT-090",
+          "id": "T-ENT-094",
           "lien": "FD",
           "raison": "Circuit complet, armoires de refroidissement raccordées"
         }
@@ -894,33 +972,40 @@
       "duree_semaines": 10
     },
     {
-      "id": "T-HAL-010",
-      "designation": "Ventilation hygiénique - réseaux (section 42)",
+      "id": "T-HAL-011",
+      "designation": "Ventilation du local de refroidissement des locaux élec.",
       "entreprise": "HALG",
       "systeme": "VENT-HYG",
       "phase": "P2",
       "locaux": [
-        "CENT.N-1.01",
-        "CENT.N-1.02",
-        "CENT.N-1.03",
-        "CENT.N-1.04",
-        "CENT.N-1.06",
-        "CENT.N-1.07",
-        "CENT.N-2.01",
-        "CENT.N-2.03",
-        "CENT.N-2.04",
-        "CENT.N-2.05",
-        "CENT.N-2.07",
-        "CENT.N-2.08",
-        "CENT.N-2.09",
-        "CENT.N-2.10",
-        "CENT.N-2.18",
-        "CENT.N-2.19",
-        "CENT.N-2.21",
-        "CENT.N-2.22",
-        "CENT.N-2.23"
+        "CENT.N-2.03"
       ],
       "duree_classe": "mois",
+      "duree_semaines": 2,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ANT-010",
+          "lien": "FD",
+          "raison": "Local disponible"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Local N-2.03, où Hälg passe avant Entretec. Détaché du reste de la ventilation pour ne pas retenir le froid des locaux derrière douze semaines de réseaux."
+    },
+    {
+      "id": "T-HAL-012",
+      "designation": "Ventilation des galeries et locaux techniques N-1",
+      "entreprise": "HALG",
+      "systeme": "VENT-HYG",
+      "phase": "P2",
+      "locaux": [
+        "CENT.N-1.02",
+        "CENT.N-1.03",
+        "CENT.N-1.04"
+      ],
+      "duree_classe": "mois",
+      "duree_semaines": 5,
       "date_connue": null,
       "predecesseurs": [
         {
@@ -940,8 +1025,43 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Premier des réseaux : le plus encombrant et le moins déformable. Débits : MT 1'240, hydraulique chaud 890, TGBT 790 m3/h. Comprend le free-cooling du local MT. Locaux des PAC 3 et 4 retirés : équipements reportés. Hälg intervient globalement dans tous les locaux (MO, 20.10.2026), ce qui le met en concurrence avec les autres lots partout où l'on passe chacun son tour.",
-      "duree_semaines": 12
+      "notes": "Galeries techniques : l'hydraulique et le sanitaire passent avant la ventilation."
+    },
+    {
+      "id": "T-HAL-013",
+      "designation": "Ventilation hygiénique des autres locaux",
+      "entreprise": "HALG",
+      "systeme": "VENT-HYG",
+      "phase": "P2",
+      "locaux": [
+        "CENT.N-1.01",
+        "CENT.N-1.06",
+        "CENT.N-1.07",
+        "CENT.N-2.01",
+        "CENT.N-2.04",
+        "CENT.N-2.05",
+        "CENT.N-2.07",
+        "CENT.N-2.08",
+        "CENT.N-2.09",
+        "CENT.N-2.10",
+        "CENT.N-2.18",
+        "CENT.N-2.19",
+        "CENT.N-2.21",
+        "CENT.N-2.22",
+        "CENT.N-2.23"
+      ],
+      "duree_classe": "mois",
+      "duree_semaines": 5,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-HAL-012",
+          "lien": "FD",
+          "raison": "Même entreprise, enchaînement séquentiel"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Débits relevés au schéma 42 : MT 1'240, hydraulique chaud 890, TGBT 790, pompage PAC 560, refroid. loc. élec. 350, variateurs 280 m3/h."
     },
     {
       "id": "T-HAL-020",
@@ -959,7 +1079,7 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-HAL-010",
+          "id": "T-HAL-013",
           "lien": "DD",
           "raison": "Même entreprise"
         }
@@ -985,7 +1105,7 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-HAL-010",
+          "id": "T-HAL-013",
           "lien": "DD",
           "raison": "Même entreprise, réseaux coordonnés"
         },
@@ -1035,7 +1155,7 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-HAL-010",
+          "id": "T-HAL-013",
           "lien": "FD",
           "raison": "Installation terminée"
         },
@@ -1282,7 +1402,7 @@
           "raison": "Local variateurs : Exergo passe avant IEG (MO, 20.10.2026)"
         },
         {
-          "id": "T-ENT-090",
+          "id": "T-ENT-093",
           "lien": "FD",
           "raison": "Local variateurs : Entretec passe entre Exergo et IEG (MO, 20.10.2026)"
         },
@@ -1419,7 +1539,7 @@
           "raison": "Raccordement au réseau extérieur effectif"
         },
         {
-          "id": "T-HAL-010",
+          "id": "T-HAL-013",
           "lien": "FD",
           "raison": "Ventilation hygiénique et free-cooling du local MT disponibles : c'est ce qui permet la première mise sous tension avant que le froid CO2 ne soit en service"
         }
@@ -1446,7 +1566,7 @@
           "raison": "Tension disponible"
         },
         {
-          "id": "T-ENT-090",
+          "id": "T-ENT-093",
           "lien": "FD",
           "raison": "RÈGLE DURE : les variateurs ne tournent pas en charge sans leur refroidissement (70 kW par local var/com)"
         }
@@ -1890,5 +2010,12 @@
     "Bâtiment terminé à 90 %, réception à la mi-novembre 2026 : le gros œuvre sort du chemin critique.",
     "Structure principale de l'accumulateur terminée à la mi-novembre 2026.",
     "Calorifugeage de l'accumulateur à partir de décembre 2026."
+  ],
+  "corrections_v20": [
+    "Le froid process d'Entretec est découpé en quatre interventions séquentielles : centrale, galeries, locaux électriques, locaux process. Les douze semaines sont réparties 4-4-2-2, répartition proposée et non relevée."
+  ],
+  "corrections_v21": [
+    "La ventilation hygiénique de Hälg est découpée en trois : le local de refroidissement des locaux électriques, les galeries et locaux techniques N-1, puis le reste. Répartition 2-5-5 proposée et non relevée.",
+    "Le froid des locaux n'attend plus que deux semaines de ventilation au lieu de douze."
   ]
 }

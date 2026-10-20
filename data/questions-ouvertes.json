@@ -2,14 +2,25 @@
   "note": "Questions classées par priorité. Les questions résolues sont conservées avec leur réponse : l'historique des décisions fait partie du document.",
   "questions": [
     {
-      "id": "Q-27",
-      "priorite": "haute",
+      "id": "Q-28",
+      "priorite": "moyenne",
       "statut": "ouverte",
+      "sujet": "Ordre de la passe froid dans les galeries techniques",
+      "question": "Dans les galeries N-1.03 et N-1.04, la distribution du froid d'Entretec passe-t-elle après la ventilation, ou faut-il la placer avec l'hydraulique chaud ?",
+      "pourquoi": "L'ordre relevé pour les galeries est hydraulique et sanitaire, puis ventilation. Mais le découpage du froid place la distribution après la centrale, elle-même après la ventilation du local N-2.03 : le froid passe donc en troisième. Soit l'ordre relevé visait les passes principales et c'est cohérent, soit le froid doit remonter avec le chaud, et la centrale doit alors être alimentée autrement.",
+      "destinataire": "Entretec / Hälg",
+      "impact": "Cohérence de l'ordre dans le volume le plus partagé du bâtiment."
+    },
+    {
+      "id": "Q-27",
+      "priorite": "resolue",
+      "statut": "resolue",
       "sujet": "Découper le froid process d'Entretec par local",
       "question": "Faut-il découper la tâche de froid process hydroaulique d'Entretec, aujourd'hui décrite à l'échelle du bâtiment sur 12 semaines, en interventions par local ?",
       "pourquoi": "C'est le dernier obstacle au respect du « chacun son tour ». Entretec intervient dans le local variateurs et dans le refroidissement des locaux électriques, mais comme sa tâche couvre tout le bâtiment, rien n'empêche son chevauchement avec Exergo et IEG. Le découpage est possible ; appliqué tel quel, il repousserait la réception de huit semaines supplémentaires, au 31.12.2027, parce qu'il place Entretec derrière Exergo sur tout son parcours au lieu d'un seul local.",
       "destinataire": "Entretec / Maître d'ouvrage",
-      "impact": "Huit semaines si l'on séquence sans découper. Probablement beaucoup moins avec un découpage par local."
+      "impact": "Les conflits tombent de 79 à 52 semaines-locaux. Le découpage a d'abord coûté dix semaines, parce qu'Entretec attendait les douze semaines de ventilation de Hälg pour respecter un ordre dans un seul local. Découper Hälg de la même manière les a récupérées : réception toujours au 05.11.2027.",
+      "reponse": "Découpage séquentiel en quatre : centrale de froid des locaux, distribution dans les galeries, armoires des locaux électriques, armoires des locaux process (MO, 20.10.2026). La répartition 4-4-2-2 des douze semaines reste une proposition."
     },
     {
       "id": "Q-26",
@@ -33,13 +44,13 @@
     },
     {
       "id": "Q-24",
-      "priorite": "partielle",
-      "statut": "partielle",
+      "priorite": "resolue",
+      "statut": "resolue",
       "sujet": "Ordre de passage dans les locaux où l'on travaille chacun son tour",
       "question": "Dans quel ordre passent les lots des quatre locaux où vous avez déclaré « chacun son tour » — MT, TGBT, variateurs, refroidissement des locaux élec. — et la règle vaut-elle ailleurs ?",
       "pourquoi": "Le relevé des locaux étant achevé, les conflits sont maintenant mesurables : 20 locaux se chevauchent, 192 semaines-locaux au total. Le local TGBT porte six lots simultanés sur 17 semaines, les variateurs cinq sur 15, alors que ces deux locaux n'en admettent qu'un à la fois. Le planning les additionne au lieu de les enchaîner, et sous-estime donc leur durée.",
       "destinataire": "Maître d'ouvrage",
-      "impact": "Le câblage IEG des locaux électriques devient une tâche distincte, asservie à celui qui les équipe. Les conflits tombent de 13 locaux et 109 semaines-locaux à 11 et 77, et la réception recule de quatre semaines, au 05.11.2027 : c'est le coût du respect de la règle.",
+      "impact": "Le chacun son tour est désormais respecté sans coût sur la date, grâce au découpage des tâches de réseaux par local. Les conflits résiduels portent sur des locaux dont la limite n'a pas été relevée.",
       "reponse": "Ordres relevés : INFRA puis IEG au MT, TABLEAU puis IEG au TGBT, Exergo puis Entretec puis IEG aux variateurs, Hälg puis Entretec puis IEG au refroidissement des locaux électriques. Le pompage PAC admet deux entreprises (MO, 20.10.2026)."
     },
     {
