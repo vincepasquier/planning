@@ -2,7 +2,19 @@
   "note": "Questions classées par priorité. Les questions résolues sont conservées avec leur réponse : l'historique des décisions fait partie du document.",
   "questions": [
     {
-      "id": "Q-13", "priorite": "critique", "statut": "ouverte",
+      "id": "Q-21",
+      "priorite": "critique",
+      "statut": "ouverte",
+      "sujet": "Les PAC 3 et 4 relèvent-elles de l'étape 1 ?",
+      "question": "Les PAC 3 et 4 sont-elles installées dans ce marché, ou reportées à une étape ultérieure ?",
+      "pourquoi": "Trois indices convergent. Le maître d'ouvrage construit d'abord le local PAC 1 puis le local PAC 2. Le schéma de froid process marque les départs froid des PAC 3 et 4 « (réserve) ». Le concept MCR ne détaille que les RIO des PAC 1 et 2, les PAC 3 et 4 étant notées « idem ». Si ces deux machines sont différées, la moitié du jalon pivot disparaît du planning et la phase de manutention se raccourcit d'autant.",
+      "destinataire": "Maître d'ouvrage / Groupe E",
+      "impact": "Change le périmètre du marché et retire potentiellement 6 semaines de manutention du chemin critique."
+    },
+    {
+      "id": "Q-13",
+      "priorite": "critique",
+      "statut": "ouverte",
       "sujet": "Contradiction entre maquette et schémas sur N-2.09 et N-2.14",
       "question": "Les locaux N-2.09 et N-2.14 sont-ils des locaux de commande ou les centrales froid n°1 et n°2 ?",
       "pourquoi": "La maquette architecturale (Riforma, 15.07.2026) les nomme 'Commande 1 et 2' et 'Commande 3 et 4'. Les schémas de ventilation Groupe E (25.03.2026) les nomment 'Centrale froid n°1' et 'Centrale froid n°2'. La liste des armoires place par ailleurs les coffrets PAC en N-2.08 et N-2.13, pas en N-2.09 ni N-2.14. Si ce sont des centrales froid, c'est Despraz qui occupe ces locaux et non Groupe E Tech.",
@@ -10,7 +22,9 @@
       "impact": "Détermine quelle entreprise occupe deux locaux et quand. Affecte T-DES-005 et T-GE-030."
     },
     {
-      "id": "Q-02", "priorite": "critique", "statut": "ouverte",
+      "id": "Q-02",
+      "priorite": "critique",
+      "statut": "ouverte",
       "sujet": "Gabarit de passage des équipements lourds",
       "question": "Quelles sont les dimensions hors-tout et le poids des PAC NH3, des cellules TGBT et des 7 vases d'expansion de 5'000 L ?",
       "pourquoi": "Les locaux PAC, TGBT, MT et accumulateur font 7,00 m sous plafond, mais les circulations N-2 qui y mènent n'en font que 4,10 m, et les quais à N-1 2,62 m. Le gabarit limite est celui de l'itinéraire, pas celui du local de destination. S'y ajoutent les vases d'expansion, les circulateurs Grundfos NBG (484 kg) et les vannes de régulation RTK (401 kg).",
@@ -18,7 +32,9 @@
       "impact": "Peut inverser toute la phase P1 et imposer une intervention du gros œuvre avant son achèvement."
     },
     {
-      "id": "Q-06", "priorite": "critique", "statut": "ouverte",
+      "id": "Q-06",
+      "priorite": "critique",
+      "statut": "ouverte",
       "sujet": "Adjudication du calorifugeage",
       "question": "Quand le lot calorifugeage sera-t-il adjugé ?",
       "pourquoi": "L'épreuve de pression de l'accumulateur est ferme au 30.11.2026 et l'isolation suit immédiatement. Le lot n'est pas adjugé, et il est bloquant pour la réception.",
@@ -26,7 +42,9 @@
       "impact": "Retard direct sur l'accumulateur, puis sur la réception."
     },
     {
-      "id": "Q-19", "priorite": "critique", "statut": "ouverte",
+      "id": "Q-19",
+      "priorite": "critique",
+      "statut": "ouverte",
       "sujet": "Maturité des études de sécurité et de froid",
       "question": "Quand les schémas de ventilation de sécurité CO2/NH3 (pré-exécution) et de froid process (appel d'offres) passeront-ils en exécution ?",
       "pourquoi": "Ces deux systèmes conditionnent la charge des fluides frigorigènes et la mise sous tension durable, alors que l'hydraulique chaud est déjà en exécution depuis septembre 2026. Le schéma de refroidissement du local MT date de juillet 2025 et n'a jamais dépassé la mise à l'enquête.",
@@ -34,7 +52,9 @@
       "impact": "Écart de maturité de trois niveaux entre des systèmes interdépendants."
     },
     {
-      "id": "Q-18", "priorite": "haute", "statut": "ouverte",
+      "id": "Q-18",
+      "priorite": "haute",
+      "statut": "ouverte",
       "sujet": "Périmètre de la STAP",
       "question": "Qui réalise la STAP, et son planning est-il lié à celui de la centrale ?",
       "pourquoi": "Le synoptique chaud s'intitule 'Centrale PAC 18MW (STAP et Centrale)', la liste des armoires comporte une armoire STAP et le concept MCR un API STAP. La STAP est donc dans le périmètre, mais elle n'apparaît ni dans la maquette architecturale ni dans la liste des adjudications communiquée.",
@@ -42,7 +62,9 @@
       "impact": "Un ouvrage entier est hors du réseau de tâches actuel."
     },
     {
-      "id": "Q-14", "priorite": "haute", "statut": "ouverte",
+      "id": "Q-14",
+      "priorite": "haute",
+      "statut": "ouverte",
       "sujet": "Phasage étape 1 / final",
       "question": "Que recouvrent les 'Etape 1' et 'Final' des départs ZI 19.119 et CADFR, et à quelles échéances ?",
       "pourquoi": "Le synoptique chaud distingue systématiquement les deux, et certaines vannes sont 'motorisées en étape 2'. Le projet est donc phasé, ce qui change la définition de ce qu'il faut livrer et quand.",
@@ -50,7 +72,9 @@
       "impact": "Redéfinit le périmètre de la mise en service et donc la date de réception."
     },
     {
-      "id": "Q-15", "priorite": "haute", "statut": "ouverte",
+      "id": "Q-15",
+      "priorite": "haute",
+      "statut": "ouverte",
       "sujet": "Rôle des chaufferies mobiles gaz",
       "question": "Les deux chaufferies mobiles gaz de 2.5 MW sont-elles un secours, une alimentation provisoire du CAD, ou les deux ? Et à quelle date doivent-elles être opérationnelles ?",
       "pourquoi": "C'est potentiellement le levier de planning le plus puissant du dossier : si elles alimentent le CAD en attendant les PAC, la date de livraison de chaleur se découple de la mise en service des machines.",
@@ -58,7 +82,9 @@
       "impact": "Peut retirer la mise en service des PAC du chemin critique contractuel."
     },
     {
-      "id": "Q-04", "priorite": "haute", "statut": "ouverte",
+      "id": "Q-04",
+      "priorite": "haute",
+      "statut": "ouverte",
       "sujet": "Délais de livraison",
       "question": "Quels sont les délais annoncés pour le transformateur MT, les cellules TGBT, les variateurs, les PAC NH3 et les groupes froid CO2 ?",
       "pourquoi": "Sur une centrale, le chemin critique passe généralement par les commandes et non par les travaux. Sans ces délais, le réseau n'a pas d'échelle de temps.",
@@ -66,7 +92,9 @@
       "impact": "Détermine le chemin critique réel."
     },
     {
-      "id": "Q-05", "priorite": "haute", "statut": "ouverte",
+      "id": "Q-05",
+      "priorite": "haute",
+      "statut": "ouverte",
       "sujet": "Détection gaz NH3 et CO2",
       "question": "Qui fournit et raccorde la détection NH3 et CO2 : Groupe E Tech avec la détection incendie, Wettstein avec les machines, ou Despraz ?",
       "pourquoi": "C'est une sécurité des personnes qui pilote la ventilation de secours, donc un prérequis dur à la charge des fluides. L'ammoniac est toxique et inflammable.",
@@ -74,7 +102,9 @@
       "impact": "Lot potentiellement orphelin, bloquant pour la charge NH3 et CO2."
     },
     {
-      "id": "Q-07", "priorite": "haute", "statut": "ouverte",
+      "id": "Q-07",
+      "priorite": "haute",
+      "statut": "ouverte",
       "sujet": "Première mise sous tension et refroidissement",
       "question": "Le free-cooling de la ventilation hygiénique suffit-il à la première mise sous tension du MT et du TGBT, le froid CO2 n'intervenant qu'ensuite pour la pleine charge ?",
       "pourquoi": "Il y a une boucle apparente : le froid des locaux électriques est produit par les centrales froid CO2, qui ont besoin d'électricité. Le schéma de refroidissement du local MT mentionne un free-cooling, qui est probablement la sortie de cette boucle. Le réseau de tâches fait cette hypothèse et doit être confirmé.",
@@ -82,7 +112,9 @@
       "impact": "Si l'hypothèse est fausse, il faut une alimentation provisoire et la séquence de mise sous tension change."
     },
     {
-      "id": "Q-10", "priorite": "haute", "statut": "ouverte",
+      "id": "Q-10",
+      "priorite": "haute",
+      "statut": "ouverte",
       "sujet": "Pilotage de la mise en service",
       "question": "Qui coordonne la campagne d'essais fonctionnels, qui exige la présence simultanée de Wettstein, Despraz, Entretec, Groupe E Tech et Groupe E ?",
       "pourquoi": "T-GE-060 n'est pas une tâche mais une campagne à cinq entreprises. Sans pilote désigné, elle glisse.",
@@ -90,7 +122,9 @@
       "impact": "Risque de glissement en fin de chantier, là où il n'y a plus de marge."
     },
     {
-      "id": "Q-20", "priorite": "haute", "statut": "ouverte",
+      "id": "Q-20",
+      "priorite": "haute",
+      "statut": "ouverte",
       "sujet": "Exigences réglementaires liées à l'ammoniac",
       "question": "Quelles autorisations et réceptions par des tiers s'appliquent à l'installation NH3, et quels sont leurs délais ?",
       "pourquoi": "Une installation à l'ammoniac relève d'exigences de sécurité spécifiques en Suisse. Une réception par un organisme tiers, si elle est requise, est un jalon à délai propre qui ne se rattrape pas.",
@@ -98,7 +132,9 @@
       "impact": "Jalon réglementaire potentiellement non modélisé, en fin de chantier."
     },
     {
-      "id": "Q-16", "priorite": "moyenne", "statut": "ouverte",
+      "id": "Q-16",
+      "priorite": "moyenne",
+      "statut": "ouverte",
       "sujet": "Emplacement de cinq armoires",
       "question": "Où seront installées les armoires Auxiliaires 1 à 4 et le coffret Accumulateur chaud ?",
       "pourquoi": "Cinq armoires sur quinze portent la mention 'A définir', dont celle de la ventilation de secours et celle de l'accumulateur, qui est éprouvé le 30.11.2026.",
@@ -106,7 +142,9 @@
       "impact": "Empêche de planifier les socles, le câblage et la réservation d'espace."
     },
     {
-      "id": "Q-01", "priorite": "moyenne", "statut": "ouverte",
+      "id": "Q-01",
+      "priorite": "moyenne",
+      "statut": "ouverte",
       "sujet": "Itinéraire de manutention",
       "question": "Par où entrent les PAC, l'accumulateur et les vases d'expansion : rampe extérieure et couvert à N-2, trémie, ou quais à N-1 ?",
       "pourquoi": "La maquette montre une rampe extérieure (137 m2) et un couvert (299 m2) à N-2, tous deux à 7,00 m, ce qui suggère un accès direct au niveau bas. Les quais 1 et 2 sont à N-1 sous 2,62 m.",
@@ -114,7 +152,9 @@
       "impact": "Détermine le jalon pivot T-WET-040."
     },
     {
-      "id": "Q-17", "priorite": "moyenne", "statut": "ouverte",
+      "id": "Q-17",
+      "priorite": "moyenne",
+      "statut": "ouverte",
       "sujet": "Validité du concept MCR",
       "question": "Le concept MCR V1.0 du 22.02.2024 est-il toujours la référence ?",
       "pourquoi": "Il est antérieur de plus de deux ans aux schémas d'exécution et ne montre que les RIO des PAC 1 et 2, les PAC 3 et 4 étant notées 'idem'. La liste des armoires, elle, date de février 2025.",
@@ -122,7 +162,9 @@
       "impact": "Base de T-GE-030 et T-GE-040."
     },
     {
-      "id": "Q-09", "priorite": "moyenne", "statut": "ouverte",
+      "id": "Q-09",
+      "priorite": "moyenne",
+      "statut": "ouverte",
       "sujet": "Désenfumage",
       "question": "Y a-t-il un lot désenfumage, distinct de la ventilation de secours CO2/NH3 ?",
       "pourquoi": "Les schémas reçus traitent la ventilation hygiénique, les WC et la sécurité gaz, mais pas le désenfumage. Bâtiment à deux niveaux enterrés avec local MT.",
@@ -130,7 +172,9 @@
       "impact": "Lot potentiellement orphelin."
     },
     {
-      "id": "Q-11", "priorite": "moyenne", "statut": "ouverte",
+      "id": "Q-11",
+      "priorite": "moyenne",
+      "statut": "ouverte",
       "sujet": "Date de mise en service visée",
       "question": "Y a-t-il une date de mise en service contractuelle, et porte-t-elle sur l'étape 1 ou sur le final ?",
       "pourquoi": "C'est le vrai point de départ du calage des dates, et le phasage en change la définition.",
@@ -138,7 +182,9 @@
       "impact": "Transforme l'ordonnancement en planning daté."
     },
     {
-      "id": "Q-08", "priorite": "basse", "statut": "ouverte",
+      "id": "Q-08",
+      "priorite": "basse",
+      "statut": "ouverte",
       "sujet": "Qualité de la maquette ARC",
       "question": "Le numéro CENT.N-2.05 est attribué deux fois dans la maquette (34,6 m2 et 128,0 m2), et le schéma de sécurité le nomme 'Local intro CO2' alors que la maquette le nomme 'Hydraulique circuit int.'. Lequel fait foi ?",
       "pourquoi": "Un numéro en doublon et une désignation divergente empêchent tout rattachement fiable des tâches aux locaux.",
@@ -146,7 +192,9 @@
       "impact": "Qualité des données."
     },
     {
-      "id": "Q-12", "priorite": "basse", "statut": "ouverte",
+      "id": "Q-12",
+      "priorite": "basse",
+      "statut": "ouverte",
       "sujet": "Usage des quais",
       "question": "À quoi servent les quais 1 et 2 (N-1, 2,62 m sous plafond) ?",
       "pourquoi": "Trop bas pour les gros équipements.",
@@ -154,7 +202,9 @@
       "impact": "Clarifie l'itinéraire de manutention."
     },
     {
-      "id": "Q-03", "priorite": "resolue", "statut": "resolue",
+      "id": "Q-03",
+      "priorite": "resolue",
+      "statut": "resolue",
       "sujet": "Limite de prestation sur les machines",
       "question": "Où s'arrête Wettstein et où commencent Despraz et Entretec ?",
       "reponse": "Les PAC de Wettstein sont dans les locaux uniquement. Le CO2 et l'hydraulique chaud viennent se raccorder sur les PAC dans leur local. (Maître d'ouvrage, 20.10.2026)",

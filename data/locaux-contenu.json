@@ -17,7 +17,7 @@
       "famille": "A",
       "famille_titre": "Locaux PAC",
       "rang_priorite": 1,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "partiel",
       "hypothese_actuelle": [
         {
           "lot": "ANTIGLIO",
@@ -73,7 +73,7 @@
         "interventions": [],
         "manutention": null,
         "co_activite_possible": null,
-        "remarques": null
+        "remarques": "Socles préfabriqués, amenés dans le local au moment utile : pas de maturation de béton à attendre. Local construit en 1er position."
       }
     },
     {
@@ -85,7 +85,7 @@
       "famille": "A",
       "famille_titre": "Locaux PAC",
       "rang_priorite": 1,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "partiel",
       "hypothese_actuelle": [
         {
           "lot": "ANTIGLIO",
@@ -141,7 +141,7 @@
         "interventions": [],
         "manutention": null,
         "co_activite_possible": null,
-        "remarques": null
+        "remarques": "Socles préfabriqués, amenés dans le local au moment utile : pas de maturation de béton à attendre. Local construit en 2e position."
       }
     },
     {
@@ -209,7 +209,7 @@
         "interventions": [],
         "manutention": null,
         "co_activite_possible": null,
-        "remarques": null
+        "remarques": "Socles préfabriqués, amenés dans le local au moment utile : pas de maturation de béton à attendre."
       }
     },
     {
@@ -277,7 +277,7 @@
         "interventions": [],
         "manutention": null,
         "co_activite_possible": null,
-        "remarques": null
+        "remarques": "Socles préfabriqués, amenés dans le local au moment utile : pas de maturation de béton à attendre."
       }
     },
     {

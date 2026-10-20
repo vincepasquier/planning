@@ -1,5 +1,5 @@
 {
-  "version": "0.3",
+  "version": "0.4",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -23,31 +23,6 @@
       "predecesseurs": [],
       "statut": "en_cours",
       "duree_semaines": 8
-    },
-    {
-      "id": "T-ANT-020",
-      "designation": "Socles et massifs PAC 1 à 4",
-      "entreprise": "ANTIGLIO",
-      "systeme": "GC",
-      "phase": "P0",
-      "locaux": [
-        "CENT.N-2.07",
-        "CENT.N-2.10",
-        "CENT.N-2.12",
-        "CENT.N-2.15"
-      ],
-      "duree_classe": "semaine",
-      "date_connue": null,
-      "predecesseurs": [
-        {
-          "id": "T-ANT-010",
-          "lien": "DD",
-          "raison": "Travaux de même nature, même entreprise"
-        }
-      ],
-      "statut": "a_confirmer",
-      "notes": "Socles mûrs avant mise en charge. Délai de cure à faire confirmer par Wettstein.",
-      "duree_semaines": 3
     },
     {
       "id": "T-ANT-025",
@@ -221,6 +196,94 @@
       "duree_semaines": 6
     },
     {
+      "id": "T-ANT-021",
+      "designation": "Pose du socle préfabriqué PAC 1",
+      "entreprise": "ANTIGLIO",
+      "systeme": "PAC-1",
+      "phase": "P0",
+      "locaux": [
+        "CENT.N-2.07"
+      ],
+      "duree_classe": "semaine",
+      "duree_semaines": 1,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ANT-010",
+          "lien": "DD",
+          "raison": "Local disponible ; le socle préfabriqué ne demande pas de cure"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Socle préfabriqué, amené dans le local au moment utile (MO, 20.10.2026). Supprime la contrainte de maturation du béton qui retenait la pose des machines. Fournisseur du préfabriqué à confirmer."
+    },
+    {
+      "id": "T-ANT-022",
+      "designation": "Pose du socle préfabriqué PAC 2",
+      "entreprise": "ANTIGLIO",
+      "systeme": "PAC-2",
+      "phase": "P0",
+      "locaux": [
+        "CENT.N-2.10"
+      ],
+      "duree_classe": "semaine",
+      "duree_semaines": 1,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ANT-010",
+          "lien": "DD",
+          "raison": "Local disponible ; le socle préfabriqué ne demande pas de cure"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Socle préfabriqué, amené dans le local au moment utile (MO, 20.10.2026). Supprime la contrainte de maturation du béton qui retenait la pose des machines. Fournisseur du préfabriqué à confirmer."
+    },
+    {
+      "id": "T-ANT-023",
+      "designation": "Pose du socle préfabriqué PAC 3",
+      "entreprise": "ANTIGLIO",
+      "systeme": "PAC-3",
+      "phase": "P0",
+      "locaux": [
+        "CENT.N-2.12"
+      ],
+      "duree_classe": "semaine",
+      "duree_semaines": 1,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ANT-010",
+          "lien": "DD",
+          "raison": "Local disponible ; le socle préfabriqué ne demande pas de cure"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Socle préfabriqué, amené dans le local au moment utile (MO, 20.10.2026). Supprime la contrainte de maturation du béton qui retenait la pose des machines. Fournisseur du préfabriqué à confirmer."
+    },
+    {
+      "id": "T-ANT-024",
+      "designation": "Pose du socle préfabriqué PAC 4",
+      "entreprise": "ANTIGLIO",
+      "systeme": "PAC-4",
+      "phase": "P0",
+      "locaux": [
+        "CENT.N-2.15"
+      ],
+      "duree_classe": "semaine",
+      "duree_semaines": 1,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-ANT-010",
+          "lien": "DD",
+          "raison": "Local disponible ; le socle préfabriqué ne demande pas de cure"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Socle préfabriqué, amené dans le local au moment utile (MO, 20.10.2026). Supprime la contrainte de maturation du béton qui retenait la pose des machines. Fournisseur du préfabriqué à confirmer."
+    },
+    {
       "id": "T-WET-010",
       "designation": "Manutention et pose PAC 1 (NH3)",
       "entreprise": "WETTSTEIN",
@@ -233,13 +296,13 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-ANT-020",
+          "id": "T-ANT-021",
           "lien": "FD",
-          "raison": "Socle béton mûr avant mise en charge"
+          "raison": "Socle préfabriqué en place dans le local"
         }
       ],
       "statut": "a_confirmer",
-      "notes": "PLAN N-2 : l'acces se fait par la rampe exterieure (12% puis 6%), le couvert N-2.25, puis la porte 20 (type B, EI60) de 3.50 m de large sur 4.00 m de haut donnant dans PAC 4. Gabarit limite : 3.50 x 4.00 m. Q-01 et Q-02 repondues pour l'itineraire ; restent les dimensions hors-tout des machines.",
+      "notes": "Premier local construit (MO, 20.10.2026). Accès par la rampe extérieure, le couvert N-2.25 puis la porte 20 (type B, EI60) de 3.50 x 4.00 m. Dimensions et poids de la machine toujours inconnus : voir Q-02.",
       "duree_semaines": 3
     },
     {
@@ -255,18 +318,18 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-ANT-020",
+          "id": "T-ANT-022",
           "lien": "FD",
-          "raison": "Socle béton mûr"
+          "raison": "Socle préfabriqué en place dans le local"
         },
         {
           "id": "T-WET-010",
           "lien": "FD",
-          "raison": "Même moyen de levage"
+          "raison": "Le MO construit d'abord le local PAC 1, puis le local PAC 2 (20.10.2026)"
         }
       ],
       "statut": "a_confirmer",
-      "notes": "PLAN N-2 : l'acces se fait par la rampe exterieure (12% puis 6%), le couvert N-2.25, puis la porte 20 (type B, EI60) de 3.50 m de large sur 4.00 m de haut donnant dans PAC 4. Gabarit limite : 3.50 x 4.00 m. Q-01 et Q-02 repondues pour l'itineraire ; restent les dimensions hors-tout des machines.",
+      "notes": "Deuxième local construit, après PAC 1 (MO, 20.10.2026).",
       "duree_semaines": 3
     },
     {
@@ -282,13 +345,18 @@
       "date_connue": null,
       "predecesseurs": [
         {
+          "id": "T-ANT-023",
+          "lien": "FD",
+          "raison": "Socle préfabriqué en place dans le local"
+        },
+        {
           "id": "T-WET-020",
           "lien": "FD",
           "raison": "Même moyen de levage"
         }
       ],
       "statut": "a_confirmer",
-      "notes": "PLAN N-2 : l'acces se fait par la rampe exterieure (12% puis 6%), le couvert N-2.25, puis la porte 20 (type B, EI60) de 3.50 m de large sur 4.00 m de haut donnant dans PAC 4. Gabarit limite : 3.50 x 4.00 m. Q-01 et Q-02 repondues pour l'itineraire ; restent les dimensions hors-tout des machines.",
+      "notes": "Rang à confirmer : les schémas marquent les départs froid PAC 3 et 4 « (réserve) » et le concept MCR ne détaille que les PAC 1 et 2. Ces machines relèvent-elles de l'étape 1 ? Voir Q-21.",
       "duree_semaines": 3
     },
     {
@@ -304,13 +372,18 @@
       "date_connue": null,
       "predecesseurs": [
         {
+          "id": "T-ANT-024",
+          "lien": "FD",
+          "raison": "Socle préfabriqué en place dans le local"
+        },
+        {
           "id": "T-WET-030",
           "lien": "FD",
           "raison": "Même moyen de levage"
         }
       ],
       "statut": "a_confirmer",
-      "notes": "PLAN N-2 : l'acces se fait par la rampe exterieure (12% puis 6%), le couvert N-2.25, puis la porte 20 (type B, EI60) de 3.50 m de large sur 4.00 m de haut donnant dans PAC 4. Gabarit limite : 3.50 x 4.00 m. Q-01 et Q-02 repondues pour l'itineraire ; restent les dimensions hors-tout des machines.",
+      "notes": "Rang à confirmer : les schémas marquent les départs froid PAC 3 et 4 « (réserve) » et le concept MCR ne détaille que les PAC 1 et 2. Ces machines relèvent-elles de l'étape 1 ? Voir Q-21.",
       "duree_semaines": 3
     },
     {
@@ -1504,5 +1577,9 @@
     "Itineraire de manutention etabli depuis le plan N-2 : rampe exterieure, couvert N-2.25, porte 20 de 3.50 x 4.00 m donnant dans PAC 4.",
     "Accumulateur releve au plan : diametre 8 m (9 m isole), hauteur 19 m, monte sur place.",
     "Ajout d'une duree en semaines sur chaque tache, pour permettre le calcul de dates."
+  ],
+  "corrections_v04": [
+    "Socles préfabriqués, posés local par local au moment utile : la contrainte de maturation du béton disparaît (MO, 20.10.2026).",
+    "Séquence confirmée : local PAC 1 construit avant local PAC 2 (MO, 20.10.2026)."
   ]
 }
