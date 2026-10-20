@@ -1418,15 +1418,15 @@ RAISONS DES LIENS :
       <Summary>0</Summary>
       <Type>1</Type>
       <DurationFormat>7</DurationFormat>
-      <Duration>PT120H0M0S</Duration>
+      <Duration>PT480H0M0S</Duration>
       <Start>2027-04-12T08:00:00</Start>
-      <Finish>2027-04-30T17:00:00</Finish>
+      <Finish>2027-07-02T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-ANS-030]  Lot : ANSERMOT  |  Systeme : MEN
 Locaux : CENT.N-1.01, CENT.N-1.05, CENT.N-1.06, CENT.N-1.07, CENT.N-2.01, CENT.N-2.02, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.06, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.11, CENT.N-2.12, CENT.N-2.13, CENT.N-2.14, CENT.N-2.15, CENT.N-2.16, CENT.N-2.17, CENT.N-2.18, CENT.N-2.19, CENT.N-2.20, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23, CENT.N-2.24, CENT.N-2.25, CENT.N-2.26
 Statut : non_adjuge
 
-Des portes sont posées dans tous les locaux (MO, 20.10.2026).
+Deux jours par porte (MO, 20.10.2026), 30 locaux équipés, soit 60 jours ouvrés. Hypothèse d'une porte par local et d'une seule équipe : à corriger si Ansermot en engage plusieurs, ou si certains locaux reçoivent plus d'une porte.
 
 RAISONS DES LIENS :
   &lt;- T-GET-030 (FD) : Réseaux passés : une porte posée tôt est une porte abîmée ou démontée</Notes>
@@ -2759,7 +2759,7 @@ RAISONS DES LIENS :
       <ResourceUID>2</ResourceUID>
       <Units>1</Units>
       <Start>2027-04-12T08:00:00</Start>
-      <Finish>2027-04-30T17:00:00</Finish>
+      <Finish>2027-07-02T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>43</UID>

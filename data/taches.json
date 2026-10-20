@@ -1,5 +1,5 @@
 {
-  "version": "1.5",
+  "version": "1.6",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -1668,7 +1668,7 @@
         "CENT.N-2.25",
         "CENT.N-2.26"
       ],
-      "duree_classe": "quinzaine",
+      "duree_classe": "trimestre",
       "date_connue": null,
       "predecesseurs": [
         {
@@ -1678,8 +1678,8 @@
         }
       ],
       "statut": "non_adjuge",
-      "notes": "Des portes sont posées dans tous les locaux (MO, 20.10.2026).",
-      "duree_semaines": 3
+      "notes": "Deux jours par porte (MO, 20.10.2026), 30 locaux équipés, soit 60 jours ouvrés. Hypothèse d'une porte par local et d'une seule équipe : à corriger si Ansermot en engage plusieurs, ou si certains locaux reçoivent plus d'une porte.",
+      "duree_semaines": 12
     },
     {
       "id": "T-ANS-040",
@@ -1809,5 +1809,9 @@
   ],
   "corrections_v15": [
     "Niveau N+0 : les sorties ne reçoivent que de l'éclairage et de la serrurerie. La surface bituminée reste à relever."
+  ],
+  "corrections_v16": [
+    "Pose des portes : deux jours par porte sur 30 locaux, soit 12 semaines au lieu de 3.",
+    "Ansermot est ponctuel dans tous les locaux où il ne pose que des portes : deux jours n'est pas une occupation."
   ]
 }
