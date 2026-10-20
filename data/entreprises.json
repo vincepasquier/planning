@@ -20,7 +20,9 @@
       "CO2": "Fluide du froid process et du refroidissement des locaux (Despraz)",
       "eau": "Hydraulique chaud PN16, pression statique 11 bars (Entretec)"
     },
-    "phasage": "Etape 1 puis Final, sur les départs ZI et CADFR (à préciser, voir Q-14)"
+    "phasage": "Etape 1 puis Final, sur les départs ZI et CADFR (à préciser, voir Q-14)",
+    "demarrage_chantier": "2026-12-01",
+    "note_demarrage": "Les entreprises peuvent intervenir dès décembre 2026 (MO, 20.10.2026). Le calcul cale la première semaine au lundi 30.11.2026. Bilfinger est déjà sur site."
   },
   "entreprises": [
     {

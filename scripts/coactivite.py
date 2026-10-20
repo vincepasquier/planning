@@ -16,10 +16,19 @@ sys.path.insert(0, __file__.rsplit("/", 1)[0])
 from planifier import charger, planifier  # noqa: E402
 
 
+def demarrage_defaut():
+    """Date de démarrage du chantier, lue dans les données du projet."""
+    try:
+        import json as _j
+        return _j.load(open("data/entreprises.json", encoding="utf-8"))["projet"]["demarrage_chantier"]
+    except Exception:
+        return date.today().isoformat()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--taches", default="data/taches.json")
-    ap.add_argument("--debut", default=date.today().isoformat())
+    ap.add_argument("--debut", default=demarrage_defaut())
     ap.add_argument("--seuil", type=int, default=3)
     args = ap.parse_args()
 

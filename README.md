@@ -11,18 +11,19 @@ surtout **pourquoi**. Chaque lien entre deux tâches porte sa justification.
 
 | | |
 |---|---|
-| Tâches | 61 |
-| Liens de dépendance | 99 |
+| Tâches | 62 |
+| Liens de dépendance | 108 |
 | Rangs d'ordonnancement | 11, sans cycle |
-| Durée calculée | 50 semaines (fin au plus tôt 08.10.2027) |
+| Durée calculée | 48 semaines (réception au plus tôt 05.11.2027) |
 | Dates fermes | 1 (épreuve accumulateur, 30.11.2026) |
-| Questions ouvertes | 26 posées, 6 résolues |
-| Lots non adjugés | 3 (calorifugeage, levage, Ansermot) |
+| Questions ouvertes | 27 posées, 9 résolues |
+| Lots non adjugés | 3 (calorifugeage des conduites, levage, Ansermot) |
 | Périmètre non communiqué | 1 (STAP) |
 
-Version 1.1 — quinze locaux relevés avec le maître d'ouvrage sur trente-huit,
-dont toutes les familles lourdes sauf deux. Les durées de ces locaux sont
-relevées ; les autres restent des propositions.
+Version 1.9 — les 36 locaux de la maquette sont relevés lot par lot avec le
+maître d'ouvrage : 139 affectations relevées, 2 supposées. Le chantier ouvre
+aux entreprises techniques en décembre 2026, le bâtiment étant réceptionné à
+la mi-novembre.
 
 ### Corrections apportées en v0.2
 
@@ -45,6 +46,9 @@ data/
   taches.json             Les tâches et leurs liens — le cœur du dépôt
   questions-ouvertes.json Ce qui doit être tranché, par priorité
   documents.json          Les 9 schémas reçus, avec leur niveau de maturité
+  matrice-locaux-lots.json  Qui passe où, relevé local par local
+  intensites.json         Occupation réelle ou simple passage, et limites par local
+  locaux-contenu.json     Les fiches de relevé, une par local
   armoires.json           Les 15 armoires de commande et leurs emplacements
   extracted/locaux.json   37 locaux extraits de la maquette ARC, avec métrés
   extracted/planning.csv  Le planning daté, une ligne par lot et par local
@@ -61,6 +65,8 @@ scripts/
   export_excel.py         Export et réimport du classeur Excel
   export_html.py          Génération de la page de visualisation
   gabarit_planning.html   Gabarit de cette page
+  extract_geometrie.py    IFC -> emprise au sol des locaux, redressée
+  coactivite.py           Conflits de co-activité, local par local
 ```
 
 ## Utilisation
@@ -80,17 +86,25 @@ python3 -I scripts/valider.py data/taches.json
 Calculer les dates et exporter le planning par lot et par local :
 
 ```bash
-python3 -I scripts/planifier.py --debut 2026-10-26 --csv data/extracted/planning.csv
-python3 -I scripts/planifier.py --par lot      # regroupé par entreprise
-python3 -I scripts/planifier.py --par local    # regroupé par local
+python3 -I scripts/planifier.py --csv data/extracted/planning.csv
+python3 -I scripts/planifier.py --par lot       # regroupé par entreprise
+python3 -I scripts/planifier.py --par local     # regroupé par local
+python3 -I scripts/planifier.py --par critique  # le chemin critique seul
 ```
 
 Produire les trois livrables :
 
 ```bash
-python3 -I scripts/export_msproject.py --debut 2026-10-26   # .xml pour MS Project
-python3 -I scripts/export_excel.py     --debut 2026-10-26   # .xlsx quatre onglets
-python3 -I scripts/export_html.py      --debut 2026-10-26   # page de visualisation
+python3 -I scripts/export_msproject.py   # .xml pour MS Project
+python3 -I scripts/export_excel.py       # .xlsx quatre onglets
+python3 -I scripts/export_html.py        # page de visualisation
+python3 -I scripts/coactivite.py         # conflits de co-activité
+```
+
+La date de démarrage est lue dans `data/entreprises.json`, champ
+`projet.demarrage_chantier` ; `--debut` permet de la forcer.
+
+```bash
 ```
 
 Reprendre les durées corrigées par les entreprises :

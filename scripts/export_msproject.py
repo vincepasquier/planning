@@ -179,11 +179,20 @@ def construire(taches, dates, phases, debut, nom_projet):
     return racine
 
 
+def demarrage_defaut():
+    """Date de démarrage du chantier, lue dans les données du projet."""
+    try:
+        import json as _j
+        return _j.load(open("data/entreprises.json", encoding="utf-8"))["projet"]["demarrage_chantier"]
+    except Exception:
+        return date.today().isoformat()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--taches", default="data/taches.json")
     ap.add_argument("--phases", default="data/phases.json")
-    ap.add_argument("--debut", default=date.today().isoformat())
+    ap.add_argument("--debut", default=demarrage_defaut())
     ap.add_argument("--sortie", default="data/extracted/planning_msproject.xml")
     args = ap.parse_args()
 

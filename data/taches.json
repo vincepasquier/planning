@@ -1,5 +1,5 @@
 {
-  "version": "1.7",
+  "version": "1.9",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -19,10 +19,11 @@
         "*"
       ],
       "duree_classe": "mois",
-      "date_connue": null,
+      "date_connue": "2026-11-13",
       "predecesseurs": [],
       "statut": "en_cours",
-      "duree_semaines": 8
+      "duree_semaines": 8,
+      "notes": "Bâtiment terminé à 90 % ; réception à la mi-novembre 2026 (MO, 20.10.2026). Les locaux sont donc disponibles avant l'ouverture du chantier aux entreprises techniques en décembre."
     },
     {
       "id": "T-ANT-025",
@@ -123,10 +124,10 @@
         "CENT.N-2.24"
       ],
       "duree_classe": "mois",
-      "date_connue": null,
+      "date_connue": "2026-11-13",
       "predecesseurs": [],
       "statut": "en_cours",
-      "notes": "Accumulateur chaud 5'000 kW, 2 x 2.5 MW. PLAN N-2 : diametre 8 m (9 m une fois isole), HAUTEUR 19 m. Il traverse donc plusieurs niveaux et se monte sur place : ce n'est pas un colis de manutention.",
+      "notes": "Accumulateur chaud 5'000 kW, 2 x 2.5 MW. Diamètre 8 m, 9 m isolé, hauteur 19 m, monté sur place. Structure principale terminée à la mi-novembre 2026 (MO, 20.10.2026).",
       "duree_semaines": 12
     },
     {
@@ -197,8 +198,9 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Réalisé par Bilfinger avec l'accumulateur (MO, 20.10.2026) : ce n'est donc pas un lot à adjuger. Environ 500 m² en hauteur, diamètre passant de 8 à 9 m.",
-      "duree_semaines": 6
+      "notes": "Réalisé par Bilfinger avec l'accumulateur (MO, 20.10.2026) : ce n'est donc pas un lot à adjuger. Environ 500 m² en hauteur, diamètre passant de 8 à 9 m. Début prévu en décembre 2026 (MO, 20.10.2026).",
+      "duree_semaines": 6,
+      "debut_au_plus_tot": "2026-12-01"
     },
     {
       "id": "T-ANT-021",
@@ -1879,5 +1881,14 @@
     "Ordre relevé dans les locaux électriques : INFRA puis IEG au MT, TABLEAU puis IEG au TGBT, Exergo puis Entretec puis IEG aux variateurs.",
     "Le câblage IEG se scinde : les locaux électriques deviennent une tâche distincte, asservie à celui qui les équipe.",
     "Le local pompage PAC admet deux entreprises à la fois."
+  ],
+  "corrections_v18": [
+    "Les entreprises peuvent intervenir dès décembre 2026 : le planning démarre la semaine du 30.11.2026.",
+    "Le montage de l'accumulateur est ancré sur l'épreuve du 30.11.2026, Bilfinger étant déjà sur site."
+  ],
+  "corrections_v19": [
+    "Bâtiment terminé à 90 %, réception à la mi-novembre 2026 : le gros œuvre sort du chemin critique.",
+    "Structure principale de l'accumulateur terminée à la mi-novembre 2026.",
+    "Calorifugeage de l'accumulateur à partir de décembre 2026."
   ]
 }
