@@ -48,6 +48,7 @@ data/
   armoires.json           Les 15 armoires de commande et leurs emplacements
   extracted/locaux.json   37 locaux extraits de la maquette ARC, avec métrés
   extracted/planning.csv  Le planning daté, une ligne par lot et par local
+  extracted/planning_msproject.xml  Le même planning, ouvrable dans MS Project
   raw/                    Maquettes IFC brutes (non versionnées)
 docs/
   regles-enchainement.md  La logique du réseau, expliquée
@@ -56,6 +57,10 @@ scripts/
   extract_locaux.py       IFC -> liste des locaux + métrés
   valider.py              Contrôle du réseau et calcul des rangs
   planifier.py            Calcul des dates au plus tôt, export CSV
+  export_msproject.py     Export MSPDI XML, liens et raisons compris
+  export_excel.py         Export et réimport du classeur Excel
+  export_html.py          Génération de la page de visualisation
+  gabarit_planning.html   Gabarit de cette page
 ```
 
 ## Utilisation
@@ -80,8 +85,30 @@ python3 -I scripts/planifier.py --par lot      # regroupé par entreprise
 python3 -I scripts/planifier.py --par local    # regroupé par local
 ```
 
+Produire les trois livrables :
+
+```bash
+python3 -I scripts/export_msproject.py --debut 2026-10-26   # .xml pour MS Project
+python3 -I scripts/export_excel.py     --debut 2026-10-26   # .xlsx quatre onglets
+python3 -I scripts/export_html.py      --debut 2026-10-26   # page de visualisation
+```
+
+Reprendre les durées corrigées par les entreprises :
+
+```bash
+python3 -I scripts/export_excel.py --reimporter planning.xlsx
+```
+
 Aucune dépendance externe : un fichier IFC est du texte STEP (ISO-10303-21),
 lisible directement.
+
+## Qui est la source
+
+Le dépôt est la source, MS Project est une vue : on corrige ici, on réexporte.
+Ce partage tient tant que la structure bouge. Le jour où un planificateur
+reprend le fichier dans MS Project et le fait vivre, l'inverse devient vrai —
+et ce dépôt garde alors ce que MS Project ne sait pas stocker : la raison de
+chaque lien, les métrés, les questions ouvertes et les scripts d'extraction.
 
 ## Pourquoi les IFC ne sont pas versionnés
 
