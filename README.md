@@ -11,18 +11,18 @@ surtout **pourquoi**. Chaque lien entre deux tâches porte sa justification.
 
 | | |
 |---|---|
-| Tâches | 59 |
-| Liens de dépendance | 90 |
-| Rangs d'ordonnancement | 15, sans cycle |
-| Durée calculée | 55 semaines (fin au plus tôt 12.11.2027) |
+| Tâches | 61 |
+| Liens de dépendance | 99 |
+| Rangs d'ordonnancement | 11, sans cycle |
+| Durée calculée | 50 semaines (fin au plus tôt 08.10.2027) |
 | Dates fermes | 1 (épreuve accumulateur, 30.11.2026) |
-| Questions ouvertes | 19, dont 4 critiques |
-| Lots non adjugés | 2 (calorifugeage, Ansermot) |
+| Questions ouvertes | 26 posées, 6 résolues |
+| Lots non adjugés | 3 (calorifugeage, levage, Ansermot) |
 | Périmètre non communiqué | 1 (STAP) |
 
-Version 0.3 — ossature datée. Les durées sont des propositions à corriger par
-les entreprises : c'est le seul paramètre à reprendre pour que les dates
-deviennent justes.
+Version 1.1 — quinze locaux relevés avec le maître d'ouvrage sur trente-huit,
+dont toutes les familles lourdes sauf deux. Les durées de ces locaux sont
+relevées ; les autres restent des propositions.
 
 ### Corrections apportées en v0.2
 
@@ -122,20 +122,24 @@ la valeur à suivre dans le temps : les **données extraites** (quelques
 centaines de kilo-octets, diffables d'un indice à l'autre) et la **logique
 d'enchaînement**.
 
-## Les quatre points les plus urgents
+## Où se joue la date
 
-1. **Q-13 — Contradiction de documents.** La maquette nomme N-2.09 et N-2.14
-   « Commande », les schémas Groupe E « Centrale froid n°1 et n°2 ». Si ce sont
-   des centrales froid, c'est Despraz qui occupe ces locaux, pas Groupe E Tech.
-2. **Q-02 — Gabarit de passage.** Les locaux PAC font 7,00 m sous plafond, les
-   circulations qui y mènent 4,10 m. Dimensions hors-tout des machines, des
-   cellules TGBT et des 7 vases de 5'000 L ?
-3. **Q-06 — Calorifugeage non adjugé.** Il suit immédiatement la seule date
-   ferme du dossier (30.11.2026, dans six semaines).
-4. **Q-19 — Maturité des études.** L'hydraulique est en exécution ; le froid
-   process est encore en appel d'offres et le refroidissement du local MT n'a
-   jamais dépassé la mise à l'enquête (juillet 2025). Or ces systèmes
-   conditionnent la mise sous tension et la charge des fluides.
+Deux chaînes courent en parallèle et se rejoignent sur les essais. La chaîne
+électricité et régulation porte le chemin critique ; le montage des machines
+n'a plus que sept jours de marge. Les deux arrivent pratiquement ensemble, ce
+qui est sain mais ne laisse aucune réserve de part ni d'autre.
+
+## Les trois points les plus urgents
+
+1. **Trois lots non adjugés** — calorifugeage, entreprise de levage, Ansermot.
+   Le calorifugeage suit immédiatement la seule date ferme du dossier
+   (30.11.2026) et porte environ 500 m² d'isolation en hauteur sur
+   l'accumulateur.
+2. **Q-24 — chacun son tour.** Les tâches de réseaux décrites à l'échelle du
+   bâtiment peuvent encore se superposer dans un local qui n'admet qu'une
+   entreprise. Les durées des petits locaux techniques sont donc sous-estimées.
+3. **La STAP**, dans le périmètre du projet mais absente de la maquette et des
+   adjudications.
 
 ## Sources
 

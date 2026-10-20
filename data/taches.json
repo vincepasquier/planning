@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -412,13 +412,18 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-DES-017",
+          "id": "T-DES-010",
           "lien": "FD",
-          "raison": "Echangeurs froid poses : l'hydraulique se raccorde dessus"
+          "raison": "Réseau CO2 posé jusqu'aux échangeurs"
+        },
+        {
+          "id": "T-DES-005",
+          "lien": "FD",
+          "raison": "Centrale froid n°1 en service"
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Circuit hydraulique froid 16/21 degres en aval des echangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Conditionne la mise en charge nominale des variateurs. Locaux des PAC 3 et 4 retirés : équipements reportés. Dans N-2.03 : ventilation par Hälg, hydraulique froid par Entretec, câblage par IEG, chacun son tour (MO, 20.10.2026).",
+      "notes": "Circuit hydraulique froid 16/21 degrés en aval des échangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Réalisable dès que le réseau CO2 et la centrale froid n°1 sont en place, sans attendre l'échangeur de la PAC 2 (MO, 20.10.2026) : c'est une branche distincte du froid process. Conditionne la mise en charge nominale des variateurs.",
       "duree_semaines": 12
     },
     {
@@ -1593,5 +1598,8 @@
     "Ordre dans les galeries techniques : hydraulique et sanitaire, puis ventilation. Cela inverse la règle générale que j'avais posée, selon laquelle le plus encombrant passe en premier.",
     "IEG ne passe pas par les galeries mais par en dessous : pas de concurrence de cheminement.",
     "Hydraulique chaud : 15 semaines. Pompes et collecteur des locaux PAC : 10 semaines."
+  ],
+  "corrections_v11": [
+    "Le refroidissement des locaux ne dépend plus de l'échangeur de la PAC 2 : les deux branches du froid process sont indépendantes (Q-23 tranchée)."
   ]
 }

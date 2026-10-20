@@ -33,13 +33,14 @@
     },
     {
       "id": "Q-23",
-      "priorite": "critique",
-      "statut": "ouverte",
+      "priorite": "resolue",
+      "statut": "resolue",
       "sujet": "Le refroidissement des locaux dépend-il vraiment de l'échangeur de la PAC 2 ?",
       "question": "Le circuit hydraulique froid qui alimente les armoires de refroidissement des locaux techniques peut-il être réalisé dès que le réseau CO2 et les centrales froid sont en place, sans attendre l'échangeur froid de la PAC 2 ?",
       "pourquoi": "Le réseau fait aujourd'hui dépendre le froid des locaux de l'échangeur de la PAC 2, ce qui le place sur le chemin critique derrière 30 semaines de montage. Or le schéma de froid process distingue deux branches : les échangeurs des PAC d'un côté, le refroidissement des locaux de l'autre, alimentés par les mêmes centrales froid. Si les deux branches sont indépendantes, le froid des locaux peut démarrer bien plus tôt.",
       "destinataire": "Despraz / Groupe E Entretec",
-      "impact": "12 semaines sur la date de réception : fin au 01.10.2027 au lieu du 24.12.2027."
+      "impact": "Onze semaines gagnées : fin au plus tôt le 08.10.2027 au lieu du 24.12.2027. Le chemin critique bascule de Wettstein vers la chaîne électricité et régulation.",
+      "reponse": "Oui : le circuit hydraulique froid des locaux peut être réalisé directement, dès que le réseau CO2 et la centrale froid n°1 sont en place (MO, 20.10.2026)."
     },
     {
       "id": "Q-22",
