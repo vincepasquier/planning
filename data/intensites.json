@@ -1,0 +1,13 @@
+{
+  "note": "Intensité de présence d'un lot dans un local. « principal » : le gros du travail s'y fait. « ponctuel » : passage, raccord, quelques appareils. Sans valeur, l'intensité est inconnue et comptée comme principale, par prudence.",
+  "effet": "Les lots ponctuels ne comptent pas dans la teinte du plan ni dans les conflits de co-activité : ce sont des passages, pas des occupations.",
+  "locaux": {
+    "CENT.N-2.04": {
+      "GETECH-TABLEAU": "principal",
+      "GETECH-IEG": "principal",
+      "ENTRETEC": "ponctuel",
+      "HALG": "ponctuel",
+      "ANSERMOT": "ponctuel"
+    }
+  }
+}

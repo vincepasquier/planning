@@ -30,6 +30,11 @@ def main():
     fin = max(f for _, f in dates.values())
 
     locaux = {x["numero"]: x for x in json.load(open("data/extracted/locaux.json", encoding="utf-8"))["locaux"] if x["est_local"]}
+    try:
+        intensites = json.load(open("data/intensites.json", encoding="utf-8"))["locaux"]
+    except FileNotFoundError:
+        intensites = {}
+    ponctuel = lambda n, lot: intensites.get(n, {}).get(lot) == "ponctuel"
     fiches = {f["numero"]: f for f in json.load(open("data/locaux-contenu.json", encoding="utf-8"))["fiches"]}
     chacun_son_tour = {n for n, f in fiches.items()
                        if "chacun son tour" in (f.get("reponse", {}).get("co_activite_possible") or "").lower()}
@@ -40,7 +45,8 @@ def main():
         d = D0 + timedelta(weeks=s)
         for n in locaux:
             lots = {taches[i]["entreprise"] for i in taches
-                    if n in taches[i]["locaux"] and dates[i][0] <= d <= dates[i][1]}
+                    if n in taches[i]["locaux"] and dates[i][0] <= d <= dates[i][1]
+                    and not ponctuel(n, taches[i]["entreprise"])}
             seuil = 2 if n in chacun_son_tour else args.seuil
             if len(lots) >= seuil:
                 c = conflits.setdefault(n, {"semaines": [], "lots": set(), "seuil": seuil})

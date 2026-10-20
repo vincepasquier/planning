@@ -296,7 +296,10 @@ let piece = null, vue = "gantt", groupe = "phase", tache = null, lecture = null;
 
 const lundiDe = i => { const d = new Date(D0.getTime() + i * 7 * jour); d.setHours(0,0,0,0); return d; };
 const couvre = (t, d) => dt(t.debut) <= d && d <= dt(t.fin);
-const occupantsDe = (n, d) => D.taches.filter(t => t.locaux.includes(n) && couvre(t, d));
+const INT = D.intensites || {};
+const ponctuel = (n, lot) => (INT[n] || {})[lot] === "ponctuel";
+const occupantsDe = (n, d) => D.taches.filter(t => t.locaux.includes(n) && couvre(t, d) && !ponctuel(n, t.lot));
+const passagesDe = (n, d) => D.taches.filter(t => t.locaux.includes(n) && couvre(t, d) && ponctuel(n, t.lot));
 const globales = d => D.taches.filter(t => t.locaux.includes("*") && couvre(t, d));
 const tachesDe = n => D.taches.filter(t => t.locaux.includes(n)).sort((a,b) => a.debut < b.debut ? -1 : 1);
 
@@ -337,12 +340,13 @@ function rendrePlan(){
   let pieces = "", labels = "", maxOcc = 0;
   for (const loc of n.locaux){
     const occ = occupantsDe(loc.numero, d), hm = HORS.has(loc.numero);
+    const pass_ = passagesDe(loc.numero, d);
     maxOcc = Math.max(maxOcc, occ.length);
     const pts = loc.polygone.map(([x,y]) => `${(x-x0).toFixed(2)},${(y1-y).toFixed(2)}`).join(" ");
     const lots = [...new Set(occ.map(t => t.lot))];
     pieces += `<polygon class="piece${piece===loc.numero?" actif":""}" points="${pts}" fill="${teinte(occ.length)}"
       data-loc="${esc(loc.numero)}" tabindex="0" role="button"
-      aria-label="${esc(loc.numero)} ${esc(loc.designation)}"><title>${esc(loc.numero)} ${esc(loc.designation)} — ${hm?"hors marché":occ.length?esc(lots.join(", ")):"libre"}</title></polygon>`;
+      aria-label="${esc(loc.numero)} ${esc(loc.designation)}"><title>${esc(loc.numero)} ${esc(loc.designation)} — ${hm?"hors marché":occ.length?esc(lots.join(", ")):"libre"}${pass_.length?` (passage : ${esc([...new Set(pass_.map(t=>t.lot))].join(", "))})`:""}</title></polygon>`;
     if (hm) pieces += `<polygon class="hors" points="${pts}"></polygon>`;
     else if (occ.length >= 3) pieces += `<polygon class="coact" points="${pts}"></polygon>`;
     const cx = loc.polygone.reduce((a,p) => a+p[0], 0)/loc.polygone.length - x0;
@@ -377,7 +381,8 @@ function rendreFiche(){
     return;
   }
   const info = L[piece] || {}, f = (D.fiches || {})[piece] || {}, r = f.reponse || {};
-  const toutes = tachesDe(piece), ici = toutes.filter(t => couvre(t, d));
+  const toutes = tachesDe(piece), ici = toutes.filter(t => couvre(t, d) && !ponctuel(piece, t.lot));
+  const pass_ = toutes.filter(t => couvre(t, d) && ponctuel(piece, t.lot));
   const nowPct = ((d - D0) / jour) / TOTAL * 100;
 
   const frise = toutes.length ? `<div class="mini">${toutes.map(t => {
@@ -407,6 +412,7 @@ function rendreFiche(){
         : `<span class="tag">non relevé</span>`}
       ${ici.length >= 3 ? `<span class="tag fort">${ici.length} entreprises cette semaine</span>`
         : ici.length ? `<span class="tag">${ici.length} en cours</span>` : ""}
+      ${pass_.length ? `<span class="tag">${pass_.length} en passage</span>` : ""}
     </div>
     ${r.contenu ? `<div class="bloc-f"><p class="eyebrow">Contenu</p><p class="contenu">${esc(r.contenu)}</p></div>` : ""}
     ${r.manutention ? `<div class="bloc-f"><p class="eyebrow">Manutention</p><p class="contenu">${esc(r.manutention)}</p></div>` : ""}
