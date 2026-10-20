@@ -22,6 +22,7 @@ ENTRETEC;CENT.N-1.02;Tuyauterie hydraulique chaud (sections 00 à 06);T-ENT-010;
 ENTRETEC;CENT.N-1.04;Tuyauterie hydraulique chaud (sections 00 à 06);T-ENT-010;2026-11-30;2027-03-12;15;P2;a_confirmer;35;
 ENTRETEC;CENT.N-2.19;Tuyauterie hydraulique chaud (sections 00 à 06);T-ENT-010;2026-11-30;2027-03-12;15;P2;a_confirmer;35;
 ENTRETEC;CENT.N-2.24;Tuyauterie hydraulique chaud (sections 00 à 06);T-ENT-010;2026-11-30;2027-03-12;15;P2;a_confirmer;35;
+ENTRETEC;CENT.N-2.19;Raccordement hydraulique des vases d'expansion;T-ENT-020;2026-11-30;2026-12-18;3;P2;a_confirmer;217;
 ENTRETEC;CENT.N-2.18;Pompes et collecteur de circulation des locaux PAC;T-ENT-030;2026-11-30;2027-02-05;10;P2;a_confirmer;168;
 GE;CENT.N+0.03;Raccordement extérieur (MT réseau et conduites CAD);T-GE-020;2026-11-30;2027-02-19;12;P3;a_confirmer;133;
 GETECH-IEG;CENT.N+0.01;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-11-30;2027-03-19;16;P2;a_confirmer;105;
@@ -56,7 +57,6 @@ GETECH-IEG;CENT.N-2.24;Chemins de câbles et câblage IEG (hors locaux électriq
 GETECH-IEG;CENT.N-2.25;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-11-30;2027-03-19;16;P2;a_confirmer;105;
 GETECH-IEG;CENT.N-2.26;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-11-30;2027-03-19;16;P2;a_confirmer;105;
 HALG;CENT.N-2.03;Ventilation du local de refroidissement des locaux élec.;T-HAL-011;2026-11-30;2026-12-11;2;P2;a_confirmer;105;
-LEVAGE;CENT.N-2.19;Mise en place des vases d'expansion (7 x 5'000 L);T-LEV-010;2026-11-30;2026-12-11;2;P1;non_adjuge;203;
 RIEDO;CENT.N-1.03;Installations sanitaires;T-RIE-010;2026-11-30;2026-12-18;3;P2;a_confirmer;119;
 RIEDO;CENT.N-1.04;Installations sanitaires;T-RIE-010;2026-11-30;2026-12-18;3;P2;a_confirmer;119;
 RIEDO;CENT.N-2.22;Installations sanitaires;T-RIE-010;2026-11-30;2026-12-18;3;P2;a_confirmer;119;
@@ -67,10 +67,9 @@ ENTRETEC;CENT.N-2.24;Raccordement hydraulique sur accumulateur;T-ENT-050;2026-12
 GE;CENT.N-2.24;Raccordement des sondes de l'accumulateur;T-GE-010;2026-12-07;2026-12-11;1;P4;a_confirmer;273;
 WETTSTEIN;CENT.N-2.07;Montage de la PAC 1 (NH3) dans le local;T-WET-010;2026-12-07;2027-03-19;15;P1;a_confirmer;0;oui
 BILFINGER;CENT.N-2.24;Calorifugeage de l'accumulateur;T-CAL-010;2026-12-14;2027-01-22;6;P5;a_confirmer;273;
-ENTRETEC;CENT.N-2.19;Raccordement hydraulique des vases d'expansion;T-ENT-020;2026-12-14;2027-01-01;3;P2;a_confirmer;203;
 GETECH-INFRA;CENT.N-2.01;Cellules et transformateurs MT/BT, rails d'énergie;T-GET-010;2027-02-01;2027-03-26;8;P3;a_confirmer;0;oui
 ENTRETEC;CENT.N-2.03;Centrale de froid des locaux;T-ENT-091;2027-02-22;2027-03-19;4;P2;a_confirmer;35;
-ENTRETEC;CENT.N-2.19;Départ CAD et départ ZI (étape 1);T-ENT-055;2027-03-15;2027-04-09;4;P4;a_confirmer;189;
+ENTRETEC;CENT.N-2.19;Départ CAD et départ ZI (étape 1);T-ENT-055;2027-03-15;2027-04-09;4;P4;a_confirmer;210;
 ENTRETEC;CENT.N-2.03;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-03-15;2027-03-26;2;P5;a_confirmer;133;
 ENTRETEC;CENT.N-2.04;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-03-15;2027-03-26;2;P5;a_confirmer;133;
 ENTRETEC;CENT.N-2.05;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-03-15;2027-03-26;2;P5;a_confirmer;133;
@@ -106,7 +105,6 @@ GETECH-TABLEAU;CENT.N-2.04;Pose des tableaux TGBT;T-GET-020;2027-03-29;2027-05-2
 GETECH-TABLEAU;CENT.N-2.21;Armoires et coffrets de commande (15 unités);T-GET-050;2027-03-29;2027-04-23;4;P3;a_confirmer;28;
 GETECH-TABLEAU;CENT.N-2.19;Armoires et coffrets de commande (15 unités);T-GET-050;2027-03-29;2027-04-23;4;P3;a_confirmer;28;
 GETECH-TABLEAU;CENT.N-2.04;Armoires et coffrets de commande (15 unités);T-GET-050;2027-03-29;2027-04-23;4;P3;a_confirmer;28;
-ENTRETEC;CENT.N+0.03;Raccordement des chaufferies mobiles gaz (2 x 2.5 MW);T-ENT-080;2027-04-12;2027-04-30;3;P4;a_confirmer;189;
 HALG;CENT.N-1.01;Ventilation hygiénique des autres locaux;T-HAL-013;2027-04-19;2027-05-21;5;P2;a_confirmer;35;
 HALG;CENT.N-1.06;Ventilation hygiénique des autres locaux;T-HAL-013;2027-04-19;2027-05-21;5;P2;a_confirmer;35;
 HALG;CENT.N-1.07;Ventilation hygiénique des autres locaux;T-HAL-013;2027-04-19;2027-05-21;5;P2;a_confirmer;35;

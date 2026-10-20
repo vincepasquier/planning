@@ -24,13 +24,14 @@
     },
     {
       "id": "Q-26",
-      "priorite": "haute",
-      "statut": "ouverte",
+      "priorite": "resolue",
+      "statut": "resolue",
       "sujet": "Entreprise de levage pour les vases d'expansion",
       "question": "Quelle entreprise met en place les 7 vases d'expansion, et quand sera-t-elle désignée ?",
       "pourquoi": "Spirotec fournit, Entretec raccorde, mais la mise en place revient à une entreprise de levage qui n'est pas désignée. Elle s'intercale entre les deux et conditionne le raccordement de l'expansion, lui-même préalable à la mise en eau des réseaux. C'est le troisième lot non adjugé du dossier, après le calorifugeage et Ansermot.",
       "destinataire": "Maître d'ouvrage",
-      "impact": "Bloque le remplissage des réseaux hydrauliques, donc les épreuves et la mise en service."
+      "impact": "Un lot non adjugé de moins. Entretec raccorde quand les vases sont en place ; la coordination reste à la charge du maître d'ouvrage.",
+      "reponse": "La mise en place des vases d'expansion est organisée hors planning (MO, 20.10.2026)."
     },
     {
       "id": "Q-25",
@@ -149,13 +150,14 @@
     },
     {
       "id": "Q-15",
-      "priorite": "haute",
-      "statut": "ouverte",
+      "priorite": "resolue",
+      "statut": "resolue",
       "sujet": "Rôle des chaufferies mobiles gaz",
       "question": "Les deux chaufferies mobiles gaz de 2.5 MW sont-elles un secours, une alimentation provisoire du CAD, ou les deux ? Et à quelle date doivent-elles être opérationnelles ?",
       "pourquoi": "C'est potentiellement le levier de planning le plus puissant du dossier : si elles alimentent le CAD en attendant les PAC, la date de livraison de chaleur se découple de la mise en service des machines.",
       "destinataire": "Groupe E",
-      "impact": "Peut retirer la mise en service des PAC du chemin critique contractuel."
+      "impact": "Le levier de découplage entre la livraison de chaleur et la mise en service des PAC n'est pas retenu. Les chaufferies restent au synoptique chaud.",
+      "reponse": "Les chaufferies mobiles sortent du périmètre du planning (MO, 20.10.2026)."
     },
     {
       "id": "Q-04",
@@ -190,13 +192,14 @@
     },
     {
       "id": "Q-10",
-      "priorite": "haute",
-      "statut": "ouverte",
+      "priorite": "resolue",
+      "statut": "resolue",
       "sujet": "Pilotage de la mise en service",
       "question": "Qui coordonne la campagne d'essais fonctionnels, qui exige la présence simultanée de Wettstein, Despraz, Entretec, Groupe E Tech et Groupe E ?",
       "pourquoi": "T-GE-060 n'est pas une tâche mais une campagne à cinq entreprises. Sans pilote désigné, elle glisse.",
       "destinataire": "Maître d'ouvrage",
-      "impact": "Risque de glissement en fin de chantier, là où il n'y a plus de marge."
+      "impact": "Huit semaines d'essais à cinq entreprises ont désormais un responsable.",
+      "reponse": "Groupe E pilote la campagne de mise en service (MO, 20.10.2026)."
     },
     {
       "id": "Q-20",

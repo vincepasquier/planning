@@ -11,16 +11,16 @@ surtout **pourquoi**. Chaque lien entre deux tâches porte sa justification.
 
 | | |
 |---|---|
-| Tâches | 67 |
-| Liens de dépendance | 116 |
+| Tâches | 65 |
+| Liens de dépendance | 113 |
 | Rangs d'ordonnancement | 12, sans cycle |
 | Durée calculée | 48 semaines (réception au plus tôt 05.11.2027) |
 | Dates fermes | 1 (épreuve accumulateur, 30.11.2026) |
-| Questions ouvertes | 28 posées, 12 résolues |
-| Lots non adjugés | 3 (calorifugeage des conduites, levage, Ansermot) |
+| Questions ouvertes | 28 posées, 11 résolues |
+| Lots non adjugés | 2 (calorifugeage des conduites, Ansermot) |
 | Périmètre non communiqué | 1 (STAP) |
 
-Version 2.1 — les 36 locaux de la maquette sont relevés lot par lot avec le
+Version 2.2 — les 36 locaux de la maquette sont relevés lot par lot avec le
 maître d'ouvrage : 139 affectations relevées, 2 supposées. Le chantier ouvre
 aux entreprises techniques en décembre 2026, le bâtiment étant réceptionné à
 la mi-novembre.

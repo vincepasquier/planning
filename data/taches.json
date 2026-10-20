@@ -1,5 +1,5 @@
 {
-  "version": "2.1",
+  "version": "2.2",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -729,28 +729,6 @@
       "duree_semaines": 15
     },
     {
-      "id": "T-LEV-010",
-      "designation": "Mise en place des vases d'expansion (7 x 5'000 L)",
-      "entreprise": "LEVAGE",
-      "systeme": "EXPANSION",
-      "phase": "P1",
-      "locaux": [
-        "CENT.N-2.19"
-      ],
-      "duree_classe": "quinzaine",
-      "duree_semaines": 2,
-      "date_connue": null,
-      "predecesseurs": [
-        {
-          "id": "T-ANT-010",
-          "lien": "FD",
-          "raison": "Local hydraulique chaud disponible"
-        }
-      ],
-      "statut": "non_adjuge",
-      "notes": "Vases fournis par SPIROTEC, mis en place par une entreprise de levage, raccordés par Entretec (MO, 20.10.2026). Entreprise de levage à désigner. Les vases arrivent assemblés : c'est pour eux que la question de gabarit reste posée (Q-02). Levage à organiser (MO, 20.10.2026)."
-    },
-    {
       "id": "T-ENT-020",
       "designation": "Raccordement hydraulique des vases d'expansion",
       "entreprise": "ENTRETEC",
@@ -764,18 +742,13 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-LEV-010",
-          "lien": "FD",
-          "raison": "Vases en place avant raccordement"
-        },
-        {
           "id": "T-ENT-010",
           "lien": "DD",
           "raison": "Même local, même entreprise"
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Section 07 du synoptique : 7 vases de 5'000 L, 0.5 bar, DN20/40/65."
+      "notes": "Section 07 du synoptique : 7 vases de 5'000 L, 0.5 bar, DN20/40/65. Fournis par Spirotec. Leur mise en place par une entreprise de levage reste à organiser hors planning (MO, 20.10.2026)."
     },
     {
       "id": "T-ENT-030",
@@ -914,28 +887,6 @@
       ],
       "statut": "a_confirmer",
       "duree_semaines": 1
-    },
-    {
-      "id": "T-ENT-080",
-      "designation": "Raccordement des chaufferies mobiles gaz (2 x 2.5 MW)",
-      "entreprise": "ENTRETEC",
-      "systeme": "HYD-CHAUD",
-      "phase": "P4",
-      "locaux": [
-        "CENT.N+0.03"
-      ],
-      "duree_classe": "quinzaine",
-      "date_connue": null,
-      "predecesseurs": [
-        {
-          "id": "T-ENT-055",
-          "lien": "FD",
-          "raison": "Collecteurs de départ disponibles"
-        }
-      ],
-      "statut": "a_confirmer",
-      "notes": "LEVIER DE PLANNING : échangeurs PN6/PN25 sur le synoptique chaud. Les chaufferies mobiles permettent d'alimenter le CAD avant que les PAC soient en service, donc de découpler la date de livraison de chaleur de celle de la mise en service des machines. Voir Q-15. La surface bituminée N+0.03 n'est pas encore relevée : affectation déduite, à reprendre.",
-      "duree_semaines": 3
     },
     {
       "id": "T-CAL-020",
@@ -1721,7 +1672,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Campagne à cinq entreprises simultanées (Wettstein, Despraz, Entretec, Groupe E Tech, Groupe E). À planifier comme une campagne, pas comme une tâche. Pilote à désigner, voir Q-10.",
+      "notes": "Campagne à cinq entreprises simultanées — Wettstein, Despraz, Entretec, Groupe E Tech et Groupe E. PILOTE : Groupe E (MO, 20.10.2026). À planifier comme une campagne, pas comme une tâche.",
       "duree_semaines": 8
     },
     {
@@ -2017,5 +1968,10 @@
   "corrections_v21": [
     "La ventilation hygiénique de Hälg est découpée en trois : le local de refroidissement des locaux électriques, les galeries et locaux techniques N-1, puis le reste. Répartition 2-5-5 proposée et non relevée.",
     "Le froid des locaux n'attend plus que deux semaines de ventilation au lieu de douze."
+  ],
+  "corrections_v22": [
+    "Les chaufferies mobiles gaz sortent du périmètre du planning (MO, 20.10.2026). Elles restent au synoptique chaud.",
+    "La mise en place des vases d'expansion sort du planning : elle sera organisée hors séquence. Entretec raccorde quand les vases sont là.",
+    "Groupe E pilote la campagne de mise en service."
   ]
 }

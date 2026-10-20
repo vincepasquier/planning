@@ -194,20 +194,13 @@
     <Resource>
       <UID>14</UID>
       <ID>14</ID>
-      <Name>LEVAGE</Name>
+      <Name>RIEDO</Name>
       <Type>1</Type>
       <CalendarUID>1</CalendarUID>
     </Resource>
     <Resource>
       <UID>15</UID>
       <ID>15</ID>
-      <Name>RIEDO</Name>
-      <Type>1</Type>
-      <CalendarUID>1</CalendarUID>
-    </Resource>
-    <Resource>
-      <UID>16</UID>
-      <ID>16</ID>
       <Name>WETTSTEIN</Name>
       <Type>1</Type>
       <CalendarUID>1</CalendarUID>
@@ -464,37 +457,6 @@ RAISONS DES LIENS :
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
-      <Name>Mise en place des vases d'expansion (7 x 5'000 L)</Name>
-      <OutlineLevel>2</OutlineLevel>
-      <Summary>0</Summary>
-      <Type>1</Type>
-      <DurationFormat>7</DurationFormat>
-      <Duration>PT80H0M0S</Duration>
-      <Start>2026-11-30T08:00:00</Start>
-      <Finish>2026-12-11T17:00:00</Finish>
-      <ConstraintType>0</ConstraintType>
-      <Notes>[T-LEV-010]  Lot : LEVAGE  |  Systeme : EXPANSION
-Locaux : CENT.N-2.19
-Statut : non_adjuge
-
-Vases fournis par SPIROTEC, mis en place par une entreprise de levage, raccordés par Entretec (MO, 20.10.2026). Entreprise de levage à désigner. Les vases arrivent assemblés : c'est pour eux que la question de gabarit reste posée (Q-02). Levage à organiser (MO, 20.10.2026).
-
-RAISONS DES LIENS :
-  &lt;- T-ANT-010 (FD) : Local hydraulique chaud disponible</Notes>
-      <PredecessorLink>
-        <PredecessorUID>2</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-    </Task>
-    <Task>
-      <UID>12</UID>
-      <ID>12</ID>
-      <Active>1</Active>
-      <Manual>0</Manual>
-      <CalendarUID>1</CalendarUID>
       <Name>Montage de la PAC 1 (NH3) dans le local</Name>
       <OutlineLevel>2</OutlineLevel>
       <Summary>0</Summary>
@@ -521,8 +483,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>13</UID>
-      <ID>13</ID>
+      <UID>12</UID>
+      <ID>12</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -552,7 +514,7 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>12</PredecessorUID>
+        <PredecessorUID>11</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -560,8 +522,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>14</UID>
-      <ID>14</ID>
+      <UID>13</UID>
+      <ID>13</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -583,7 +545,7 @@ Voir Q-01 : l'itinéraire réel reste à confirmer.
 RAISONS DES LIENS :
   &lt;- T-WET-020 (FD) : Dernier colis lourd rentré</Notes>
       <PredecessorLink>
-        <PredecessorUID>13</PredecessorUID>
+        <PredecessorUID>12</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -591,8 +553,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>15</UID>
-      <ID>15</ID>
+      <UID>14</UID>
+      <ID>14</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -604,8 +566,8 @@ RAISONS DES LIENS :
       <Notes>Ordre de passage dans les volumes partagés : le plus encombrant et le moins déformable d'abord. Ventilation, puis hydraulique, puis CO2, puis chemins de câbles.</Notes>
     </Task>
     <Task>
-      <UID>16</UID>
-      <ID>16</ID>
+      <UID>15</UID>
+      <ID>15</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -635,7 +597,7 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>17</PredecessorUID>
+        <PredecessorUID>16</PredecessorUID>
         <Type>3</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -643,8 +605,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>17</UID>
-      <ID>17</ID>
+      <UID>16</UID>
+      <ID>16</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -667,6 +629,37 @@ RAISONS DES LIENS :
   &lt;- T-ANT-010 (DD) : Locaux livrés par le gros œuvre au fur et à mesure</Notes>
       <PredecessorLink>
         <PredecessorUID>2</PredecessorUID>
+        <Type>3</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+    </Task>
+    <Task>
+      <UID>17</UID>
+      <ID>17</ID>
+      <Active>1</Active>
+      <Manual>0</Manual>
+      <CalendarUID>1</CalendarUID>
+      <Name>Raccordement hydraulique des vases d'expansion</Name>
+      <OutlineLevel>2</OutlineLevel>
+      <Summary>0</Summary>
+      <Type>1</Type>
+      <DurationFormat>7</DurationFormat>
+      <Duration>PT120H0M0S</Duration>
+      <Start>2026-11-30T08:00:00</Start>
+      <Finish>2026-12-18T17:00:00</Finish>
+      <ConstraintType>0</ConstraintType>
+      <Notes>[T-ENT-020]  Lot : ENTRETEC  |  Systeme : EXPANSION
+Locaux : CENT.N-2.19
+Statut : a_confirmer
+
+Section 07 du synoptique : 7 vases de 5'000 L, 0.5 bar, DN20/40/65. Fournis par Spirotec. Leur mise en place par une entreprise de levage reste à organiser hors planning (MO, 20.10.2026).
+
+RAISONS DES LIENS :
+  &lt;- T-ENT-010 (DD) : Même local, même entreprise</Notes>
+      <PredecessorLink>
+        <PredecessorUID>16</PredecessorUID>
         <Type>3</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -697,7 +690,7 @@ Pompes et collecteur faisant circuler l'eau dans les locaux PAC (MO, 20.10.2026)
 RAISONS DES LIENS :
   &lt;- T-ENT-010 (DD) : Même entreprise, réseaux coordonnés</Notes>
       <PredecessorLink>
-        <PredecessorUID>17</PredecessorUID>
+        <PredecessorUID>16</PredecessorUID>
         <Type>3</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -759,7 +752,7 @@ Groupe E Tech IEG câble tout ce qui n'est pas du rail d'énergie. 905 segments 
 RAISONS DES LIENS :
   &lt;- T-DES-010 (DD) : Dernier des réseaux : le chemin de câbles est le plus adaptable, il contourne</Notes>
       <PredecessorLink>
-        <PredecessorUID>16</PredecessorUID>
+        <PredecessorUID>15</PredecessorUID>
         <Type>3</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -824,45 +817,6 @@ RAISONS DES LIENS :
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
-      <Name>Raccordement hydraulique des vases d'expansion</Name>
-      <OutlineLevel>2</OutlineLevel>
-      <Summary>0</Summary>
-      <Type>1</Type>
-      <DurationFormat>7</DurationFormat>
-      <Duration>PT120H0M0S</Duration>
-      <Start>2026-12-14T08:00:00</Start>
-      <Finish>2027-01-01T17:00:00</Finish>
-      <ConstraintType>0</ConstraintType>
-      <Notes>[T-ENT-020]  Lot : ENTRETEC  |  Systeme : EXPANSION
-Locaux : CENT.N-2.19
-Statut : a_confirmer
-
-Section 07 du synoptique : 7 vases de 5'000 L, 0.5 bar, DN20/40/65.
-
-RAISONS DES LIENS :
-  &lt;- T-LEV-010 (FD) : Vases en place avant raccordement
-  &lt;- T-ENT-010 (DD) : Même local, même entreprise</Notes>
-      <PredecessorLink>
-        <PredecessorUID>11</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>17</PredecessorUID>
-        <Type>3</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-    </Task>
-    <Task>
-      <UID>24</UID>
-      <ID>24</ID>
-      <Active>1</Active>
-      <Manual>0</Manual>
-      <CalendarUID>1</CalendarUID>
       <Name>Centrale de froid des locaux</Name>
       <OutlineLevel>2</OutlineLevel>
       <Summary>0</Summary>
@@ -883,7 +837,7 @@ RAISONS DES LIENS :
   &lt;- T-DES-005 (FD) : Centrale froid n°1 en service
   &lt;- T-HAL-011 (FD) : Local refroidissement des locaux élec. : Hälg passe avant Entretec (MO, 20.10.2026)</Notes>
       <PredecessorLink>
-        <PredecessorUID>16</PredecessorUID>
+        <PredecessorUID>15</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -905,8 +859,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>25</UID>
-      <ID>25</ID>
+      <UID>24</UID>
+      <ID>24</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -937,7 +891,7 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>17</PredecessorUID>
+        <PredecessorUID>16</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -952,8 +906,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>26</UID>
-      <ID>26</ID>
+      <UID>25</UID>
+      <ID>25</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -975,7 +929,7 @@ Galeries N-1.03 et N-1.04. À NOTER : cette passe froid suit la ventilation dans
 RAISONS DES LIENS :
   &lt;- T-ENT-091 (FD) : La centrale alimente la distribution</Notes>
       <PredecessorLink>
-        <PredecessorUID>24</PredecessorUID>
+        <PredecessorUID>23</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -983,8 +937,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>27</UID>
-      <ID>27</ID>
+      <UID>26</UID>
+      <ID>26</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1006,7 +960,7 @@ Débits relevés au schéma 42 : MT 1'240, hydraulique chaud 890, TGBT 790, pomp
 RAISONS DES LIENS :
   &lt;- T-HAL-012 (FD) : Même entreprise, enchaînement séquentiel</Notes>
       <PredecessorLink>
-        <PredecessorUID>25</PredecessorUID>
+        <PredecessorUID>24</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1014,8 +968,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>28</UID>
-      <ID>28</ID>
+      <UID>27</UID>
+      <ID>27</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1037,7 +991,7 @@ Statut : a_confirmer
 RAISONS DES LIENS :
   &lt;- T-HAL-013 (DD) : Même entreprise</Notes>
       <PredecessorLink>
-        <PredecessorUID>27</PredecessorUID>
+        <PredecessorUID>26</PredecessorUID>
         <Type>3</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1045,8 +999,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>29</UID>
-      <ID>29</ID>
+      <UID>28</UID>
+      <ID>28</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1070,14 +1024,14 @@ RAISONS DES LIENS :
   &lt;- T-ENT-010 (FD) : Dans les galeries techniques, l'hydraulique et le sanitaire passent avant la ventilation (MO, 20.10.2026).
   &lt;- T-RIE-010 (FD) : Dans les galeries techniques, l'hydraulique et le sanitaire passent avant la ventilation (MO, 20.10.2026).</Notes>
       <PredecessorLink>
-        <PredecessorUID>27</PredecessorUID>
+        <PredecessorUID>26</PredecessorUID>
         <Type>3</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>17</PredecessorUID>
+        <PredecessorUID>16</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1092,8 +1046,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>30</UID>
-      <ID>30</ID>
+      <UID>29</UID>
+      <ID>29</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1105,8 +1059,8 @@ RAISONS DES LIENS :
       <Notes>MT/BT, transformateurs, TGBT, armoires variateurs et commande. Mené en parallèle de P2 car conditionné par les délais de livraison.</Notes>
     </Task>
     <Task>
-      <UID>31</UID>
-      <ID>31</ID>
+      <UID>30</UID>
+      <ID>30</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1126,8 +1080,8 @@ Statut : a_confirmer
 À coordonner avec la surface bituminée (3'352 m2) et la rampe, qui sert aussi d'itinéraire de manutention. La surface bituminée N+0.03 n'est pas encore relevée : affectation déduite, à reprendre.</Notes>
     </Task>
     <Task>
-      <UID>32</UID>
-      <ID>32</ID>
+      <UID>31</UID>
+      <ID>31</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1147,8 +1101,8 @@ Statut : HORS_PERIMETRE_CONNU
 Le synoptique chaud s'intitule 'Centrale PAC 18MW (STAP et Centrale)' et la liste des armoires comporte une armoire STAP (1200x2000x400, 400/230 V, socle 100 mm, API STAP au concept MCR). La STAP est donc dans le périmètre du projet, mais absente de la maquette architecturale et de la liste des adjudications communiquée. Voir Q-18.</Notes>
     </Task>
     <Task>
-      <UID>33</UID>
-      <ID>33</ID>
+      <UID>32</UID>
+      <ID>32</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1168,8 +1122,8 @@ Statut : a_confirmer
 Groupe E Tech INFRA pose les cellules et transformateurs MT/BT, ainsi que les rails d'énergie jusque dans le local TGBT — c'est là que s'arrête sa prestation. Matériel livré dès février 2027 (MO, 20.10.2026).</Notes>
     </Task>
     <Task>
-      <UID>34</UID>
-      <ID>34</ID>
+      <UID>33</UID>
+      <ID>33</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1191,7 +1145,7 @@ Groupe E Tech TABLEAU pose les TGBT dans le local TGBT. Cellules livrées dès f
 RAISONS DES LIENS :
   &lt;- T-GET-010 (FD) : Chacun son tour dans le local TGBT ; les rails d'énergie d'INFRA y aboutissent (ordre à confirmer, Q-25)</Notes>
       <PredecessorLink>
-        <PredecessorUID>33</PredecessorUID>
+        <PredecessorUID>32</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1199,8 +1153,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>35</UID>
-      <ID>35</ID>
+      <UID>34</UID>
+      <ID>34</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1222,7 +1176,7 @@ Tableaux variateurs fournis par Wettstein et Exergo (MO, 20.10.2026).
 RAISONS DES LIENS :
   &lt;- T-GET-020 (DD) : Même campagne de livraison, à confirmer</Notes>
       <PredecessorLink>
-        <PredecessorUID>34</PredecessorUID>
+        <PredecessorUID>33</PredecessorUID>
         <Type>3</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1230,8 +1184,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>36</UID>
-      <ID>36</ID>
+      <UID>35</UID>
+      <ID>35</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1261,7 +1215,7 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>35</PredecessorUID>
+        <PredecessorUID>34</PredecessorUID>
         <Type>3</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1269,8 +1223,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>37</UID>
-      <ID>37</ID>
+      <UID>36</UID>
+      <ID>36</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1282,8 +1236,8 @@ RAISONS DES LIENS :
       <Notes>CO2, hydraulique, puissance et régulation sur les PAC et l'accumulateur, dans les locaux.</Notes>
     </Task>
     <Task>
-      <UID>38</UID>
-      <ID>38</ID>
+      <UID>37</UID>
+      <ID>37</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1305,7 +1259,7 @@ RIO 2 - Accu du concept MCR : 6 circuits instrumentés. Les doigts de gant doive
 RAISONS DES LIENS :
   &lt;- T-BIL-020 (FD) : Épreuve réalisée avant instrumentation définitive</Notes>
       <PredecessorLink>
-        <PredecessorUID>55</PredecessorUID>
+        <PredecessorUID>53</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1313,8 +1267,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>39</UID>
-      <ID>39</ID>
+      <UID>38</UID>
+      <ID>38</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1334,7 +1288,7 @@ Statut : a_confirmer
 RAISONS DES LIENS :
   &lt;- T-BIL-020 (FD) : Épreuve de l'enveloppe avant raccordement des réseaux</Notes>
       <PredecessorLink>
-        <PredecessorUID>55</PredecessorUID>
+        <PredecessorUID>53</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1342,8 +1296,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>40</UID>
-      <ID>40</ID>
+      <UID>39</UID>
+      <ID>39</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1365,7 +1319,7 @@ Le synoptique distingue 'Départ ZI 19.119 - Etape 1 / Final' et 'Départ CADFR 
 RAISONS DES LIENS :
   &lt;- T-ENT-010 (FD) : Collecteurs réalisés</Notes>
       <PredecessorLink>
-        <PredecessorUID>17</PredecessorUID>
+        <PredecessorUID>16</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1373,8 +1327,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>41</UID>
-      <ID>41</ID>
+      <UID>40</UID>
+      <ID>40</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1397,14 +1351,14 @@ RAISONS DES LIENS :
   &lt;- T-WET-010 (FD) : Wettstein libère le local et passe directement au suivant ; Entretec et Despraz y interviennent ensemble, 4 semaines confondues (MO, 20.10.2026).
   &lt;- T-ENT-010 (FD) : Réseau amont réalisé</Notes>
       <PredecessorLink>
-        <PredecessorUID>12</PredecessorUID>
+        <PredecessorUID>11</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>17</PredecessorUID>
+        <PredecessorUID>16</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1412,8 +1366,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>42</UID>
-      <ID>42</ID>
+      <UID>41</UID>
+      <ID>41</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1436,14 +1390,14 @@ RAISONS DES LIENS :
   &lt;- T-ENT-041 (DD) : Entretec et Despraz interviennent en même temps dans le local (MO, 20.10.2026)
   &lt;- T-DES-010 (FD) : Réseau CO2 amont réalisé</Notes>
       <PredecessorLink>
-        <PredecessorUID>41</PredecessorUID>
+        <PredecessorUID>40</PredecessorUID>
         <Type>3</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>16</PredecessorUID>
+        <PredecessorUID>15</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1451,39 +1405,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>43</UID>
-      <ID>43</ID>
-      <Active>1</Active>
-      <Manual>0</Manual>
-      <CalendarUID>1</CalendarUID>
-      <Name>Raccordement des chaufferies mobiles gaz (2 x 2.5 MW)</Name>
-      <OutlineLevel>2</OutlineLevel>
-      <Summary>0</Summary>
-      <Type>1</Type>
-      <DurationFormat>7</DurationFormat>
-      <Duration>PT120H0M0S</Duration>
-      <Start>2027-04-12T08:00:00</Start>
-      <Finish>2027-04-30T17:00:00</Finish>
-      <ConstraintType>0</ConstraintType>
-      <Notes>[T-ENT-080]  Lot : ENTRETEC  |  Systeme : HYD-CHAUD
-Locaux : CENT.N+0.03
-Statut : a_confirmer
-
-LEVIER DE PLANNING : échangeurs PN6/PN25 sur le synoptique chaud. Les chaufferies mobiles permettent d'alimenter le CAD avant que les PAC soient en service, donc de découpler la date de livraison de chaleur de celle de la mise en service des machines. Voir Q-15. La surface bituminée N+0.03 n'est pas encore relevée : affectation déduite, à reprendre.
-
-RAISONS DES LIENS :
-  &lt;- T-ENT-055 (FD) : Collecteurs de départ disponibles</Notes>
-      <PredecessorLink>
-        <PredecessorUID>40</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-    </Task>
-    <Task>
-      <UID>44</UID>
-      <ID>44</ID>
+      <UID>42</UID>
+      <ID>42</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1505,7 +1428,7 @@ Armoires 1 « Master local MCR » et 3 « Réseau IP - Télécom » en N-2.21, s
 RAISONS DES LIENS :
   &lt;- T-GET-050 (FD) : Armoires en place</Notes>
       <PredecessorLink>
-        <PredecessorUID>36</PredecessorUID>
+        <PredecessorUID>35</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1513,8 +1436,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>45</UID>
-      <ID>45</ID>
+      <UID>43</UID>
+      <ID>43</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1538,13 +1461,6 @@ RAISONS DES LIENS :
   &lt;- T-DES-010 (FD) : Réseau CO2 posé
   &lt;- T-GE-030 (DD) : Même entreprise</Notes>
       <PredecessorLink>
-        <PredecessorUID>17</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
         <PredecessorUID>16</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
@@ -1552,7 +1468,14 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>44</PredecessorUID>
+        <PredecessorUID>15</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>42</PredecessorUID>
         <Type>3</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1560,8 +1483,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>46</UID>
-      <ID>46</ID>
+      <UID>44</UID>
+      <ID>44</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1585,14 +1508,7 @@ RAISONS DES LIENS :
   &lt;- T-GET-040 (FD) : Local variateurs : Exergo passe avant Entretec (MO, 20.10.2026)
   &lt;- T-GET-020 (FD) : Local TGBT : les tableaux sont posés avant</Notes>
       <PredecessorLink>
-        <PredecessorUID>26</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>35</PredecessorUID>
+        <PredecessorUID>25</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1605,10 +1521,17 @@ RAISONS DES LIENS :
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>33</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
     </Task>
     <Task>
-      <UID>47</UID>
-      <ID>47</ID>
+      <UID>45</UID>
+      <ID>45</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1630,7 +1553,7 @@ Pompage PAC 25 kW, hydraulique chaud 15 kW.
 RAISONS DES LIENS :
   &lt;- T-ENT-093 (FD) : Même équipe, enchaînement séquentiel (MO, 20.10.2026)</Notes>
       <PredecessorLink>
-        <PredecessorUID>46</PredecessorUID>
+        <PredecessorUID>44</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1638,8 +1561,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>48</UID>
-      <ID>48</ID>
+      <UID>46</UID>
+      <ID>46</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1665,6 +1588,13 @@ RAISONS DES LIENS :
   &lt;- T-ENT-093 (FD) : Local variateurs : Entretec passe entre Exergo et IEG (MO, 20.10.2026)
   &lt;- T-GET-030 (DD) : Même entreprise, même campagne de câblage</Notes>
       <PredecessorLink>
+        <PredecessorUID>32</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
         <PredecessorUID>33</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
@@ -1679,14 +1609,7 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>35</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>46</PredecessorUID>
+        <PredecessorUID>44</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1701,8 +1624,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>49</UID>
-      <ID>49</ID>
+      <UID>47</UID>
+      <ID>47</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1725,14 +1648,14 @@ RAISONS DES LIENS :
   &lt;- T-WET-020 (FD) : Wettstein libère le local et passe directement au suivant ; Entretec et Despraz y interviennent ensemble, 4 semaines confondues (MO, 20.10.2026).
   &lt;- T-ENT-010 (FD) : Réseau amont réalisé</Notes>
       <PredecessorLink>
-        <PredecessorUID>13</PredecessorUID>
+        <PredecessorUID>12</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>17</PredecessorUID>
+        <PredecessorUID>16</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1740,8 +1663,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>50</UID>
-      <ID>50</ID>
+      <UID>48</UID>
+      <ID>48</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1764,14 +1687,14 @@ RAISONS DES LIENS :
   &lt;- T-ENT-042 (DD) : Entretec et Despraz interviennent en même temps dans le local (MO, 20.10.2026)
   &lt;- T-DES-010 (FD) : Réseau CO2 amont réalisé</Notes>
       <PredecessorLink>
-        <PredecessorUID>49</PredecessorUID>
+        <PredecessorUID>47</PredecessorUID>
         <Type>3</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>16</PredecessorUID>
+        <PredecessorUID>15</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1779,8 +1702,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>51</UID>
-      <ID>51</ID>
+      <UID>49</UID>
+      <ID>49</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1810,21 +1733,21 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>35</PredecessorUID>
+        <PredecessorUID>34</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>13</PredecessorUID>
+        <PredecessorUID>12</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>48</PredecessorUID>
+        <PredecessorUID>46</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1832,8 +1755,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>52</UID>
-      <ID>52</ID>
+      <UID>50</UID>
+      <ID>50</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1863,7 +1786,7 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>48</PredecessorUID>
+        <PredecessorUID>46</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1871,8 +1794,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>53</UID>
-      <ID>53</ID>
+      <UID>51</UID>
+      <ID>51</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1902,7 +1825,7 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>48</PredecessorUID>
+        <PredecessorUID>46</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1910,8 +1833,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>54</UID>
-      <ID>54</ID>
+      <UID>52</UID>
+      <ID>52</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1923,8 +1846,8 @@ RAISONS DES LIENS :
       <Notes>Rinçage, épreuves de pression, étanchéité CO2, tirage au vide, charge, mise sous tension.</Notes>
     </Task>
     <Task>
-      <UID>55</UID>
-      <ID>55</ID>
+      <UID>53</UID>
+      <ID>53</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1955,8 +1878,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>56</UID>
-      <ID>56</ID>
+      <UID>54</UID>
+      <ID>54</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1979,14 +1902,14 @@ RAISONS DES LIENS :
   &lt;- T-BIL-020 (FD) : On n'isole pas avant d'avoir éprouvé : une reprise de fuite impose de déshabiller
   &lt;- T-GE-010 (FD) : Sondes et doigts de gant posés, sinon on rouvre l'isolation</Notes>
       <PredecessorLink>
-        <PredecessorUID>55</PredecessorUID>
+        <PredecessorUID>53</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>38</PredecessorUID>
+        <PredecessorUID>37</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1994,8 +1917,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>57</UID>
-      <ID>57</ID>
+      <UID>55</UID>
+      <ID>55</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2019,7 +1942,7 @@ RAISONS DES LIENS :
   &lt;- T-ENT-030 (FD) : Pompes posées pour assurer la circulation de rinçage
   &lt;- T-ENT-020 (FD) : Expansion en service avant mise en eau</Notes>
       <PredecessorLink>
-        <PredecessorUID>17</PredecessorUID>
+        <PredecessorUID>16</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2033,7 +1956,7 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>23</PredecessorUID>
+        <PredecessorUID>17</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2041,8 +1964,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>58</UID>
-      <ID>58</ID>
+      <UID>56</UID>
+      <ID>56</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2062,7 +1985,7 @@ Statut : a_confirmer
 RAISONS DES LIENS :
   &lt;- T-ENT-060 (FD) : Réseau rempli</Notes>
       <PredecessorLink>
-        <PredecessorUID>57</PredecessorUID>
+        <PredecessorUID>55</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2070,8 +1993,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>59</UID>
-      <ID>59</ID>
+      <UID>57</UID>
+      <ID>57</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2096,6 +2019,13 @@ RAISONS DES LIENS :
   &lt;- T-GE-020 (FD) : Raccordement au réseau extérieur effectif
   &lt;- T-HAL-013 (FD) : Ventilation hygiénique et free-cooling du local MT disponibles : c'est ce qui permet la première mise sous tension avant que le froid CO2 ne soit en service</Notes>
       <PredecessorLink>
+        <PredecessorUID>32</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
         <PredecessorUID>33</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
@@ -2103,21 +2033,14 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>34</PredecessorUID>
+        <PredecessorUID>30</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>31</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>27</PredecessorUID>
+        <PredecessorUID>26</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2125,8 +2048,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>60</UID>
-      <ID>60</ID>
+      <UID>58</UID>
+      <ID>58</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2149,14 +2072,14 @@ RAISONS DES LIENS :
   &lt;- T-ENT-070 (FD) : On n'isole pas une tuyauterie non éprouvée
   &lt;- T-GE-040 (FD) : Instrumentation posée avant habillage</Notes>
       <PredecessorLink>
-        <PredecessorUID>58</PredecessorUID>
+        <PredecessorUID>56</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>45</PredecessorUID>
+        <PredecessorUID>43</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2164,8 +2087,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>61</UID>
-      <ID>61</ID>
+      <UID>59</UID>
+      <ID>59</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2195,7 +2118,7 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>48</PredecessorUID>
+        <PredecessorUID>46</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2203,8 +2126,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>62</UID>
-      <ID>62</ID>
+      <UID>60</UID>
+      <ID>60</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2224,7 +2147,7 @@ Statut : a_confirmer
 RAISONS DES LIENS :
   &lt;- T-WET-020 (FD) : Machines en place et assemblées</Notes>
       <PredecessorLink>
-        <PredecessorUID>13</PredecessorUID>
+        <PredecessorUID>12</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2232,8 +2155,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>63</UID>
-      <ID>63</ID>
+      <UID>61</UID>
+      <ID>61</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2253,7 +2176,7 @@ Statut : non_adjuge
 RAISONS DES LIENS :
   &lt;- T-WET-020 (FD) : Après le dernier colis lourd</Notes>
       <PredecessorLink>
-        <PredecessorUID>13</PredecessorUID>
+        <PredecessorUID>12</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2261,8 +2184,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>64</UID>
-      <ID>64</ID>
+      <UID>62</UID>
+      <ID>62</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2283,14 +2206,14 @@ RAISONS DES LIENS :
   &lt;- T-DES-017 (FD) : Toutes les soudures terminées : une seule reprise invalide l'épreuve
   &lt;- T-ENT-094 (FD) : Circuit complet, armoires de refroidissement raccordées</Notes>
       <PredecessorLink>
-        <PredecessorUID>50</PredecessorUID>
+        <PredecessorUID>48</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>47</PredecessorUID>
+        <PredecessorUID>45</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2298,8 +2221,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>65</UID>
-      <ID>65</ID>
+      <UID>63</UID>
+      <ID>63</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2324,14 +2247,21 @@ RAISONS DES LIENS :
   &lt;- T-GET-080 (FD) : Alimentation secourue disponible
   &lt;- T-ANT-035 (FD) : Sectorisation coupe-feu achevée : les clapets ne valent que dans une paroi étanche</Notes>
       <PredecessorLink>
-        <PredecessorUID>29</PredecessorUID>
+        <PredecessorUID>28</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>52</PredecessorUID>
+        <PredecessorUID>50</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>57</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2344,17 +2274,10 @@ RAISONS DES LIENS :
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>61</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
     </Task>
     <Task>
-      <UID>66</UID>
-      <ID>66</ID>
+      <UID>64</UID>
+      <ID>64</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2374,7 +2297,7 @@ Statut : a_confirmer
 RAISONS DES LIENS :
   &lt;- T-DES-030 (FD) : Étanchéité prouvée avant mise sous vide</Notes>
       <PredecessorLink>
-        <PredecessorUID>64</PredecessorUID>
+        <PredecessorUID>62</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2382,8 +2305,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>67</UID>
-      <ID>67</ID>
+      <UID>65</UID>
+      <ID>65</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2407,21 +2330,21 @@ RAISONS DES LIENS :
   &lt;- T-HAL-050 (FD) : RÈGLE DE SÉCURITÉ : ventilation de secours et détection NH3 en service avant toute introduction d'ammoniac dans le bâtiment
   &lt;- T-GET-080 (FD) : Machines alimentables</Notes>
       <PredecessorLink>
-        <PredecessorUID>62</PredecessorUID>
+        <PredecessorUID>60</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>65</PredecessorUID>
+        <PredecessorUID>63</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>59</PredecessorUID>
+        <PredecessorUID>57</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2429,8 +2352,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>68</UID>
-      <ID>68</ID>
+      <UID>66</UID>
+      <ID>66</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2454,21 +2377,21 @@ RAISONS DES LIENS :
   &lt;- T-HAL-050 (FD) : RÈGLE DE SÉCURITÉ : ventilation de secours et détection CO2 en service avant charge (12'100 m3/h d'extraction par local en cas de fuite)
   &lt;- T-GET-080 (FD) : Centrales froid alimentables</Notes>
       <PredecessorLink>
-        <PredecessorUID>66</PredecessorUID>
+        <PredecessorUID>64</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>65</PredecessorUID>
+        <PredecessorUID>63</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>59</PredecessorUID>
+        <PredecessorUID>57</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2476,8 +2399,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>69</UID>
-      <ID>69</ID>
+      <UID>67</UID>
+      <ID>67</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2489,8 +2412,8 @@ RAISONS DES LIENS :
       <Notes>Essais de régulation, essais fonctionnels intégrés, réception.</Notes>
     </Task>
     <Task>
-      <UID>70</UID>
-      <ID>70</ID>
+      <UID>68</UID>
+      <ID>68</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2512,6 +2435,13 @@ RAISONS DES LIENS :
   &lt;- T-HAL-020 (FD) : Installation terminée
   &lt;- T-GET-080 (FD) : Alimentation définitive disponible</Notes>
       <PredecessorLink>
+        <PredecessorUID>26</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
         <PredecessorUID>27</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
@@ -2519,14 +2449,7 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>28</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>59</PredecessorUID>
+        <PredecessorUID>57</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2534,8 +2457,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>71</UID>
-      <ID>71</ID>
+      <UID>69</UID>
+      <ID>69</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2558,14 +2481,14 @@ RAISONS DES LIENS :
   &lt;- T-GET-080 (FD) : Tension disponible
   &lt;- T-ENT-093 (FD) : RÈGLE DURE : les variateurs ne tournent pas en charge sans leur refroidissement (70 kW par local var/com)</Notes>
       <PredecessorLink>
-        <PredecessorUID>59</PredecessorUID>
+        <PredecessorUID>57</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>46</PredecessorUID>
+        <PredecessorUID>44</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2573,8 +2496,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>72</UID>
-      <ID>72</ID>
+      <UID>70</UID>
+      <ID>70</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2595,14 +2518,14 @@ RAISONS DES LIENS :
   &lt;- T-GE-040 (FD) : Instrumentation raccordée
   &lt;- T-GET-080 (FD) : Alimentation disponible</Notes>
       <PredecessorLink>
-        <PredecessorUID>45</PredecessorUID>
+        <PredecessorUID>43</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>59</PredecessorUID>
+        <PredecessorUID>57</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2610,8 +2533,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>73</UID>
-      <ID>73</ID>
+      <UID>71</UID>
+      <ID>71</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2628,7 +2551,7 @@ RAISONS DES LIENS :
 Locaux : *
 Statut : a_confirmer
 
-Campagne à cinq entreprises simultanées (Wettstein, Despraz, Entretec, Groupe E Tech, Groupe E). À planifier comme une campagne, pas comme une tâche. Pilote à désigner, voir Q-10.
+Campagne à cinq entreprises simultanées — Wettstein, Despraz, Entretec, Groupe E Tech et Groupe E. PILOTE : Groupe E (MO, 20.10.2026). À planifier comme une campagne, pas comme une tâche.
 
 RAISONS DES LIENS :
   &lt;- T-GE-050 (FD) : Boucles validées
@@ -2638,14 +2561,28 @@ RAISONS DES LIENS :
   &lt;- T-HAL-040 (FD) : Ventilation en service
   &lt;- T-GET-090 (FD) : Variateurs en charge nominale</Notes>
       <PredecessorLink>
-        <PredecessorUID>72</PredecessorUID>
+        <PredecessorUID>70</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>67</PredecessorUID>
+        <PredecessorUID>65</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>66</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>56</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2659,21 +2596,7 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>58</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>70</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>71</PredecessorUID>
+        <PredecessorUID>69</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2681,8 +2604,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>74</UID>
-      <ID>74</ID>
+      <UID>72</UID>
+      <ID>72</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2706,21 +2629,28 @@ RAISONS DES LIENS :
   &lt;- T-ANS-040 (FD) : Bâtiment refermé
   &lt;- T-HAL-050 (FD) : Systèmes de sécurité réceptionnés</Notes>
       <PredecessorLink>
-        <PredecessorUID>73</PredecessorUID>
+        <PredecessorUID>71</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>56</PredecessorUID>
+        <PredecessorUID>54</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>60</PredecessorUID>
+        <PredecessorUID>58</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>61</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2728,13 +2658,6 @@ RAISONS DES LIENS :
       </PredecessorLink>
       <PredecessorLink>
         <PredecessorUID>63</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>65</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2770,7 +2693,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>5</UID>
       <TaskUID>5</TaskUID>
-      <ResourceUID>16</ResourceUID>
+      <ResourceUID>15</ResourceUID>
       <Units>1</Units>
       <Start>2026-11-30T08:00:00</Start>
       <Finish>2026-12-04T17:00:00</Finish>
@@ -2778,7 +2701,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>6</UID>
       <TaskUID>6</TaskUID>
-      <ResourceUID>16</ResourceUID>
+      <ResourceUID>15</ResourceUID>
       <Units>1</Units>
       <Start>2026-11-30T08:00:00</Start>
       <Finish>2026-12-04T17:00:00</Finish>
@@ -2810,42 +2733,42 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>11</UID>
       <TaskUID>11</TaskUID>
-      <ResourceUID>14</ResourceUID>
-      <Units>1</Units>
-      <Start>2026-11-30T08:00:00</Start>
-      <Finish>2026-12-11T17:00:00</Finish>
-    </Assignment>
-    <Assignment>
-      <UID>12</UID>
-      <TaskUID>12</TaskUID>
-      <ResourceUID>16</ResourceUID>
+      <ResourceUID>15</ResourceUID>
       <Units>1</Units>
       <Start>2026-12-07T08:00:00</Start>
       <Finish>2027-03-19T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>13</UID>
-      <TaskUID>13</TaskUID>
-      <ResourceUID>16</ResourceUID>
+      <UID>12</UID>
+      <TaskUID>12</TaskUID>
+      <ResourceUID>15</ResourceUID>
       <Units>1</Units>
       <Start>2027-03-22T08:00:00</Start>
       <Finish>2027-07-02T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>14</UID>
-      <TaskUID>14</TaskUID>
+      <UID>13</UID>
+      <TaskUID>13</TaskUID>
       <ResourceUID>3</ResourceUID>
       <Units>1</Units>
       <Start>2027-07-05T08:00:00</Start>
       <Finish>2027-07-09T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>16</UID>
-      <TaskUID>16</TaskUID>
+      <UID>15</UID>
+      <TaskUID>15</TaskUID>
       <ResourceUID>6</ResourceUID>
       <Units>1</Units>
       <Start>2026-11-30T08:00:00</Start>
       <Finish>2027-02-19T17:00:00</Finish>
+    </Assignment>
+    <Assignment>
+      <UID>16</UID>
+      <TaskUID>16</TaskUID>
+      <ResourceUID>7</ResourceUID>
+      <Units>1</Units>
+      <Start>2026-11-30T08:00:00</Start>
+      <Finish>2027-03-12T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>17</UID>
@@ -2853,7 +2776,7 @@ RAISONS DES LIENS :
       <ResourceUID>7</ResourceUID>
       <Units>1</Units>
       <Start>2026-11-30T08:00:00</Start>
-      <Finish>2027-03-12T17:00:00</Finish>
+      <Finish>2026-12-18T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>18</UID>
@@ -2882,7 +2805,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>21</UID>
       <TaskUID>21</TaskUID>
-      <ResourceUID>15</ResourceUID>
+      <ResourceUID>14</ResourceUID>
       <Units>1</Units>
       <Start>2026-11-30T08:00:00</Start>
       <Finish>2026-12-18T17:00:00</Finish>
@@ -2900,32 +2823,32 @@ RAISONS DES LIENS :
       <TaskUID>23</TaskUID>
       <ResourceUID>7</ResourceUID>
       <Units>1</Units>
-      <Start>2026-12-14T08:00:00</Start>
-      <Finish>2027-01-01T17:00:00</Finish>
-    </Assignment>
-    <Assignment>
-      <UID>24</UID>
-      <TaskUID>24</TaskUID>
-      <ResourceUID>7</ResourceUID>
-      <Units>1</Units>
       <Start>2027-02-22T08:00:00</Start>
       <Finish>2027-03-19T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>25</UID>
-      <TaskUID>25</TaskUID>
+      <UID>24</UID>
+      <TaskUID>24</TaskUID>
       <ResourceUID>13</ResourceUID>
       <Units>1</Units>
       <Start>2027-03-15T08:00:00</Start>
       <Finish>2027-04-16T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>26</UID>
-      <TaskUID>26</TaskUID>
+      <UID>25</UID>
+      <TaskUID>25</TaskUID>
       <ResourceUID>7</ResourceUID>
       <Units>1</Units>
       <Start>2027-03-22T08:00:00</Start>
       <Finish>2027-04-16T17:00:00</Finish>
+    </Assignment>
+    <Assignment>
+      <UID>26</UID>
+      <TaskUID>26</TaskUID>
+      <ResourceUID>13</ResourceUID>
+      <Units>1</Units>
+      <Start>2027-04-19T08:00:00</Start>
+      <Finish>2027-05-21T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>27</UID>
@@ -2933,7 +2856,7 @@ RAISONS DES LIENS :
       <ResourceUID>13</ResourceUID>
       <Units>1</Units>
       <Start>2027-04-19T08:00:00</Start>
-      <Finish>2027-05-21T17:00:00</Finish>
+      <Finish>2027-05-07T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>28</UID>
@@ -2941,92 +2864,92 @@ RAISONS DES LIENS :
       <ResourceUID>13</ResourceUID>
       <Units>1</Units>
       <Start>2027-04-19T08:00:00</Start>
-      <Finish>2027-05-07T17:00:00</Finish>
-    </Assignment>
-    <Assignment>
-      <UID>29</UID>
-      <TaskUID>29</TaskUID>
-      <ResourceUID>13</ResourceUID>
-      <Units>1</Units>
-      <Start>2027-04-19T08:00:00</Start>
       <Finish>2027-06-25T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>31</UID>
-      <TaskUID>31</TaskUID>
+      <UID>30</UID>
+      <TaskUID>30</TaskUID>
       <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2026-11-30T08:00:00</Start>
       <Finish>2027-02-19T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>32</UID>
-      <TaskUID>32</TaskUID>
+      <UID>31</UID>
+      <TaskUID>31</TaskUID>
       <ResourceUID>1</ResourceUID>
       <Units>1</Units>
       <Start>2026-11-30T08:00:00</Start>
       <Finish>2027-04-16T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>33</UID>
-      <TaskUID>33</TaskUID>
+      <UID>32</UID>
+      <TaskUID>32</TaskUID>
       <ResourceUID>11</ResourceUID>
       <Units>1</Units>
       <Start>2027-02-01T08:00:00</Start>
       <Finish>2027-03-26T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>34</UID>
-      <TaskUID>34</TaskUID>
+      <UID>33</UID>
+      <TaskUID>33</TaskUID>
       <ResourceUID>12</ResourceUID>
       <Units>1</Units>
       <Start>2027-03-29T08:00:00</Start>
       <Finish>2027-05-21T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>35</UID>
-      <TaskUID>35</TaskUID>
+      <UID>34</UID>
+      <TaskUID>34</TaskUID>
       <ResourceUID>8</ResourceUID>
       <Units>1</Units>
       <Start>2027-03-29T08:00:00</Start>
       <Finish>2027-05-07T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>36</UID>
-      <TaskUID>36</TaskUID>
+      <UID>35</UID>
+      <TaskUID>35</TaskUID>
       <ResourceUID>12</ResourceUID>
       <Units>1</Units>
       <Start>2027-03-29T08:00:00</Start>
       <Finish>2027-04-23T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>38</UID>
-      <TaskUID>38</TaskUID>
+      <UID>37</UID>
+      <TaskUID>37</TaskUID>
       <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2026-12-07T08:00:00</Start>
       <Finish>2026-12-11T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>39</UID>
-      <TaskUID>39</TaskUID>
+      <UID>38</UID>
+      <TaskUID>38</TaskUID>
       <ResourceUID>7</ResourceUID>
       <Units>1</Units>
       <Start>2026-12-07T08:00:00</Start>
       <Finish>2026-12-18T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>40</UID>
-      <TaskUID>40</TaskUID>
+      <UID>39</UID>
+      <TaskUID>39</TaskUID>
       <ResourceUID>7</ResourceUID>
       <Units>1</Units>
       <Start>2027-03-15T08:00:00</Start>
       <Finish>2027-04-09T17:00:00</Finish>
     </Assignment>
     <Assignment>
+      <UID>40</UID>
+      <TaskUID>40</TaskUID>
+      <ResourceUID>7</ResourceUID>
+      <Units>1</Units>
+      <Start>2027-03-22T08:00:00</Start>
+      <Finish>2027-04-16T17:00:00</Finish>
+    </Assignment>
+    <Assignment>
       <UID>41</UID>
       <TaskUID>41</TaskUID>
-      <ResourceUID>7</ResourceUID>
+      <ResourceUID>6</ResourceUID>
       <Units>1</Units>
       <Start>2027-03-22T08:00:00</Start>
       <Finish>2027-04-16T17:00:00</Finish>
@@ -3034,63 +2957,63 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>42</UID>
       <TaskUID>42</TaskUID>
-      <ResourceUID>6</ResourceUID>
-      <Units>1</Units>
-      <Start>2027-03-22T08:00:00</Start>
-      <Finish>2027-04-16T17:00:00</Finish>
-    </Assignment>
-    <Assignment>
-      <UID>43</UID>
-      <TaskUID>43</TaskUID>
-      <ResourceUID>7</ResourceUID>
-      <Units>1</Units>
-      <Start>2027-04-12T08:00:00</Start>
-      <Finish>2027-04-30T17:00:00</Finish>
-    </Assignment>
-    <Assignment>
-      <UID>44</UID>
-      <TaskUID>44</TaskUID>
       <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2027-04-26T08:00:00</Start>
       <Finish>2027-07-02T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>45</UID>
-      <TaskUID>45</TaskUID>
+      <UID>43</UID>
+      <TaskUID>43</TaskUID>
       <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2027-04-26T08:00:00</Start>
       <Finish>2027-06-18T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>46</UID>
-      <TaskUID>46</TaskUID>
+      <UID>44</UID>
+      <TaskUID>44</TaskUID>
       <ResourceUID>7</ResourceUID>
       <Units>1</Units>
       <Start>2027-05-24T08:00:00</Start>
       <Finish>2027-06-04T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>47</UID>
-      <TaskUID>47</TaskUID>
+      <UID>45</UID>
+      <TaskUID>45</TaskUID>
       <ResourceUID>7</ResourceUID>
       <Units>1</Units>
       <Start>2027-06-07T08:00:00</Start>
       <Finish>2027-06-18T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>48</UID>
-      <TaskUID>48</TaskUID>
+      <UID>46</UID>
+      <TaskUID>46</TaskUID>
       <ResourceUID>10</ResourceUID>
       <Units>1</Units>
       <Start>2027-06-07T08:00:00</Start>
       <Finish>2027-07-02T17:00:00</Finish>
     </Assignment>
     <Assignment>
+      <UID>47</UID>
+      <TaskUID>47</TaskUID>
+      <ResourceUID>7</ResourceUID>
+      <Units>1</Units>
+      <Start>2027-07-05T08:00:00</Start>
+      <Finish>2027-07-30T17:00:00</Finish>
+    </Assignment>
+    <Assignment>
+      <UID>48</UID>
+      <TaskUID>48</TaskUID>
+      <ResourceUID>6</ResourceUID>
+      <Units>1</Units>
+      <Start>2027-07-05T08:00:00</Start>
+      <Finish>2027-07-30T17:00:00</Finish>
+    </Assignment>
+    <Assignment>
       <UID>49</UID>
       <TaskUID>49</TaskUID>
-      <ResourceUID>7</ResourceUID>
+      <ResourceUID>10</ResourceUID>
       <Units>1</Units>
       <Start>2027-07-05T08:00:00</Start>
       <Finish>2027-07-30T17:00:00</Finish>
@@ -3098,7 +3021,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>50</UID>
       <TaskUID>50</TaskUID>
-      <ResourceUID>6</ResourceUID>
+      <ResourceUID>10</ResourceUID>
       <Units>1</Units>
       <Start>2027-07-05T08:00:00</Start>
       <Finish>2027-07-30T17:00:00</Finish>
@@ -3106,127 +3029,119 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>51</UID>
       <TaskUID>51</TaskUID>
-      <ResourceUID>10</ResourceUID>
-      <Units>1</Units>
-      <Start>2027-07-05T08:00:00</Start>
-      <Finish>2027-07-30T17:00:00</Finish>
-    </Assignment>
-    <Assignment>
-      <UID>52</UID>
-      <TaskUID>52</TaskUID>
-      <ResourceUID>10</ResourceUID>
-      <Units>1</Units>
-      <Start>2027-07-05T08:00:00</Start>
-      <Finish>2027-07-30T17:00:00</Finish>
-    </Assignment>
-    <Assignment>
-      <UID>53</UID>
-      <TaskUID>53</TaskUID>
       <ResourceUID>2</ResourceUID>
       <Units>1</Units>
       <Start>2027-07-05T08:00:00</Start>
       <Finish>2027-09-24T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>55</UID>
-      <TaskUID>55</TaskUID>
+      <UID>53</UID>
+      <TaskUID>53</TaskUID>
       <ResourceUID>4</ResourceUID>
       <Units>1</Units>
       <Start>2026-11-30T08:00:00</Start>
       <Finish>2026-12-04T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>56</UID>
-      <TaskUID>56</TaskUID>
+      <UID>54</UID>
+      <TaskUID>54</TaskUID>
       <ResourceUID>4</ResourceUID>
       <Units>1</Units>
       <Start>2026-12-14T08:00:00</Start>
       <Finish>2027-01-22T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>57</UID>
-      <TaskUID>57</TaskUID>
+      <UID>55</UID>
+      <TaskUID>55</TaskUID>
       <ResourceUID>7</ResourceUID>
       <Units>1</Units>
       <Start>2027-03-15T08:00:00</Start>
       <Finish>2027-03-26T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>58</UID>
-      <TaskUID>58</TaskUID>
+      <UID>56</UID>
+      <TaskUID>56</TaskUID>
       <ResourceUID>7</ResourceUID>
       <Units>1</Units>
       <Start>2027-03-29T08:00:00</Start>
       <Finish>2027-04-02T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>59</UID>
-      <TaskUID>59</TaskUID>
+      <UID>57</UID>
+      <TaskUID>57</TaskUID>
       <ResourceUID>11</ResourceUID>
       <Units>1</Units>
       <Start>2027-05-24T08:00:00</Start>
       <Finish>2027-06-04T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>60</UID>
-      <TaskUID>60</TaskUID>
+      <UID>58</UID>
+      <TaskUID>58</TaskUID>
       <ResourceUID>5</ResourceUID>
       <Units>1</Units>
       <Start>2027-06-21T08:00:00</Start>
       <Finish>2027-08-27T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>61</UID>
-      <TaskUID>61</TaskUID>
+      <UID>59</UID>
+      <TaskUID>59</TaskUID>
       <ResourceUID>3</ResourceUID>
       <Units>1</Units>
       <Start>2027-07-05T08:00:00</Start>
       <Finish>2027-07-23T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>62</UID>
-      <TaskUID>62</TaskUID>
-      <ResourceUID>16</ResourceUID>
+      <UID>60</UID>
+      <TaskUID>60</TaskUID>
+      <ResourceUID>15</ResourceUID>
       <Units>1</Units>
       <Start>2027-07-05T08:00:00</Start>
       <Finish>2027-07-16T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>63</UID>
-      <TaskUID>63</TaskUID>
+      <UID>61</UID>
+      <TaskUID>61</TaskUID>
       <ResourceUID>2</ResourceUID>
       <Units>1</Units>
       <Start>2027-07-05T08:00:00</Start>
       <Finish>2027-07-09T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>64</UID>
-      <TaskUID>64</TaskUID>
+      <UID>62</UID>
+      <TaskUID>62</TaskUID>
       <ResourceUID>6</ResourceUID>
       <Units>1</Units>
       <Start>2027-08-02T08:00:00</Start>
       <Finish>2027-08-13T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>65</UID>
-      <TaskUID>65</TaskUID>
+      <UID>63</UID>
+      <TaskUID>63</TaskUID>
       <ResourceUID>13</ResourceUID>
       <Units>1</Units>
       <Start>2027-08-02T08:00:00</Start>
       <Finish>2027-08-20T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>66</UID>
-      <TaskUID>66</TaskUID>
+      <UID>64</UID>
+      <TaskUID>64</TaskUID>
       <ResourceUID>6</ResourceUID>
       <Units>1</Units>
       <Start>2027-08-16T08:00:00</Start>
       <Finish>2027-08-20T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>67</UID>
-      <TaskUID>67</TaskUID>
-      <ResourceUID>16</ResourceUID>
+      <UID>65</UID>
+      <TaskUID>65</TaskUID>
+      <ResourceUID>15</ResourceUID>
+      <Units>1</Units>
+      <Start>2027-08-23T08:00:00</Start>
+      <Finish>2027-08-27T17:00:00</Finish>
+    </Assignment>
+    <Assignment>
+      <UID>66</UID>
+      <TaskUID>66</TaskUID>
+      <ResourceUID>6</ResourceUID>
       <Units>1</Units>
       <Start>2027-08-23T08:00:00</Start>
       <Finish>2027-08-27T17:00:00</Finish>
@@ -3234,46 +3149,38 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>68</UID>
       <TaskUID>68</TaskUID>
-      <ResourceUID>6</ResourceUID>
-      <Units>1</Units>
-      <Start>2027-08-23T08:00:00</Start>
-      <Finish>2027-08-27T17:00:00</Finish>
-    </Assignment>
-    <Assignment>
-      <UID>70</UID>
-      <TaskUID>70</TaskUID>
       <ResourceUID>13</ResourceUID>
       <Units>1</Units>
       <Start>2027-06-07T08:00:00</Start>
       <Finish>2027-06-18T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>71</UID>
-      <TaskUID>71</TaskUID>
+      <UID>69</UID>
+      <TaskUID>69</TaskUID>
       <ResourceUID>8</ResourceUID>
       <Units>1</Units>
       <Start>2027-06-07T08:00:00</Start>
       <Finish>2027-06-18T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>72</UID>
-      <TaskUID>72</TaskUID>
+      <UID>70</UID>
+      <TaskUID>70</TaskUID>
       <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2027-06-21T08:00:00</Start>
       <Finish>2027-07-30T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>73</UID>
-      <TaskUID>73</TaskUID>
+      <UID>71</UID>
+      <TaskUID>71</TaskUID>
       <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2027-08-30T08:00:00</Start>
       <Finish>2027-10-22T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>74</UID>
-      <TaskUID>74</TaskUID>
+      <UID>72</UID>
+      <TaskUID>72</TaskUID>
       <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2027-10-25T08:00:00</Start>
