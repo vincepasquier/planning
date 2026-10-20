@@ -2,6 +2,16 @@
   "note": "Questions classées par priorité. Les questions résolues sont conservées avec leur réponse : l'historique des décisions fait partie du document.",
   "questions": [
     {
+      "id": "Q-27",
+      "priorite": "haute",
+      "statut": "ouverte",
+      "sujet": "Découper le froid process d'Entretec par local",
+      "question": "Faut-il découper la tâche de froid process hydroaulique d'Entretec, aujourd'hui décrite à l'échelle du bâtiment sur 12 semaines, en interventions par local ?",
+      "pourquoi": "C'est le dernier obstacle au respect du « chacun son tour ». Entretec intervient dans le local variateurs et dans le refroidissement des locaux électriques, mais comme sa tâche couvre tout le bâtiment, rien n'empêche son chevauchement avec Exergo et IEG. Le découpage est possible ; appliqué tel quel, il repousserait la réception de huit semaines supplémentaires, au 31.12.2027, parce qu'il place Entretec derrière Exergo sur tout son parcours au lieu d'un seul local.",
+      "destinataire": "Entretec / Maître d'ouvrage",
+      "impact": "Huit semaines si l'on séquence sans découper. Probablement beaucoup moins avec un découpage par local."
+    },
+    {
       "id": "Q-26",
       "priorite": "haute",
       "statut": "ouverte",
@@ -23,13 +33,14 @@
     },
     {
       "id": "Q-24",
-      "priorite": "critique",
-      "statut": "ouverte",
+      "priorite": "partielle",
+      "statut": "partielle",
       "sujet": "Ordre de passage dans les locaux où l'on travaille chacun son tour",
       "question": "Dans quel ordre passent les lots des quatre locaux où vous avez déclaré « chacun son tour » — MT, TGBT, variateurs, refroidissement des locaux élec. — et la règle vaut-elle ailleurs ?",
       "pourquoi": "Le relevé des locaux étant achevé, les conflits sont maintenant mesurables : 20 locaux se chevauchent, 192 semaines-locaux au total. Le local TGBT porte six lots simultanés sur 17 semaines, les variateurs cinq sur 15, alors que ces deux locaux n'en admettent qu'un à la fois. Le planning les additionne au lieu de les enchaîner, et sous-estime donc leur durée.",
       "destinataire": "Maître d'ouvrage",
-      "impact": "Jusqu'ici invisible, désormais chiffré : ces chevauchements sont du temps qui manque au planning."
+      "impact": "Le câblage IEG des locaux électriques devient une tâche distincte, asservie à celui qui les équipe. Les conflits tombent de 13 locaux et 109 semaines-locaux à 11 et 77, et la réception recule de quatre semaines, au 05.11.2027 : c'est le coût du respect de la règle.",
+      "reponse": "Ordres relevés : INFRA puis IEG au MT, TABLEAU puis IEG au TGBT, Exergo puis Entretec puis IEG aux variateurs, Hälg puis Entretec puis IEG au refroidissement des locaux électriques. Le pompage PAC admet deux entreprises (MO, 20.10.2026)."
     },
     {
       "id": "Q-23",

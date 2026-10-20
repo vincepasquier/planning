@@ -727,7 +727,7 @@ RAISONS DES LIENS :
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
-      <Name>Chemins de câbles et câblage IEG</Name>
+      <Name>Chemins de câbles et câblage IEG (hors locaux électriques)</Name>
       <OutlineLevel>2</OutlineLevel>
       <Summary>0</Summary>
       <Type>1</Type>
@@ -737,7 +737,7 @@ RAISONS DES LIENS :
       <Finish>2027-04-09T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-GET-030]  Lot : GETECH-IEG  |  Systeme : IEG
-Locaux : CENT.N+0.01, CENT.N+0.02, CENT.N-1.01, CENT.N-1.02, CENT.N-1.03, CENT.N-1.04, CENT.N-1.05, CENT.N-1.06, CENT.N-1.07, CENT.N-2.01, CENT.N-2.02, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.06, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.12, CENT.N-2.13, CENT.N-2.14, CENT.N-2.15, CENT.N-2.16, CENT.N-2.17, CENT.N-2.18, CENT.N-2.19, CENT.N-2.20, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23, CENT.N-2.24, CENT.N-2.25, CENT.N-2.26
+Locaux : CENT.N+0.01, CENT.N+0.02, CENT.N-1.01, CENT.N-1.02, CENT.N-1.03, CENT.N-1.04, CENT.N-1.05, CENT.N-1.06, CENT.N-1.07, CENT.N-2.02, CENT.N-2.03, CENT.N-2.05, CENT.N-2.06, CENT.N-2.07, CENT.N-2.09, CENT.N-2.10, CENT.N-2.12, CENT.N-2.13, CENT.N-2.14, CENT.N-2.15, CENT.N-2.16, CENT.N-2.17, CENT.N-2.18, CENT.N-2.19, CENT.N-2.20, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23, CENT.N-2.24, CENT.N-2.25, CENT.N-2.26
 Statut : a_confirmer
 
 Groupe E Tech IEG câble tout ce qui n'est pas du rail d'énergie. 905 segments de chemin de câbles, 615 accessoires, 647 luminaires. IEG intervient globalement dans tous les locaux (MO, 20.10.2026), ce qui le met en concurrence avec les autres lots partout où l'on passe chacun son tour. IEG ne passe pas par les galeries techniques mais par en dessous (MO, 20.10.2026) : son cheminement n'entre donc pas en concurrence avec l'hydraulique et la ventilation.
@@ -1173,7 +1173,7 @@ RAISONS DES LIENS :
       <OutlineLevel>1</OutlineLevel>
       <Summary>1</Summary>
       <Start>2026-12-07T08:00:00</Start>
-      <Finish>2027-07-02T17:00:00</Finish>
+      <Finish>2027-09-24T17:00:00</Finish>
       <Notes>CO2, hydraulique, puissance et régulation sur les PAC et l'accumulateur, dans les locaux.</Notes>
     </Task>
     <Task>
@@ -1200,7 +1200,7 @@ RIO 2 - Accu du concept MCR : 6 circuits instrumentés. Les doigts de gant doive
 RAISONS DES LIENS :
   &lt;- T-BIL-020 (FD) : Épreuve réalisée avant instrumentation définitive</Notes>
       <PredecessorLink>
-        <PredecessorUID>49</PredecessorUID>
+        <PredecessorUID>50</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1229,7 +1229,7 @@ Statut : a_confirmer
 RAISONS DES LIENS :
   &lt;- T-BIL-020 (FD) : Épreuve de l'enveloppe avant raccordement des réseaux</Notes>
       <PredecessorLink>
-        <PredecessorUID>49</PredecessorUID>
+        <PredecessorUID>50</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1382,68 +1382,6 @@ RAISONS DES LIENS :
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
-      <Name>Détection incendie et détection gaz NH3 / CO2</Name>
-      <OutlineLevel>2</OutlineLevel>
-      <Summary>0</Summary>
-      <Type>1</Type>
-      <DurationFormat>7</DurationFormat>
-      <Duration>PT160H0M0S</Duration>
-      <Start>2027-04-12T08:00:00</Start>
-      <Finish>2027-05-07T17:00:00</Finish>
-      <ConstraintType>0</ConstraintType>
-      <Notes>[T-GET-070]  Lot : GETECH-IEG  |  Systeme : DI
-Locaux : CENT.N-1.01, CENT.N-1.02, CENT.N-1.03, CENT.N-1.04, CENT.N-1.05, CENT.N-1.06, CENT.N-1.07, CENT.N-2.01, CENT.N-2.02, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.06, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.12, CENT.N-2.13, CENT.N-2.14, CENT.N-2.15, CENT.N-2.16, CENT.N-2.17, CENT.N-2.18, CENT.N-2.19, CENT.N-2.20, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23, CENT.N-2.24, CENT.N-2.25, CENT.N-2.26
-Statut : a_confirmer
-
-À TRANCHER : la détection gaz NH3 et CO2 est-elle dans ce lot, chez Wettstein, ou chez Despraz ? C'est une sécurité des personnes qui pilote la ventilation de secours. Voir Q-05.
-
-RAISONS DES LIENS :
-  &lt;- T-GET-030 (FD) : Supports de câblage disponibles</Notes>
-      <PredecessorLink>
-        <PredecessorUID>20</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-    </Task>
-    <Task>
-      <UID>42</UID>
-      <ID>42</ID>
-      <Active>1</Active>
-      <Manual>0</Manual>
-      <CalendarUID>1</CalendarUID>
-      <Name>Portes intérieures</Name>
-      <OutlineLevel>2</OutlineLevel>
-      <Summary>0</Summary>
-      <Type>1</Type>
-      <DurationFormat>7</DurationFormat>
-      <Duration>PT480H0M0S</Duration>
-      <Start>2027-04-12T08:00:00</Start>
-      <Finish>2027-07-02T17:00:00</Finish>
-      <ConstraintType>0</ConstraintType>
-      <Notes>[T-ANS-030]  Lot : ANSERMOT  |  Systeme : MEN
-Locaux : CENT.N-1.01, CENT.N-1.05, CENT.N-1.06, CENT.N-1.07, CENT.N-2.01, CENT.N-2.02, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.06, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.11, CENT.N-2.12, CENT.N-2.13, CENT.N-2.14, CENT.N-2.15, CENT.N-2.16, CENT.N-2.17, CENT.N-2.18, CENT.N-2.19, CENT.N-2.20, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23, CENT.N-2.24, CENT.N-2.25, CENT.N-2.26
-Statut : non_adjuge
-
-Deux jours par porte (MO, 20.10.2026), 30 locaux équipés, soit 60 jours ouvrés. Hypothèse d'une porte par local et d'une seule équipe : à corriger si Ansermot en engage plusieurs, ou si certains locaux reçoivent plus d'une porte.
-
-RAISONS DES LIENS :
-  &lt;- T-GET-030 (FD) : Réseaux passés : une porte posée tôt est une porte abîmée ou démontée</Notes>
-      <PredecessorLink>
-        <PredecessorUID>20</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-    </Task>
-    <Task>
-      <UID>43</UID>
-      <ID>43</ID>
-      <Active>1</Active>
-      <Manual>0</Manual>
-      <CalendarUID>1</CalendarUID>
       <Name>Automates et régulation MCR (API, RIO, HMI, Scada)</Name>
       <OutlineLevel>2</OutlineLevel>
       <Summary>0</Summary>
@@ -1470,8 +1408,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>44</UID>
-      <ID>44</ID>
+      <UID>42</UID>
+      <ID>42</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1509,7 +1447,7 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>43</PredecessorUID>
+        <PredecessorUID>41</PredecessorUID>
         <Type>3</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1517,8 +1455,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>45</UID>
-      <ID>45</ID>
+      <UID>43</UID>
+      <ID>43</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1556,8 +1494,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>46</UID>
-      <ID>46</ID>
+      <UID>44</UID>
+      <ID>44</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1580,7 +1518,7 @@ RAISONS DES LIENS :
   &lt;- T-ENT-042 (DD) : Entretec et Despraz interviennent en même temps dans le local (MO, 20.10.2026)
   &lt;- T-DES-010 (FD) : Réseau CO2 amont réalisé</Notes>
       <PredecessorLink>
-        <PredecessorUID>45</PredecessorUID>
+        <PredecessorUID>43</PredecessorUID>
         <Type>3</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1595,8 +1533,71 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>47</UID>
-      <ID>47</ID>
+      <UID>45</UID>
+      <ID>45</ID>
+      <Active>1</Active>
+      <Manual>0</Manual>
+      <CalendarUID>1</CalendarUID>
+      <Name>Câblage IEG des locaux électriques</Name>
+      <OutlineLevel>2</OutlineLevel>
+      <Summary>0</Summary>
+      <Type>1</Type>
+      <DurationFormat>7</DurationFormat>
+      <Duration>PT160H0M0S</Duration>
+      <Start>2027-06-07T08:00:00</Start>
+      <Finish>2027-07-02T17:00:00</Finish>
+      <ConstraintType>0</ConstraintType>
+      <Notes>[T-GET-031]  Lot : GETECH-IEG  |  Systeme : IEG
+Locaux : CENT.N-2.01, CENT.N-2.04, CENT.N-2.08
+Statut : a_confirmer
+
+Ces trois locaux n'admettent qu'une entreprise à la fois. L'ordre relevé est INFRA puis IEG au MT, TABLEAU puis IEG au TGBT, et Exergo puis Entretec puis IEG aux variateurs.
+
+RAISONS DES LIENS :
+  &lt;- T-GET-010 (FD) : Local MT : INFRA passe avant IEG (MO, 20.10.2026)
+  &lt;- T-GET-020 (FD) : Local TGBT : TABLEAU passe avant IEG (MO, 20.10.2026)
+  &lt;- T-GET-040 (FD) : Local variateurs : Exergo passe avant IEG (MO, 20.10.2026)
+  &lt;- T-ENT-090 (FD) : Local variateurs : Entretec passe entre Exergo et IEG (MO, 20.10.2026)
+  &lt;- T-GET-030 (DD) : Même entreprise, même campagne de câblage</Notes>
+      <PredecessorLink>
+        <PredecessorUID>30</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>31</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>32</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>26</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>20</PredecessorUID>
+        <Type>3</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+    </Task>
+    <Task>
+      <UID>46</UID>
+      <ID>46</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1606,8 +1607,8 @@ RAISONS DES LIENS :
       <Type>1</Type>
       <DurationFormat>7</DurationFormat>
       <Duration>PT160H0M0S</Duration>
-      <Start>2027-05-31T08:00:00</Start>
-      <Finish>2027-06-25T17:00:00</Finish>
+      <Start>2027-07-05T08:00:00</Start>
+      <Finish>2027-07-30T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-GET-060]  Lot : GETECH-IEG  |  Systeme : IEG
 Locaux : CENT.N-2.07, CENT.N-2.10
@@ -1616,7 +1617,8 @@ Statut : a_confirmer
 RAISONS DES LIENS :
   &lt;- T-GET-030 (FD) : Chemins de câbles posés
   &lt;- T-GET-040 (FD) : Variateurs en place pour tirer aux deux extrémités
-  &lt;- T-WET-020 (FD) : Machines en place</Notes>
+  &lt;- T-WET-020 (FD) : Machines en place
+  &lt;- T-GET-031 (FD) : Câblage des locaux électriques achevé</Notes>
       <PredecessorLink>
         <PredecessorUID>20</PredecessorUID>
         <Type>1</Type>
@@ -1638,10 +1640,95 @@ RAISONS DES LIENS :
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>45</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+    </Task>
+    <Task>
+      <UID>47</UID>
+      <ID>47</ID>
+      <Active>1</Active>
+      <Manual>0</Manual>
+      <CalendarUID>1</CalendarUID>
+      <Name>Détection incendie et détection gaz NH3 / CO2</Name>
+      <OutlineLevel>2</OutlineLevel>
+      <Summary>0</Summary>
+      <Type>1</Type>
+      <DurationFormat>7</DurationFormat>
+      <Duration>PT160H0M0S</Duration>
+      <Start>2027-07-05T08:00:00</Start>
+      <Finish>2027-07-30T17:00:00</Finish>
+      <ConstraintType>0</ConstraintType>
+      <Notes>[T-GET-070]  Lot : GETECH-IEG  |  Systeme : DI
+Locaux : CENT.N-1.01, CENT.N-1.02, CENT.N-1.03, CENT.N-1.04, CENT.N-1.05, CENT.N-1.06, CENT.N-1.07, CENT.N-2.01, CENT.N-2.02, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.06, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.12, CENT.N-2.13, CENT.N-2.14, CENT.N-2.15, CENT.N-2.16, CENT.N-2.17, CENT.N-2.18, CENT.N-2.19, CENT.N-2.20, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23, CENT.N-2.24, CENT.N-2.25, CENT.N-2.26
+Statut : a_confirmer
+
+À TRANCHER : la détection gaz NH3 et CO2 est-elle dans ce lot, chez Wettstein, ou chez Despraz ? C'est une sécurité des personnes qui pilote la ventilation de secours. Voir Q-05.
+
+RAISONS DES LIENS :
+  &lt;- T-GET-030 (FD) : Supports de câblage disponibles
+  &lt;- T-GET-031 (FD) : Câblage des locaux électriques achevé</Notes>
+      <PredecessorLink>
+        <PredecessorUID>20</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>45</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
     </Task>
     <Task>
       <UID>48</UID>
       <ID>48</ID>
+      <Active>1</Active>
+      <Manual>0</Manual>
+      <CalendarUID>1</CalendarUID>
+      <Name>Portes intérieures</Name>
+      <OutlineLevel>2</OutlineLevel>
+      <Summary>0</Summary>
+      <Type>1</Type>
+      <DurationFormat>7</DurationFormat>
+      <Duration>PT480H0M0S</Duration>
+      <Start>2027-07-05T08:00:00</Start>
+      <Finish>2027-09-24T17:00:00</Finish>
+      <ConstraintType>0</ConstraintType>
+      <Notes>[T-ANS-030]  Lot : ANSERMOT  |  Systeme : MEN
+Locaux : CENT.N-1.01, CENT.N-1.05, CENT.N-1.06, CENT.N-1.07, CENT.N-2.01, CENT.N-2.02, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.06, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.11, CENT.N-2.12, CENT.N-2.13, CENT.N-2.14, CENT.N-2.15, CENT.N-2.16, CENT.N-2.17, CENT.N-2.18, CENT.N-2.19, CENT.N-2.20, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23, CENT.N-2.24, CENT.N-2.25, CENT.N-2.26
+Statut : non_adjuge
+
+Deux jours par porte (MO, 20.10.2026), 30 locaux équipés, soit 60 jours ouvrés. Hypothèse d'une porte par local et d'une seule équipe : à corriger si Ansermot en engage plusieurs, ou si certains locaux reçoivent plus d'une porte.
+
+RAISONS DES LIENS :
+  &lt;- T-GET-030 (FD) : Réseaux passés : une porte posée tôt est une porte abîmée ou démontée
+  &lt;- T-GET-031 (FD) : Câblage des locaux électriques achevé</Notes>
+      <PredecessorLink>
+        <PredecessorUID>20</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>45</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+    </Task>
+    <Task>
+      <UID>49</UID>
+      <ID>49</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1653,8 +1740,8 @@ RAISONS DES LIENS :
       <Notes>Rinçage, épreuves de pression, étanchéité CO2, tirage au vide, charge, mise sous tension.</Notes>
     </Task>
     <Task>
-      <UID>49</UID>
-      <ID>49</ID>
+      <UID>50</UID>
+      <ID>50</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1685,8 +1772,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>50</UID>
-      <ID>50</ID>
+      <UID>51</UID>
+      <ID>51</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1709,7 +1796,7 @@ RAISONS DES LIENS :
   &lt;- T-BIL-020 (FD) : On n'isole pas avant d'avoir éprouvé : une reprise de fuite impose de déshabiller
   &lt;- T-GE-010 (FD) : Sondes et doigts de gant posés, sinon on rouvre l'isolation</Notes>
       <PredecessorLink>
-        <PredecessorUID>49</PredecessorUID>
+        <PredecessorUID>50</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1724,8 +1811,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>51</UID>
-      <ID>51</ID>
+      <UID>52</UID>
+      <ID>52</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1771,8 +1858,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>52</UID>
-      <ID>52</ID>
+      <UID>53</UID>
+      <ID>53</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -1792,38 +1879,7 @@ Statut : a_confirmer
 RAISONS DES LIENS :
   &lt;- T-ENT-060 (FD) : Réseau rempli</Notes>
       <PredecessorLink>
-        <PredecessorUID>51</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-    </Task>
-    <Task>
-      <UID>53</UID>
-      <ID>53</ID>
-      <Active>1</Active>
-      <Manual>0</Manual>
-      <CalendarUID>1</CalendarUID>
-      <Name>Rebouchages et calfeutrements coupe-feu</Name>
-      <OutlineLevel>2</OutlineLevel>
-      <Summary>0</Summary>
-      <Type>1</Type>
-      <DurationFormat>7</DurationFormat>
-      <Duration>PT120H0M0S</Duration>
-      <Start>2027-04-12T08:00:00</Start>
-      <Finish>2027-04-30T17:00:00</Finish>
-      <ConstraintType>0</ConstraintType>
-      <Notes>[T-ANT-035]  Lot : ANTIGLIO  |  Systeme : GC
-Locaux : *
-Statut : a_confirmer
-
-Les clapets coupe-feu (CCF) des schémas 41, 42 et 43 supposent une sectorisation achevée et contrôlée.
-
-RAISONS DES LIENS :
-  &lt;- T-GET-030 (FD) : Dernier réseau passé : on ne rebouche qu'une fois tous les percements traversés</Notes>
-      <PredecessorLink>
-        <PredecessorUID>20</PredecessorUID>
+        <PredecessorUID>52</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -1949,61 +2005,6 @@ RAISONS DES LIENS :
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
-      <Name>Mise en service et essais de la ventilation de secours et de la détection gaz</Name>
-      <OutlineLevel>2</OutlineLevel>
-      <Summary>0</Summary>
-      <Type>1</Type>
-      <DurationFormat>7</DurationFormat>
-      <Duration>PT120H0M0S</Duration>
-      <Start>2027-06-07T08:00:00</Start>
-      <Finish>2027-06-25T17:00:00</Finish>
-      <ConstraintType>0</ConstraintType>
-      <Notes>[T-HAL-050]  Lot : HALG  |  Systeme : VENT-SECU
-Locaux : CENT.N-1.01, CENT.N-1.02, CENT.N-1.03, CENT.N-1.04, CENT.N-1.06, CENT.N-1.07, CENT.N-2.01, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.18, CENT.N-2.19, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23
-Statut : a_confirmer
-
-JALON DE SÉCURITÉ : conditionne la charge NH3 et la charge CO2. Aucun fluide frigorigène n'entre dans le bâtiment avant que ce système soit éprouvé.
-
-RAISONS DES LIENS :
-  &lt;- T-HAL-030 (FD) : Installation terminée
-  &lt;- T-GET-070 (FD) : Détection NH3 et CO2 raccordée et fonctionnelle
-  &lt;- T-GET-080 (FD) : Alimentation secourue disponible
-  &lt;- T-ANT-035 (FD) : Sectorisation coupe-feu achevée : les clapets ne valent que dans une paroi étanche</Notes>
-      <PredecessorLink>
-        <PredecessorUID>25</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>41</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>54</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>53</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-    </Task>
-    <Task>
-      <UID>58</UID>
-      <ID>58</ID>
-      <Active>1</Active>
-      <Manual>0</Manual>
-      <CalendarUID>1</CalendarUID>
       <Name>Calorifugeage des tuyauteries chaud et froid</Name>
       <OutlineLevel>2</OutlineLevel>
       <Summary>0</Summary>
@@ -2023,14 +2024,14 @@ RAISONS DES LIENS :
   &lt;- T-ENT-070 (FD) : On n'isole pas une tuyauterie non éprouvée
   &lt;- T-GE-040 (FD) : Instrumentation posée avant habillage</Notes>
       <PredecessorLink>
-        <PredecessorUID>52</PredecessorUID>
+        <PredecessorUID>53</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>44</PredecessorUID>
+        <PredecessorUID>42</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2038,55 +2039,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>59</UID>
-      <ID>59</ID>
-      <Active>1</Active>
-      <Manual>0</Manual>
-      <CalendarUID>1</CalendarUID>
-      <Name>Charge en NH3 des PAC 1 et 2</Name>
-      <OutlineLevel>2</OutlineLevel>
-      <Summary>0</Summary>
-      <Type>1</Type>
-      <DurationFormat>7</DurationFormat>
-      <Duration>PT40H0M0S</Duration>
-      <Start>2027-06-28T08:00:00</Start>
-      <Finish>2027-07-02T17:00:00</Finish>
-      <ConstraintType>0</ConstraintType>
-      <Notes>[T-WET-060]  Lot : WETTSTEIN  |  Systeme : NH3
-Locaux : CENT.N-2.07, CENT.N-2.10
-Statut : a_confirmer
-
-L'ammoniac est toxique et inflammable. La ventilation de secours extrait 5'500 m3/h par local PAC en cas de fuite NH3.
-
-RAISONS DES LIENS :
-  &lt;- T-WET-050 (FD) : Étanchéité prouvée
-  &lt;- T-HAL-050 (FD) : RÈGLE DE SÉCURITÉ : ventilation de secours et détection NH3 en service avant toute introduction d'ammoniac dans le bâtiment
-  &lt;- T-GET-080 (FD) : Machines alimentables</Notes>
-      <PredecessorLink>
-        <PredecessorUID>55</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>57</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>54</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-    </Task>
-    <Task>
-      <UID>60</UID>
-      <ID>60</ID>
+      <UID>58</UID>
+      <ID>58</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2107,7 +2061,7 @@ RAISONS DES LIENS :
   &lt;- T-DES-017 (FD) : Toutes les soudures terminées : une seule reprise invalide l'épreuve
   &lt;- T-ENT-090 (FD) : Circuit complet, armoires de refroidissement raccordées</Notes>
       <PredecessorLink>
-        <PredecessorUID>46</PredecessorUID>
+        <PredecessorUID>44</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2122,8 +2076,47 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>61</UID>
-      <ID>61</ID>
+      <UID>59</UID>
+      <ID>59</ID>
+      <Active>1</Active>
+      <Manual>0</Manual>
+      <CalendarUID>1</CalendarUID>
+      <Name>Rebouchages et calfeutrements coupe-feu</Name>
+      <OutlineLevel>2</OutlineLevel>
+      <Summary>0</Summary>
+      <Type>1</Type>
+      <DurationFormat>7</DurationFormat>
+      <Duration>PT120H0M0S</Duration>
+      <Start>2027-07-05T08:00:00</Start>
+      <Finish>2027-07-23T17:00:00</Finish>
+      <ConstraintType>0</ConstraintType>
+      <Notes>[T-ANT-035]  Lot : ANTIGLIO  |  Systeme : GC
+Locaux : *
+Statut : a_confirmer
+
+Les clapets coupe-feu (CCF) des schémas 41, 42 et 43 supposent une sectorisation achevée et contrôlée.
+
+RAISONS DES LIENS :
+  &lt;- T-GET-030 (FD) : Dernier réseau passé : on ne rebouche qu'une fois tous les percements traversés
+  &lt;- T-GET-031 (FD) : Câblage des locaux électriques achevé</Notes>
+      <PredecessorLink>
+        <PredecessorUID>20</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>45</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+    </Task>
+    <Task>
+      <UID>60</UID>
+      <ID>60</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2143,7 +2136,62 @@ Statut : a_confirmer
 RAISONS DES LIENS :
   &lt;- T-DES-030 (FD) : Étanchéité prouvée avant mise sous vide</Notes>
       <PredecessorLink>
-        <PredecessorUID>60</PredecessorUID>
+        <PredecessorUID>58</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+    </Task>
+    <Task>
+      <UID>61</UID>
+      <ID>61</ID>
+      <Active>1</Active>
+      <Manual>0</Manual>
+      <CalendarUID>1</CalendarUID>
+      <Name>Mise en service et essais de la ventilation de secours et de la détection gaz</Name>
+      <OutlineLevel>2</OutlineLevel>
+      <Summary>0</Summary>
+      <Type>1</Type>
+      <DurationFormat>7</DurationFormat>
+      <Duration>PT120H0M0S</Duration>
+      <Start>2027-08-02T08:00:00</Start>
+      <Finish>2027-08-20T17:00:00</Finish>
+      <ConstraintType>0</ConstraintType>
+      <Notes>[T-HAL-050]  Lot : HALG  |  Systeme : VENT-SECU
+Locaux : CENT.N-1.01, CENT.N-1.02, CENT.N-1.03, CENT.N-1.04, CENT.N-1.06, CENT.N-1.07, CENT.N-2.01, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.18, CENT.N-2.19, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23
+Statut : a_confirmer
+
+JALON DE SÉCURITÉ : conditionne la charge NH3 et la charge CO2. Aucun fluide frigorigène n'entre dans le bâtiment avant que ce système soit éprouvé.
+
+RAISONS DES LIENS :
+  &lt;- T-HAL-030 (FD) : Installation terminée
+  &lt;- T-GET-070 (FD) : Détection NH3 et CO2 raccordée et fonctionnelle
+  &lt;- T-GET-080 (FD) : Alimentation secourue disponible
+  &lt;- T-ANT-035 (FD) : Sectorisation coupe-feu achevée : les clapets ne valent que dans une paroi étanche</Notes>
+      <PredecessorLink>
+        <PredecessorUID>25</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>47</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>54</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>59</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2156,34 +2204,34 @@ RAISONS DES LIENS :
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
-      <Name>Charge en CO2</Name>
+      <Name>Charge en NH3 des PAC 1 et 2</Name>
       <OutlineLevel>2</OutlineLevel>
       <Summary>0</Summary>
       <Type>1</Type>
       <DurationFormat>7</DurationFormat>
       <Duration>PT40H0M0S</Duration>
-      <Start>2027-07-19T08:00:00</Start>
-      <Finish>2027-07-23T17:00:00</Finish>
+      <Start>2027-08-23T08:00:00</Start>
+      <Finish>2027-08-27T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
-      <Notes>[T-DES-050]  Lot : DESPRAZ  |  Systeme : FROID-CO2
-Locaux : CENT.N-2.05
+      <Notes>[T-WET-060]  Lot : WETTSTEIN  |  Systeme : NH3
+Locaux : CENT.N-2.07, CENT.N-2.10
 Statut : a_confirmer
 
-Charge par le local d'introduction CO2 N-2.05.
+L'ammoniac est toxique et inflammable. La ventilation de secours extrait 5'500 m3/h par local PAC en cas de fuite NH3.
 
 RAISONS DES LIENS :
-  &lt;- T-DES-040 (FD) : Vide tenu
-  &lt;- T-HAL-050 (FD) : RÈGLE DE SÉCURITÉ : ventilation de secours et détection CO2 en service avant charge (12'100 m3/h d'extraction par local en cas de fuite)
-  &lt;- T-GET-080 (FD) : Centrales froid alimentables</Notes>
+  &lt;- T-WET-050 (FD) : Étanchéité prouvée
+  &lt;- T-HAL-050 (FD) : RÈGLE DE SÉCURITÉ : ventilation de secours et détection NH3 en service avant toute introduction d'ammoniac dans le bâtiment
+  &lt;- T-GET-080 (FD) : Machines alimentables</Notes>
       <PredecessorLink>
-        <PredecessorUID>61</PredecessorUID>
+        <PredecessorUID>55</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>57</PredecessorUID>
+        <PredecessorUID>61</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2203,16 +2251,63 @@ RAISONS DES LIENS :
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
-      <Name>P6 - Mise en service et réception</Name>
-      <OutlineLevel>1</OutlineLevel>
-      <Summary>1</Summary>
-      <Start>2027-06-07T08:00:00</Start>
-      <Finish>2027-10-08T17:00:00</Finish>
-      <Notes>Essais de régulation, essais fonctionnels intégrés, réception.</Notes>
+      <Name>Charge en CO2</Name>
+      <OutlineLevel>2</OutlineLevel>
+      <Summary>0</Summary>
+      <Type>1</Type>
+      <DurationFormat>7</DurationFormat>
+      <Duration>PT40H0M0S</Duration>
+      <Start>2027-08-23T08:00:00</Start>
+      <Finish>2027-08-27T17:00:00</Finish>
+      <ConstraintType>0</ConstraintType>
+      <Notes>[T-DES-050]  Lot : DESPRAZ  |  Systeme : FROID-CO2
+Locaux : CENT.N-2.05
+Statut : a_confirmer
+
+Charge par le local d'introduction CO2 N-2.05.
+
+RAISONS DES LIENS :
+  &lt;- T-DES-040 (FD) : Vide tenu
+  &lt;- T-HAL-050 (FD) : RÈGLE DE SÉCURITÉ : ventilation de secours et détection CO2 en service avant charge (12'100 m3/h d'extraction par local en cas de fuite)
+  &lt;- T-GET-080 (FD) : Centrales froid alimentables</Notes>
+      <PredecessorLink>
+        <PredecessorUID>60</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>61</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>54</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
     </Task>
     <Task>
       <UID>64</UID>
       <ID>64</ID>
+      <Active>1</Active>
+      <Manual>0</Manual>
+      <CalendarUID>1</CalendarUID>
+      <Name>P6 - Mise en service et réception</Name>
+      <OutlineLevel>1</OutlineLevel>
+      <Summary>1</Summary>
+      <Start>2027-06-07T08:00:00</Start>
+      <Finish>2027-11-05T17:00:00</Finish>
+      <Notes>Essais de régulation, essais fonctionnels intégrés, réception.</Notes>
+    </Task>
+    <Task>
+      <UID>65</UID>
+      <ID>65</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2256,8 +2351,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>65</UID>
-      <ID>65</ID>
+      <UID>66</UID>
+      <ID>66</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2295,8 +2390,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>66</UID>
-      <ID>66</ID>
+      <UID>67</UID>
+      <ID>67</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2317,7 +2412,7 @@ RAISONS DES LIENS :
   &lt;- T-GE-040 (FD) : Instrumentation raccordée
   &lt;- T-GET-080 (FD) : Alimentation disponible</Notes>
       <PredecessorLink>
-        <PredecessorUID>44</PredecessorUID>
+        <PredecessorUID>42</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2332,8 +2427,8 @@ RAISONS DES LIENS :
       </PredecessorLink>
     </Task>
     <Task>
-      <UID>67</UID>
-      <ID>67</ID>
+      <UID>68</UID>
+      <ID>68</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2343,8 +2438,8 @@ RAISONS DES LIENS :
       <Type>1</Type>
       <DurationFormat>7</DurationFormat>
       <Duration>PT320H0M0S</Duration>
-      <Start>2027-08-02T08:00:00</Start>
-      <Finish>2027-09-24T17:00:00</Finish>
+      <Start>2027-08-30T08:00:00</Start>
+      <Finish>2027-10-22T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-GE-060]  Lot : GE  |  Systeme : MCR
 Locaux : *
@@ -2360,14 +2455,7 @@ RAISONS DES LIENS :
   &lt;- T-HAL-040 (FD) : Ventilation en service
   &lt;- T-GET-090 (FD) : Variateurs en charge nominale</Notes>
       <PredecessorLink>
-        <PredecessorUID>66</PredecessorUID>
-        <Type>1</Type>
-        <CrossProject>0</CrossProject>
-        <LinkLag>0</LinkLag>
-        <LagFormat>7</LagFormat>
-      </PredecessorLink>
-      <PredecessorLink>
-        <PredecessorUID>59</PredecessorUID>
+        <PredecessorUID>67</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2381,14 +2469,14 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>52</PredecessorUID>
+        <PredecessorUID>63</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>64</PredecessorUID>
+        <PredecessorUID>53</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2401,10 +2489,17 @@ RAISONS DES LIENS :
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
+      <PredecessorLink>
+        <PredecessorUID>66</PredecessorUID>
+        <Type>1</Type>
+        <CrossProject>0</CrossProject>
+        <LinkLag>0</LinkLag>
+        <LagFormat>7</LagFormat>
+      </PredecessorLink>
     </Task>
     <Task>
-      <UID>68</UID>
-      <ID>68</ID>
+      <UID>69</UID>
+      <ID>69</ID>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
@@ -2414,8 +2509,8 @@ RAISONS DES LIENS :
       <Type>1</Type>
       <DurationFormat>7</DurationFormat>
       <Duration>PT80H0M0S</Duration>
-      <Start>2027-09-27T08:00:00</Start>
-      <Finish>2027-10-08T17:00:00</Finish>
+      <Start>2027-10-25T08:00:00</Start>
+      <Finish>2027-11-05T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-REC-010]  Lot : GE  |  Systeme : RECEPTION
 Locaux : *
@@ -2428,21 +2523,21 @@ RAISONS DES LIENS :
   &lt;- T-ANS-040 (FD) : Bâtiment refermé
   &lt;- T-HAL-050 (FD) : Systèmes de sécurité réceptionnés</Notes>
       <PredecessorLink>
-        <PredecessorUID>67</PredecessorUID>
+        <PredecessorUID>68</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>50</PredecessorUID>
+        <PredecessorUID>51</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>58</PredecessorUID>
+        <PredecessorUID>57</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2456,7 +2551,7 @@ RAISONS DES LIENS :
         <LagFormat>7</LagFormat>
       </PredecessorLink>
       <PredecessorLink>
-        <PredecessorUID>57</PredecessorUID>
+        <PredecessorUID>61</PredecessorUID>
         <Type>1</Type>
         <CrossProject>0</CrossProject>
         <LinkLag>0</LinkLag>
@@ -2748,98 +2843,98 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>41</UID>
       <TaskUID>41</TaskUID>
-      <ResourceUID>10</ResourceUID>
-      <Units>1</Units>
-      <Start>2027-04-12T08:00:00</Start>
-      <Finish>2027-05-07T17:00:00</Finish>
-    </Assignment>
-    <Assignment>
-      <UID>42</UID>
-      <TaskUID>42</TaskUID>
-      <ResourceUID>2</ResourceUID>
-      <Units>1</Units>
-      <Start>2027-04-12T08:00:00</Start>
-      <Finish>2027-07-02T17:00:00</Finish>
-    </Assignment>
-    <Assignment>
-      <UID>43</UID>
-      <TaskUID>43</TaskUID>
       <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2027-04-26T08:00:00</Start>
       <Finish>2027-07-02T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>44</UID>
-      <TaskUID>44</TaskUID>
+      <UID>42</UID>
+      <TaskUID>42</TaskUID>
       <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2027-04-26T08:00:00</Start>
       <Finish>2027-06-18T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>45</UID>
-      <TaskUID>45</TaskUID>
+      <UID>43</UID>
+      <TaskUID>43</TaskUID>
       <ResourceUID>7</ResourceUID>
       <Units>1</Units>
       <Start>2027-05-31T08:00:00</Start>
       <Finish>2027-06-25T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>46</UID>
-      <TaskUID>46</TaskUID>
+      <UID>44</UID>
+      <TaskUID>44</TaskUID>
       <ResourceUID>6</ResourceUID>
       <Units>1</Units>
       <Start>2027-05-31T08:00:00</Start>
       <Finish>2027-06-25T17:00:00</Finish>
     </Assignment>
     <Assignment>
+      <UID>45</UID>
+      <TaskUID>45</TaskUID>
+      <ResourceUID>10</ResourceUID>
+      <Units>1</Units>
+      <Start>2027-06-07T08:00:00</Start>
+      <Finish>2027-07-02T17:00:00</Finish>
+    </Assignment>
+    <Assignment>
+      <UID>46</UID>
+      <TaskUID>46</TaskUID>
+      <ResourceUID>10</ResourceUID>
+      <Units>1</Units>
+      <Start>2027-07-05T08:00:00</Start>
+      <Finish>2027-07-30T17:00:00</Finish>
+    </Assignment>
+    <Assignment>
       <UID>47</UID>
       <TaskUID>47</TaskUID>
       <ResourceUID>10</ResourceUID>
       <Units>1</Units>
-      <Start>2027-05-31T08:00:00</Start>
-      <Finish>2027-06-25T17:00:00</Finish>
+      <Start>2027-07-05T08:00:00</Start>
+      <Finish>2027-07-30T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>49</UID>
-      <TaskUID>49</TaskUID>
-      <ResourceUID>4</ResourceUID>
+      <UID>48</UID>
+      <TaskUID>48</TaskUID>
+      <ResourceUID>2</ResourceUID>
       <Units>1</Units>
-      <Start>2026-11-30T08:00:00</Start>
-      <Finish>2026-12-04T17:00:00</Finish>
+      <Start>2027-07-05T08:00:00</Start>
+      <Finish>2027-09-24T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>50</UID>
       <TaskUID>50</TaskUID>
       <ResourceUID>4</ResourceUID>
       <Units>1</Units>
-      <Start>2026-12-14T08:00:00</Start>
-      <Finish>2027-01-22T17:00:00</Finish>
+      <Start>2026-11-30T08:00:00</Start>
+      <Finish>2026-12-04T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>51</UID>
       <TaskUID>51</TaskUID>
-      <ResourceUID>7</ResourceUID>
+      <ResourceUID>4</ResourceUID>
       <Units>1</Units>
-      <Start>2027-02-08T08:00:00</Start>
-      <Finish>2027-02-19T17:00:00</Finish>
+      <Start>2026-12-14T08:00:00</Start>
+      <Finish>2027-01-22T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>52</UID>
       <TaskUID>52</TaskUID>
       <ResourceUID>7</ResourceUID>
       <Units>1</Units>
-      <Start>2027-02-22T08:00:00</Start>
-      <Finish>2027-02-26T17:00:00</Finish>
+      <Start>2027-02-08T08:00:00</Start>
+      <Finish>2027-02-19T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>53</UID>
       <TaskUID>53</TaskUID>
-      <ResourceUID>3</ResourceUID>
+      <ResourceUID>7</ResourceUID>
       <Units>1</Units>
-      <Start>2027-04-12T08:00:00</Start>
-      <Finish>2027-04-30T17:00:00</Finish>
+      <Start>2027-02-22T08:00:00</Start>
+      <Finish>2027-02-26T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>54</UID>
@@ -2868,63 +2963,63 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>57</UID>
       <TaskUID>57</TaskUID>
-      <ResourceUID>13</ResourceUID>
-      <Units>1</Units>
-      <Start>2027-06-07T08:00:00</Start>
-      <Finish>2027-06-25T17:00:00</Finish>
-    </Assignment>
-    <Assignment>
-      <UID>58</UID>
-      <TaskUID>58</TaskUID>
       <ResourceUID>5</ResourceUID>
       <Units>1</Units>
       <Start>2027-06-21T08:00:00</Start>
       <Finish>2027-08-27T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>59</UID>
-      <TaskUID>59</TaskUID>
-      <ResourceUID>16</ResourceUID>
-      <Units>1</Units>
-      <Start>2027-06-28T08:00:00</Start>
-      <Finish>2027-07-02T17:00:00</Finish>
-    </Assignment>
-    <Assignment>
-      <UID>60</UID>
-      <TaskUID>60</TaskUID>
+      <UID>58</UID>
+      <TaskUID>58</TaskUID>
       <ResourceUID>6</ResourceUID>
       <Units>1</Units>
       <Start>2027-06-28T08:00:00</Start>
       <Finish>2027-07-09T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>61</UID>
-      <TaskUID>61</TaskUID>
+      <UID>59</UID>
+      <TaskUID>59</TaskUID>
+      <ResourceUID>3</ResourceUID>
+      <Units>1</Units>
+      <Start>2027-07-05T08:00:00</Start>
+      <Finish>2027-07-23T17:00:00</Finish>
+    </Assignment>
+    <Assignment>
+      <UID>60</UID>
+      <TaskUID>60</TaskUID>
       <ResourceUID>6</ResourceUID>
       <Units>1</Units>
       <Start>2027-07-12T08:00:00</Start>
       <Finish>2027-07-16T17:00:00</Finish>
     </Assignment>
     <Assignment>
-      <UID>62</UID>
-      <TaskUID>62</TaskUID>
-      <ResourceUID>6</ResourceUID>
-      <Units>1</Units>
-      <Start>2027-07-19T08:00:00</Start>
-      <Finish>2027-07-23T17:00:00</Finish>
-    </Assignment>
-    <Assignment>
-      <UID>64</UID>
-      <TaskUID>64</TaskUID>
+      <UID>61</UID>
+      <TaskUID>61</TaskUID>
       <ResourceUID>13</ResourceUID>
       <Units>1</Units>
-      <Start>2027-06-07T08:00:00</Start>
-      <Finish>2027-06-18T17:00:00</Finish>
+      <Start>2027-08-02T08:00:00</Start>
+      <Finish>2027-08-20T17:00:00</Finish>
+    </Assignment>
+    <Assignment>
+      <UID>62</UID>
+      <TaskUID>62</TaskUID>
+      <ResourceUID>16</ResourceUID>
+      <Units>1</Units>
+      <Start>2027-08-23T08:00:00</Start>
+      <Finish>2027-08-27T17:00:00</Finish>
+    </Assignment>
+    <Assignment>
+      <UID>63</UID>
+      <TaskUID>63</TaskUID>
+      <ResourceUID>6</ResourceUID>
+      <Units>1</Units>
+      <Start>2027-08-23T08:00:00</Start>
+      <Finish>2027-08-27T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>65</UID>
       <TaskUID>65</TaskUID>
-      <ResourceUID>8</ResourceUID>
+      <ResourceUID>13</ResourceUID>
       <Units>1</Units>
       <Start>2027-06-07T08:00:00</Start>
       <Finish>2027-06-18T17:00:00</Finish>
@@ -2932,26 +3027,34 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>66</UID>
       <TaskUID>66</TaskUID>
-      <ResourceUID>9</ResourceUID>
+      <ResourceUID>8</ResourceUID>
       <Units>1</Units>
-      <Start>2027-06-21T08:00:00</Start>
-      <Finish>2027-07-30T17:00:00</Finish>
+      <Start>2027-06-07T08:00:00</Start>
+      <Finish>2027-06-18T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>67</UID>
       <TaskUID>67</TaskUID>
       <ResourceUID>9</ResourceUID>
       <Units>1</Units>
-      <Start>2027-08-02T08:00:00</Start>
-      <Finish>2027-09-24T17:00:00</Finish>
+      <Start>2027-06-21T08:00:00</Start>
+      <Finish>2027-07-30T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>68</UID>
       <TaskUID>68</TaskUID>
       <ResourceUID>9</ResourceUID>
       <Units>1</Units>
-      <Start>2027-09-27T08:00:00</Start>
-      <Finish>2027-10-08T17:00:00</Finish>
+      <Start>2027-08-30T08:00:00</Start>
+      <Finish>2027-10-22T17:00:00</Finish>
+    </Assignment>
+    <Assignment>
+      <UID>69</UID>
+      <TaskUID>69</TaskUID>
+      <ResourceUID>9</ResourceUID>
+      <Units>1</Units>
+      <Start>2027-10-25T08:00:00</Start>
+      <Finish>2027-11-05T17:00:00</Finish>
     </Assignment>
   </Assignments>
 </Project>

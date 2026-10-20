@@ -1,283 +1,283 @@
 lot;local;tache;id;debut;fin;semaines;phase;statut;marge_jours;critique
-A DEFINIR;STAP;STAP - génie civil, équipements et armoire de commande;T-STA-010;2026-10-26;2027-03-12;20;P3;HORS_PERIMETRE_CONNU;210;
-ANTIGLIO;*;Achèvement béton, étanchéité et enveloppe;T-ANT-010;2026-10-26;2026-12-18;8;P0;en_cours;7;
-ANTIGLIO;*;Réservations et percements;T-ANT-030;2026-10-26;2026-11-13;3;P0;a_confirmer;329;
-ANTIGLIO;CENT.N-2.21;Socles armoires et coffrets (100 mm);T-ANT-025;2026-10-26;2026-11-06;2;P0;a_confirmer;140;
-ANTIGLIO;CENT.N-2.04;Socles armoires et coffrets (100 mm);T-ANT-025;2026-10-26;2026-11-06;2;P0;a_confirmer;140;
-ANTIGLIO;CENT.N-2.19;Socles armoires et coffrets (100 mm);T-ANT-025;2026-10-26;2026-11-06;2;P0;a_confirmer;140;
-BILFINGER;CENT.N-2.24;Montage de l'accumulateur chaud;T-BIL-010;2026-10-26;2027-01-15;12;P1;en_cours;196;
-ENTRETEC;CENT.N-1.02;Tuyauterie hydraulique chaud (sections 00 à 06);T-ENT-010;2026-10-26;2027-02-05;15;P2;a_confirmer;35;
-ENTRETEC;CENT.N-1.04;Tuyauterie hydraulique chaud (sections 00 à 06);T-ENT-010;2026-10-26;2027-02-05;15;P2;a_confirmer;35;
-ENTRETEC;CENT.N-2.19;Tuyauterie hydraulique chaud (sections 00 à 06);T-ENT-010;2026-10-26;2027-02-05;15;P2;a_confirmer;35;
-ENTRETEC;CENT.N-2.24;Tuyauterie hydraulique chaud (sections 00 à 06);T-ENT-010;2026-10-26;2027-02-05;15;P2;a_confirmer;35;
-ENTRETEC;CENT.N-2.18;Pompes et collecteur de circulation des locaux PAC;T-ENT-030;2026-10-26;2027-01-01;10;P2;a_confirmer;175;
-GE;CENT.N+0.03;Raccordement extérieur (MT réseau et conduites CAD);T-GE-020;2026-10-26;2027-01-15;12;P3;a_confirmer;140;
-RIEDO;CENT.N-1.03;Installations sanitaires;T-RIE-010;2026-10-26;2026-11-13;3;P2;a_confirmer;119;
-RIEDO;CENT.N-1.04;Installations sanitaires;T-RIE-010;2026-10-26;2026-11-13;3;P2;a_confirmer;119;
-RIEDO;CENT.N-2.22;Installations sanitaires;T-RIE-010;2026-10-26;2026-11-13;3;P2;a_confirmer;119;
-RIEDO;CENT.N-2.23;Installations sanitaires;T-RIE-010;2026-10-26;2026-11-13;3;P2;a_confirmer;119;
-WETTSTEIN;CENT.N-2.07;Mise en place du socle préfabriqué PAC 1;T-ANT-021;2026-10-26;2026-10-30;1;P0;a_confirmer;7;
-WETTSTEIN;CENT.N-2.10;Mise en place du socle préfabriqué PAC 2;T-ANT-022;2026-10-26;2026-10-30;1;P0;a_confirmer;112;
-WETTSTEIN;CENT.N-2.07;Montage de la PAC 1 (NH3) dans le local;T-WET-010;2026-11-02;2027-02-12;15;P1;a_confirmer;7;
-BILFINGER;CENT.N-2.24;Épreuve de pression de l'accumulateur;T-BIL-020;2026-11-30;2026-12-04;1;P5;date_ferme;245;
-ENTRETEC;CENT.N-2.24;Raccordement hydraulique sur accumulateur;T-ENT-050;2026-12-07;2026-12-18;2;P4;a_confirmer;294;
-GE;CENT.N-2.24;Raccordement des sondes de l'accumulateur;T-GE-010;2026-12-07;2026-12-11;1;P4;a_confirmer;245;
-BILFINGER;CENT.N-2.24;Calorifugeage de l'accumulateur;T-CAL-010;2026-12-14;2027-01-22;6;P5;a_confirmer;245;
-ANSERMOT;CENT.N-2.21;Fenêtres;T-ANS-010;2026-12-21;2027-01-08;3;P0;non_adjuge;273;
-ANSERMOT;CENT.N+0.01;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;266;
-ANSERMOT;CENT.N+0.02;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;266;
-ANSERMOT;CENT.N-2.02;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;266;
-ANSERMOT;CENT.N-2.17;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;266;
-ANSERMOT;CENT.N-2.18;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;266;
-ANSERMOT;CENT.N-2.20;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;266;
-DESPRAZ;CENT.N-1.02;Tuyauterie CO2 jusqu'aux echangeurs froid;T-DES-010;2026-12-21;2027-03-12;12;P2;a_confirmer;28;
-DESPRAZ;CENT.N-1.03;Tuyauterie CO2 jusqu'aux echangeurs froid;T-DES-010;2026-12-21;2027-03-12;12;P2;a_confirmer;28;
-DESPRAZ;CENT.N-2.05;Tuyauterie CO2 jusqu'aux echangeurs froid;T-DES-010;2026-12-21;2027-03-12;12;P2;a_confirmer;28;
-ENTRETEC;CENT.N-2.09;Centrale froid n°1 (hydraulique);T-DES-005;2026-12-21;2027-01-22;5;P1;a_confirmer;28;
-GETECH-IEG;CENT.N+0.01;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N+0.02;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-1.01;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-1.02;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-1.03;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-1.04;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-1.05;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-1.06;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-1.07;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.01;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.02;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.03;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.04;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.05;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.06;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.07;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.08;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.09;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.10;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.12;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.13;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.14;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.15;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.16;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.17;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.18;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.19;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.20;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.21;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.22;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.23;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.24;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.25;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-GETECH-IEG;CENT.N-2.26;Chemins de câbles et câblage IEG;T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;56;
-LEVAGE;CENT.N-2.19;Mise en place des vases d'expansion (7 x 5'000 L);T-LEV-010;2026-12-21;2027-01-01;2;P1;non_adjuge;154;
-ENTRETEC;CENT.N-2.19;Raccordement hydraulique des vases d'expansion;T-ENT-020;2027-01-04;2027-01-22;3;P2;a_confirmer;154;
-GETECH-INFRA;CENT.N-2.01;Cellules et transformateurs MT/BT, rails d'énergie;T-GET-010;2027-02-01;2027-03-26;8;P3;a_confirmer;0;oui
-ENTRETEC;CENT.N-2.19;Départ CAD et départ ZI (étape 1);T-ENT-055;2027-02-08;2027-03-05;4;P4;a_confirmer;196;
-ENTRETEC;CENT.N-2.03;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.04;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.05;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.06;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.07;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.08;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.09;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.10;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.18;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.19;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.24;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;140;
-HALG;CENT.N-1.01;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-1.02;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-1.03;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-1.04;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-1.06;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-1.07;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-2.01;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-2.03;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-2.04;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-2.05;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-2.07;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-2.08;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-2.09;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-2.10;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-2.18;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-2.19;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-2.21;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-2.22;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-2.23;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;35;
-HALG;CENT.N-2.21;Ventilation commande, WC, vestiaire (section 41);T-HAL-020;2027-02-08;2027-02-26;3;P2;a_confirmer;140;
-HALG;CENT.N-2.22;Ventilation commande, WC, vestiaire (section 41);T-HAL-020;2027-02-08;2027-02-26;3;P2;a_confirmer;140;
-HALG;CENT.N-2.23;Ventilation commande, WC, vestiaire (section 41);T-HAL-020;2027-02-08;2027-02-26;3;P2;a_confirmer;140;
-HALG;CENT.N-1.07;Ventilation commande, WC, vestiaire (section 41);T-HAL-020;2027-02-08;2027-02-26;3;P2;a_confirmer;140;
-HALG;CENT.N-1.02;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2027-02-08;2027-04-16;10;P2;a_confirmer;77;
-HALG;CENT.N-1.03;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2027-02-08;2027-04-16;10;P2;a_confirmer;77;
-HALG;CENT.N-2.05;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2027-02-08;2027-04-16;10;P2;a_confirmer;77;
-HALG;CENT.N-2.07;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2027-02-08;2027-04-16;10;P2;a_confirmer;77;
-HALG;CENT.N-2.10;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2027-02-08;2027-04-16;10;P2;a_confirmer;77;
-ENTRETEC;CENT.N-2.07;Raccordement hydraulique chaud PAC 1;T-ENT-041;2027-02-15;2027-03-12;4;P4;a_confirmer;210;
-WETTSTEIN;CENT.N-2.10;Montage de la PAC 2 (NH3) dans le local;T-WET-020;2027-02-15;2027-05-28;15;P1;a_confirmer;7;
-ENTRETEC;CENT.N-2.03;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.04;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.05;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.06;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.07;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.08;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.09;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.10;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.18;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.19;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;140;
-ENTRETEC;CENT.N-2.24;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;140;
-ENTRETEC;CENT.N+0.03;Raccordement des chaufferies mobiles gaz (2 x 2.5 MW);T-ENT-080;2027-03-08;2027-03-26;3;P4;a_confirmer;196;
-DESPRAZ;CENT.N-2.07;Échangeur froid et CO2 PAC 1;T-DES-016;2027-03-15;2027-04-09;4;P4;a_confirmer;182;
-ENTRETEC;CENT.N-1.03;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-03-15;2027-06-04;12;P2;a_confirmer;28;
-ENTRETEC;CENT.N-1.04;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-03-15;2027-06-04;12;P2;a_confirmer;28;
-ENTRETEC;CENT.N-2.03;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-03-15;2027-06-04;12;P2;a_confirmer;28;
-ENTRETEC;CENT.N-2.04;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-03-15;2027-06-04;12;P2;a_confirmer;28;
-ENTRETEC;CENT.N-2.08;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-03-15;2027-06-04;12;P2;a_confirmer;28;
-ENTRETEC;CENT.N-2.18;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-03-15;2027-06-04;12;P2;a_confirmer;28;
-ENTRETEC;CENT.N-2.19;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-03-15;2027-06-04;12;P2;a_confirmer;28;
-EXERGO;CENT.N-2.08;Armoires variateurs 1 et 2;T-GET-040;2027-03-29;2027-05-07;6;P3;a_confirmer;0;oui
-GETECH-TABLEAU;CENT.N-2.04;Pose des tableaux TGBT;T-GET-020;2027-03-29;2027-05-21;8;P3;a_confirmer;0;oui
-GETECH-TABLEAU;CENT.N-2.21;Armoires et coffrets de commande (15 unités);T-GET-050;2027-03-29;2027-04-23;4;P3;a_confirmer;0;oui
-GETECH-TABLEAU;CENT.N-2.19;Armoires et coffrets de commande (15 unités);T-GET-050;2027-03-29;2027-04-23;4;P3;a_confirmer;0;oui
-GETECH-TABLEAU;CENT.N-2.04;Armoires et coffrets de commande (15 unités);T-GET-050;2027-03-29;2027-04-23;4;P3;a_confirmer;0;oui
-ANSERMOT;CENT.N-1.01;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-1.05;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-1.06;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-1.07;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.01;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.02;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.03;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.04;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.05;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.06;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.07;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.08;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.09;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.10;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.11;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.12;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.13;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.14;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.15;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.16;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.17;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.18;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.19;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.20;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.21;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.22;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.23;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.24;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.25;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANSERMOT;CENT.N-2.26;Portes intérieures;T-ANS-030;2027-04-12;2027-07-02;12;P4;non_adjuge;98;
-ANTIGLIO;*;Rebouchages et calfeutrements coupe-feu;T-ANT-035;2027-04-12;2027-04-30;3;P5;a_confirmer;63;
-GETECH-IEG;CENT.N-1.01;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-1.02;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-1.03;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-1.04;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-1.05;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-1.06;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-1.07;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.01;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.02;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.03;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.04;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.05;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.06;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.07;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.08;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.09;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.10;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.12;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.13;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.14;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.15;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.16;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.17;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.18;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.19;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.20;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.21;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.22;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.23;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.24;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.25;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GETECH-IEG;CENT.N-2.26;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-04-12;2027-05-07;4;P4;a_confirmer;56;
-GE;CENT.N-2.21;Automates et régulation MCR (API, RIO, HMI, Scada);T-GE-030;2027-04-26;2027-07-02;10;P4;a_confirmer;0;oui
-GE;CENT.N-2.05;Raccordement des sondes et actionneurs (hors accumulateur);T-GE-040;2027-04-26;2027-06-18;8;P4;a_confirmer;0;oui
-GE;CENT.N-2.07;Raccordement des sondes et actionneurs (hors accumulateur);T-GE-040;2027-04-26;2027-06-18;8;P4;a_confirmer;0;oui
-GE;CENT.N-2.09;Raccordement des sondes et actionneurs (hors accumulateur);T-GE-040;2027-04-26;2027-06-18;8;P4;a_confirmer;0;oui
-GE;CENT.N-2.10;Raccordement des sondes et actionneurs (hors accumulateur);T-GE-040;2027-04-26;2027-06-18;8;P4;a_confirmer;0;oui
-GE;CENT.N-2.18;Raccordement des sondes et actionneurs (hors accumulateur);T-GE-040;2027-04-26;2027-06-18;8;P4;a_confirmer;0;oui
-GE;CENT.N-2.19;Raccordement des sondes et actionneurs (hors accumulateur);T-GE-040;2027-04-26;2027-06-18;8;P4;a_confirmer;0;oui
-GE;CENT.N-2.24;Raccordement des sondes et actionneurs (hors accumulateur);T-GE-040;2027-04-26;2027-06-18;8;P4;a_confirmer;0;oui
-GETECH-INFRA;CENT.N-2.01;Mise sous tension MT/BT et TGBT;T-GET-080;2027-05-24;2027-06-04;2;P5;a_confirmer;14;
-GETECH-INFRA;CENT.N-2.04;Mise sous tension MT/BT et TGBT;T-GET-080;2027-05-24;2027-06-04;2;P5;a_confirmer;14;
-ANSERMOT;CENT.N-2.25;Portes du chemin de manutention;T-ANS-040;2027-05-31;2027-06-04;1;P5;non_adjuge;112;
-ANSERMOT;CENT.N-2.26;Portes du chemin de manutention;T-ANS-040;2027-05-31;2027-06-04;1;P5;non_adjuge;112;
-ANSERMOT;CENT.N-2.11;Portes du chemin de manutention;T-ANS-040;2027-05-31;2027-06-04;1;P5;non_adjuge;112;
-ANTIGLIO;CENT.N-2.25;Fermeture de l'accès de manutention;T-ANT-040;2027-05-31;2027-06-04;1;P1;a_confirmer;126;
-ANTIGLIO;CENT.N-2.26;Fermeture de l'accès de manutention;T-ANT-040;2027-05-31;2027-06-04;1;P1;a_confirmer;126;
-DESPRAZ;CENT.N-2.10;Échangeur froid et CO2 PAC 2;T-DES-017;2027-05-31;2027-06-25;4;P4;a_confirmer;7;
-ENTRETEC;CENT.N-2.10;Raccordement hydraulique chaud PAC 2;T-ENT-042;2027-05-31;2027-06-25;4;P4;a_confirmer;7;
-GETECH-IEG;CENT.N-2.07;Câblage de puissance des PAC;T-GET-060;2027-05-31;2027-06-25;4;P4;a_confirmer;105;
-GETECH-IEG;CENT.N-2.10;Câblage de puissance des PAC;T-GET-060;2027-05-31;2027-06-25;4;P4;a_confirmer;105;
-WETTSTEIN;CENT.N-2.07;Épreuve d'étanchéité des circuits NH3;T-WET-050;2027-05-31;2027-06-11;2;P5;a_confirmer;42;
-WETTSTEIN;CENT.N-2.10;Épreuve d'étanchéité des circuits NH3;T-WET-050;2027-05-31;2027-06-11;2;P5;a_confirmer;42;
-EXERGO;CENT.N-2.08;Mise en charge nominale des variateurs;T-GET-090;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-1.01;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-1.02;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-1.03;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-1.04;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-1.06;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-1.07;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-2.01;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-2.03;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-2.04;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-2.05;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-2.07;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-2.08;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-2.09;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-2.10;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-2.18;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-2.19;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-2.21;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-2.22;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-2.23;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;42;
-HALG;CENT.N-1.01;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-1.02;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-1.03;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-1.04;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-1.06;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-1.07;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-2.01;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-2.03;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-2.04;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-2.05;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-2.07;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-2.08;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-2.09;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-2.10;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-2.18;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-2.19;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-2.21;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-2.22;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-HALG;CENT.N-2.23;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-06-07;2027-06-25;3;P5;a_confirmer;28;
-CALORIFUGEAGE;CENT.N-1.03;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;28;
-CALORIFUGEAGE;CENT.N-1.04;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;28;
-CALORIFUGEAGE;CENT.N-2.05;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;28;
-CALORIFUGEAGE;CENT.N-2.07;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;28;
-CALORIFUGEAGE;CENT.N-2.09;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;28;
-CALORIFUGEAGE;CENT.N-2.10;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;28;
-CALORIFUGEAGE;CENT.N-2.18;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;28;
-CALORIFUGEAGE;CENT.N-2.19;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;28;
-GE;*;Essais de boucles et de régulation;T-GE-050;2027-06-21;2027-07-30;6;P6;a_confirmer;0;oui
-DESPRAZ;CENT.N-2.05;Épreuve d'étanchéité du circuit CO2;T-DES-030;2027-06-28;2027-07-09;2;P5;a_confirmer;7;
-DESPRAZ;CENT.N-2.07;Épreuve d'étanchéité du circuit CO2;T-DES-030;2027-06-28;2027-07-09;2;P5;a_confirmer;7;
-DESPRAZ;CENT.N-2.10;Épreuve d'étanchéité du circuit CO2;T-DES-030;2027-06-28;2027-07-09;2;P5;a_confirmer;7;
-WETTSTEIN;CENT.N-2.07;Charge en NH3 des PAC 1 et 2;T-WET-060;2027-06-28;2027-07-02;1;P5;a_confirmer;28;
-WETTSTEIN;CENT.N-2.10;Charge en NH3 des PAC 1 et 2;T-WET-060;2027-06-28;2027-07-02;1;P5;a_confirmer;28;
-DESPRAZ;CENT.N-2.05;Tirage au vide du circuit CO2;T-DES-040;2027-07-12;2027-07-16;1;P5;a_confirmer;7;
-DESPRAZ;CENT.N-2.07;Tirage au vide du circuit CO2;T-DES-040;2027-07-12;2027-07-16;1;P5;a_confirmer;7;
-DESPRAZ;CENT.N-2.10;Tirage au vide du circuit CO2;T-DES-040;2027-07-12;2027-07-16;1;P5;a_confirmer;7;
-DESPRAZ;CENT.N-2.05;Charge en CO2;T-DES-050;2027-07-19;2027-07-23;1;P5;a_confirmer;7;
-GE;*;Essais fonctionnels intégrés et mise en service des PAC;T-GE-060;2027-08-02;2027-09-24;8;P6;a_confirmer;0;oui
-GE;*;Réception de l'installation;T-REC-010;2027-09-27;2027-10-08;2;P6;a_confirmer;0;oui
+A DEFINIR;STAP;STAP - génie civil, équipements et armoire de commande;T-STA-010;2026-10-26;2027-03-12;20;P3;HORS_PERIMETRE_CONNU;238;
+ANTIGLIO;*;Achèvement béton, étanchéité et enveloppe;T-ANT-010;2026-10-26;2026-12-18;8;P0;en_cours;0;oui
+ANTIGLIO;*;Réservations et percements;T-ANT-030;2026-10-26;2026-11-13;3;P0;a_confirmer;357;
+ANTIGLIO;CENT.N-2.21;Socles armoires et coffrets (100 mm);T-ANT-025;2026-10-26;2026-11-06;2;P0;a_confirmer;168;
+ANTIGLIO;CENT.N-2.04;Socles armoires et coffrets (100 mm);T-ANT-025;2026-10-26;2026-11-06;2;P0;a_confirmer;168;
+ANTIGLIO;CENT.N-2.19;Socles armoires et coffrets (100 mm);T-ANT-025;2026-10-26;2026-11-06;2;P0;a_confirmer;168;
+BILFINGER;CENT.N-2.24;Montage de l'accumulateur chaud;T-BIL-010;2026-10-26;2027-01-15;12;P1;en_cours;224;
+ENTRETEC;CENT.N-1.02;Tuyauterie hydraulique chaud (sections 00 à 06);T-ENT-010;2026-10-26;2027-02-05;15;P2;a_confirmer;56;
+ENTRETEC;CENT.N-1.04;Tuyauterie hydraulique chaud (sections 00 à 06);T-ENT-010;2026-10-26;2027-02-05;15;P2;a_confirmer;56;
+ENTRETEC;CENT.N-2.19;Tuyauterie hydraulique chaud (sections 00 à 06);T-ENT-010;2026-10-26;2027-02-05;15;P2;a_confirmer;56;
+ENTRETEC;CENT.N-2.24;Tuyauterie hydraulique chaud (sections 00 à 06);T-ENT-010;2026-10-26;2027-02-05;15;P2;a_confirmer;56;
+ENTRETEC;CENT.N-2.18;Pompes et collecteur de circulation des locaux PAC;T-ENT-030;2026-10-26;2027-01-01;10;P2;a_confirmer;203;
+GE;CENT.N+0.03;Raccordement extérieur (MT réseau et conduites CAD);T-GE-020;2026-10-26;2027-01-15;12;P3;a_confirmer;168;
+RIEDO;CENT.N-1.03;Installations sanitaires;T-RIE-010;2026-10-26;2026-11-13;3;P2;a_confirmer;147;
+RIEDO;CENT.N-1.04;Installations sanitaires;T-RIE-010;2026-10-26;2026-11-13;3;P2;a_confirmer;147;
+RIEDO;CENT.N-2.22;Installations sanitaires;T-RIE-010;2026-10-26;2026-11-13;3;P2;a_confirmer;147;
+RIEDO;CENT.N-2.23;Installations sanitaires;T-RIE-010;2026-10-26;2026-11-13;3;P2;a_confirmer;147;
+WETTSTEIN;CENT.N-2.07;Mise en place du socle préfabriqué PAC 1;T-ANT-021;2026-10-26;2026-10-30;1;P0;a_confirmer;35;
+WETTSTEIN;CENT.N-2.10;Mise en place du socle préfabriqué PAC 2;T-ANT-022;2026-10-26;2026-10-30;1;P0;a_confirmer;140;
+WETTSTEIN;CENT.N-2.07;Montage de la PAC 1 (NH3) dans le local;T-WET-010;2026-11-02;2027-02-12;15;P1;a_confirmer;35;
+BILFINGER;CENT.N-2.24;Épreuve de pression de l'accumulateur;T-BIL-020;2026-11-30;2026-12-04;1;P5;date_ferme;273;
+ENTRETEC;CENT.N-2.24;Raccordement hydraulique sur accumulateur;T-ENT-050;2026-12-07;2026-12-18;2;P4;a_confirmer;322;
+GE;CENT.N-2.24;Raccordement des sondes de l'accumulateur;T-GE-010;2026-12-07;2026-12-11;1;P4;a_confirmer;273;
+BILFINGER;CENT.N-2.24;Calorifugeage de l'accumulateur;T-CAL-010;2026-12-14;2027-01-22;6;P5;a_confirmer;273;
+ANSERMOT;CENT.N-2.21;Fenêtres;T-ANS-010;2026-12-21;2027-01-08;3;P0;non_adjuge;301;
+ANSERMOT;CENT.N+0.01;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;294;
+ANSERMOT;CENT.N+0.02;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;294;
+ANSERMOT;CENT.N-2.02;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;294;
+ANSERMOT;CENT.N-2.17;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;294;
+ANSERMOT;CENT.N-2.18;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;294;
+ANSERMOT;CENT.N-2.20;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;294;
+DESPRAZ;CENT.N-1.02;Tuyauterie CO2 jusqu'aux echangeurs froid;T-DES-010;2026-12-21;2027-03-12;12;P2;a_confirmer;0;oui
+DESPRAZ;CENT.N-1.03;Tuyauterie CO2 jusqu'aux echangeurs froid;T-DES-010;2026-12-21;2027-03-12;12;P2;a_confirmer;0;oui
+DESPRAZ;CENT.N-2.05;Tuyauterie CO2 jusqu'aux echangeurs froid;T-DES-010;2026-12-21;2027-03-12;12;P2;a_confirmer;0;oui
+ENTRETEC;CENT.N-2.09;Centrale froid n°1 (hydraulique);T-DES-005;2026-12-21;2027-01-22;5;P1;a_confirmer;0;oui
+GETECH-IEG;CENT.N+0.01;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N+0.02;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-1.01;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-1.02;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-1.03;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-1.04;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-1.05;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-1.06;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-1.07;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.02;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.03;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.05;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.06;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.07;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.09;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.10;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.12;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.13;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.14;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.15;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.16;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.17;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.18;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.19;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.20;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.21;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.22;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.23;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.24;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.25;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+GETECH-IEG;CENT.N-2.26;Chemins de câbles et câblage IEG (hors locaux électriques);T-GET-030;2026-12-21;2027-04-09;16;P2;a_confirmer;84;
+LEVAGE;CENT.N-2.19;Mise en place des vases d'expansion (7 x 5'000 L);T-LEV-010;2026-12-21;2027-01-01;2;P1;non_adjuge;182;
+ENTRETEC;CENT.N-2.19;Raccordement hydraulique des vases d'expansion;T-ENT-020;2027-01-04;2027-01-22;3;P2;a_confirmer;182;
+GETECH-INFRA;CENT.N-2.01;Cellules et transformateurs MT/BT, rails d'énergie;T-GET-010;2027-02-01;2027-03-26;8;P3;a_confirmer;14;
+ENTRETEC;CENT.N-2.19;Départ CAD et départ ZI (étape 1);T-ENT-055;2027-02-08;2027-03-05;4;P4;a_confirmer;224;
+ENTRETEC;CENT.N-2.03;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.04;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.05;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.06;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.07;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.08;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.09;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.10;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.18;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.19;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.24;Rinçage et remplissage des réseaux hydrauliques;T-ENT-060;2027-02-08;2027-02-19;2;P5;a_confirmer;168;
+HALG;CENT.N-1.01;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-1.02;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-1.03;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-1.04;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-1.06;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-1.07;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-2.01;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-2.03;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-2.04;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-2.05;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-2.07;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-2.08;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-2.09;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-2.10;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-2.18;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-2.19;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-2.21;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-2.22;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-2.23;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2027-02-08;2027-04-30;12;P2;a_confirmer;63;
+HALG;CENT.N-2.21;Ventilation commande, WC, vestiaire (section 41);T-HAL-020;2027-02-08;2027-02-26;3;P2;a_confirmer;168;
+HALG;CENT.N-2.22;Ventilation commande, WC, vestiaire (section 41);T-HAL-020;2027-02-08;2027-02-26;3;P2;a_confirmer;168;
+HALG;CENT.N-2.23;Ventilation commande, WC, vestiaire (section 41);T-HAL-020;2027-02-08;2027-02-26;3;P2;a_confirmer;168;
+HALG;CENT.N-1.07;Ventilation commande, WC, vestiaire (section 41);T-HAL-020;2027-02-08;2027-02-26;3;P2;a_confirmer;168;
+HALG;CENT.N-1.02;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2027-02-08;2027-04-16;10;P2;a_confirmer;105;
+HALG;CENT.N-1.03;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2027-02-08;2027-04-16;10;P2;a_confirmer;105;
+HALG;CENT.N-2.05;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2027-02-08;2027-04-16;10;P2;a_confirmer;105;
+HALG;CENT.N-2.07;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2027-02-08;2027-04-16;10;P2;a_confirmer;105;
+HALG;CENT.N-2.10;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2027-02-08;2027-04-16;10;P2;a_confirmer;105;
+ENTRETEC;CENT.N-2.07;Raccordement hydraulique chaud PAC 1;T-ENT-041;2027-02-15;2027-03-12;4;P4;a_confirmer;238;
+WETTSTEIN;CENT.N-2.10;Montage de la PAC 2 (NH3) dans le local;T-WET-020;2027-02-15;2027-05-28;15;P1;a_confirmer;35;
+ENTRETEC;CENT.N-2.03;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.04;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.05;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.06;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.07;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.08;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.09;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.10;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.18;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.19;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;168;
+ENTRETEC;CENT.N-2.24;Épreuve de pression des réseaux hydrauliques;T-ENT-070;2027-02-22;2027-02-26;1;P5;a_confirmer;168;
+ENTRETEC;CENT.N+0.03;Raccordement des chaufferies mobiles gaz (2 x 2.5 MW);T-ENT-080;2027-03-08;2027-03-26;3;P4;a_confirmer;224;
+DESPRAZ;CENT.N-2.07;Échangeur froid et CO2 PAC 1;T-DES-016;2027-03-15;2027-04-09;4;P4;a_confirmer;210;
+ENTRETEC;CENT.N-1.03;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-03-15;2027-06-04;12;P2;a_confirmer;0;oui
+ENTRETEC;CENT.N-1.04;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-03-15;2027-06-04;12;P2;a_confirmer;0;oui
+ENTRETEC;CENT.N-2.03;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-03-15;2027-06-04;12;P2;a_confirmer;0;oui
+ENTRETEC;CENT.N-2.04;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-03-15;2027-06-04;12;P2;a_confirmer;0;oui
+ENTRETEC;CENT.N-2.08;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-03-15;2027-06-04;12;P2;a_confirmer;0;oui
+ENTRETEC;CENT.N-2.18;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-03-15;2027-06-04;12;P2;a_confirmer;0;oui
+ENTRETEC;CENT.N-2.19;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-03-15;2027-06-04;12;P2;a_confirmer;0;oui
+EXERGO;CENT.N-2.08;Armoires variateurs 1 et 2;T-GET-040;2027-03-29;2027-05-07;6;P3;a_confirmer;28;
+GETECH-TABLEAU;CENT.N-2.04;Pose des tableaux TGBT;T-GET-020;2027-03-29;2027-05-21;8;P3;a_confirmer;14;
+GETECH-TABLEAU;CENT.N-2.21;Armoires et coffrets de commande (15 unités);T-GET-050;2027-03-29;2027-04-23;4;P3;a_confirmer;28;
+GETECH-TABLEAU;CENT.N-2.19;Armoires et coffrets de commande (15 unités);T-GET-050;2027-03-29;2027-04-23;4;P3;a_confirmer;28;
+GETECH-TABLEAU;CENT.N-2.04;Armoires et coffrets de commande (15 unités);T-GET-050;2027-03-29;2027-04-23;4;P3;a_confirmer;28;
+GE;CENT.N-2.21;Automates et régulation MCR (API, RIO, HMI, Scada);T-GE-030;2027-04-26;2027-07-02;10;P4;a_confirmer;28;
+GE;CENT.N-2.05;Raccordement des sondes et actionneurs (hors accumulateur);T-GE-040;2027-04-26;2027-06-18;8;P4;a_confirmer;28;
+GE;CENT.N-2.07;Raccordement des sondes et actionneurs (hors accumulateur);T-GE-040;2027-04-26;2027-06-18;8;P4;a_confirmer;28;
+GE;CENT.N-2.09;Raccordement des sondes et actionneurs (hors accumulateur);T-GE-040;2027-04-26;2027-06-18;8;P4;a_confirmer;28;
+GE;CENT.N-2.10;Raccordement des sondes et actionneurs (hors accumulateur);T-GE-040;2027-04-26;2027-06-18;8;P4;a_confirmer;28;
+GE;CENT.N-2.18;Raccordement des sondes et actionneurs (hors accumulateur);T-GE-040;2027-04-26;2027-06-18;8;P4;a_confirmer;28;
+GE;CENT.N-2.19;Raccordement des sondes et actionneurs (hors accumulateur);T-GE-040;2027-04-26;2027-06-18;8;P4;a_confirmer;28;
+GE;CENT.N-2.24;Raccordement des sondes et actionneurs (hors accumulateur);T-GE-040;2027-04-26;2027-06-18;8;P4;a_confirmer;28;
+GETECH-INFRA;CENT.N-2.01;Mise sous tension MT/BT et TGBT;T-GET-080;2027-05-24;2027-06-04;2;P5;a_confirmer;42;
+GETECH-INFRA;CENT.N-2.04;Mise sous tension MT/BT et TGBT;T-GET-080;2027-05-24;2027-06-04;2;P5;a_confirmer;42;
+ANSERMOT;CENT.N-2.25;Portes du chemin de manutention;T-ANS-040;2027-05-31;2027-06-04;1;P5;non_adjuge;140;
+ANSERMOT;CENT.N-2.26;Portes du chemin de manutention;T-ANS-040;2027-05-31;2027-06-04;1;P5;non_adjuge;140;
+ANSERMOT;CENT.N-2.11;Portes du chemin de manutention;T-ANS-040;2027-05-31;2027-06-04;1;P5;non_adjuge;140;
+ANTIGLIO;CENT.N-2.25;Fermeture de l'accès de manutention;T-ANT-040;2027-05-31;2027-06-04;1;P1;a_confirmer;154;
+ANTIGLIO;CENT.N-2.26;Fermeture de l'accès de manutention;T-ANT-040;2027-05-31;2027-06-04;1;P1;a_confirmer;154;
+DESPRAZ;CENT.N-2.10;Échangeur froid et CO2 PAC 2;T-DES-017;2027-05-31;2027-06-25;4;P4;a_confirmer;35;
+ENTRETEC;CENT.N-2.10;Raccordement hydraulique chaud PAC 2;T-ENT-042;2027-05-31;2027-06-25;4;P4;a_confirmer;35;
+WETTSTEIN;CENT.N-2.07;Épreuve d'étanchéité des circuits NH3;T-WET-050;2027-05-31;2027-06-11;2;P5;a_confirmer;70;
+WETTSTEIN;CENT.N-2.10;Épreuve d'étanchéité des circuits NH3;T-WET-050;2027-05-31;2027-06-11;2;P5;a_confirmer;70;
+EXERGO;CENT.N-2.08;Mise en charge nominale des variateurs;T-GET-090;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+GETECH-IEG;CENT.N-2.01;Câblage IEG des locaux électriques;T-GET-031;2027-06-07;2027-07-02;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.04;Câblage IEG des locaux électriques;T-GET-031;2027-06-07;2027-07-02;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.08;Câblage IEG des locaux électriques;T-GET-031;2027-06-07;2027-07-02;4;P4;a_confirmer;0;oui
+HALG;CENT.N-1.01;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-1.02;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-1.03;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-1.04;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-1.06;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-1.07;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-2.01;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-2.03;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-2.04;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-2.05;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-2.07;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-2.08;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-2.09;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-2.10;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-2.18;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-2.19;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-2.21;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-2.22;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+HALG;CENT.N-2.23;Mise en service de la ventilation hygiénique et WC;T-HAL-040;2027-06-07;2027-06-18;2;P6;a_confirmer;70;
+CALORIFUGEAGE;CENT.N-1.03;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;56;
+CALORIFUGEAGE;CENT.N-1.04;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;56;
+CALORIFUGEAGE;CENT.N-2.05;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;56;
+CALORIFUGEAGE;CENT.N-2.07;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;56;
+CALORIFUGEAGE;CENT.N-2.09;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;56;
+CALORIFUGEAGE;CENT.N-2.10;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;56;
+CALORIFUGEAGE;CENT.N-2.18;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;56;
+CALORIFUGEAGE;CENT.N-2.19;Calorifugeage des tuyauteries chaud et froid;T-CAL-020;2027-06-21;2027-08-27;10;P5;BLOQUE;56;
+GE;*;Essais de boucles et de régulation;T-GE-050;2027-06-21;2027-07-30;6;P6;a_confirmer;28;
+DESPRAZ;CENT.N-2.05;Épreuve d'étanchéité du circuit CO2;T-DES-030;2027-06-28;2027-07-09;2;P5;a_confirmer;35;
+DESPRAZ;CENT.N-2.07;Épreuve d'étanchéité du circuit CO2;T-DES-030;2027-06-28;2027-07-09;2;P5;a_confirmer;35;
+DESPRAZ;CENT.N-2.10;Épreuve d'étanchéité du circuit CO2;T-DES-030;2027-06-28;2027-07-09;2;P5;a_confirmer;35;
+ANSERMOT;CENT.N-1.01;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-1.05;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-1.06;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-1.07;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.01;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.02;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.03;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.04;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.05;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.06;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.07;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.08;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.09;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.10;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.11;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.12;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.13;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.14;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.15;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.16;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.17;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.18;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.19;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.20;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.21;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.22;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.23;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.24;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.25;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANSERMOT;CENT.N-2.26;Portes intérieures;T-ANS-030;2027-07-05;2027-09-24;12;P4;non_adjuge;42;
+ANTIGLIO;*;Rebouchages et calfeutrements coupe-feu;T-ANT-035;2027-07-05;2027-07-23;3;P5;a_confirmer;7;
+GETECH-IEG;CENT.N-2.07;Câblage de puissance des PAC;T-GET-060;2027-07-05;2027-07-30;4;P4;a_confirmer;98;
+GETECH-IEG;CENT.N-2.10;Câblage de puissance des PAC;T-GET-060;2027-07-05;2027-07-30;4;P4;a_confirmer;98;
+GETECH-IEG;CENT.N-1.01;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-1.02;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-1.03;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-1.04;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-1.05;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-1.06;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-1.07;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.01;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.02;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.03;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.04;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.05;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.06;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.07;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.08;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.09;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.10;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.12;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.13;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.14;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.15;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.16;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.17;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.18;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.19;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.20;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.21;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.22;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.23;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.24;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.25;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+GETECH-IEG;CENT.N-2.26;Détection incendie et détection gaz NH3 / CO2;T-GET-070;2027-07-05;2027-07-30;4;P4;a_confirmer;0;oui
+DESPRAZ;CENT.N-2.05;Tirage au vide du circuit CO2;T-DES-040;2027-07-12;2027-07-16;1;P5;a_confirmer;35;
+DESPRAZ;CENT.N-2.07;Tirage au vide du circuit CO2;T-DES-040;2027-07-12;2027-07-16;1;P5;a_confirmer;35;
+DESPRAZ;CENT.N-2.10;Tirage au vide du circuit CO2;T-DES-040;2027-07-12;2027-07-16;1;P5;a_confirmer;35;
+HALG;CENT.N-1.01;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-1.02;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-1.03;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-1.04;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-1.06;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-1.07;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-2.01;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-2.03;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-2.04;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-2.05;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-2.07;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-2.08;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-2.09;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-2.10;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-2.18;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-2.19;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-2.21;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-2.22;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+HALG;CENT.N-2.23;Mise en service et essais de la ventilation de secours et de la détection gaz;T-HAL-050;2027-08-02;2027-08-20;3;P5;a_confirmer;0;oui
+DESPRAZ;CENT.N-2.05;Charge en CO2;T-DES-050;2027-08-23;2027-08-27;1;P5;a_confirmer;0;oui
+WETTSTEIN;CENT.N-2.07;Charge en NH3 des PAC 1 et 2;T-WET-060;2027-08-23;2027-08-27;1;P5;a_confirmer;0;oui
+WETTSTEIN;CENT.N-2.10;Charge en NH3 des PAC 1 et 2;T-WET-060;2027-08-23;2027-08-27;1;P5;a_confirmer;0;oui
+GE;*;Essais fonctionnels intégrés et mise en service des PAC;T-GE-060;2027-08-30;2027-10-22;8;P6;a_confirmer;0;oui
+GE;*;Réception de l'installation;T-REC-010;2027-10-25;2027-11-05;2;P6;a_confirmer;0;oui

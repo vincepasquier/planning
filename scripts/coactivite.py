@@ -38,6 +38,11 @@ def main():
     fiches = {f["numero"]: f for f in json.load(open("data/locaux-contenu.json", encoding="utf-8"))["fiches"]}
     chacun_son_tour = {n for n, f in fiches.items()
                        if "chacun son tour" in (f.get("reponse", {}).get("co_activite_possible") or "").lower()}
+    limites = {}
+    try:
+        limites = json.load(open("data/intensites.json", encoding="utf-8")).get("limites", {})
+    except FileNotFoundError:
+        pass
 
     semaines = (fin - D0).days // 7 + 1
     conflits = {}
@@ -47,7 +52,8 @@ def main():
             lots = {taches[i]["entreprise"] for i in taches
                     if n in taches[i]["locaux"] and dates[i][0] <= d <= dates[i][1]
                     and not ponctuel(n, taches[i]["entreprise"])}
-            seuil = 2 if n in chacun_son_tour else args.seuil
+            # Un local relevé porte sa propre limite ; le conflit commence un lot au-dessus.
+            seuil = limites[n] + 1 if n in limites else (2 if n in chacun_son_tour else args.seuil)
             if len(lots) >= seuil:
                 c = conflits.setdefault(n, {"semaines": [], "lots": set(), "seuil": seuil})
                 c["semaines"].append(d)
@@ -63,7 +69,7 @@ def main():
     print("-" * 112)
     for n, c in sorted(conflits.items(), key=lambda kv: -len(kv[1]["semaines"])):
         d0, d1 = min(c["semaines"]), max(c["semaines"])
-        tag = " *" if n in chacun_son_tour else ""
+        tag = f" (max {limites[n]})" if n in limites else (" *" if n in chacun_son_tour else "")
         print(f"{n.replace('CENT.',''):<14}{(locaux[n]['designation'] or '')[:25]:<26}"
               f"{len(c['semaines']):>4}{len(c['lots']):>5}  {d0} à {d1}  {', '.join(sorted(c['lots']))}{tag}")
     print("\n* local où le maître d'ouvrage a déclaré qu'on passe chacun son tour")

@@ -113,5 +113,13 @@
   },
   "lots_toujours_principaux": {
     "GETECH-IEG": "Dans chaque local : luminaires, détection incendie, et raccordement des périphériques et des pompes. Ce n'est pas un passage, c'est de la pose, donc IEG reste principal partout (MO, 20.10.2026)."
-  }
+  },
+  "limites": {
+    "CENT.N-2.01": 1,
+    "CENT.N-2.03": 1,
+    "CENT.N-2.04": 1,
+    "CENT.N-2.08": 1,
+    "CENT.N-2.18": 2
+  },
+  "limites_note": "Nombre d'entreprises admises simultanément, relevé avec le maître d'ouvrage. Sans valeur, le seuil d'alerte par défaut s'applique."
 }

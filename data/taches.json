@@ -1,5 +1,5 @@
 {
-  "version": "1.6",
+  "version": "1.7",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -79,6 +79,11 @@
           "id": "T-GET-030",
           "lien": "FD",
           "raison": "Dernier réseau passé : on ne rebouche qu'une fois tous les percements traversés"
+        },
+        {
+          "id": "T-GET-031",
+          "lien": "FD",
+          "raison": "Câblage des locaux électriques achevé"
         }
       ],
       "statut": "a_confirmer",
@@ -1143,7 +1148,7 @@
     },
     {
       "id": "T-GET-030",
-      "designation": "Chemins de câbles et câblage IEG",
+      "designation": "Chemins de câbles et câblage IEG (hors locaux électriques)",
       "entreprise": "GETECH-IEG",
       "systeme": "IEG",
       "phase": "P2",
@@ -1157,14 +1162,11 @@
         "CENT.N-1.05",
         "CENT.N-1.06",
         "CENT.N-1.07",
-        "CENT.N-2.01",
         "CENT.N-2.02",
         "CENT.N-2.03",
-        "CENT.N-2.04",
         "CENT.N-2.05",
         "CENT.N-2.06",
         "CENT.N-2.07",
-        "CENT.N-2.08",
         "CENT.N-2.09",
         "CENT.N-2.10",
         "CENT.N-2.12",
@@ -1248,6 +1250,50 @@
       "duree_semaines": 4
     },
     {
+      "id": "T-GET-031",
+      "designation": "Câblage IEG des locaux électriques",
+      "entreprise": "GETECH-IEG",
+      "systeme": "IEG",
+      "phase": "P4",
+      "locaux": [
+        "CENT.N-2.01",
+        "CENT.N-2.04",
+        "CENT.N-2.08"
+      ],
+      "duree_classe": "mois",
+      "duree_semaines": 4,
+      "date_connue": null,
+      "predecesseurs": [
+        {
+          "id": "T-GET-010",
+          "lien": "FD",
+          "raison": "Local MT : INFRA passe avant IEG (MO, 20.10.2026)"
+        },
+        {
+          "id": "T-GET-020",
+          "lien": "FD",
+          "raison": "Local TGBT : TABLEAU passe avant IEG (MO, 20.10.2026)"
+        },
+        {
+          "id": "T-GET-040",
+          "lien": "FD",
+          "raison": "Local variateurs : Exergo passe avant IEG (MO, 20.10.2026)"
+        },
+        {
+          "id": "T-ENT-090",
+          "lien": "FD",
+          "raison": "Local variateurs : Entretec passe entre Exergo et IEG (MO, 20.10.2026)"
+        },
+        {
+          "id": "T-GET-030",
+          "lien": "DD",
+          "raison": "Même entreprise, même campagne de câblage"
+        }
+      ],
+      "statut": "a_confirmer",
+      "notes": "Ces trois locaux n'admettent qu'une entreprise à la fois. L'ordre relevé est INFRA puis IEG au MT, TABLEAU puis IEG au TGBT, et Exergo puis Entretec puis IEG aux variateurs."
+    },
+    {
       "id": "T-GET-060",
       "designation": "Câblage de puissance des PAC",
       "entreprise": "GETECH-IEG",
@@ -1274,6 +1320,11 @@
           "id": "T-WET-020",
           "lien": "FD",
           "raison": "Machines en place"
+        },
+        {
+          "id": "T-GET-031",
+          "lien": "FD",
+          "raison": "Câblage des locaux électriques achevé"
         }
       ],
       "statut": "a_confirmer",
@@ -1326,6 +1377,11 @@
           "id": "T-GET-030",
           "lien": "FD",
           "raison": "Supports de câblage disponibles"
+        },
+        {
+          "id": "T-GET-031",
+          "lien": "FD",
+          "raison": "Câblage des locaux électriques achevé"
         }
       ],
       "statut": "a_confirmer",
@@ -1675,6 +1731,11 @@
           "id": "T-GET-030",
           "lien": "FD",
           "raison": "Réseaux passés : une porte posée tôt est une porte abîmée ou démontée"
+        },
+        {
+          "id": "T-GET-031",
+          "lien": "FD",
+          "raison": "Câblage des locaux électriques achevé"
         }
       ],
       "statut": "non_adjuge",
@@ -1813,5 +1874,10 @@
   "corrections_v16": [
     "Pose des portes : deux jours par porte sur 30 locaux, soit 12 semaines au lieu de 3.",
     "Ansermot est ponctuel dans tous les locaux où il ne pose que des portes : deux jours n'est pas une occupation."
+  ],
+  "corrections_v17": [
+    "Ordre relevé dans les locaux électriques : INFRA puis IEG au MT, TABLEAU puis IEG au TGBT, Exergo puis Entretec puis IEG aux variateurs.",
+    "Le câblage IEG se scinde : les locaux électriques deviennent une tâche distincte, asservie à celui qui les équipe.",
+    "Le local pompage PAC admet deux entreprises à la fois."
   ]
 }
