@@ -2,6 +2,16 @@
   "note": "Questions classées par priorité. Les questions résolues sont conservées avec leur réponse : l'historique des décisions fait partie du document.",
   "questions": [
     {
+      "id": "Q-24",
+      "priorite": "haute",
+      "statut": "ouverte",
+      "sujet": "Ordre de passage dans les locaux où l'on travaille chacun son tour",
+      "question": "Dans le local variateurs N-2.08, dans quel ordre passent Groupe E Tech, Entretec et Hälg ? Et la règle « chacun son tour » vaut-elle aussi pour les autres petits locaux techniques ?",
+      "pourquoi": "Le local fait 66 m² et n'admet qu'une entreprise à la fois. Mon réseau ne sait pas encore l'exprimer : les tâches de réseaux — ventilation, froid des locaux, chemins de câbles — sont décrites à l'échelle du bâtiment et non du local, donc rien ne les empêche de s'y superposer. Les découper par local est possible, mais il faut d'abord connaître l'ordre.",
+      "destinataire": "Maître d'ouvrage",
+      "impact": "Sans cet ordre, les durées des petits locaux techniques sont sous-estimées : trois passages successifs ne tiennent pas dans le temps d'un seul."
+    },
+    {
       "id": "Q-23",
       "priorite": "critique",
       "statut": "ouverte",
@@ -35,13 +45,14 @@
     },
     {
       "id": "Q-13",
-      "priorite": "critique",
-      "statut": "ouverte",
+      "priorite": "resolue",
+      "statut": "resolue",
       "sujet": "Contradiction entre maquette et schémas sur N-2.09 et N-2.14",
       "question": "Les locaux N-2.09 et N-2.14 sont-ils des locaux de commande ou les centrales froid n°1 et n°2 ?",
       "pourquoi": "La maquette architecturale (Riforma, 15.07.2026) les nomme 'Commande 1 et 2' et 'Commande 3 et 4'. Les schémas de ventilation Groupe E (25.03.2026) les nomment 'Centrale froid n°1' et 'Centrale froid n°2'. La liste des armoires place par ailleurs les coffrets PAC en N-2.08 et N-2.13, pas en N-2.09 ni N-2.14. Si ce sont des centrales froid, c'est Despraz qui occupe ces locaux et non Groupe E Tech.",
       "destinataire": "Groupe E / Riforma Architecture",
-      "impact": "Détermine quelle entreprise occupe deux locaux et quand. Affecte T-DES-005 et T-GE-030."
+      "impact": "Despraz occupe N-2.09, 5 semaines. N-2.14 sort du marché. La maquette ARC est à corriger.",
+      "reponse": "Ce sont les centrales froid n°1 et n°2 : les schémas Groupe E avaient raison contre la maquette architecturale (MO, 20.10.2026). La n°2 (N-2.14) est laissée vide pour l'instant."
     },
     {
       "id": "Q-02",

@@ -347,7 +347,7 @@
       "famille": "B",
       "famille_titre": "Variateurs",
       "rang_priorite": 2,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "rempli",
       "hypothese_actuelle": [
         {
           "lot": "ENTRETEC",
@@ -381,11 +381,33 @@
         }
       ],
       "reponse": {
-        "contenu": null,
-        "interventions": [],
+        "contenu": "Variateurs 1 et 2, coffrets PAC 1 et 2. Fosse CO2 déjà réalisée.",
+        "interventions": [
+          {
+            "lot": "GETECH",
+            "prestation": "Armoires variateurs 1 et 2",
+            "duree_semaines": 6,
+            "ordre": null,
+            "remarque": "Ordre de passage entre lots à préciser"
+          },
+          {
+            "lot": "ENTRETEC",
+            "prestation": "Armoires de refroidissement du local (70 kW)",
+            "duree_semaines": null,
+            "ordre": null,
+            "remarque": null
+          },
+          {
+            "lot": "HALG",
+            "prestation": "Ventilation hygiénique (280 m3/h)",
+            "duree_semaines": null,
+            "ordre": null,
+            "remarque": null
+          }
+        ],
         "manutention": null,
-        "co_activite_possible": null,
-        "remarques": null
+        "co_activite_possible": "Une seule entreprise à la fois : chacun son tour dans les 66 m².",
+        "remarques": "La fosse CO2 est déjà réalisée, aucune tâche de gros œuvre à prévoir."
       }
     },
     {
@@ -397,7 +419,7 @@
       "famille": "C",
       "famille_titre": "Commande / Centrale froid",
       "rang_priorite": 2,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "rempli",
       "hypothese_actuelle": [
         {
           "lot": "DESPRAZ",
@@ -413,11 +435,19 @@
         }
       ],
       "reponse": {
-        "contenu": null,
-        "interventions": [],
+        "contenu": "Centrale froid CO2 n°1. La maquette architecturale la nomme à tort « Commande 1 et 2 ».",
+        "interventions": [
+          {
+            "lot": "DESPRAZ",
+            "prestation": "Centrale froid CO2 n°1",
+            "duree_semaines": 5,
+            "ordre": 1,
+            "remarque": null
+          }
+        ],
         "manutention": null,
         "co_activite_possible": null,
-        "remarques": null
+        "remarques": "Tranche la contradiction Q-13 en faveur des schémas Groupe E."
       }
     },
     {
@@ -429,7 +459,7 @@
       "famille": "B",
       "famille_titre": "Variateurs",
       "rang_priorite": 2,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "hors_marche",
       "hypothese_actuelle": [
         {
           "lot": "ENTRETEC",
@@ -463,11 +493,11 @@
         }
       ],
       "reponse": {
-        "contenu": null,
+        "contenu": "Variateurs 3 et 4. Non équipé dans ce marché.",
         "interventions": [],
         "manutention": null,
         "co_activite_possible": null,
-        "remarques": null
+        "remarques": "Hors marché : les PAC 3 et 4 sont reportées (MO, 20.10.2026)."
       }
     },
     {
@@ -479,7 +509,7 @@
       "famille": "C",
       "famille_titre": "Commande / Centrale froid",
       "rang_priorite": 2,
-      "statut_fiche": "a_remplir",
+      "statut_fiche": "hors_marche",
       "hypothese_actuelle": [
         {
           "lot": "DESPRAZ",
@@ -495,11 +525,11 @@
         }
       ],
       "reponse": {
-        "contenu": null,
+        "contenu": "Centrale froid n°2. Local laissé vide pour l'instant.",
         "interventions": [],
         "manutention": null,
         "co_activite_possible": null,
-        "remarques": null
+        "remarques": "Hors marché : équipement reporté (MO, 20.10.2026)."
       }
     },
     {

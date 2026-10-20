@@ -432,20 +432,20 @@ RAISONS DES LIENS :
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
-      <Name>Centrales froid CO2 n°1 et n°2</Name>
+      <Name>Centrale froid CO2 n°1</Name>
       <OutlineLevel>2</OutlineLevel>
       <Summary>0</Summary>
       <Type>1</Type>
       <DurationFormat>7</DurationFormat>
-      <Duration>PT400H0M0S</Duration>
+      <Duration>PT200H0M0S</Duration>
       <Start>2026-12-21T08:00:00</Start>
-      <Finish>2027-02-26T17:00:00</Finish>
+      <Finish>2027-01-22T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-DES-005]  Lot : DESPRAZ  |  Systeme : FROID-CO2
-Locaux : CENT.N-2.09, CENT.N-2.14
+Locaux : CENT.N-2.09
 Statut : a_confirmer
 
-CONTRADICTION DE DOCUMENTS : la maquette ARC nomme N-2.09 et N-2.14 'Commande 1-2' et 'Commande 3-4', les schémas Groupe E les nomment 'Centrale froid n°1' et 'n°2'. Voir Q-13.
+Q-13 tranchée : N-2.09 et N-2.14 sont bien les centrales froid n°1 et n°2, et non des locaux de commande comme les nomme la maquette architecturale (MO, 20.10.2026). La centrale froid n°2 (N-2.14) est laissée vide pour l'instant.
 
 RAISONS DES LIENS :
   &lt;- T-ANT-010 (FD) : Locaux disponibles</Notes>
@@ -647,10 +647,10 @@ RAISONS DES LIENS :
       <Finish>2027-01-15T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-HAL-010]  Lot : HALG  |  Systeme : VENT-HYG
-Locaux : CENT.N-2.01, CENT.N-2.03, CENT.N-2.04, CENT.N-2.08, CENT.N-2.13, CENT.N-2.18, CENT.N-2.19, CENT.N-1.02
+Locaux : CENT.N-2.01, CENT.N-2.03, CENT.N-2.04, CENT.N-2.08, CENT.N-2.18, CENT.N-2.19, CENT.N-1.02
 Statut : a_confirmer
 
-Premier des réseaux : le plus encombrant et le moins déformable. Débits : MT 1'240, hydraulique chaud 890, TGBT 790 m3/h. Comprend le free-cooling du local MT.
+Premier des réseaux : le plus encombrant et le moins déformable. Débits : MT 1'240, hydraulique chaud 890, TGBT 790 m3/h. Comprend le free-cooling du local MT. Locaux des PAC 3 et 4 retirés : équipements reportés.
 
 RAISONS DES LIENS :
   &lt;- T-ANT-010 (DD) : Locaux livrés par le gros œuvre au fur et à mesure</Notes>
@@ -709,10 +709,10 @@ RAISONS DES LIENS :
       <Finish>2027-01-01T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-HAL-030]  Lot : HALG  |  Systeme : VENT-SECU
-Locaux : CENT.N-2.05, CENT.N-2.07, CENT.N-2.10, CENT.N-2.12, CENT.N-2.15, CENT.N-1.02, CENT.N-1.03
+Locaux : CENT.N-2.05, CENT.N-2.07, CENT.N-2.10, CENT.N-1.02, CENT.N-1.03
 Statut : a_confirmer
 
-SYSTÈME DE SÉCURITÉ. Cheminée d'extraction de secours dédiée, gaines galvanisées étanchéité classe D, clapets coupe-feu. Extraction fuite NH3 5'500 m3/h et fuite CO2 12'100 m3/h par local. Schéma encore en pré-exécution (16.10.2026).
+SYSTÈME DE SÉCURITÉ. Cheminée d'extraction de secours dédiée, gaines galvanisées étanchéité classe D, clapets coupe-feu. Extraction fuite NH3 5'500 m3/h et fuite CO2 12'100 m3/h par local. Schéma encore en pré-exécution (16.10.2026). Locaux des PAC 3 et 4 retirés : équipements reportés.
 
 RAISONS DES LIENS :
   &lt;- T-HAL-010 (DD) : Même entreprise, réseaux coordonnés</Notes>
@@ -862,10 +862,10 @@ RAISONS DES LIENS :
       <Finish>2027-09-17T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-ENT-090]  Lot : ENTRETEC  |  Systeme : FROID-HYD
-Locaux : CENT.N-2.01, CENT.N-2.03, CENT.N-2.04, CENT.N-2.08, CENT.N-2.13, CENT.N-2.18, CENT.N-2.19
+Locaux : CENT.N-2.01, CENT.N-2.03, CENT.N-2.04, CENT.N-2.08, CENT.N-2.18, CENT.N-2.19
 Statut : a_confirmer
 
-Circuit hydraulique froid 16/21 degres en aval des echangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Conditionne la mise en charge nominale des variateurs.
+Circuit hydraulique froid 16/21 degres en aval des echangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Conditionne la mise en charge nominale des variateurs. Locaux des PAC 3 et 4 retirés : équipements reportés.
 
 RAISONS DES LIENS :
   &lt;- T-DES-017 (FD) : Echangeurs froid poses : l'hydraulique se raccorde dessus</Notes>
@@ -938,18 +938,20 @@ Délai de livraison à renseigner. Même contrainte de gabarit que les PAC : loc
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
-      <Name>Armoires variateurs 1-2 et 3-4</Name>
+      <Name>Armoires variateurs 1 et 2</Name>
       <OutlineLevel>2</OutlineLevel>
       <Summary>0</Summary>
       <Type>1</Type>
       <DurationFormat>7</DurationFormat>
-      <Duration>PT320H0M0S</Duration>
+      <Duration>PT240H0M0S</Duration>
       <Start>2026-10-26T08:00:00</Start>
-      <Finish>2026-12-18T17:00:00</Finish>
+      <Finish>2026-12-04T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-GET-040]  Lot : GETECH  |  Systeme : TGBT
-Locaux : CENT.N-2.08, CENT.N-2.13
+Locaux : CENT.N-2.08
 Statut : a_confirmer
+
+Les variateurs 3 et 4 (N-2.13) ne sont pas équipés dans ce marché, les PAC 3 et 4 étant reportées (MO, 20.10.2026). La fosse CO2 du local est déjà réalisée.
 
 RAISONS DES LIENS :
   &lt;- T-GET-020 (DD) : Même campagne de livraison, à confirmer</Notes>
@@ -1019,10 +1021,10 @@ Le synoptique chaud s'intitule 'Centrale PAC 18MW (STAP et Centrale)' et la list
       <Finish>2026-12-04T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-GET-050]  Lot : GETECH  |  Systeme : MCR
-Locaux : CENT.N-2.21, CENT.N-2.04, CENT.N-2.19, CENT.N-2.03, CENT.N-2.08, CENT.N-2.13
+Locaux : CENT.N-2.21, CENT.N-2.04, CENT.N-2.19, CENT.N-2.03, CENT.N-2.08
 Statut : a_confirmer
 
-Voir data/armoires.json. 5 armoires sur 15 n'ont pas encore de local attribué, dont celle de la ventilation de secours et celle de l'accumulateur. Voir Q-16.
+Voir data/armoires.json. 5 armoires sur 15 n'ont pas encore de local attribué, dont celle de la ventilation de secours et celle de l'accumulateur. Voir Q-16. Locaux des PAC 3 et 4 retirés : équipements reportés. Les coffrets PAC 3 et 4 (armoires 11 et 12, local N-2.13) sortent du marché.
 
 RAISONS DES LIENS :
   &lt;- T-ANT-025 (FD) : Socles de 100 mm coulés
@@ -1131,10 +1133,10 @@ RAISONS DES LIENS :
       <Finish>2027-02-12T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-GE-030]  Lot : GE  |  Systeme : MCR
-Locaux : CENT.N-2.21, CENT.N-2.09, CENT.N-2.14
+Locaux : CENT.N-2.21
 Statut : a_confirmer
 
-Concept MCR : API General, HMI, RIO 1 Distribution, RIO 2 Accu, RIO 3 PAC 1, RIO 4 PAC 2, API STAP. Profinet/Modbus IP, MBUS/Modbus RTU, Scada IEC 104. Concept daté de février 2024, à revalider. Voir Q-17.
+Armoires 1 « Master local MCR » et 3 « Réseau IP - Télécom » en N-2.21, selon la liste des armoires. Les locaux N-2.09 et N-2.14 sont des centrales froid, pas des locaux de commande. Concept MCR daté de février 2024, à revalider (Q-17).
 
 RAISONS DES LIENS :
   &lt;- T-GET-050 (FD) : Armoires en place</Notes>
@@ -2187,8 +2189,10 @@ RAISONS DES LIENS :
       <Finish>2027-10-01T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-GET-090]  Lot : GETECH  |  Systeme : TGBT
-Locaux : CENT.N-2.08, CENT.N-2.13
+Locaux : CENT.N-2.08
 Statut : a_confirmer
+
+Locaux des PAC 3 et 4 retirés : équipements reportés.
 
 RAISONS DES LIENS :
   &lt;- T-GET-080 (FD) : Tension disponible
@@ -2412,7 +2416,7 @@ RAISONS DES LIENS :
       <ResourceUID>6</ResourceUID>
       <Units>1</Units>
       <Start>2026-12-21T08:00:00</Start>
-      <Finish>2027-02-26T17:00:00</Finish>
+      <Finish>2027-01-22T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>12</UID>
@@ -2540,7 +2544,7 @@ RAISONS DES LIENS :
       <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2026-10-26T08:00:00</Start>
-      <Finish>2026-12-18T17:00:00</Finish>
+      <Finish>2026-12-04T17:00:00</Finish>
     </Assignment>
     <Assignment>
       <UID>30</UID>

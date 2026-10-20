@@ -33,6 +33,8 @@ def main():
     entreprises = json.load(open("data/entreprises.json", encoding="utf-8"))
     questions = json.load(open("data/questions-ouvertes.json", encoding="utf-8"))["questions"]
     geometrie = json.load(open("data/extracted/geometrie.json", encoding="utf-8"))
+    fiches = json.load(open("data/locaux-contenu.json", encoding="utf-8"))["fiches"]
+    hors_marche = sorted(f["numero"] for f in fiches if f["statut_fiche"] == "hors_marche")
     locaux = {x["numero"]: x for x in
               json.load(open("data/extracted/locaux.json", encoding="utf-8"))["locaux"]
               if x["est_local"]}
@@ -64,6 +66,7 @@ def main():
         "lots": entreprises["entreprises"],
         "questions": questions,
         "geometrie": geometrie,
+        "horsMarche": hors_marche,
         "locaux": {k: {"designation": v["designation"], "niveau": v["niveau"],
                        "surface": v.get("surface_nette_m2"),
                        "hauteur": v.get("hauteur_sous_plafond_m")}

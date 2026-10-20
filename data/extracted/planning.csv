@@ -13,13 +13,11 @@ ENTRETEC;CENT.N-2.18;Pompage PAC;T-ENT-030;2026-10-26;2026-11-20;4;P2;a_confirme
 GE;CENT.N+0.03;Raccordement extérieur (MT réseau et conduites CAD);T-GE-020;2026-10-26;2027-01-15;12;P3;a_confirmer;217;
 GETECH;CENT.N-2.01;Infrastructure MT et transformateurs;T-GET-010;2026-10-26;2027-01-15;12;P3;a_confirmer;217;
 GETECH;CENT.N-2.04;Tableaux TGBT;T-GET-020;2026-10-26;2027-01-15;12;P3;a_confirmer;217;
-GETECH;CENT.N-2.08;Armoires variateurs 1-2 et 3-4;T-GET-040;2026-10-26;2026-12-18;8;P3;a_confirmer;231;
-GETECH;CENT.N-2.13;Armoires variateurs 1-2 et 3-4;T-GET-040;2026-10-26;2026-12-18;8;P3;a_confirmer;231;
+GETECH;CENT.N-2.08;Armoires variateurs 1 et 2;T-GET-040;2026-10-26;2026-12-04;6;P3;a_confirmer;231;
 HALG;CENT.N-2.01;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2026-10-26;2027-01-15;12;P2;a_confirmer;105;
 HALG;CENT.N-2.03;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2026-10-26;2027-01-15;12;P2;a_confirmer;105;
 HALG;CENT.N-2.04;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2026-10-26;2027-01-15;12;P2;a_confirmer;105;
 HALG;CENT.N-2.08;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2026-10-26;2027-01-15;12;P2;a_confirmer;105;
-HALG;CENT.N-2.13;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2026-10-26;2027-01-15;12;P2;a_confirmer;105;
 HALG;CENT.N-2.18;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2026-10-26;2027-01-15;12;P2;a_confirmer;105;
 HALG;CENT.N-2.19;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2026-10-26;2027-01-15;12;P2;a_confirmer;105;
 HALG;CENT.N-1.02;Ventilation hygiénique - réseaux (section 42);T-HAL-010;2026-10-26;2027-01-15;12;P2;a_confirmer;105;
@@ -30,8 +28,6 @@ HALG;CENT.N-1.07;Ventilation commande, WC, vestiaire (section 41);T-HAL-020;2026
 HALG;CENT.N-2.05;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2026-10-26;2027-01-01;10;P2;a_confirmer;259;
 HALG;CENT.N-2.07;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2026-10-26;2027-01-01;10;P2;a_confirmer;259;
 HALG;CENT.N-2.10;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2026-10-26;2027-01-01;10;P2;a_confirmer;259;
-HALG;CENT.N-2.12;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2026-10-26;2027-01-01;10;P2;a_confirmer;259;
-HALG;CENT.N-2.15;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2026-10-26;2027-01-01;10;P2;a_confirmer;259;
 HALG;CENT.N-1.02;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2026-10-26;2027-01-01;10;P2;a_confirmer;259;
 HALG;CENT.N-1.03;Ventilation de sécurité CO2/NH3 - réseaux (section 43);T-HAL-030;2026-10-26;2027-01-01;10;P2;a_confirmer;259;
 RIEDO;CENT.N-2.23;Installations sanitaires;T-RIE-010;2026-10-26;2026-11-13;3;P2;a_confirmer;406;
@@ -42,18 +38,14 @@ GETECH;CENT.N-2.04;Armoires et coffrets de commande (15 unités);T-GET-050;2026-
 GETECH;CENT.N-2.19;Armoires et coffrets de commande (15 unités);T-GET-050;2026-11-09;2026-12-04;4;P3;a_confirmer;217;
 GETECH;CENT.N-2.03;Armoires et coffrets de commande (15 unités);T-GET-050;2026-11-09;2026-12-04;4;P3;a_confirmer;217;
 GETECH;CENT.N-2.08;Armoires et coffrets de commande (15 unités);T-GET-050;2026-11-09;2026-12-04;4;P3;a_confirmer;217;
-GETECH;CENT.N-2.13;Armoires et coffrets de commande (15 unités);T-GET-050;2026-11-09;2026-12-04;4;P3;a_confirmer;217;
 BILFINGER;CENT.N-2.24;Épreuve de pression de l'accumulateur;T-BIL-020;2026-11-30;2026-12-04;1;P5;date_ferme;322;
 ENTRETEC;CENT.N-2.24;Raccordement hydraulique sur accumulateur;T-ENT-050;2026-12-07;2026-12-18;2;P4;a_confirmer;371;
 GE;CENT.N-2.24;Raccordement des sondes de l'accumulateur;T-GE-010;2026-12-07;2026-12-11;1;P4;a_confirmer;322;
 GE;CENT.N-2.21;Automates et régulation MCR (API, RIO, HMI, Scada);T-GE-030;2026-12-07;2027-02-12;10;P4;a_confirmer;217;
-GE;CENT.N-2.09;Automates et régulation MCR (API, RIO, HMI, Scada);T-GE-030;2026-12-07;2027-02-12;10;P4;a_confirmer;217;
-GE;CENT.N-2.14;Automates et régulation MCR (API, RIO, HMI, Scada);T-GE-030;2026-12-07;2027-02-12;10;P4;a_confirmer;217;
 CALORIFUGEAGE;CENT.N-2.24;Calorifugeage de l'accumulateur;T-CAL-010;2026-12-14;2027-01-22;6;P5;BLOQUE;322;
 ANSERMOT;*;Fenêtres;T-ANS-010;2026-12-21;2027-01-08;3;P0;non_adjuge;350;
 ANSERMOT;*;Serrurerie : garde-corps, échelles, caillebotis;T-ANS-020;2026-12-21;2027-01-15;4;P2;non_adjuge;343;
-DESPRAZ;CENT.N-2.09;Centrales froid CO2 n°1 et n°2;T-DES-005;2026-12-21;2027-02-26;10;P1;a_confirmer;77;
-DESPRAZ;CENT.N-2.14;Centrales froid CO2 n°1 et n°2;T-DES-005;2026-12-21;2027-02-26;10;P1;a_confirmer;77;
+DESPRAZ;CENT.N-2.09;Centrale froid CO2 n°1;T-DES-005;2026-12-21;2027-01-22;5;P1;a_confirmer;77;
 DESPRAZ;CENT.N-2.05;Tuyauterie CO2 jusqu'aux echangeurs froid;T-DES-010;2026-12-21;2027-03-12;12;P2;a_confirmer;77;
 DESPRAZ;CENT.N-2.06;Tuyauterie CO2 jusqu'aux echangeurs froid;T-DES-010;2026-12-21;2027-03-12;12;P2;a_confirmer;77;
 DESPRAZ;CENT.N-2.16;Tuyauterie CO2 jusqu'aux echangeurs froid;T-DES-010;2026-12-21;2027-03-12;12;P2;a_confirmer;77;
@@ -93,12 +85,10 @@ ENTRETEC;CENT.N-2.01;Froid process hydraulique et armoires de refroidissement de
 ENTRETEC;CENT.N-2.03;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-06-28;2027-09-17;12;P2;a_confirmer;0;oui
 ENTRETEC;CENT.N-2.04;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-06-28;2027-09-17;12;P2;a_confirmer;0;oui
 ENTRETEC;CENT.N-2.08;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-06-28;2027-09-17;12;P2;a_confirmer;0;oui
-ENTRETEC;CENT.N-2.13;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-06-28;2027-09-17;12;P2;a_confirmer;0;oui
 ENTRETEC;CENT.N-2.18;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-06-28;2027-09-17;12;P2;a_confirmer;0;oui
 ENTRETEC;CENT.N-2.19;Froid process hydraulique et armoires de refroidissement des locaux;T-ENT-090;2027-06-28;2027-09-17;12;P2;a_confirmer;0;oui
 DESPRAZ;*;Épreuve d'étanchéité du circuit CO2;T-DES-030;2027-09-20;2027-10-01;2;P5;a_confirmer;0;oui
 GETECH;CENT.N-2.08;Mise en charge nominale des variateurs;T-GET-090;2027-09-20;2027-10-01;2;P6;a_confirmer;14;
-GETECH;CENT.N-2.13;Mise en charge nominale des variateurs;T-GET-090;2027-09-20;2027-10-01;2;P6;a_confirmer;14;
 DESPRAZ;*;Tirage au vide du circuit CO2;T-DES-040;2027-10-04;2027-10-08;1;P5;a_confirmer;0;oui
 DESPRAZ;CENT.N-2.05;Charge en CO2;T-DES-050;2027-10-11;2027-10-15;1;P5;a_confirmer;0;oui
 GE;*;Essais fonctionnels intégrés et mise en service des PAC;T-GE-060;2027-10-18;2027-12-10;8;P6;a_confirmer;0;oui

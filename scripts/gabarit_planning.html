@@ -190,6 +190,8 @@ footer p{margin:0 0 5px}
 .piece.actif{stroke:var(--ink);stroke-width:2}
 .etiq{font-family:var(--mono);fill:var(--ink);paint-order:stroke fill;
   stroke:var(--surface);stroke-linejoin:round;pointer-events:none;text-anchor:middle;dominant-baseline:middle}
+.hors{fill:none;stroke:var(--ink-muted);vector-effect:non-scaling-stroke;stroke-width:1;
+  stroke-dasharray:2 2.5;pointer-events:none}
 .coact{fill:none;stroke:var(--critical);vector-effect:non-scaling-stroke;stroke-width:1.8;stroke-dasharray:5 3;pointer-events:none}
 .global{background:var(--plane);border:1px solid var(--ring);border-radius:9px;padding:11px 14px;
   font-size:12.5px;color:var(--ink-2);margin-bottom:13px}
@@ -514,6 +516,7 @@ function occupantsDe(numero, d){
   return D.taches.filter(t => t.locaux.includes(numero) && couvre(t, d));
 }
 function globales(d){ return D.taches.filter(t => t.locaux.includes("*") && couvre(t, d)); }
+const HORS = new Set(D.horsMarche || []);
 const teinte = n => n === 0 ? "var(--o0)" : n === 1 ? "var(--o1)" : n === 2 ? "var(--o2)"
   : n === 3 ? "var(--o3)" : "var(--o4)";
 
@@ -538,14 +541,15 @@ function rendrePlan(){
     let pieces = "", labels = "", occupes = 0, maxOcc = 0;
     for (const loc of n.locaux){
       const occ = occupantsDe(loc.numero, d);
+      const hm = HORS.has(loc.numero);
       if (occ.length) occupes++;
       maxOcc = Math.max(maxOcc, occ.length);
       const pts = loc.polygone.map(([x, y]) => `${(x - x0).toFixed(2)},${(y1 - y).toFixed(2)}`).join(" ");
       const lots = [...new Set(occ.map(t => t.lot))];
       pieces += `<polygon class="piece${pieceActive === loc.numero ? " actif" : ""}" points="${pts}"
-        fill="${teinte(occ.length)}" data-loc="${esc(loc.numero)}"
-        data-info="${esc(loc.designation)} — ${occ.length ? esc(lots.join(", ")) : "libre"}"><title>${esc(loc.numero)} ${esc(loc.designation)} — ${occ.length ? esc(lots.join(", ")) : "libre"}</title></polygon>`;
-      if (occ.length >= 3) pieces += `<polygon class="coact" points="${pts}"></polygon>`;
+        fill="${teinte(occ.length)}" data-loc="${esc(loc.numero)}"><title>${esc(loc.numero)} ${esc(loc.designation)} — ${hm ? "hors marché" : occ.length ? esc(lots.join(", ")) : "libre"}</title></polygon>`;
+      if (hm) pieces += `<polygon class="hors" points="${pts}"></polygon>`;
+      else if (occ.length >= 3) pieces += `<polygon class="coact" points="${pts}"></polygon>`;
       const cx = loc.polygone.reduce((a, p) => a + p[0], 0) / loc.polygone.length - x0;
       const cy = y1 - loc.polygone.reduce((a, p) => a + p[1], 0) / loc.polygone.length;
       const court = (loc.numero || "").split(".").pop();
@@ -575,6 +579,7 @@ function rendrePieceDetail(d, fin){
       ${info.surface ? `<span class="tag">${info.surface.toFixed(1)} m²</span>` : ""}
       ${info.hauteur ? `<span class="tag">${info.hauteur.toFixed(2)} m sous plafond</span>` : ""}
       <span class="tag">${toutes.length} tâche${toutes.length>1?"s":""} au total</span>
+      ${HORS.has(pieceActive) ? `<span class="tag fort">hors marché — équipement reporté</span>` : ""}
       ${ici.length >= 3 ? `<span class="tag fort">co-activité : ${ici.length} entreprises cette semaine</span>` : ""}
     </div>
     <div class="liens"><div><p class="eyebrow">Interventions dans ce local</p>
@@ -589,7 +594,8 @@ function rendrePieceDetail(d, fin){
 $("#p-curseur").max = SEMAINES - 1;
 $("#p-legende").innerHTML = [[0,"libre"],[1,"1 entreprise"],[2,"2"],[3,"3"],[4,"4 et plus"]]
   .map(([n,l]) => `<i><span class="sw" style="background:${teinte(n)}"></span>${esc(l)}</i>`).join("")
-  + `<i><span class="sw" style="background:transparent;border:1.5px dashed var(--critical)"></span>co-activité (3 entreprises ou plus)</i>`;
+  + `<i><span class="sw" style="background:transparent;border:1.5px dashed var(--critical)"></span>co-activité (3 entreprises ou plus)</i>`
+  + `<i><span class="sw" style="background:transparent;border:1.5px dashed var(--ink-muted)"></span>hors marché (reporté)</i>`;
 $("#p-curseur").addEventListener("input", e => { sem = +e.target.value; rendrePlan(); });
 $("#p-prec").addEventListener("click", () => { sem = Math.max(0, sem - 1); rendrePlan(); });
 $("#p-suiv").addEventListener("click", () => { sem = Math.min(SEMAINES - 1, sem + 1); rendrePlan(); });

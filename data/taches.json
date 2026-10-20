@@ -1,5 +1,5 @@
 {
-  "version": "0.6",
+  "version": "0.7",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -345,13 +345,12 @@
     },
     {
       "id": "T-DES-005",
-      "designation": "Centrales froid CO2 n°1 et n°2",
+      "designation": "Centrale froid CO2 n°1",
       "entreprise": "DESPRAZ",
       "systeme": "FROID-CO2",
       "phase": "P1",
       "locaux": [
-        "CENT.N-2.09",
-        "CENT.N-2.14"
+        "CENT.N-2.09"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -363,8 +362,8 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "CONTRADICTION DE DOCUMENTS : la maquette ARC nomme N-2.09 et N-2.14 'Commande 1-2' et 'Commande 3-4', les schémas Groupe E les nomment 'Centrale froid n°1' et 'n°2'. Voir Q-13.",
-      "duree_semaines": 10
+      "notes": "Q-13 tranchée : N-2.09 et N-2.14 sont bien les centrales froid n°1 et n°2, et non des locaux de commande comme les nomme la maquette architecturale (MO, 20.10.2026). La centrale froid n°2 (N-2.14) est laissée vide pour l'instant.",
+      "duree_semaines": 5
     },
     {
       "id": "T-DES-010",
@@ -406,7 +405,6 @@
         "CENT.N-2.03",
         "CENT.N-2.04",
         "CENT.N-2.08",
-        "CENT.N-2.13",
         "CENT.N-2.18",
         "CENT.N-2.19"
       ],
@@ -420,7 +418,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Circuit hydraulique froid 16/21 degres en aval des echangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Conditionne la mise en charge nominale des variateurs.",
+      "notes": "Circuit hydraulique froid 16/21 degres en aval des echangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Conditionne la mise en charge nominale des variateurs. Locaux des PAC 3 et 4 retirés : équipements reportés.",
       "duree_semaines": 12
     },
     {
@@ -831,7 +829,6 @@
         "CENT.N-2.03",
         "CENT.N-2.04",
         "CENT.N-2.08",
-        "CENT.N-2.13",
         "CENT.N-2.18",
         "CENT.N-2.19",
         "CENT.N-1.02"
@@ -846,7 +843,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Premier des réseaux : le plus encombrant et le moins déformable. Débits : MT 1'240, hydraulique chaud 890, TGBT 790 m3/h. Comprend le free-cooling du local MT.",
+      "notes": "Premier des réseaux : le plus encombrant et le moins déformable. Débits : MT 1'240, hydraulique chaud 890, TGBT 790 m3/h. Comprend le free-cooling du local MT. Locaux des PAC 3 et 4 retirés : équipements reportés.",
       "duree_semaines": 12
     },
     {
@@ -884,8 +881,6 @@
         "CENT.N-2.05",
         "CENT.N-2.07",
         "CENT.N-2.10",
-        "CENT.N-2.12",
-        "CENT.N-2.15",
         "CENT.N-1.02",
         "CENT.N-1.03"
       ],
@@ -899,7 +894,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "SYSTÈME DE SÉCURITÉ. Cheminée d'extraction de secours dédiée, gaines galvanisées étanchéité classe D, clapets coupe-feu. Extraction fuite NH3 5'500 m3/h et fuite CO2 12'100 m3/h par local. Schéma encore en pré-exécution (16.10.2026).",
+      "notes": "SYSTÈME DE SÉCURITÉ. Cheminée d'extraction de secours dédiée, gaines galvanisées étanchéité classe D, clapets coupe-feu. Extraction fuite NH3 5'500 m3/h et fuite CO2 12'100 m3/h par local. Schéma encore en pré-exécution (16.10.2026). Locaux des PAC 3 et 4 retirés : équipements reportés.",
       "duree_semaines": 10
     },
     {
@@ -1026,13 +1021,12 @@
     },
     {
       "id": "T-GET-040",
-      "designation": "Armoires variateurs 1-2 et 3-4",
+      "designation": "Armoires variateurs 1 et 2",
       "entreprise": "GETECH",
       "systeme": "TGBT",
       "phase": "P3",
       "locaux": [
-        "CENT.N-2.08",
-        "CENT.N-2.13"
+        "CENT.N-2.08"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -1044,7 +1038,8 @@
         }
       ],
       "statut": "a_confirmer",
-      "duree_semaines": 8
+      "duree_semaines": 6,
+      "notes": "Les variateurs 3 et 4 (N-2.13) ne sont pas équipés dans ce marché, les PAC 3 et 4 étant reportées (MO, 20.10.2026). La fosse CO2 du local est déjà réalisée."
     },
     {
       "id": "T-GET-050",
@@ -1057,8 +1052,7 @@
         "CENT.N-2.04",
         "CENT.N-2.19",
         "CENT.N-2.03",
-        "CENT.N-2.08",
-        "CENT.N-2.13"
+        "CENT.N-2.08"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
@@ -1075,7 +1069,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Voir data/armoires.json. 5 armoires sur 15 n'ont pas encore de local attribué, dont celle de la ventilation de secours et celle de l'accumulateur. Voir Q-16.",
+      "notes": "Voir data/armoires.json. 5 armoires sur 15 n'ont pas encore de local attribué, dont celle de la ventilation de secours et celle de l'accumulateur. Voir Q-16. Locaux des PAC 3 et 4 retirés : équipements reportés. Les coffrets PAC 3 et 4 (armoires 11 et 12, local N-2.13) sortent du marché.",
       "duree_semaines": 4
     },
     {
@@ -1177,8 +1171,7 @@
       "systeme": "TGBT",
       "phase": "P6",
       "locaux": [
-        "CENT.N-2.08",
-        "CENT.N-2.13"
+        "CENT.N-2.08"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -1195,7 +1188,8 @@
         }
       ],
       "statut": "a_confirmer",
-      "duree_semaines": 2
+      "duree_semaines": 2,
+      "notes": "Locaux des PAC 3 et 4 retirés : équipements reportés."
     },
     {
       "id": "T-GE-020",
@@ -1220,9 +1214,7 @@
       "systeme": "MCR",
       "phase": "P4",
       "locaux": [
-        "CENT.N-2.21",
-        "CENT.N-2.09",
-        "CENT.N-2.14"
+        "CENT.N-2.21"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -1234,7 +1226,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Concept MCR : API General, HMI, RIO 1 Distribution, RIO 2 Accu, RIO 3 PAC 1, RIO 4 PAC 2, API STAP. Profinet/Modbus IP, MBUS/Modbus RTU, Scada IEC 104. Concept daté de février 2024, à revalider. Voir Q-17.",
+      "notes": "Armoires 1 « Master local MCR » et 3 « Réseau IP - Télécom » en N-2.21, selon la liste des armoires. Les locaux N-2.09 et N-2.14 sont des centrales froid, pas des locaux de commande. Concept MCR daté de février 2024, à revalider (Q-17).",
       "duree_semaines": 10
     },
     {
@@ -1525,5 +1517,10 @@
   "corrections_v06": [
     "Raccordements découpés par local : Entretec et Despraz interviennent 4 semaines confondues dans chaque local PAC, dès que Wettstein l'a quitté.",
     "Wettstein passe directement d'un local à l'autre, sans recouvrement : les raccordements de la PAC 1 se déroulent donc pendant le montage de la PAC 2."
+  ],
+  "corrections_v07": [
+    "N-2.09 et N-2.14 sont les centrales froid n°1 et n°2 : les schémas Groupe E avaient raison contre la maquette architecturale (Q-13 tranchée).",
+    "Quatre locaux sortent du marché : N-2.12 et N-2.15 (PAC 3 et 4), N-2.13 (variateurs 3 et 4), N-2.14 (centrale froid n°2).",
+    "Centrale froid n°1 : 5 semaines. Armoires variateurs 1 et 2 : 6 semaines. La fosse CO2 du local variateurs est déjà réalisée."
   ]
 }
