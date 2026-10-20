@@ -152,55 +152,62 @@
     <Resource>
       <UID>8</UID>
       <ID>8</ID>
-      <Name>GE</Name>
+      <Name>EXERGO</Name>
       <Type>1</Type>
       <CalendarUID>1</CalendarUID>
     </Resource>
     <Resource>
       <UID>9</UID>
       <ID>9</ID>
-      <Name>GETECH-IEG</Name>
+      <Name>GE</Name>
       <Type>1</Type>
       <CalendarUID>1</CalendarUID>
     </Resource>
     <Resource>
       <UID>10</UID>
       <ID>10</ID>
-      <Name>GETECH-INFRA</Name>
+      <Name>GETECH-IEG</Name>
       <Type>1</Type>
       <CalendarUID>1</CalendarUID>
     </Resource>
     <Resource>
       <UID>11</UID>
       <ID>11</ID>
-      <Name>GETECH-TABLEAU</Name>
+      <Name>GETECH-INFRA</Name>
       <Type>1</Type>
       <CalendarUID>1</CalendarUID>
     </Resource>
     <Resource>
       <UID>12</UID>
       <ID>12</ID>
-      <Name>HALG</Name>
+      <Name>GETECH-TABLEAU</Name>
       <Type>1</Type>
       <CalendarUID>1</CalendarUID>
     </Resource>
     <Resource>
       <UID>13</UID>
       <ID>13</ID>
-      <Name>LEVAGE</Name>
+      <Name>HALG</Name>
       <Type>1</Type>
       <CalendarUID>1</CalendarUID>
     </Resource>
     <Resource>
       <UID>14</UID>
       <ID>14</ID>
-      <Name>RIEDO</Name>
+      <Name>LEVAGE</Name>
       <Type>1</Type>
       <CalendarUID>1</CalendarUID>
     </Resource>
     <Resource>
       <UID>15</UID>
       <ID>15</ID>
+      <Name>RIEDO</Name>
+      <Type>1</Type>
+      <CalendarUID>1</CalendarUID>
+    </Resource>
+    <Resource>
+      <UID>16</UID>
+      <ID>16</ID>
       <Name>WETTSTEIN</Name>
       <Type>1</Type>
       <CalendarUID>1</CalendarUID>
@@ -255,7 +262,7 @@ Statut : en_cours</Notes>
       <Finish>2026-11-06T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-ANT-025]  Lot : ANTIGLIO  |  Systeme : GC
-Locaux : *
+Locaux : CENT.N-2.21, CENT.N-2.04, CENT.N-2.19
 Statut : a_confirmer
 
 Les armoires 1, 2, 3, 14 et 15 reposent sur socle 100 mm (liste des armoires).
@@ -295,7 +302,7 @@ Statut : a_confirmer</Notes>
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
-      <Name>Pose du socle préfabriqué PAC 1</Name>
+      <Name>Mise en place du socle préfabriqué PAC 1</Name>
       <OutlineLevel>2</OutlineLevel>
       <Summary>0</Summary>
       <Type>1</Type>
@@ -304,11 +311,11 @@ Statut : a_confirmer</Notes>
       <Start>2026-10-26T08:00:00</Start>
       <Finish>2026-10-30T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
-      <Notes>[T-ANT-021]  Lot : ANTIGLIO  |  Systeme : PAC-1
-Locaux : *
+      <Notes>[T-ANT-021]  Lot : WETTSTEIN  |  Systeme : PAC-1
+Locaux : CENT.N-2.07
 Statut : a_confirmer
 
-Socle préfabriqué, amené dans le local au moment utile (MO, 20.10.2026). Supprime la contrainte de maturation du béton qui retenait la pose des machines. Fournisseur du préfabriqué à confirmer.
+Déplacement et mise en place par Wettstein et le maître d'ouvrage (MO, 20.10.2026).
 
 RAISONS DES LIENS :
   &lt;- T-ANT-010 (DD) : Local disponible ; le socle préfabriqué ne demande pas de cure</Notes>
@@ -326,7 +333,7 @@ RAISONS DES LIENS :
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
-      <Name>Pose du socle préfabriqué PAC 2</Name>
+      <Name>Mise en place du socle préfabriqué PAC 2</Name>
       <OutlineLevel>2</OutlineLevel>
       <Summary>0</Summary>
       <Type>1</Type>
@@ -335,11 +342,11 @@ RAISONS DES LIENS :
       <Start>2026-10-26T08:00:00</Start>
       <Finish>2026-10-30T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
-      <Notes>[T-ANT-022]  Lot : ANTIGLIO  |  Systeme : PAC-2
-Locaux : *
+      <Notes>[T-ANT-022]  Lot : WETTSTEIN  |  Systeme : PAC-2
+Locaux : CENT.N-2.10
 Statut : a_confirmer
 
-Socle préfabriqué, amené dans le local au moment utile (MO, 20.10.2026). Supprime la contrainte de maturation du béton qui retenait la pose des machines. Fournisseur du préfabriqué à confirmer.
+Déplacement et mise en place par Wettstein et le maître d'ouvrage (MO, 20.10.2026).
 
 RAISONS DES LIENS :
   &lt;- T-ANT-010 (DD) : Local disponible ; le socle préfabriqué ne demande pas de cure</Notes>
@@ -367,10 +374,10 @@ RAISONS DES LIENS :
       <Finish>2027-01-08T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-ANS-010]  Lot : ANSERMOT  |  Systeme : MEN
-Locaux : CENT.N-2.02, CENT.N-2.17, CENT.N-2.18, CENT.N-2.20
+Locaux : CENT.N-2.21
 Statut : non_adjuge
 
-Mise hors d'air nécessaire avant mise sous tension durable des équipements électriques.
+Fenêtres du bureau / poste de commande (MO, 20.10.2026).
 
 RAISONS DES LIENS :
   &lt;- T-ANT-010 (FD) : Supports et tableaux terminés</Notes>
@@ -453,7 +460,7 @@ RAISONS DES LIENS :
       <Active>1</Active>
       <Manual>0</Manual>
       <CalendarUID>1</CalendarUID>
-      <Name>Centrale froid CO2 n°1</Name>
+      <Name>Centrale froid n°1 (hydraulique)</Name>
       <OutlineLevel>2</OutlineLevel>
       <Summary>0</Summary>
       <Type>1</Type>
@@ -462,11 +469,11 @@ RAISONS DES LIENS :
       <Start>2026-12-21T08:00:00</Start>
       <Finish>2027-01-22T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
-      <Notes>[T-DES-005]  Lot : DESPRAZ  |  Systeme : FROID-CO2
-Locaux : *
+      <Notes>[T-DES-005]  Lot : ENTRETEC  |  Systeme : FROID-CO2
+Locaux : CENT.N-2.09
 Statut : a_confirmer
 
-Q-13 tranchée : N-2.09 et N-2.14 sont bien les centrales froid n°1 et n°2, et non des locaux de commande comme les nomme la maquette architecturale (MO, 20.10.2026). La centrale froid n°2 (N-2.14) est laissée vide pour l'instant.
+Entretec réalise le froid dans ce local. L'échange froid CO2/eau se fait dans le local d'introduction CO2 N-2.05, côté Despraz (MO, 20.10.2026).
 
 RAISONS DES LIENS :
   &lt;- T-ANT-010 (FD) : Locaux disponibles</Notes>
@@ -494,10 +501,10 @@ RAISONS DES LIENS :
       <Finish>2027-01-01T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-LEV-010]  Lot : LEVAGE  |  Systeme : EXPANSION
-Locaux : *
+Locaux : CENT.N-2.19
 Statut : non_adjuge
 
-Vases fournis par SPIROTEC, mis en place par une entreprise de levage, raccordés par Entretec (MO, 20.10.2026). Entreprise de levage à désigner. Les vases arrivent assemblés : c'est pour eux que la question de gabarit reste posée (Q-02).
+Vases fournis par SPIROTEC, mis en place par une entreprise de levage, raccordés par Entretec (MO, 20.10.2026). Entreprise de levage à désigner. Les vases arrivent assemblés : c'est pour eux que la question de gabarit reste posée (Q-02). Levage à organiser (MO, 20.10.2026).
 
 RAISONS DES LIENS :
   &lt;- T-ANT-010 (FD) : Local hydraulique chaud disponible</Notes>
@@ -564,7 +571,7 @@ RAISONS DES LIENS :
       <Finish>2027-06-04T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-ANT-040]  Lot : ANTIGLIO  |  Systeme : GC
-Locaux : *
+Locaux : CENT.N-2.25, CENT.N-2.26
 Statut : a_confirmer
 
 Voir Q-01 : l'itinéraire réel reste à confirmer.
@@ -959,7 +966,7 @@ RAISONS DES LIENS :
 Locaux : CENT.N-2.03, CENT.N-2.04, CENT.N-2.08, CENT.N-2.18, CENT.N-2.19
 Statut : a_confirmer
 
-Circuit hydraulique froid 16/21 degrés en aval des échangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Réalisable dès que le réseau CO2 et la centrale froid n°1 sont en place, sans attendre l'échangeur de la PAC 2 (MO, 20.10.2026) : c'est une branche distincte du froid process. Conditionne la mise en charge nominale des variateurs.
+Circuit hydraulique froid 16/21 degrés en aval des échangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Réalisable dès que le réseau CO2 et la centrale froid n°1 sont en place, sans attendre l'échangeur de la PAC 2 (MO, 20.10.2026) : c'est une branche distincte du froid process. Conditionne la mise en charge nominale des variateurs. Le local MT est refroidi par l'air depuis N-2.03, et non par un piquage hydraulique direct (MO, 20.10.2026).
 
 RAISONS DES LIENS :
   &lt;- T-DES-010 (FD) : Réseau CO2 posé jusqu'aux échangeurs
@@ -1101,11 +1108,11 @@ RAISONS DES LIENS :
       <Start>2027-03-29T08:00:00</Start>
       <Finish>2027-05-07T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
-      <Notes>[T-GET-040]  Lot : GETECH-TABLEAU  |  Systeme : TGBT
-Locaux : *
+      <Notes>[T-GET-040]  Lot : EXERGO  |  Systeme : TGBT
+Locaux : CENT.N-2.08
 Statut : a_confirmer
 
-Les variateurs 3 et 4 (N-2.13) ne sont pas équipés dans ce marché, les PAC 3 et 4 étant reportées (MO, 20.10.2026). La fosse CO2 du local est déjà réalisée. Attribution INFRA / TABLEAU / IEG à confirmer (Q-25).
+Tableaux variateurs fournis par Wettstein et Exergo (MO, 20.10.2026).
 
 RAISONS DES LIENS :
   &lt;- T-GET-020 (DD) : Même campagne de livraison, à confirmer</Notes>
@@ -1133,7 +1140,7 @@ RAISONS DES LIENS :
       <Finish>2027-04-23T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-GET-050]  Lot : GETECH-TABLEAU  |  Systeme : MCR
-Locaux : CENT.N-2.04
+Locaux : CENT.N-2.21, CENT.N-2.19, CENT.N-2.04
 Statut : a_confirmer
 
 Voir data/armoires.json. 5 armoires sur 15 n'ont pas encore de local attribué, dont celle de la ventilation de secours et celle de l'accumulateur. Voir Q-16. Locaux des PAC 3 et 4 retirés : équipements reportés. Les coffrets PAC 3 et 4 (armoires 11 et 12, local N-2.13) sortent du marché. Attribution INFRA / TABLEAU / IEG à confirmer (Q-25).
@@ -1185,7 +1192,7 @@ RAISONS DES LIENS :
       <Finish>2026-12-11T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-GE-010]  Lot : GE  |  Systeme : ACC
-Locaux : *
+Locaux : CENT.N-2.24
 Statut : a_confirmer
 
 RIO 2 - Accu du concept MCR : 6 circuits instrumentés. Les doigts de gant doivent être posés et repérés avant calorifugeage.
@@ -1416,10 +1423,10 @@ RAISONS DES LIENS :
       <Finish>2027-04-30T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-ANS-030]  Lot : ANSERMOT  |  Systeme : MEN
-Locaux : CENT.N-2.02, CENT.N-2.17, CENT.N-2.18, CENT.N-2.20
+Locaux : CENT.N-2.01, CENT.N-2.02, CENT.N-2.03, CENT.N-2.04, CENT.N-2.05, CENT.N-2.06, CENT.N-2.07, CENT.N-2.08, CENT.N-2.09, CENT.N-2.10, CENT.N-2.11, CENT.N-2.12, CENT.N-2.13, CENT.N-2.14, CENT.N-2.15, CENT.N-2.16, CENT.N-2.17, CENT.N-2.18, CENT.N-2.19, CENT.N-2.20, CENT.N-2.21, CENT.N-2.22, CENT.N-2.23, CENT.N-2.24, CENT.N-2.25, CENT.N-2.26
 Statut : non_adjuge
 
-Les locaux NH3 et CO2 ont probablement des exigences spécifiques (sens d'ouverture, résistance, étanchéité). À vérifier avec le concept de sécurité.
+Des portes sont posées dans tous les locaux (MO, 20.10.2026).
 
 RAISONS DES LIENS :
   &lt;- T-GET-030 (FD) : Réseaux passés : une porte posée tôt est une porte abîmée ou démontée</Notes>
@@ -1447,10 +1454,10 @@ RAISONS DES LIENS :
       <Finish>2027-07-02T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-GE-030]  Lot : GE  |  Systeme : MCR
-Locaux : *
+Locaux : CENT.N-2.21
 Statut : a_confirmer
 
-Armoires 1 « Master local MCR » et 3 « Réseau IP - Télécom » en N-2.21, selon la liste des armoires. Les locaux N-2.09 et N-2.14 sont des centrales froid, pas des locaux de commande. Concept MCR daté de février 2024, à revalider (Q-17).
+Armoires 1 « Master local MCR » et 3 « Réseau IP - Télécom » en N-2.21, selon la liste des armoires. Les locaux N-2.09 et N-2.14 sont des centrales froid, pas des locaux de commande. Concept MCR daté de février 2024, à revalider (Q-17). Groupe E Tech TABLEAU intervient en sous-traitance dans ce local. Groupe E assure la mise en service complète de la centrale (MO, 20.10.2026).
 
 RAISONS DES LIENS :
   &lt;- T-GET-050 (FD) : Armoires en place</Notes>
@@ -1478,7 +1485,7 @@ RAISONS DES LIENS :
       <Finish>2027-06-18T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-GE-040]  Lot : GE  |  Systeme : MCR
-Locaux : *
+Locaux : CENT.N-2.05, CENT.N-2.07, CENT.N-2.09, CENT.N-2.10, CENT.N-2.18, CENT.N-2.19, CENT.N-2.24
 Statut : a_confirmer
 
 Comprend les 4 sondes de température intérieure centrale (rez et galerie) du synoptique chaud. Doit précéder le calorifugeage.
@@ -1692,11 +1699,11 @@ RAISONS DES LIENS :
       <Start>2026-12-14T08:00:00</Start>
       <Finish>2027-01-22T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
-      <Notes>[T-CAL-010]  Lot : CALORIFUGEAGE  |  Systeme : ACC
-Locaux : *
-Statut : BLOQUE
+      <Notes>[T-CAL-010]  Lot : BILFINGER  |  Systeme : ACC
+Locaux : CENT.N-2.24
+Statut : a_confirmer
 
-ALERTE : lot non adjuge, qui suit immediatement une date ferme. PLAN N-2 : l'accumulateur fait 19 m de haut pour 8 m de diametre, soit environ 500 m2 d'isolation en hauteur (passage de 8 a 9 m isole). C'est un chantier d'acces en hauteur, pas un appoint de calorifugeage.
+Réalisé par Bilfinger avec l'accumulateur (MO, 20.10.2026) : ce n'est donc pas un lot à adjuger. Environ 500 m² en hauteur, diamètre passant de 8 à 9 m.
 
 RAISONS DES LIENS :
   &lt;- T-BIL-020 (FD) : On n'isole pas avant d'avoir éprouvé : une reprise de fuite impose de déshabiller
@@ -1923,7 +1930,7 @@ RAISONS DES LIENS :
       <Finish>2027-06-04T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-ANS-040]  Lot : ANSERMOT  |  Systeme : MEN
-Locaux : *
+Locaux : CENT.N-2.25, CENT.N-2.26, CENT.N-2.11
 Statut : non_adjuge
 
 RAISONS DES LIENS :
@@ -2007,10 +2014,10 @@ RAISONS DES LIENS :
       <Finish>2027-08-27T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
       <Notes>[T-CAL-020]  Lot : CALORIFUGEAGE  |  Systeme : HYD-CHAUD
-Locaux : *
+Locaux : CENT.N-2.05, CENT.N-2.07, CENT.N-2.09, CENT.N-2.10, CENT.N-2.18, CENT.N-2.19, CENT.N-1.03, CENT.N-1.04
 Statut : BLOQUE
 
-ALERTE : lot non adjugé et bloquant pour la réception.
+ALERTE : lot non adjugé et bloquant pour la réception. Porte sur les conduites d'hydraulique chaud, l'accumulateur étant isolé par Bilfinger.
 
 RAISONS DES LIENS :
   &lt;- T-ENT-070 (FD) : On n'isole pas une tuyauterie non éprouvée
@@ -2263,11 +2270,11 @@ RAISONS DES LIENS :
       <Start>2027-06-07T08:00:00</Start>
       <Finish>2027-06-18T17:00:00</Finish>
       <ConstraintType>0</ConstraintType>
-      <Notes>[T-GET-090]  Lot : GETECH-TABLEAU  |  Systeme : TGBT
-Locaux : *
+      <Notes>[T-GET-090]  Lot : EXERGO  |  Systeme : TGBT
+Locaux : CENT.N-2.08
 Statut : a_confirmer
 
-Locaux des PAC 3 et 4 retirés : équipements reportés.
+Tableaux variateurs fournis par Wettstein et Exergo (MO, 20.10.2026).
 
 RAISONS DES LIENS :
   &lt;- T-GET-080 (FD) : Tension disponible
@@ -2485,7 +2492,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>5</UID>
       <TaskUID>5</TaskUID>
-      <ResourceUID>3</ResourceUID>
+      <ResourceUID>16</ResourceUID>
       <Units>1</Units>
       <Start>2026-10-26T08:00:00</Start>
       <Finish>2026-10-30T17:00:00</Finish>
@@ -2493,7 +2500,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>6</UID>
       <TaskUID>6</TaskUID>
-      <ResourceUID>3</ResourceUID>
+      <ResourceUID>16</ResourceUID>
       <Units>1</Units>
       <Start>2026-10-26T08:00:00</Start>
       <Finish>2026-10-30T17:00:00</Finish>
@@ -2517,7 +2524,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>10</UID>
       <TaskUID>10</TaskUID>
-      <ResourceUID>15</ResourceUID>
+      <ResourceUID>16</ResourceUID>
       <Units>1</Units>
       <Start>2026-11-02T08:00:00</Start>
       <Finish>2027-02-12T17:00:00</Finish>
@@ -2525,7 +2532,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>11</UID>
       <TaskUID>11</TaskUID>
-      <ResourceUID>6</ResourceUID>
+      <ResourceUID>7</ResourceUID>
       <Units>1</Units>
       <Start>2026-12-21T08:00:00</Start>
       <Finish>2027-01-22T17:00:00</Finish>
@@ -2533,7 +2540,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>12</UID>
       <TaskUID>12</TaskUID>
-      <ResourceUID>13</ResourceUID>
+      <ResourceUID>14</ResourceUID>
       <Units>1</Units>
       <Start>2026-12-21T08:00:00</Start>
       <Finish>2027-01-01T17:00:00</Finish>
@@ -2541,7 +2548,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>13</UID>
       <TaskUID>13</TaskUID>
-      <ResourceUID>15</ResourceUID>
+      <ResourceUID>16</ResourceUID>
       <Units>1</Units>
       <Start>2027-02-15T08:00:00</Start>
       <Finish>2027-05-28T17:00:00</Finish>
@@ -2573,7 +2580,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>18</UID>
       <TaskUID>18</TaskUID>
-      <ResourceUID>14</ResourceUID>
+      <ResourceUID>15</ResourceUID>
       <Units>1</Units>
       <Start>2026-10-26T08:00:00</Start>
       <Finish>2026-11-13T17:00:00</Finish>
@@ -2589,7 +2596,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>20</UID>
       <TaskUID>20</TaskUID>
-      <ResourceUID>9</ResourceUID>
+      <ResourceUID>10</ResourceUID>
       <Units>1</Units>
       <Start>2026-12-21T08:00:00</Start>
       <Finish>2027-04-09T17:00:00</Finish>
@@ -2613,7 +2620,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>23</UID>
       <TaskUID>23</TaskUID>
-      <ResourceUID>12</ResourceUID>
+      <ResourceUID>13</ResourceUID>
       <Units>1</Units>
       <Start>2027-02-08T08:00:00</Start>
       <Finish>2027-04-30T17:00:00</Finish>
@@ -2621,7 +2628,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>24</UID>
       <TaskUID>24</TaskUID>
-      <ResourceUID>12</ResourceUID>
+      <ResourceUID>13</ResourceUID>
       <Units>1</Units>
       <Start>2027-02-08T08:00:00</Start>
       <Finish>2027-02-26T17:00:00</Finish>
@@ -2629,7 +2636,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>25</UID>
       <TaskUID>25</TaskUID>
-      <ResourceUID>12</ResourceUID>
+      <ResourceUID>13</ResourceUID>
       <Units>1</Units>
       <Start>2027-02-08T08:00:00</Start>
       <Finish>2027-04-16T17:00:00</Finish>
@@ -2645,7 +2652,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>28</UID>
       <TaskUID>28</TaskUID>
-      <ResourceUID>8</ResourceUID>
+      <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2026-10-26T08:00:00</Start>
       <Finish>2027-01-15T17:00:00</Finish>
@@ -2661,7 +2668,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>30</UID>
       <TaskUID>30</TaskUID>
-      <ResourceUID>10</ResourceUID>
+      <ResourceUID>11</ResourceUID>
       <Units>1</Units>
       <Start>2027-02-01T08:00:00</Start>
       <Finish>2027-03-26T17:00:00</Finish>
@@ -2669,7 +2676,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>31</UID>
       <TaskUID>31</TaskUID>
-      <ResourceUID>11</ResourceUID>
+      <ResourceUID>12</ResourceUID>
       <Units>1</Units>
       <Start>2027-03-29T08:00:00</Start>
       <Finish>2027-05-21T17:00:00</Finish>
@@ -2677,7 +2684,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>32</UID>
       <TaskUID>32</TaskUID>
-      <ResourceUID>11</ResourceUID>
+      <ResourceUID>8</ResourceUID>
       <Units>1</Units>
       <Start>2027-03-29T08:00:00</Start>
       <Finish>2027-05-07T17:00:00</Finish>
@@ -2685,7 +2692,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>33</UID>
       <TaskUID>33</TaskUID>
-      <ResourceUID>11</ResourceUID>
+      <ResourceUID>12</ResourceUID>
       <Units>1</Units>
       <Start>2027-03-29T08:00:00</Start>
       <Finish>2027-04-23T17:00:00</Finish>
@@ -2693,7 +2700,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>35</UID>
       <TaskUID>35</TaskUID>
-      <ResourceUID>8</ResourceUID>
+      <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2026-12-07T08:00:00</Start>
       <Finish>2026-12-11T17:00:00</Finish>
@@ -2741,7 +2748,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>41</UID>
       <TaskUID>41</TaskUID>
-      <ResourceUID>9</ResourceUID>
+      <ResourceUID>10</ResourceUID>
       <Units>1</Units>
       <Start>2027-04-12T08:00:00</Start>
       <Finish>2027-05-07T17:00:00</Finish>
@@ -2757,7 +2764,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>43</UID>
       <TaskUID>43</TaskUID>
-      <ResourceUID>8</ResourceUID>
+      <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2027-04-26T08:00:00</Start>
       <Finish>2027-07-02T17:00:00</Finish>
@@ -2765,7 +2772,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>44</UID>
       <TaskUID>44</TaskUID>
-      <ResourceUID>8</ResourceUID>
+      <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2027-04-26T08:00:00</Start>
       <Finish>2027-06-18T17:00:00</Finish>
@@ -2789,7 +2796,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>47</UID>
       <TaskUID>47</TaskUID>
-      <ResourceUID>9</ResourceUID>
+      <ResourceUID>10</ResourceUID>
       <Units>1</Units>
       <Start>2027-05-31T08:00:00</Start>
       <Finish>2027-06-25T17:00:00</Finish>
@@ -2805,7 +2812,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>50</UID>
       <TaskUID>50</TaskUID>
-      <ResourceUID>5</ResourceUID>
+      <ResourceUID>4</ResourceUID>
       <Units>1</Units>
       <Start>2026-12-14T08:00:00</Start>
       <Finish>2027-01-22T17:00:00</Finish>
@@ -2837,7 +2844,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>54</UID>
       <TaskUID>54</TaskUID>
-      <ResourceUID>10</ResourceUID>
+      <ResourceUID>11</ResourceUID>
       <Units>1</Units>
       <Start>2027-05-24T08:00:00</Start>
       <Finish>2027-06-04T17:00:00</Finish>
@@ -2845,7 +2852,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>55</UID>
       <TaskUID>55</TaskUID>
-      <ResourceUID>15</ResourceUID>
+      <ResourceUID>16</ResourceUID>
       <Units>1</Units>
       <Start>2027-05-31T08:00:00</Start>
       <Finish>2027-06-11T17:00:00</Finish>
@@ -2861,7 +2868,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>57</UID>
       <TaskUID>57</TaskUID>
-      <ResourceUID>12</ResourceUID>
+      <ResourceUID>13</ResourceUID>
       <Units>1</Units>
       <Start>2027-06-07T08:00:00</Start>
       <Finish>2027-06-25T17:00:00</Finish>
@@ -2877,7 +2884,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>59</UID>
       <TaskUID>59</TaskUID>
-      <ResourceUID>15</ResourceUID>
+      <ResourceUID>16</ResourceUID>
       <Units>1</Units>
       <Start>2027-06-28T08:00:00</Start>
       <Finish>2027-07-02T17:00:00</Finish>
@@ -2909,7 +2916,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>64</UID>
       <TaskUID>64</TaskUID>
-      <ResourceUID>12</ResourceUID>
+      <ResourceUID>13</ResourceUID>
       <Units>1</Units>
       <Start>2027-06-07T08:00:00</Start>
       <Finish>2027-06-18T17:00:00</Finish>
@@ -2917,7 +2924,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>65</UID>
       <TaskUID>65</TaskUID>
-      <ResourceUID>11</ResourceUID>
+      <ResourceUID>8</ResourceUID>
       <Units>1</Units>
       <Start>2027-06-07T08:00:00</Start>
       <Finish>2027-06-18T17:00:00</Finish>
@@ -2925,7 +2932,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>66</UID>
       <TaskUID>66</TaskUID>
-      <ResourceUID>8</ResourceUID>
+      <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2027-06-21T08:00:00</Start>
       <Finish>2027-07-30T17:00:00</Finish>
@@ -2933,7 +2940,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>67</UID>
       <TaskUID>67</TaskUID>
-      <ResourceUID>8</ResourceUID>
+      <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2027-08-02T08:00:00</Start>
       <Finish>2027-09-24T17:00:00</Finish>
@@ -2941,7 +2948,7 @@ RAISONS DES LIENS :
     <Assignment>
       <UID>68</UID>
       <TaskUID>68</TaskUID>
-      <ResourceUID>8</ResourceUID>
+      <ResourceUID>9</ResourceUID>
       <Units>1</Units>
       <Start>2027-09-27T08:00:00</Start>
       <Finish>2027-10-08T17:00:00</Finish>

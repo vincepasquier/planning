@@ -87,13 +87,13 @@
     },
     {
       "id": "Q-06",
-      "priorite": "critique",
+      "priorite": "haute",
       "statut": "ouverte",
       "sujet": "Adjudication du calorifugeage",
-      "question": "Quand le lot calorifugeage sera-t-il adjugé ?",
-      "pourquoi": "L'épreuve de pression de l'accumulateur est ferme au 30.11.2026 et l'isolation suit immédiatement. Le lot n'est pas adjugé, et il est bloquant pour la réception.",
+      "question": "Quand le lot calorifugeage des conduites sera-t-il adjugé ?",
+      "pourquoi": "L'accumulateur est isolé par Bilfinger, ce qui retire la partie la plus urgente et la plus lourde — 500 m² en hauteur juste après l'épreuve du 30.11.2026. Reste le calorifugeage des conduites d'hydraulique chaud et froid, qui suit les épreuves de pression et reste bloquant pour la réception.",
       "destinataire": "Maître d'ouvrage",
-      "impact": "Retard direct sur l'accumulateur, puis sur la réception."
+      "impact": "Bloque la réception, mais n'est plus adossé à une date ferme proche."
     },
     {
       "id": "Q-19",

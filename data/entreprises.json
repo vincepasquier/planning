@@ -39,7 +39,8 @@
       "code": "BILFINGER",
       "nom": "Bilfinger",
       "prestations": [
-        "Fourniture et montage de l'accumulateur chaud (5'000 kW, 2 x 2.5 MW)"
+        "Fourniture et montage de l'accumulateur chaud (5'000 kW, 2 x 2.5 MW)",
+        "Calorifugeage de l'accumulateur"
       ],
       "statut": "adjugé",
       "avancement": "en cours - épreuve de pression fin novembre 2026"
@@ -120,11 +121,10 @@
       "code": "CALORIFUGEAGE",
       "nom": "À adjuger",
       "prestations": [
-        "Calorifugeage accumulateur",
-        "Calorifugeage tuyauteries chaud et froid"
+        "Calorifugeage des conduites d'hydraulique chaud et froid"
       ],
       "statut": "NON ADJUGÉ",
-      "alerte": "Lot situé tard dans la séquence et bloquant pour la mise en service. L'isolation de l'accumulateur suit directement l'épreuve de pression de fin novembre 2026."
+      "alerte": "Lot non adjugé, bloquant pour la réception. L'accumulateur, lui, est isolé par Bilfinger : cette partie n'est plus en suspens."
     },
     {
       "code": "STAP",
@@ -182,6 +182,14 @@
       ],
       "statut": "NON ADJUGÉ",
       "alerte": "Entreprise de levage non désignée, alors qu'elle conditionne le raccordement de l'expansion, lui-même préalable à la mise en eau des réseaux."
+    },
+    {
+      "code": "EXERGO",
+      "nom": "Exergo",
+      "prestations": [
+        "Fourniture des tableaux variateurs, avec Wettstein"
+      ],
+      "statut": "adjugé"
     }
   ],
   "conventions": {

@@ -1,5 +1,5 @@
 {
-  "note": "Qui passe où. Le niveau N-2 est relevé exhaustivement avec le maître d'ouvrage (20.10.2026). Les niveaux N-1 et N+0 restent déduits.",
+  "note": "Qui passe où. Le niveau N-2 est relevé exhaustivement avec le maître d'ouvrage (20.10.2026), écarts compris. Les niveaux N-1 et N+0 restent déduits.",
   "lots_declares_globaux": [
     "ANSERMOT",
     "ANTIGLIO",
@@ -78,23 +78,29 @@
       "hauteur_m": 2.62,
       "statut_releve": "rempli",
       "lots": {
+        "CALORIFUGEAGE": {
+          "taches": [
+            "T-CAL-020"
+          ],
+          "source": "supposé"
+        },
         "ENTRETEC": {
           "taches": [
             "T-ENT-010"
           ],
-          "source": "relevé"
+          "source": "supposé"
         },
         "HALG": {
           "taches": [
             "T-HAL-030"
           ],
-          "source": "relevé"
+          "source": "supposé"
         },
         "RIEDO": {
           "taches": [
             "T-RIE-010"
           ],
-          "source": "relevé"
+          "source": "supposé"
         }
       }
     },
@@ -105,17 +111,23 @@
       "hauteur_m": 2.62,
       "statut_releve": "rempli",
       "lots": {
+        "CALORIFUGEAGE": {
+          "taches": [
+            "T-CAL-020"
+          ],
+          "source": "supposé"
+        },
         "ENTRETEC": {
           "taches": [
             "T-ENT-010"
           ],
-          "source": "relevé"
+          "source": "supposé"
         },
         "RIEDO": {
           "taches": [
             "T-RIE-010"
           ],
-          "source": "relevé"
+          "source": "supposé"
         }
       }
     },
@@ -157,9 +169,16 @@
       "hauteur_m": 7.0,
       "statut_releve": "rempli",
       "lots": {
-        "ENTRETEC": {
+        "ANSERMOT": {
           "taches": [
-            "T-ENT-090"
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
           ],
           "source": "relevé"
         },
@@ -167,6 +186,14 @@
           "taches": [
             "T-GET-010",
             "T-GET-080"
+          ],
+          "source": "relevé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-010",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
           "source": "relevé"
         }
@@ -178,7 +205,22 @@
       "surface_m2": 44.502,
       "hauteur_m": 4.1,
       "statut_releve": "a_remplir",
-      "lots": {}
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-020",
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        }
+      }
     },
     "CENT.N-2.03": {
       "designation": "Refroid. locaux élec.",
@@ -187,15 +229,32 @@
       "hauteur_m": 4.1,
       "statut_releve": "rempli",
       "lots": {
-        "ENTRETEC": {
+        "ANSERMOT": {
           "taches": [
-            "T-ENT-090"
+            "T-ANS-030"
           ],
           "source": "relevé"
         },
-        "GETECH-TABLEAU": {
+        "ENTRETEC": {
           "taches": [
-            "T-GET-050"
+            "T-ENT-090",
+            "T-ENT-060",
+            "T-ENT-070"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-010",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
           "source": "relevé"
         }
@@ -208,6 +267,12 @@
       "hauteur_m": 7.0,
       "statut_releve": "rempli",
       "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
         "ANTIGLIO": {
           "taches": [
             "T-ANT-025"
@@ -216,7 +281,16 @@
         },
         "ENTRETEC": {
           "taches": [
-            "T-ENT-090"
+            "T-ENT-090",
+            "T-ENT-060",
+            "T-ENT-070"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
           ],
           "source": "relevé"
         },
@@ -232,6 +306,14 @@
             "T-GET-050"
           ],
           "source": "relevé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-010",
+            "T-HAL-040",
+            "T-HAL-050"
+          ],
+          "source": "relevé"
         }
       }
     },
@@ -242,18 +324,55 @@
       "hauteur_m": 7.0,
       "statut_releve": "a_remplir",
       "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "CALORIFUGEAGE": {
+          "taches": [
+            "T-CAL-020"
+          ],
+          "source": "relevé"
+        },
         "DESPRAZ": {
           "taches": [
             "T-DES-010",
+            "T-DES-030",
+            "T-DES-040",
             "T-DES-050"
           ],
-          "source": "supposé"
+          "source": "relevé"
+        },
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-060",
+            "T-ENT-070"
+          ],
+          "source": "relevé"
+        },
+        "GE": {
+          "taches": [
+            "T-GE-040"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
         },
         "HALG": {
           "taches": [
-            "T-HAL-030"
+            "T-HAL-010",
+            "T-HAL-030",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
-          "source": "supposé"
+          "source": "relevé"
         }
       }
     },
@@ -264,11 +383,25 @@
       "hauteur_m": 4.1,
       "statut_releve": "a_remplir",
       "lots": {
-        "DESPRAZ": {
+        "ANSERMOT": {
           "taches": [
-            "T-DES-010"
+            "T-ANS-030"
           ],
-          "source": "supposé"
+          "source": "relevé"
+        },
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-060",
+            "T-ENT-070"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
         }
       }
     },
@@ -279,38 +412,60 @@
       "hauteur_m": 7.0,
       "statut_releve": "rempli",
       "lots": {
-        "ANTIGLIO": {
+        "ANSERMOT": {
           "taches": [
-            "T-ANT-021"
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "CALORIFUGEAGE": {
+          "taches": [
+            "T-CAL-020"
           ],
           "source": "relevé"
         },
         "DESPRAZ": {
           "taches": [
-            "T-DES-016"
+            "T-DES-016",
+            "T-DES-030",
+            "T-DES-040"
           ],
           "source": "relevé"
         },
         "ENTRETEC": {
           "taches": [
-            "T-ENT-041"
+            "T-ENT-041",
+            "T-ENT-060",
+            "T-ENT-070"
+          ],
+          "source": "relevé"
+        },
+        "GE": {
+          "taches": [
+            "T-GE-040"
           ],
           "source": "relevé"
         },
         "GETECH-IEG": {
           "taches": [
-            "T-GET-060"
+            "T-GET-030",
+            "T-GET-060",
+            "T-GET-070"
           ],
           "source": "relevé"
         },
         "HALG": {
           "taches": [
-            "T-HAL-030"
+            "T-HAL-010",
+            "T-HAL-030",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
           "source": "relevé"
         },
         "WETTSTEIN": {
           "taches": [
+            "T-ANT-021",
             "T-WET-010",
             "T-WET-050",
             "T-WET-060"
@@ -326,17 +481,39 @@
       "hauteur_m": 4.1,
       "statut_releve": "rempli",
       "lots": {
-        "ENTRETEC": {
+        "ANSERMOT": {
           "taches": [
-            "T-ENT-090"
+            "T-ANS-030"
           ],
           "source": "relevé"
         },
-        "GETECH-TABLEAU": {
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-090",
+            "T-ENT-060",
+            "T-ENT-070"
+          ],
+          "source": "relevé"
+        },
+        "EXERGO": {
           "taches": [
             "T-GET-040",
-            "T-GET-050",
             "T-GET-090"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-010",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
           "source": "relevé"
         }
@@ -349,9 +526,44 @@
       "hauteur_m": 4.1,
       "statut_releve": "rempli",
       "lots": {
-        "DESPRAZ": {
+        "ANSERMOT": {
           "taches": [
-            "T-DES-005"
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "CALORIFUGEAGE": {
+          "taches": [
+            "T-CAL-020"
+          ],
+          "source": "relevé"
+        },
+        "ENTRETEC": {
+          "taches": [
+            "T-DES-005",
+            "T-ENT-060",
+            "T-ENT-070"
+          ],
+          "source": "relevé"
+        },
+        "GE": {
+          "taches": [
+            "T-GE-040"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-010",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
           "source": "relevé"
         }
@@ -364,38 +576,60 @@
       "hauteur_m": 7.0,
       "statut_releve": "rempli",
       "lots": {
-        "ANTIGLIO": {
+        "ANSERMOT": {
           "taches": [
-            "T-ANT-022"
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "CALORIFUGEAGE": {
+          "taches": [
+            "T-CAL-020"
           ],
           "source": "relevé"
         },
         "DESPRAZ": {
           "taches": [
-            "T-DES-017"
+            "T-DES-017",
+            "T-DES-030",
+            "T-DES-040"
           ],
           "source": "relevé"
         },
         "ENTRETEC": {
           "taches": [
-            "T-ENT-042"
+            "T-ENT-042",
+            "T-ENT-060",
+            "T-ENT-070"
+          ],
+          "source": "relevé"
+        },
+        "GE": {
+          "taches": [
+            "T-GE-040"
           ],
           "source": "relevé"
         },
         "GETECH-IEG": {
           "taches": [
-            "T-GET-060"
+            "T-GET-030",
+            "T-GET-060",
+            "T-GET-070"
           ],
           "source": "relevé"
         },
         "HALG": {
           "taches": [
-            "T-HAL-030"
+            "T-HAL-010",
+            "T-HAL-030",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
           "source": "relevé"
         },
         "WETTSTEIN": {
           "taches": [
+            "T-ANT-022",
             "T-WET-020",
             "T-WET-050",
             "T-WET-060"
@@ -413,9 +647,10 @@
       "lots": {
         "ANSERMOT": {
           "taches": [
+            "T-ANS-030",
             "T-ANS-040"
           ],
-          "source": "supposé"
+          "source": "relevé"
         }
       }
     },
@@ -425,7 +660,21 @@
       "surface_m2": 191.584,
       "hauteur_m": 7.0,
       "statut_releve": "hors_marche",
-      "lots": {}
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        }
+      }
     },
     "CENT.N-2.13": {
       "designation": "Variateurs 3 et 4",
@@ -433,7 +682,21 @@
       "surface_m2": 65.701,
       "hauteur_m": 4.1,
       "statut_releve": "hors_marche",
-      "lots": {}
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        }
+      }
     },
     "CENT.N-2.14": {
       "designation": "Commande 3 et 4",
@@ -441,7 +704,21 @@
       "surface_m2": 32.219,
       "hauteur_m": 4.1,
       "statut_releve": "hors_marche",
-      "lots": {}
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        }
+      }
     },
     "CENT.N-2.15": {
       "designation": "PAC 4",
@@ -449,7 +726,21 @@
       "surface_m2": 193.037,
       "hauteur_m": 7.0,
       "statut_releve": "hors_marche",
-      "lots": {}
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        }
+      }
     },
     "CENT.N-2.16": {
       "designation": "Circulation",
@@ -458,11 +749,18 @@
       "hauteur_m": 4.1,
       "statut_releve": "a_remplir",
       "lots": {
-        "DESPRAZ": {
+        "ANSERMOT": {
           "taches": [
-            "T-DES-010"
+            "T-ANS-030"
           ],
-          "source": "supposé"
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
         }
       }
     },
@@ -472,7 +770,22 @@
       "surface_m2": 26.726,
       "hauteur_m": 4.1,
       "statut_releve": "a_remplir",
-      "lots": {}
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-020",
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        }
+      }
     },
     "CENT.N-2.18": {
       "designation": "Pompage PAC",
@@ -481,10 +794,46 @@
       "hauteur_m": 7.0,
       "statut_releve": "rempli",
       "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-020",
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "CALORIFUGEAGE": {
+          "taches": [
+            "T-CAL-020"
+          ],
+          "source": "relevé"
+        },
         "ENTRETEC": {
           "taches": [
             "T-ENT-090",
-            "T-ENT-030"
+            "T-ENT-030",
+            "T-ENT-060",
+            "T-ENT-070"
+          ],
+          "source": "relevé"
+        },
+        "GE": {
+          "taches": [
+            "T-GE-040"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-010",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
           "source": "relevé"
         }
@@ -497,9 +846,21 @@
       "hauteur_m": 7.0,
       "statut_releve": "rempli",
       "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
         "ANTIGLIO": {
           "taches": [
             "T-ANT-025"
+          ],
+          "source": "relevé"
+        },
+        "CALORIFUGEAGE": {
+          "taches": [
+            "T-CAL-020"
           ],
           "source": "relevé"
         },
@@ -508,13 +869,36 @@
             "T-ENT-090",
             "T-ENT-010",
             "T-ENT-020",
-            "T-ENT-055"
+            "T-ENT-055",
+            "T-ENT-060",
+            "T-ENT-070"
+          ],
+          "source": "relevé"
+        },
+        "GE": {
+          "taches": [
+            "T-GE-040"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
           ],
           "source": "relevé"
         },
         "GETECH-TABLEAU": {
           "taches": [
             "T-GET-050"
+          ],
+          "source": "relevé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-010",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
           "source": "relevé"
         },
@@ -532,7 +916,22 @@
       "surface_m2": 19.564,
       "hauteur_m": 4.1,
       "statut_releve": "a_remplir",
-      "lots": {}
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-020",
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        }
+      }
     },
     "CENT.N-2.21": {
       "designation": "Bureau / poste de cde",
@@ -541,29 +940,46 @@
       "hauteur_m": 4.1,
       "statut_releve": "a_remplir",
       "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-010",
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
         "ANTIGLIO": {
           "taches": [
             "T-ANT-025"
           ],
-          "source": "supposé"
+          "source": "relevé"
         },
         "GE": {
           "taches": [
             "T-GE-030"
           ],
-          "source": "supposé"
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
         },
         "GETECH-TABLEAU": {
           "taches": [
             "T-GET-050"
           ],
-          "source": "supposé"
+          "source": "relevé"
         },
         "HALG": {
           "taches": [
-            "T-HAL-020"
+            "T-HAL-010",
+            "T-HAL-020",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
-          "source": "supposé"
+          "source": "relevé"
         }
       }
     },
@@ -574,17 +990,33 @@
       "hauteur_m": 4.1,
       "statut_releve": "a_remplir",
       "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        },
         "HALG": {
           "taches": [
-            "T-HAL-020"
+            "T-HAL-010",
+            "T-HAL-020",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
-          "source": "supposé"
+          "source": "relevé"
         },
         "RIEDO": {
           "taches": [
             "T-RIE-010"
           ],
-          "source": "supposé"
+          "source": "relevé"
         }
       }
     },
@@ -595,17 +1027,33 @@
       "hauteur_m": 4.1,
       "statut_releve": "a_remplir",
       "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
+        },
         "HALG": {
           "taches": [
-            "T-HAL-020"
+            "T-HAL-010",
+            "T-HAL-020",
+            "T-HAL-040",
+            "T-HAL-050"
           ],
-          "source": "supposé"
+          "source": "relevé"
         },
         "RIEDO": {
           "taches": [
             "T-RIE-010"
           ],
-          "source": "supposé"
+          "source": "relevé"
         }
       }
     },
@@ -616,31 +1064,42 @@
       "hauteur_m": 7.0,
       "statut_releve": "a_remplir",
       "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-030"
+          ],
+          "source": "relevé"
+        },
         "BILFINGER": {
           "taches": [
             "T-BIL-010",
-            "T-BIL-020"
-          ],
-          "source": "supposé"
-        },
-        "CALORIFUGEAGE": {
-          "taches": [
+            "T-BIL-020",
             "T-CAL-010"
           ],
-          "source": "supposé"
+          "source": "relevé"
         },
         "ENTRETEC": {
           "taches": [
             "T-ENT-010",
-            "T-ENT-050"
+            "T-ENT-050",
+            "T-ENT-060",
+            "T-ENT-070"
           ],
-          "source": "supposé"
+          "source": "relevé"
         },
         "GE": {
           "taches": [
-            "T-GE-010"
+            "T-GE-010",
+            "T-GE-040"
           ],
-          "source": "supposé"
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
         }
       }
     },
@@ -653,15 +1112,23 @@
       "lots": {
         "ANSERMOT": {
           "taches": [
+            "T-ANS-030",
             "T-ANS-040"
           ],
-          "source": "supposé"
+          "source": "relevé"
         },
         "ANTIGLIO": {
           "taches": [
             "T-ANT-040"
           ],
-          "source": "supposé"
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
         }
       }
     },
@@ -674,67 +1141,26 @@
       "lots": {
         "ANSERMOT": {
           "taches": [
+            "T-ANS-030",
             "T-ANS-040"
           ],
-          "source": "supposé"
+          "source": "relevé"
         },
         "ANTIGLIO": {
           "taches": [
             "T-ANT-040"
           ],
-          "source": "supposé"
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-030",
+            "T-GET-070"
+          ],
+          "source": "relevé"
         }
       }
     }
   },
-  "ecarts_a_trancher": [
-    {
-      "local": "CENT.N-2.07 / .10",
-      "lot": "ANTIGLIO",
-      "sujet": "Pose des socles préfabriqués",
-      "ecart": "Antiglio n'est pas listé dans les locaux PAC, mais quelqu'un pose les socles préfabriqués."
-    },
-    {
-      "local": "CENT.N-2.09",
-      "lot": "DESPRAZ",
-      "sujet": "Centrale froid n°1",
-      "ecart": "Le local a été identifié comme centrale froid n°1 équipée par Despraz en 5 semaines. Le relevé n'y met qu'Entretec, Hälg et IEG. Le CO2 s'arrête-t-il en N-2.05 ?"
-    },
-    {
-      "local": "CENT.N-2.24",
-      "lot": "CALORIFUGEAGE, GE",
-      "sujet": "Isolation et sondes de l'accumulateur",
-      "ecart": "Après l'épreuve du 30.11.2026 restent l'isolation et le raccordement des sondes, mais ni le calorifugeage ni Groupe E ne figurent au relevé du local."
-    },
-    {
-      "local": "CENT.N-2.19",
-      "lot": "LEVAGE, GETECH-TABLEAU",
-      "sujet": "Vases d'expansion et armoire Départ CAD",
-      "ecart": "L'expansion est dans ce local et mise en place par une entreprise de levage ; l'armoire Départ CAD y figure aussi selon la liste des armoires. Ni l'une ni l'autre n'apparaissent au relevé."
-    },
-    {
-      "local": "CENT.N-2.21, .19, .04, .03, .08",
-      "lot": "GETECH-TABLEAU, GE",
-      "sujet": "Armoires de commande et automates MCR",
-      "ecart": "La liste des armoires place 15 armoires dans ces locaux, dont le Master local MCR en N-2.21. Le relevé ne mentionne TABLEAU qu'en N-2.04."
-    },
-    {
-      "local": "CENT.N-2.08",
-      "lot": "GETECH-TABLEAU",
-      "sujet": "Armoires variateurs 1 et 2",
-      "ecart": "Relevé précédent : TABLEAU pose les armoires variateurs en 6 semaines dans ce local. Le relevé des lots n'y met pas TABLEAU mais y ajoute Wettstein et INFRA."
-    },
-    {
-      "local": "CENT.N-2.01",
-      "lot": "ENTRETEC",
-      "sujet": "Refroidissement du local MT",
-      "ecart": "Le schéma de froid process donne 97 kW au local MT sur le circuit hydraulique froid. Le relevé n'y met pas Entretec : le froid arrive-t-il par l'air depuis N-2.03 ?"
-    },
-    {
-      "local": "CENT.N-2.25, .26, .11",
-      "lot": "ANTIGLIO, ANSERMOT",
-      "sujet": "Fermeture de l'accès de manutention",
-      "ecart": "Le réseau prévoit la fermeture de l'accès et la pose des portes du chemin de manutention. Le relevé ne met qu'IEG dans le couvert et la rampe, et rien dans le sas."
-    }
-  ]
+  "ecarts_a_trancher": []
 }

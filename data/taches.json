@@ -1,5 +1,5 @@
 {
-  "version": "1.2",
+  "version": "1.3",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -31,7 +31,9 @@
       "systeme": "GC",
       "phase": "P0",
       "locaux": [
-        "*"
+        "CENT.N-2.21",
+        "CENT.N-2.04",
+        "CENT.N-2.19"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -90,7 +92,8 @@
       "systeme": "GC",
       "phase": "P1",
       "locaux": [
-        "*"
+        "CENT.N-2.25",
+        "CENT.N-2.26"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -150,7 +153,7 @@
       "systeme": "ACC",
       "phase": "P4",
       "locaux": [
-        "*"
+        "CENT.N-2.24"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -168,11 +171,11 @@
     {
       "id": "T-CAL-010",
       "designation": "Calorifugeage de l'accumulateur",
-      "entreprise": "CALORIFUGEAGE",
+      "entreprise": "BILFINGER",
       "systeme": "ACC",
       "phase": "P5",
       "locaux": [
-        "*"
+        "CENT.N-2.24"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
@@ -188,18 +191,18 @@
           "raison": "Sondes et doigts de gant posés, sinon on rouvre l'isolation"
         }
       ],
-      "statut": "BLOQUE",
-      "notes": "ALERTE : lot non adjuge, qui suit immediatement une date ferme. PLAN N-2 : l'accumulateur fait 19 m de haut pour 8 m de diametre, soit environ 500 m2 d'isolation en hauteur (passage de 8 a 9 m isole). C'est un chantier d'acces en hauteur, pas un appoint de calorifugeage.",
+      "statut": "a_confirmer",
+      "notes": "Réalisé par Bilfinger avec l'accumulateur (MO, 20.10.2026) : ce n'est donc pas un lot à adjuger. Environ 500 m² en hauteur, diamètre passant de 8 à 9 m.",
       "duree_semaines": 6
     },
     {
       "id": "T-ANT-021",
-      "designation": "Pose du socle préfabriqué PAC 1",
-      "entreprise": "ANTIGLIO",
+      "designation": "Mise en place du socle préfabriqué PAC 1",
+      "entreprise": "WETTSTEIN",
       "systeme": "PAC-1",
       "phase": "P0",
       "locaux": [
-        "*"
+        "CENT.N-2.07"
       ],
       "duree_classe": "semaine",
       "duree_semaines": 1,
@@ -212,16 +215,16 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Socle préfabriqué, amené dans le local au moment utile (MO, 20.10.2026). Supprime la contrainte de maturation du béton qui retenait la pose des machines. Fournisseur du préfabriqué à confirmer."
+      "notes": "Déplacement et mise en place par Wettstein et le maître d'ouvrage (MO, 20.10.2026)."
     },
     {
       "id": "T-ANT-022",
-      "designation": "Pose du socle préfabriqué PAC 2",
-      "entreprise": "ANTIGLIO",
+      "designation": "Mise en place du socle préfabriqué PAC 2",
+      "entreprise": "WETTSTEIN",
       "systeme": "PAC-2",
       "phase": "P0",
       "locaux": [
-        "*"
+        "CENT.N-2.10"
       ],
       "duree_classe": "semaine",
       "duree_semaines": 1,
@@ -234,7 +237,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Socle préfabriqué, amené dans le local au moment utile (MO, 20.10.2026). Supprime la contrainte de maturation du béton qui retenait la pose des machines. Fournisseur du préfabriqué à confirmer."
+      "notes": "Déplacement et mise en place par Wettstein et le maître d'ouvrage (MO, 20.10.2026)."
     },
     {
       "id": "T-WET-010",
@@ -342,12 +345,12 @@
     },
     {
       "id": "T-DES-005",
-      "designation": "Centrale froid CO2 n°1",
-      "entreprise": "DESPRAZ",
+      "designation": "Centrale froid n°1 (hydraulique)",
+      "entreprise": "ENTRETEC",
       "systeme": "FROID-CO2",
       "phase": "P1",
       "locaux": [
-        "*"
+        "CENT.N-2.09"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -359,7 +362,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Q-13 tranchée : N-2.09 et N-2.14 sont bien les centrales froid n°1 et n°2, et non des locaux de commande comme les nomme la maquette architecturale (MO, 20.10.2026). La centrale froid n°2 (N-2.14) est laissée vide pour l'instant.",
+      "notes": "Entretec réalise le froid dans ce local. L'échange froid CO2/eau se fait dans le local d'introduction CO2 N-2.05, côté Despraz (MO, 20.10.2026).",
       "duree_semaines": 5
     },
     {
@@ -417,7 +420,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Circuit hydraulique froid 16/21 degrés en aval des échangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Réalisable dès que le réseau CO2 et la centrale froid n°1 sont en place, sans attendre l'échangeur de la PAC 2 (MO, 20.10.2026) : c'est une branche distincte du froid process. Conditionne la mise en charge nominale des variateurs.",
+      "notes": "Circuit hydraulique froid 16/21 degrés en aval des échangeurs. MT 97 kW, variateurs/commande 70 kW, locaux PAC 55 kW chacun, pompage 25 kW, hydraulique chaud 15 kW, TGBT 10 kW. Réalisable dès que le réseau CO2 et la centrale froid n°1 sont en place, sans attendre l'échangeur de la PAC 2 (MO, 20.10.2026) : c'est une branche distincte du froid process. Conditionne la mise en charge nominale des variateurs. Le local MT est refroidi par l'air depuis N-2.03, et non par un piquage hydraulique direct (MO, 20.10.2026).",
       "duree_semaines": 12
     },
     {
@@ -643,7 +646,7 @@
       "systeme": "EXPANSION",
       "phase": "P1",
       "locaux": [
-        "*"
+        "CENT.N-2.19"
       ],
       "duree_classe": "quinzaine",
       "duree_semaines": 2,
@@ -656,7 +659,7 @@
         }
       ],
       "statut": "non_adjuge",
-      "notes": "Vases fournis par SPIROTEC, mis en place par une entreprise de levage, raccordés par Entretec (MO, 20.10.2026). Entreprise de levage à désigner. Les vases arrivent assemblés : c'est pour eux que la question de gabarit reste posée (Q-02)."
+      "notes": "Vases fournis par SPIROTEC, mis en place par une entreprise de levage, raccordés par Entretec (MO, 20.10.2026). Entreprise de levage à désigner. Les vases arrivent assemblés : c'est pour eux que la question de gabarit reste posée (Q-02). Levage à organiser (MO, 20.10.2026)."
     },
     {
       "id": "T-ENT-020",
@@ -852,7 +855,14 @@
       "systeme": "HYD-CHAUD",
       "phase": "P5",
       "locaux": [
-        "*"
+        "CENT.N-2.05",
+        "CENT.N-2.07",
+        "CENT.N-2.09",
+        "CENT.N-2.10",
+        "CENT.N-2.18",
+        "CENT.N-2.19",
+        "CENT.N-1.03",
+        "CENT.N-1.04"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -869,7 +879,7 @@
         }
       ],
       "statut": "BLOQUE",
-      "notes": "ALERTE : lot non adjugé et bloquant pour la réception.",
+      "notes": "ALERTE : lot non adjugé et bloquant pour la réception. Porte sur les conduites d'hydraulique chaud, l'accumulateur étant isolé par Bilfinger.",
       "duree_semaines": 10
     },
     {
@@ -1158,11 +1168,11 @@
     {
       "id": "T-GET-040",
       "designation": "Armoires variateurs 1 et 2",
-      "entreprise": "GETECH-TABLEAU",
+      "entreprise": "EXERGO",
       "systeme": "TGBT",
       "phase": "P3",
       "locaux": [
-        "*"
+        "CENT.N-2.08"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -1175,7 +1185,7 @@
       ],
       "statut": "a_confirmer",
       "duree_semaines": 6,
-      "notes": "Les variateurs 3 et 4 (N-2.13) ne sont pas équipés dans ce marché, les PAC 3 et 4 étant reportées (MO, 20.10.2026). La fosse CO2 du local est déjà réalisée. Attribution INFRA / TABLEAU / IEG à confirmer (Q-25)."
+      "notes": "Tableaux variateurs fournis par Wettstein et Exergo (MO, 20.10.2026)."
     },
     {
       "id": "T-GET-050",
@@ -1184,6 +1194,8 @@
       "systeme": "MCR",
       "phase": "P3",
       "locaux": [
+        "CENT.N-2.21",
+        "CENT.N-2.19",
         "CENT.N-2.04"
       ],
       "duree_classe": "quinzaine",
@@ -1323,11 +1335,11 @@
     {
       "id": "T-GET-090",
       "designation": "Mise en charge nominale des variateurs",
-      "entreprise": "GETECH-TABLEAU",
+      "entreprise": "EXERGO",
       "systeme": "TGBT",
       "phase": "P6",
       "locaux": [
-        "*"
+        "CENT.N-2.08"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -1345,7 +1357,7 @@
       ],
       "statut": "a_confirmer",
       "duree_semaines": 2,
-      "notes": "Locaux des PAC 3 et 4 retirés : équipements reportés."
+      "notes": "Tableaux variateurs fournis par Wettstein et Exergo (MO, 20.10.2026)."
     },
     {
       "id": "T-GE-020",
@@ -1370,7 +1382,7 @@
       "systeme": "MCR",
       "phase": "P4",
       "locaux": [
-        "*"
+        "CENT.N-2.21"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -1382,7 +1394,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Armoires 1 « Master local MCR » et 3 « Réseau IP - Télécom » en N-2.21, selon la liste des armoires. Les locaux N-2.09 et N-2.14 sont des centrales froid, pas des locaux de commande. Concept MCR daté de février 2024, à revalider (Q-17).",
+      "notes": "Armoires 1 « Master local MCR » et 3 « Réseau IP - Télécom » en N-2.21, selon la liste des armoires. Les locaux N-2.09 et N-2.14 sont des centrales froid, pas des locaux de commande. Concept MCR daté de février 2024, à revalider (Q-17). Groupe E Tech TABLEAU intervient en sous-traitance dans ce local. Groupe E assure la mise en service complète de la centrale (MO, 20.10.2026).",
       "duree_semaines": 10
     },
     {
@@ -1392,7 +1404,13 @@
       "systeme": "MCR",
       "phase": "P4",
       "locaux": [
-        "*"
+        "CENT.N-2.05",
+        "CENT.N-2.07",
+        "CENT.N-2.09",
+        "CENT.N-2.10",
+        "CENT.N-2.18",
+        "CENT.N-2.19",
+        "CENT.N-2.24"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -1532,10 +1550,7 @@
       "systeme": "MEN",
       "phase": "P0",
       "locaux": [
-        "CENT.N-2.02",
-        "CENT.N-2.17",
-        "CENT.N-2.18",
-        "CENT.N-2.20"
+        "CENT.N-2.21"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
@@ -1547,7 +1562,7 @@
         }
       ],
       "statut": "non_adjuge",
-      "notes": "Mise hors d'air nécessaire avant mise sous tension durable des équipements électriques.",
+      "notes": "Fenêtres du bureau / poste de commande (MO, 20.10.2026).",
       "duree_semaines": 3
     },
     {
@@ -1582,10 +1597,32 @@
       "systeme": "MEN",
       "phase": "P4",
       "locaux": [
+        "CENT.N-2.01",
         "CENT.N-2.02",
+        "CENT.N-2.03",
+        "CENT.N-2.04",
+        "CENT.N-2.05",
+        "CENT.N-2.06",
+        "CENT.N-2.07",
+        "CENT.N-2.08",
+        "CENT.N-2.09",
+        "CENT.N-2.10",
+        "CENT.N-2.11",
+        "CENT.N-2.12",
+        "CENT.N-2.13",
+        "CENT.N-2.14",
+        "CENT.N-2.15",
+        "CENT.N-2.16",
         "CENT.N-2.17",
         "CENT.N-2.18",
-        "CENT.N-2.20"
+        "CENT.N-2.19",
+        "CENT.N-2.20",
+        "CENT.N-2.21",
+        "CENT.N-2.22",
+        "CENT.N-2.23",
+        "CENT.N-2.24",
+        "CENT.N-2.25",
+        "CENT.N-2.26"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
@@ -1597,7 +1634,7 @@
         }
       ],
       "statut": "non_adjuge",
-      "notes": "Les locaux NH3 et CO2 ont probablement des exigences spécifiques (sens d'ouverture, résistance, étanchéité). À vérifier avec le concept de sécurité.",
+      "notes": "Des portes sont posées dans tous les locaux (MO, 20.10.2026).",
       "duree_semaines": 3
     },
     {
@@ -1607,7 +1644,9 @@
       "systeme": "MEN",
       "phase": "P5",
       "locaux": [
-        "*"
+        "CENT.N-2.25",
+        "CENT.N-2.26",
+        "CENT.N-2.11"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -1710,5 +1749,13 @@
   "corrections_v12": [
     "Les locaux de N-2 sont repris exhaustivement avec le maître d'ouvrage : 26 locaux, lot par lot. Les affectations que j'avais déduites sont remplacées par le relevé.",
     "Les tâches transversales n'occupent plus « tous les locaux » mais ceux où leur lot passe réellement."
+  ],
+  "corrections_v13": [
+    "Les socles préfabriqués sont mis en place par Wettstein et le maître d'ouvrage, non par Antiglio.",
+    "La centrale froid n°1 de N-2.09 est réalisée par Entretec ; l'échange froid CO2/eau se fait dans le local d'introduction CO2 N-2.05.",
+    "Le calorifugeage de l'accumulateur est réalisé par Bilfinger : il n'est plus un lot à adjuger.",
+    "Les tableaux variateurs sont fournis par Wettstein et Exergo, nouveau lot.",
+    "Ansermot pose des portes dans tous les locaux, et des fenêtres en N-2.21.",
+    "Le local MT est refroidi par l'air depuis N-2.03."
   ]
 }
