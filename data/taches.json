@@ -1,5 +1,5 @@
 {
-  "version": "0.9",
+  "version": "1.0",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -624,14 +624,14 @@
       "date_connue": null,
       "predecesseurs": [
         {
-          "id": "T-HAL-010",
+          "id": "T-ANT-010",
           "lien": "DD",
-          "raison": "Passe après la ventilation dans les volumes partagés, mais peut démarrer en local dédié"
+          "raison": "Locaux livrés par le gros œuvre au fur et à mesure"
         }
       ],
       "statut": "a_confirmer",
       "notes": "PN16, pression statique 11 bars. Le réseau part du local hydraulique chaud, traverse les galeries techniques de N-1 et rejoint l'accumulateur (MO, 20.10.2026). Il croise donc la ventilation de sécurité, qui emprunte les mêmes galeries. Circulateurs Grundfos NBG de 484 kg et vannes RTK de 401 kg à manutentionner dans les locaux.",
-      "duree_semaines": 16
+      "duree_semaines": 15
     },
     {
       "id": "T-LEV-010",
@@ -691,7 +691,7 @@
       "locaux": [
         "CENT.N-2.18"
       ],
-      "duree_classe": "quinzaine",
+      "duree_classe": "trimestre",
       "date_connue": null,
       "predecesseurs": [
         {
@@ -701,7 +701,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "duree_semaines": 4,
+      "duree_semaines": 10,
       "notes": "Pompes et collecteur faisant circuler l'eau dans les locaux PAC (MO, 20.10.2026)."
     },
     {
@@ -865,6 +865,16 @@
           "id": "T-ANT-010",
           "lien": "DD",
           "raison": "Locaux livrés par le gros œuvre au fur et à mesure"
+        },
+        {
+          "id": "T-ENT-010",
+          "lien": "FD",
+          "raison": "Dans les galeries techniques, l'hydraulique et le sanitaire passent avant la ventilation (MO, 20.10.2026)."
+        },
+        {
+          "id": "T-RIE-010",
+          "lien": "FD",
+          "raison": "Dans les galeries techniques, l'hydraulique et le sanitaire passent avant la ventilation (MO, 20.10.2026)."
         }
       ],
       "statut": "a_confirmer",
@@ -916,6 +926,16 @@
           "id": "T-HAL-010",
           "lien": "DD",
           "raison": "Même entreprise, réseaux coordonnés"
+        },
+        {
+          "id": "T-ENT-010",
+          "lien": "FD",
+          "raison": "Dans les galeries techniques, l'hydraulique et le sanitaire passent avant la ventilation (MO, 20.10.2026)."
+        },
+        {
+          "id": "T-RIE-010",
+          "lien": "FD",
+          "raison": "Dans les galeries techniques, l'hydraulique et le sanitaire passent avant la ventilation (MO, 20.10.2026)."
         }
       ],
       "statut": "a_confirmer",
@@ -1049,7 +1069,7 @@
         }
       ],
       "statut": "a_confirmer",
-      "notes": "Groupe E Tech IEG câble tout ce qui n'est pas du rail d'énergie. 905 segments de chemin de câbles, 615 accessoires, 647 luminaires. IEG intervient globalement dans tous les locaux (MO, 20.10.2026), ce qui le met en concurrence avec les autres lots partout où l'on passe chacun son tour.",
+      "notes": "Groupe E Tech IEG câble tout ce qui n'est pas du rail d'énergie. 905 segments de chemin de câbles, 615 accessoires, 647 luminaires. IEG intervient globalement dans tous les locaux (MO, 20.10.2026), ce qui le met en concurrence avec les autres lots partout où l'on passe chacun son tour. IEG ne passe pas par les galeries techniques mais par en dessous (MO, 20.10.2026) : son cheminement n'entre donc pas en concurrence avec l'hydraulique et la ventilation.",
       "duree_semaines": 16
     },
     {
@@ -1391,13 +1411,15 @@
       "phase": "P2",
       "locaux": [
         "CENT.N-2.23",
-        "CENT.N-2.22"
+        "CENT.N-2.22",
+        "CENT.N-1.03",
+        "CENT.N-1.04"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
       "predecesseurs": [],
       "statut": "a_confirmer",
-      "notes": "Lot très localisé : 3,5 m2 de sanitaire et 9,1 m2 de vestiaire. Large marge de calage.",
+      "notes": "Lot localisé en N-2, mais la tuyauterie sanitaire transite par les galeries techniques de N-1 et passe avant la ventilation (MO, 20.10.2026).",
       "duree_semaines": 3
     },
     {
@@ -1566,5 +1588,10 @@
     "Les vases d'expansion se partagent entre trois intervenants : SPIROTEC fournit, une entreprise de levage met en place, Entretec raccorde.",
     "Pompage PAC : pompes et collecteur de circulation des locaux PAC.",
     "IEG et Hälg interviennent dans tous les locaux."
+  ],
+  "corrections_v10": [
+    "Ordre dans les galeries techniques : hydraulique et sanitaire, puis ventilation. Cela inverse la règle générale que j'avais posée, selon laquelle le plus encombrant passe en premier.",
+    "IEG ne passe pas par les galeries mais par en dessous : pas de concurrence de cheminement.",
+    "Hydraulique chaud : 15 semaines. Pompes et collecteur des locaux PAC : 10 semaines."
   ]
 }

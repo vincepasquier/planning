@@ -724,7 +724,7 @@
       "famille": "E",
       "famille_titre": "Hydraulique chaud et pompage",
       "rang_priorite": 4,
-      "statut_fiche": "partiel",
+      "statut_fiche": "rempli",
       "hypothese_actuelle": [
         {
           "lot": "ENTRETEC",
@@ -751,14 +751,14 @@
           {
             "lot": "ENTRETEC",
             "prestation": "Pompes et collecteur",
-            "duree_semaines": null,
+            "duree_semaines": 10,
             "ordre": 1,
             "remarque": null
           }
         ],
         "manutention": "Circulateurs Grundfos NBG de 484 kg.",
         "co_activite_possible": null,
-        "remarques": "Durée encore inconnue."
+        "remarques": null
       }
     },
     {
@@ -770,7 +770,7 @@
       "famille": "E",
       "famille_titre": "Hydraulique chaud et pompage",
       "rang_priorite": 4,
-      "statut_fiche": "partiel",
+      "statut_fiche": "rempli",
       "hypothese_actuelle": [
         {
           "lot": "ANTIGLIO",
@@ -835,9 +835,9 @@
           {
             "lot": "ENTRETEC",
             "prestation": "Tuyauterie hydraulique chaud et raccordement de l'expansion",
-            "duree_semaines": null,
+            "duree_semaines": 15,
             "ordre": 3,
-            "remarque": "Durée encore inconnue"
+            "remarque": null
           },
           {
             "lot": "GETECH-TABLEAU",
@@ -1321,7 +1321,7 @@
       "famille": "K",
       "famille_titre": "Niveau N-1",
       "rang_priorite": 10,
-      "statut_fiche": "partiel",
+      "statut_fiche": "rempli",
       "hypothese_actuelle": [
         {
           "lot": "HALG",
@@ -1332,10 +1332,32 @@
       ],
       "reponse": {
         "contenu": "Galerie technique : l'hydraulique chaud y transite du local hydraulique chaud vers l'accumulateur. La ventilation de sécurité CO2/NH3 y passe également, ainsi que les chemins de câbles.",
-        "interventions": [],
+        "interventions": [
+          {
+            "lot": "ENTRETEC",
+            "prestation": "Hydraulique chaud vers l'accumulateur",
+            "duree_semaines": null,
+            "ordre": 1,
+            "remarque": null
+          },
+          {
+            "lot": "RIEDO",
+            "prestation": "Tuyauterie sanitaire",
+            "duree_semaines": null,
+            "ordre": 1,
+            "remarque": "Avec l'hydraulique"
+          },
+          {
+            "lot": "HALG",
+            "prestation": "Ventilation hygiénique et de sécurité",
+            "duree_semaines": null,
+            "ordre": 2,
+            "remarque": "Après l'hydraulique et le sanitaire"
+          }
+        ],
         "manutention": null,
-        "co_activite_possible": null,
-        "remarques": "Volume partagé : c'est là que l'ordre de passage des réseaux compte le plus."
+        "co_activite_possible": "Hydraulique et sanitaire ensemble, puis la ventilation.",
+        "remarques": "IEG ne passe pas par les galeries mais par en dessous : pas de concurrence."
       }
     },
     {
@@ -1347,14 +1369,36 @@
       "famille": "K",
       "famille_titre": "Niveau N-1",
       "rang_priorite": 10,
-      "statut_fiche": "partiel",
+      "statut_fiche": "rempli",
       "hypothese_actuelle": [],
       "reponse": {
         "contenu": "Galerie technique : l'hydraulique chaud y transite du local hydraulique chaud vers l'accumulateur. La ventilation de sécurité CO2/NH3 y passe également, ainsi que les chemins de câbles.",
-        "interventions": [],
+        "interventions": [
+          {
+            "lot": "ENTRETEC",
+            "prestation": "Hydraulique chaud vers l'accumulateur",
+            "duree_semaines": null,
+            "ordre": 1,
+            "remarque": null
+          },
+          {
+            "lot": "RIEDO",
+            "prestation": "Tuyauterie sanitaire",
+            "duree_semaines": null,
+            "ordre": 1,
+            "remarque": "Avec l'hydraulique"
+          },
+          {
+            "lot": "HALG",
+            "prestation": "Ventilation hygiénique et de sécurité",
+            "duree_semaines": null,
+            "ordre": 2,
+            "remarque": "Après l'hydraulique et le sanitaire"
+          }
+        ],
         "manutention": null,
-        "co_activite_possible": null,
-        "remarques": "Volume partagé : c'est là que l'ordre de passage des réseaux compte le plus."
+        "co_activite_possible": "Hydraulique et sanitaire ensemble, puis la ventilation.",
+        "remarques": "IEG ne passe pas par les galeries mais par en dessous : pas de concurrence."
       }
     },
     {
