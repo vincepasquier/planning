@@ -1,0 +1,1349 @@
+{
+  "note": "Une fiche par local. 'hypothese_actuelle' est ce que mon réseau de tâches suppose aujourd'hui ; 'reponse' est à remplir par le maître d'ouvrage. Les locaux d'une même famille sont décrits une fois, puis par écarts.",
+  "champs_attendus": {
+    "contenu": "Ce que le local reçoit, en clair",
+    "interventions": "Liste ordonnée : {lot, prestation, duree_semaines, apres (lots qui doivent passer avant), remarque}",
+    "manutention": "Colis lourds ou encombrants, et par où ils entrent",
+    "co_activite_possible": "Combien d'entreprises peuvent travailler ensemble dans ce local",
+    "remarques": "Tout ce qui change l'ordre ou la durée"
+  },
+  "fiches": [
+    {
+      "numero": "CENT.N-2.07",
+      "designation": "PAC 1",
+      "niveau": "N-2",
+      "surface_m2": 191.584,
+      "hauteur_m": 7.0,
+      "famille": "A",
+      "famille_titre": "Locaux PAC",
+      "rang_priorite": 1,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ANTIGLIO",
+          "tache": "T-ANT-020",
+          "prestation": "Socles et massifs PAC 1 à 4",
+          "duree_semaines_proposee": 3
+        },
+        {
+          "lot": "WETTSTEIN",
+          "tache": "T-WET-010",
+          "prestation": "Manutention et pose PAC 1 (NH3)",
+          "duree_semaines_proposee": 3
+        },
+        {
+          "lot": "WETTSTEIN",
+          "tache": "T-WET-050",
+          "prestation": "Épreuve d'étanchéité des circuits NH3",
+          "duree_semaines_proposee": 2
+        },
+        {
+          "lot": "WETTSTEIN",
+          "tache": "T-WET-060",
+          "prestation": "Charge en NH3 des PAC 1 à 4",
+          "duree_semaines_proposee": 1
+        },
+        {
+          "lot": "DESPRAZ",
+          "tache": "T-DES-015",
+          "prestation": "Echangeurs froid PAC 1 a 4",
+          "duree_semaines_proposee": 6
+        },
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-040",
+          "prestation": "Raccordement hydraulique chaud sur PAC 1 à 4",
+          "duree_semaines_proposee": 4
+        },
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-030",
+          "prestation": "Ventilation de sécurité CO2/NH3 - réseaux (section 43)",
+          "duree_semaines_proposee": 10
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-060",
+          "prestation": "Câblage de puissance des PAC",
+          "duree_semaines_proposee": 4
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.10",
+      "designation": "PAC 2",
+      "niveau": "N-2",
+      "surface_m2": 191.584,
+      "hauteur_m": 7.0,
+      "famille": "A",
+      "famille_titre": "Locaux PAC",
+      "rang_priorite": 1,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ANTIGLIO",
+          "tache": "T-ANT-020",
+          "prestation": "Socles et massifs PAC 1 à 4",
+          "duree_semaines_proposee": 3
+        },
+        {
+          "lot": "WETTSTEIN",
+          "tache": "T-WET-020",
+          "prestation": "Manutention et pose PAC 2 (NH3)",
+          "duree_semaines_proposee": 3
+        },
+        {
+          "lot": "WETTSTEIN",
+          "tache": "T-WET-050",
+          "prestation": "Épreuve d'étanchéité des circuits NH3",
+          "duree_semaines_proposee": 2
+        },
+        {
+          "lot": "WETTSTEIN",
+          "tache": "T-WET-060",
+          "prestation": "Charge en NH3 des PAC 1 à 4",
+          "duree_semaines_proposee": 1
+        },
+        {
+          "lot": "DESPRAZ",
+          "tache": "T-DES-015",
+          "prestation": "Echangeurs froid PAC 1 a 4",
+          "duree_semaines_proposee": 6
+        },
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-040",
+          "prestation": "Raccordement hydraulique chaud sur PAC 1 à 4",
+          "duree_semaines_proposee": 4
+        },
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-030",
+          "prestation": "Ventilation de sécurité CO2/NH3 - réseaux (section 43)",
+          "duree_semaines_proposee": 10
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-060",
+          "prestation": "Câblage de puissance des PAC",
+          "duree_semaines_proposee": 4
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.12",
+      "designation": "PAC 3",
+      "niveau": "N-2",
+      "surface_m2": 191.584,
+      "hauteur_m": 7.0,
+      "famille": "A",
+      "famille_titre": "Locaux PAC",
+      "rang_priorite": 1,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ANTIGLIO",
+          "tache": "T-ANT-020",
+          "prestation": "Socles et massifs PAC 1 à 4",
+          "duree_semaines_proposee": 3
+        },
+        {
+          "lot": "WETTSTEIN",
+          "tache": "T-WET-030",
+          "prestation": "Manutention et pose PAC 3 (NH3)",
+          "duree_semaines_proposee": 3
+        },
+        {
+          "lot": "WETTSTEIN",
+          "tache": "T-WET-050",
+          "prestation": "Épreuve d'étanchéité des circuits NH3",
+          "duree_semaines_proposee": 2
+        },
+        {
+          "lot": "WETTSTEIN",
+          "tache": "T-WET-060",
+          "prestation": "Charge en NH3 des PAC 1 à 4",
+          "duree_semaines_proposee": 1
+        },
+        {
+          "lot": "DESPRAZ",
+          "tache": "T-DES-015",
+          "prestation": "Echangeurs froid PAC 1 a 4",
+          "duree_semaines_proposee": 6
+        },
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-040",
+          "prestation": "Raccordement hydraulique chaud sur PAC 1 à 4",
+          "duree_semaines_proposee": 4
+        },
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-030",
+          "prestation": "Ventilation de sécurité CO2/NH3 - réseaux (section 43)",
+          "duree_semaines_proposee": 10
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-060",
+          "prestation": "Câblage de puissance des PAC",
+          "duree_semaines_proposee": 4
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.15",
+      "designation": "PAC 4",
+      "niveau": "N-2",
+      "surface_m2": 193.037,
+      "hauteur_m": 7.0,
+      "famille": "A",
+      "famille_titre": "Locaux PAC",
+      "rang_priorite": 1,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ANTIGLIO",
+          "tache": "T-ANT-020",
+          "prestation": "Socles et massifs PAC 1 à 4",
+          "duree_semaines_proposee": 3
+        },
+        {
+          "lot": "WETTSTEIN",
+          "tache": "T-WET-040",
+          "prestation": "Manutention et pose PAC 4 (NH3)",
+          "duree_semaines_proposee": 3
+        },
+        {
+          "lot": "WETTSTEIN",
+          "tache": "T-WET-050",
+          "prestation": "Épreuve d'étanchéité des circuits NH3",
+          "duree_semaines_proposee": 2
+        },
+        {
+          "lot": "WETTSTEIN",
+          "tache": "T-WET-060",
+          "prestation": "Charge en NH3 des PAC 1 à 4",
+          "duree_semaines_proposee": 1
+        },
+        {
+          "lot": "DESPRAZ",
+          "tache": "T-DES-015",
+          "prestation": "Echangeurs froid PAC 1 a 4",
+          "duree_semaines_proposee": 6
+        },
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-040",
+          "prestation": "Raccordement hydraulique chaud sur PAC 1 à 4",
+          "duree_semaines_proposee": 4
+        },
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-030",
+          "prestation": "Ventilation de sécurité CO2/NH3 - réseaux (section 43)",
+          "duree_semaines_proposee": 10
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-060",
+          "prestation": "Câblage de puissance des PAC",
+          "duree_semaines_proposee": 4
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.08",
+      "designation": "Variateurs 1 et 2",
+      "niveau": "N-2",
+      "surface_m2": 65.7,
+      "hauteur_m": 4.1,
+      "famille": "B",
+      "famille_titre": "Variateurs",
+      "rang_priorite": 2,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-090",
+          "prestation": "Froid process hydraulique et armoires de refroidissement des locaux",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-010",
+          "prestation": "Ventilation hygiénique - réseaux (section 42)",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-040",
+          "prestation": "Armoires variateurs 1-2 et 3-4",
+          "duree_semaines_proposee": 8
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-050",
+          "prestation": "Armoires et coffrets de commande (15 unités)",
+          "duree_semaines_proposee": 4
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-090",
+          "prestation": "Mise en charge nominale des variateurs",
+          "duree_semaines_proposee": 2
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.09",
+      "designation": "Commande 1 et 2",
+      "niveau": "N-2",
+      "surface_m2": 32.219,
+      "hauteur_m": 4.1,
+      "famille": "C",
+      "famille_titre": "Commande / Centrale froid",
+      "rang_priorite": 2,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "DESPRAZ",
+          "tache": "T-DES-005",
+          "prestation": "Centrales froid CO2 n°1 et n°2",
+          "duree_semaines_proposee": 10
+        },
+        {
+          "lot": "GE",
+          "tache": "T-GE-030",
+          "prestation": "Automates et régulation MCR (API, RIO, HMI, Scada)",
+          "duree_semaines_proposee": 10
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.13",
+      "designation": "Variateurs 3 et 4",
+      "niveau": "N-2",
+      "surface_m2": 65.701,
+      "hauteur_m": 4.1,
+      "famille": "B",
+      "famille_titre": "Variateurs",
+      "rang_priorite": 2,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-090",
+          "prestation": "Froid process hydraulique et armoires de refroidissement des locaux",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-010",
+          "prestation": "Ventilation hygiénique - réseaux (section 42)",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-040",
+          "prestation": "Armoires variateurs 1-2 et 3-4",
+          "duree_semaines_proposee": 8
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-050",
+          "prestation": "Armoires et coffrets de commande (15 unités)",
+          "duree_semaines_proposee": 4
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-090",
+          "prestation": "Mise en charge nominale des variateurs",
+          "duree_semaines_proposee": 2
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.14",
+      "designation": "Commande 3 et 4",
+      "niveau": "N-2",
+      "surface_m2": 32.219,
+      "hauteur_m": 4.1,
+      "famille": "C",
+      "famille_titre": "Commande / Centrale froid",
+      "rang_priorite": 2,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "DESPRAZ",
+          "tache": "T-DES-005",
+          "prestation": "Centrales froid CO2 n°1 et n°2",
+          "duree_semaines_proposee": 10
+        },
+        {
+          "lot": "GE",
+          "tache": "T-GE-030",
+          "prestation": "Automates et régulation MCR (API, RIO, HMI, Scada)",
+          "duree_semaines_proposee": 10
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.01",
+      "designation": "MT",
+      "niveau": "N-2",
+      "surface_m2": 172.999,
+      "hauteur_m": 7.0,
+      "famille": "D",
+      "famille_titre": "MT, TGBT, refroidissement locaux élec.",
+      "rang_priorite": 3,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-090",
+          "prestation": "Froid process hydraulique et armoires de refroidissement des locaux",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-010",
+          "prestation": "Ventilation hygiénique - réseaux (section 42)",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-010",
+          "prestation": "Infrastructure MT et transformateurs",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-080",
+          "prestation": "Mise sous tension MT/BT et TGBT",
+          "duree_semaines_proposee": 2
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.03",
+      "designation": "Refroid. locaux élec.",
+      "niveau": "N-2",
+      "surface_m2": 104.34,
+      "hauteur_m": 4.1,
+      "famille": "D",
+      "famille_titre": "MT, TGBT, refroidissement locaux élec.",
+      "rang_priorite": 3,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-090",
+          "prestation": "Froid process hydraulique et armoires de refroidissement des locaux",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-010",
+          "prestation": "Ventilation hygiénique - réseaux (section 42)",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-050",
+          "prestation": "Armoires et coffrets de commande (15 unités)",
+          "duree_semaines_proposee": 4
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.04",
+      "designation": "TGBT",
+      "niveau": "N-2",
+      "surface_m2": 85.971,
+      "hauteur_m": 7.0,
+      "famille": "D",
+      "famille_titre": "MT, TGBT, refroidissement locaux élec.",
+      "rang_priorite": 3,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ANTIGLIO",
+          "tache": "T-ANT-025",
+          "prestation": "Socles armoires et coffrets (100 mm)",
+          "duree_semaines_proposee": 2
+        },
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-090",
+          "prestation": "Froid process hydraulique et armoires de refroidissement des locaux",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-010",
+          "prestation": "Ventilation hygiénique - réseaux (section 42)",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-020",
+          "prestation": "Tableaux TGBT",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-050",
+          "prestation": "Armoires et coffrets de commande (15 unités)",
+          "duree_semaines_proposee": 4
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-080",
+          "prestation": "Mise sous tension MT/BT et TGBT",
+          "duree_semaines_proposee": 2
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.18",
+      "designation": "Pompage PAC",
+      "niveau": "N-2",
+      "surface_m2": 159.069,
+      "hauteur_m": 7.0,
+      "famille": "E",
+      "famille_titre": "Hydraulique chaud et pompage",
+      "rang_priorite": 4,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-090",
+          "prestation": "Froid process hydraulique et armoires de refroidissement des locaux",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-030",
+          "prestation": "Pompage PAC",
+          "duree_semaines_proposee": 4
+        },
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-010",
+          "prestation": "Ventilation hygiénique - réseaux (section 42)",
+          "duree_semaines_proposee": 12
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.19",
+      "designation": "Hydraulique chaud",
+      "niveau": "N-2",
+      "surface_m2": 251.816,
+      "hauteur_m": 7.0,
+      "famille": "E",
+      "famille_titre": "Hydraulique chaud et pompage",
+      "rang_priorite": 4,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ANTIGLIO",
+          "tache": "T-ANT-025",
+          "prestation": "Socles armoires et coffrets (100 mm)",
+          "duree_semaines_proposee": 2
+        },
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-090",
+          "prestation": "Froid process hydraulique et armoires de refroidissement des locaux",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-010",
+          "prestation": "Tuyauterie hydraulique chaud (sections 00 à 06)",
+          "duree_semaines_proposee": 16
+        },
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-020",
+          "prestation": "Vases d'expansion (section 07)",
+          "duree_semaines_proposee": 3
+        },
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-055",
+          "prestation": "Départ CAD et départ ZI (étape 1)",
+          "duree_semaines_proposee": 4
+        },
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-010",
+          "prestation": "Ventilation hygiénique - réseaux (section 42)",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-050",
+          "prestation": "Armoires et coffrets de commande (15 unités)",
+          "duree_semaines_proposee": 4
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.05",
+      "designation": "Hydraulique circuit int.",
+      "niveau": "N-2",
+      "surface_m2": 127.995,
+      "hauteur_m": 7.0,
+      "famille": "F",
+      "famille_titre": "Hydraulique circuit int. / intro CO2",
+      "rang_priorite": 5,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "DESPRAZ",
+          "tache": "T-DES-010",
+          "prestation": "Tuyauterie CO2 jusqu'aux echangeurs froid",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "DESPRAZ",
+          "tache": "T-DES-050",
+          "prestation": "Charge en CO2",
+          "duree_semaines_proposee": 1
+        },
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-030",
+          "prestation": "Ventilation de sécurité CO2/NH3 - réseaux (section 43)",
+          "duree_semaines_proposee": 10
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.24",
+      "designation": "Accumulateur",
+      "niveau": "N-2",
+      "surface_m2": 211.846,
+      "hauteur_m": 7.0,
+      "famille": "G",
+      "famille_titre": "Accumulateur",
+      "rang_priorite": 6,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "BILFINGER",
+          "tache": "T-BIL-010",
+          "prestation": "Montage de l'accumulateur chaud",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "BILFINGER",
+          "tache": "T-BIL-020",
+          "prestation": "Épreuve de pression de l'accumulateur",
+          "duree_semaines_proposee": 1
+        },
+        {
+          "lot": "GE",
+          "tache": "T-GE-010",
+          "prestation": "Raccordement des sondes de l'accumulateur",
+          "duree_semaines_proposee": 1
+        },
+        {
+          "lot": "CALORIFUGEAGE",
+          "tache": "T-CAL-010",
+          "prestation": "Calorifugeage de l'accumulateur",
+          "duree_semaines_proposee": 6
+        },
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-050",
+          "prestation": "Raccordement hydraulique sur accumulateur",
+          "duree_semaines_proposee": 2
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.25",
+      "designation": "Couvert",
+      "niveau": "N-2",
+      "surface_m2": 298.832,
+      "hauteur_m": 7.0,
+      "famille": "H",
+      "famille_titre": "Manutention : couvert et rampe",
+      "rang_priorite": 7,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ANTIGLIO",
+          "tache": "T-ANT-040",
+          "prestation": "Fermeture de l'accès de manutention",
+          "duree_semaines_proposee": 1
+        },
+        {
+          "lot": "ANSERMOT",
+          "tache": "T-ANS-040",
+          "prestation": "Portes du chemin de manutention",
+          "duree_semaines_proposee": 1
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.26",
+      "designation": "Rampe extérieure",
+      "niveau": "N-2",
+      "surface_m2": 137.243,
+      "hauteur_m": 7.0,
+      "famille": "H",
+      "famille_titre": "Manutention : couvert et rampe",
+      "rang_priorite": 7,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ANTIGLIO",
+          "tache": "T-ANT-040",
+          "prestation": "Fermeture de l'accès de manutention",
+          "duree_semaines_proposee": 1
+        },
+        {
+          "lot": "ANSERMOT",
+          "tache": "T-ANS-040",
+          "prestation": "Portes du chemin de manutention",
+          "duree_semaines_proposee": 1
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.02",
+      "designation": "Escaliers",
+      "niveau": "N-2",
+      "surface_m2": 44.502,
+      "hauteur_m": 4.1,
+      "famille": "I",
+      "famille_titre": "Circulations, sas et escaliers N-2",
+      "rang_priorite": 8,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.06",
+      "designation": "Circulation",
+      "niveau": "N-2",
+      "surface_m2": 209.074,
+      "hauteur_m": 4.1,
+      "famille": "I",
+      "famille_titre": "Circulations, sas et escaliers N-2",
+      "rang_priorite": 8,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "DESPRAZ",
+          "tache": "T-DES-010",
+          "prestation": "Tuyauterie CO2 jusqu'aux echangeurs froid",
+          "duree_semaines_proposee": 12
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.11",
+      "designation": "Sas",
+      "niveau": "N-2",
+      "surface_m2": 30.126,
+      "hauteur_m": 4.1,
+      "famille": "I",
+      "famille_titre": "Circulations, sas et escaliers N-2",
+      "rang_priorite": 8,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ANSERMOT",
+          "tache": "T-ANS-040",
+          "prestation": "Portes du chemin de manutention",
+          "duree_semaines_proposee": 1
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.16",
+      "designation": "Circulation",
+      "niveau": "N-2",
+      "surface_m2": 220.025,
+      "hauteur_m": 4.1,
+      "famille": "I",
+      "famille_titre": "Circulations, sas et escaliers N-2",
+      "rang_priorite": 8,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "DESPRAZ",
+          "tache": "T-DES-010",
+          "prestation": "Tuyauterie CO2 jusqu'aux echangeurs froid",
+          "duree_semaines_proposee": 12
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.17",
+      "designation": "Escaliers",
+      "niveau": "N-2",
+      "surface_m2": 26.726,
+      "hauteur_m": 4.1,
+      "famille": "I",
+      "famille_titre": "Circulations, sas et escaliers N-2",
+      "rang_priorite": 8,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.20",
+      "designation": "Escaliers",
+      "niveau": "N-2",
+      "surface_m2": 19.564,
+      "hauteur_m": 4.1,
+      "famille": "I",
+      "famille_titre": "Circulations, sas et escaliers N-2",
+      "rang_priorite": 8,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.21",
+      "designation": "Bureau / poste de cde",
+      "niveau": "N-2",
+      "surface_m2": 34.383,
+      "hauteur_m": 4.1,
+      "famille": "J",
+      "famille_titre": "Commande, vestiaire, sanitaire",
+      "rang_priorite": 9,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ANTIGLIO",
+          "tache": "T-ANT-025",
+          "prestation": "Socles armoires et coffrets (100 mm)",
+          "duree_semaines_proposee": 2
+        },
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-020",
+          "prestation": "Ventilation commande, WC, vestiaire (section 41)",
+          "duree_semaines_proposee": 3
+        },
+        {
+          "lot": "GETECH",
+          "tache": "T-GET-050",
+          "prestation": "Armoires et coffrets de commande (15 unités)",
+          "duree_semaines_proposee": 4
+        },
+        {
+          "lot": "GE",
+          "tache": "T-GE-030",
+          "prestation": "Automates et régulation MCR (API, RIO, HMI, Scada)",
+          "duree_semaines_proposee": 10
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.22",
+      "designation": "Circul. / Vestiaire",
+      "niveau": "N-2",
+      "surface_m2": 9.065,
+      "hauteur_m": 4.1,
+      "famille": "J",
+      "famille_titre": "Commande, vestiaire, sanitaire",
+      "rang_priorite": 9,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-020",
+          "prestation": "Ventilation commande, WC, vestiaire (section 41)",
+          "duree_semaines_proposee": 3
+        },
+        {
+          "lot": "RIEDO",
+          "tache": "T-RIE-010",
+          "prestation": "Installations sanitaires",
+          "duree_semaines_proposee": 3
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-2.23",
+      "designation": "Sanitaire",
+      "niveau": "N-2",
+      "surface_m2": 3.478,
+      "hauteur_m": 4.1,
+      "famille": "J",
+      "famille_titre": "Commande, vestiaire, sanitaire",
+      "rang_priorite": 9,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-020",
+          "prestation": "Ventilation commande, WC, vestiaire (section 41)",
+          "duree_semaines_proposee": 3
+        },
+        {
+          "lot": "RIEDO",
+          "tache": "T-RIE-010",
+          "prestation": "Installations sanitaires",
+          "duree_semaines_proposee": 3
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-1.01",
+      "designation": "Escaliers",
+      "niveau": "N-1",
+      "surface_m2": 44.857,
+      "hauteur_m": 2.62,
+      "famille": "K",
+      "famille_titre": "Niveau N-1",
+      "rang_priorite": 10,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-1.02",
+      "designation": "Technique",
+      "niveau": "N-1",
+      "surface_m2": 104.813,
+      "hauteur_m": 2.62,
+      "famille": "K",
+      "famille_titre": "Niveau N-1",
+      "rang_priorite": 10,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-010",
+          "prestation": "Ventilation hygiénique - réseaux (section 42)",
+          "duree_semaines_proposee": 12
+        },
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-030",
+          "prestation": "Ventilation de sécurité CO2/NH3 - réseaux (section 43)",
+          "duree_semaines_proposee": 10
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-1.03",
+      "designation": "Circulation",
+      "niveau": "N-1",
+      "surface_m2": 207.834,
+      "hauteur_m": 2.62,
+      "famille": "K",
+      "famille_titre": "Niveau N-1",
+      "rang_priorite": 10,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-030",
+          "prestation": "Ventilation de sécurité CO2/NH3 - réseaux (section 43)",
+          "duree_semaines_proposee": 10
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-1.04",
+      "designation": "Circulation",
+      "niveau": "N-1",
+      "surface_m2": 422.199,
+      "hauteur_m": 2.62,
+      "famille": "K",
+      "famille_titre": "Niveau N-1",
+      "rang_priorite": 10,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-1.05",
+      "designation": "Escaliers",
+      "niveau": "N-1",
+      "surface_m2": 26.8,
+      "hauteur_m": 2.62,
+      "famille": "K",
+      "famille_titre": "Niveau N-1",
+      "rang_priorite": 10,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-1.06",
+      "designation": "Escaliers",
+      "niveau": "N-1",
+      "surface_m2": 30.519,
+      "hauteur_m": 2.62,
+      "famille": "K",
+      "famille_titre": "Niveau N-1",
+      "rang_priorite": 10,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-1.07",
+      "designation": "Technique",
+      "niveau": "N-1",
+      "surface_m2": 37.791,
+      "hauteur_m": 2.62,
+      "famille": "K",
+      "famille_titre": "Niveau N-1",
+      "rang_priorite": 10,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "HALG",
+          "tache": "T-HAL-020",
+          "prestation": "Ventilation commande, WC, vestiaire (section 41)",
+          "duree_semaines_proposee": 3
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-1.08",
+      "designation": null,
+      "niveau": null,
+      "surface_m2": null,
+      "hauteur_m": null,
+      "famille": "K",
+      "famille_titre": "Niveau N-1",
+      "rang_priorite": 10,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N-1.09",
+      "designation": null,
+      "niveau": null,
+      "surface_m2": null,
+      "hauteur_m": null,
+      "famille": "K",
+      "famille_titre": "Niveau N-1",
+      "rang_priorite": 10,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N+0.01",
+      "designation": "Sortie 1",
+      "niveau": "N+0",
+      "surface_m2": 13.534,
+      "hauteur_m": 3.21,
+      "famille": "L",
+      "famille_titre": "Niveau N+0",
+      "rang_priorite": 11,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N+0.02",
+      "designation": "Sortie 2",
+      "niveau": "N+0",
+      "surface_m2": 10.559,
+      "hauteur_m": 3.21,
+      "famille": "L",
+      "famille_titre": "Niveau N+0",
+      "rang_priorite": 11,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    },
+    {
+      "numero": "CENT.N+0.03",
+      "designation": "Surface bituminée",
+      "niveau": "N+0",
+      "surface_m2": 3352.264,
+      "hauteur_m": 3.21,
+      "famille": "L",
+      "famille_titre": "Niveau N+0",
+      "rang_priorite": 11,
+      "statut_fiche": "a_remplir",
+      "hypothese_actuelle": [
+        {
+          "lot": "ENTRETEC",
+          "tache": "T-ENT-080",
+          "prestation": "Raccordement des chaufferies mobiles gaz (2 x 2.5 MW)",
+          "duree_semaines_proposee": 3
+        },
+        {
+          "lot": "GE",
+          "tache": "T-GE-020",
+          "prestation": "Raccordement extérieur (MT réseau et conduites CAD)",
+          "duree_semaines_proposee": 12
+        }
+      ],
+      "reponse": {
+        "contenu": null,
+        "interventions": [],
+        "manutention": null,
+        "co_activite_possible": null,
+        "remarques": null
+      }
+    }
+  ]
+}
