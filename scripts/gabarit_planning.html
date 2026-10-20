@@ -4,8 +4,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
-/* Plan de travail : bandeau de synthèse, puis barre d'outils collante,
-   puis planning (colonne de libellés figée + frise défilante), puis détail. */
+/* Le plan au centre : bandeau court, frise temporelle, puis plan du niveau à
+   gauche et fiche du local à droite. Le planning et les questions suivent. */
 :root{
   color-scheme:light;
   --plane:#f9f9f7; --surface:#fcfcfb; --sunk:#f2f1ed;
@@ -14,12 +14,11 @@
   --accent:#2a78d6;
   --p0:#86b6ef; --p1:#5598e7; --p2:#2a78d6; --p3:#256abf;
   --p4:#1c5cab; --p5:#184f95; --p6:#104281;
+  --o0:#eceae4; --o1:#b7d3f6; --o2:#86b6ef; --o3:#3987e5; --o4:#1c5cab;
   --critical:#d03b3b; --warning:#fab219; --good:#0ca30c;
   --critical-wash:#fbeaea; --warning-wash:#fdf4e0;
-  --o0:#f2f1ed; --o1:#b7d3f6; --o2:#86b6ef; --o3:#3987e5; --o4:#1c5cab;
   --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-  --label-w:316px;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   color-scheme:dark;
@@ -27,10 +26,10 @@
   --ink:#f0efec; --ink-2:#c3c2b7; --ink-muted:#898781;
   --grid:#2c2c2a; --axis:#383835; --ring:rgba(255,255,255,.10);
   --accent:#3987e5;
-  --p0:#cde2fb; --p1:#9ec5f4; --p2:#6da7ec; --p3:#3987e5;
+  --p0:#9ec5f4; --p1:#86b6ef; --p2:#6da7ec; --p3:#3987e5;
   --p4:#2a78d6; --p5:#256abf; --p6:#1c5cab;
+  --o0:#232221; --o1:#184f95; --o2:#256abf; --o3:#3987e5; --o4:#86b6ef;
   --critical-wash:#2e1717; --warning-wash:#2b2210;
-  --o0:#201f1e; --o1:#184f95; --o2:#256abf; --o3:#3987e5; --o4:#86b6ef;
 }}
 :root[data-theme="dark"]{
   color-scheme:dark;
@@ -38,248 +37,234 @@
   --ink:#f0efec; --ink-2:#c3c2b7; --ink-muted:#898781;
   --grid:#2c2c2a; --axis:#383835; --ring:rgba(255,255,255,.10);
   --accent:#3987e5;
-  --p0:#cde2fb; --p1:#9ec5f4; --p2:#6da7ec; --p3:#3987e5;
+  --p0:#9ec5f4; --p1:#86b6ef; --p2:#6da7ec; --p3:#3987e5;
   --p4:#2a78d6; --p5:#256abf; --p6:#1c5cab;
+  --o0:#232221; --o1:#184f95; --o2:#256abf; --o3:#3987e5; --o4:#86b6ef;
   --critical-wash:#2e1717; --warning-wash:#2b2210;
-  --o0:#201f1e; --o1:#184f95; --o2:#256abf; --o3:#3987e5; --o4:#86b6ef;
-
 }
 *{box-sizing:border-box}
 body{background:var(--plane);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.5}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--plane)}
 .wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
-  padding-block:0;max-width:1480px;margin-inline:auto}
+  padding-block:0;max-width:1560px;margin-inline:auto}
 h1,h2,h3{text-wrap:balance;margin:0;font-weight:600;letter-spacing:-.01em}
-.eyebrow{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-muted);font-weight:500}
+.eyebrow{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-muted);font-weight:500;margin:0}
 .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 /* ---------- bandeau ---------- */
-header{padding-block:28px 20px;border-bottom:1px solid var(--grid)}
-h1{font-size:clamp(21px,3.4vw,30px);margin-block:6px 4px}
-.sub{color:var(--ink-2);max-width:62ch}
-.stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.stat{background:var(--surface);border:1px solid var(--ring);border-radius:9px;padding:11px 15px;min-width:120px;flex:1 1 120px}
-.stat b{display:block;font-size:21px;font-weight:600;font-family:var(--mono);line-height:1.2}
-.stat span{display:block;font-size:11.5px;color:var(--ink-muted);margin-top:3px}
-.stat.alerte{border-color:var(--critical);background:var(--critical-wash)}
-.stat.alerte b{color:var(--critical)}
+header{padding-block:22px 16px;display:flex;flex-wrap:wrap;gap:18px 26px;align-items:flex-end;
+  border-bottom:1px solid var(--grid)}
+.ident{flex:1 1 300px;min-width:0}
+h1{font-size:clamp(19px,2.6vw,25px);margin-block:4px 2px}
+.ident p.sub{color:var(--ink-2);margin:0;font-size:13px}
+.chiffres{display:flex;flex-wrap:wrap;gap:7px}
+.ch{background:var(--surface);border:1px solid var(--ring);border-radius:8px;padding:7px 12px;min-width:84px}
+.ch b{display:block;font-size:17px;font-weight:600;font-family:var(--mono);line-height:1.2}
+.ch span{display:block;font-size:10.5px;color:var(--ink-muted);margin-top:1px}
+.ch.alerte{border-color:var(--critical);background:var(--critical-wash)}
+.ch.alerte b{color:var(--critical)}
 
-/* ---------- alertes ---------- */
-.alertes{display:grid;gap:9px;margin-block:20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
-.alerte-c{display:flex;gap:11px;align-items:flex-start;background:var(--surface);
-  border:1px solid var(--ring);border-left:3px solid var(--critical);border-radius:8px;padding:12px 14px}
-.alerte-c.warn{border-left-color:var(--warning)}
-.puce{flex:none;width:17px;height:17px;border-radius:50%;background:var(--critical);color:#fff;
-  font-size:11px;font-weight:600;display:grid;place-items:center;margin-top:1px}
-.alerte-c.warn .puce{background:var(--warning);color:#2b2210}
-.alerte-c p{margin:0;font-size:13px;color:var(--ink-2)}
-.alerte-c strong{color:var(--ink);font-weight:600;display:block;margin-bottom:2px;font-size:13.5px}
+/* ---------- frise temporelle ---------- */
+.temps{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--plane);
+  border-bottom:1px solid var(--grid);padding-block:11px;display:flex;gap:11px;align-items:center;flex-wrap:wrap}
+.lire{appearance:none;border:1px solid var(--ring);background:var(--accent);color:#fff;border-radius:8px;
+  width:34px;height:34px;font-size:13px;cursor:pointer;flex:none;display:grid;place-items:center}
+.lire[aria-pressed="true"]{background:var(--critical)}
+.pas{appearance:none;border:1px solid var(--ring);background:var(--surface);color:var(--ink-2);
+  border-radius:8px;width:30px;height:30px;font-size:15px;cursor:pointer;flex:none;line-height:1}
+.pas:hover{color:var(--ink)}
+.curseur{flex:1 1 200px;display:flex;align-items:center;gap:11px;min-width:0}
+.curseur input[type=range]{flex:1;min-width:0;accent-color:var(--accent)}
+.semaine{font-family:var(--mono);font-size:14px;white-space:nowrap;font-weight:500;flex:none}
+.semaine small{display:block;font-size:10.5px;color:var(--ink-muted);font-weight:400;letter-spacing:.04em}
 
-/* ---------- barre d'outils ---------- */
-.outils{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--plane);
-  border-bottom:1px solid var(--grid);padding-block:11px;display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+/* ---------- scène : plan + fiche ---------- */
+.scene{display:grid;gap:14px;margin-block:14px;align-items:start;
+  grid-template-columns:minmax(0,1.45fr) minmax(300px,1fr)}
+.scene>*{min-width:0}
+@media (max-width:980px){.scene{grid-template-columns:minmax(0,1fr)}}
+.carte{background:var(--surface);border:1px solid var(--ring);border-radius:12px}
+.niveaux{display:flex;gap:0;border-bottom:1px solid var(--grid);overflow-x:auto}
+.niveaux button{appearance:none;border:0;border-bottom:2px solid transparent;background:transparent;
+  color:var(--ink-2);font:inherit;font-size:13px;padding:11px 16px;cursor:pointer;white-space:nowrap}
+.niveaux button[aria-pressed="true"]{color:var(--ink);border-bottom-color:var(--accent);font-weight:500}
+.niveaux button span{color:var(--ink-muted);font-size:11.5px;margin-left:6px}
+.plan{padding:14px 16px 10px}
+.plan svg{width:100%;height:clamp(300px,52vh,560px);display:block}
+.piece{cursor:pointer;stroke:var(--surface);vector-effect:non-scaling-stroke;stroke-width:1.2;transition:opacity .1s}
+.piece:hover{opacity:.74}
+.piece.actif{stroke:var(--ink);stroke-width:2.4}
+.etiq{font-family:var(--mono);fill:var(--ink);paint-order:stroke fill;stroke:var(--surface);
+  stroke-linejoin:round;pointer-events:none;text-anchor:middle;dominant-baseline:middle}
+.coact{fill:none;stroke:var(--critical);vector-effect:non-scaling-stroke;stroke-width:1.8;stroke-dasharray:5 3;pointer-events:none}
+.hors{fill:none;stroke:var(--ink-muted);vector-effect:non-scaling-stroke;stroke-width:1;stroke-dasharray:2 2.5;pointer-events:none}
+.leg{display:flex;flex-wrap:wrap;gap:11px;align-items:center;font-size:11.5px;color:var(--ink-2);
+  padding:0 16px 13px}
+.leg i{font-style:normal;display:inline-flex;align-items:center;gap:5px}
+.leg .sw{width:14px;height:10px;border-radius:2px;border:1px solid var(--ring);flex:none}
+.global{padding:11px 16px;border-top:1px solid var(--grid);font-size:12.5px;color:var(--ink-2)}
+.global b{color:var(--ink);font-weight:500}
+
+/* ---------- fiche du local ---------- */
+.fiche{padding:16px 18px 18px;align-self:start;position:sticky;top:calc(env(safe-area-inset-top,0px) + 68px)}
+@media (max-width:980px){.fiche{position:static}}
+.fiche h2{font-size:17px;margin-block:3px 2px}
+.fiche .lieu{color:var(--ink-muted);font-size:12.5px;margin:0 0 12px}
+.mesures{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:13px}
+.tag{font-size:11.5px;border:1px solid var(--ring);border-radius:999px;padding:3px 10px;color:var(--ink-2);background:var(--plane)}
+.tag.fort{border-color:var(--critical);color:var(--critical);background:var(--critical-wash)}
+.tag.ok{border-color:var(--good);color:var(--good);background:transparent}
+.tag.jal{border-color:var(--warning);color:var(--ink-2);background:var(--warning-wash)}
+.bloc-f{margin-top:14px}
+.bloc-f>p.eyebrow{margin-bottom:6px}
+.contenu{font-size:12.5px;color:var(--ink-2);background:var(--plane);border:1px solid var(--ring);
+  border-radius:8px;padding:10px 12px;margin:0}
+.vide{color:var(--ink-muted);font-size:12.5px;font-style:italic;margin:0}
+/* mini-frise du local */
+.mini{display:grid;gap:4px;margin-top:4px}
+.mini-l{display:grid;grid-template-columns:1fr 74px;gap:9px;align-items:center;font-size:12px}
+.mini-l .n{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink-2)}
+.mini-l .n b{color:var(--ink);font-weight:500}
+.mini-piste{grid-column:1/-1;position:relative;height:13px;background:var(--sunk);border-radius:3px;overflow:hidden}
+.mini-b{position:absolute;top:2px;bottom:2px;border-radius:2px}
+.mini-now{position:absolute;top:0;bottom:0;width:1.5px;background:var(--critical);z-index:2}
+.mini-l .d{font-family:var(--mono);font-size:10.5px;color:var(--ink-muted);text-align:right;white-space:nowrap}
+.encours{box-shadow:0 0 0 1.5px var(--ink)}
+
+/* ---------- sections basses ---------- */
+section.bloc{margin-block:26px}
+section.bloc>h2{font-size:17px;margin-bottom:3px}
+section.bloc>p.intro{color:var(--ink-2);margin-block:0 13px;max-width:62ch;font-size:13px}
+.outils{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:11px}
 .seg{display:inline-flex;border:1px solid var(--ring);border-radius:8px;overflow:hidden;background:var(--surface)}
-.seg button{appearance:none;border:0;background:transparent;color:var(--ink-2);font:inherit;font-size:13px;
-  padding:7px 13px;cursor:pointer}
+.seg button{appearance:none;border:0;background:transparent;color:var(--ink-2);font:inherit;font-size:13px;padding:7px 12px;cursor:pointer}
 .seg button[aria-pressed="true"]{background:var(--accent);color:#fff;font-weight:500}
 .seg button+button{border-left:1px solid var(--ring)}
 select,input[type=search]{appearance:none;font:inherit;font-size:13px;color:var(--ink);background:var(--surface);
   border:1px solid var(--ring);border-radius:8px;padding:7px 11px;max-width:200px}
-input[type=search]{min-width:150px}
-:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.compte{font-size:12.5px;color:var(--ink-muted);margin-left:auto;white-space:nowrap}
-
-/* ---------- planning ---------- */
-.board{background:var(--surface);border:1px solid var(--ring);border-radius:11px;overflow:hidden;margin-block:16px}
+.compte{font-size:12.5px;color:var(--ink-muted);margin-left:auto}
+.board{background:var(--surface);border:1px solid var(--ring);border-radius:12px;overflow:hidden}
 .scroller{overflow-x:auto}
-.inner{min-width:980px}
+.inner{min-width:900px}
 .axe{display:flex;position:sticky;top:0;z-index:12;background:var(--surface);border-bottom:1px solid var(--grid)}
-.axe-pad{flex:none;width:var(--label-w);border-right:1px solid var(--grid);padding:9px 14px;
-  display:flex;align-items:flex-end;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-muted);font-weight:500}
-.axe-mois{flex:1;display:flex;position:relative}
+.axe-pad{flex:none;width:300px;border-right:1px solid var(--grid);padding:9px 14px;display:flex;align-items:flex-end;
+  font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-muted);font-weight:500}
+.axe-mois{flex:1;display:flex}
 .mois{border-left:1px solid var(--grid);padding:9px 0 7px 7px;font-size:11.5px;color:var(--ink-muted);
   font-family:var(--mono);white-space:nowrap;overflow:hidden}
 .mois:first-child{border-left:0}
 .mois b{color:var(--ink-2);font-weight:500}
 .groupe{display:flex;align-items:center;gap:9px;padding:9px 14px;background:var(--sunk);
-  border-block:1px solid var(--grid);font-size:12px;font-weight:600;letter-spacing:.02em;position:sticky;left:0}
+  border-block:1px solid var(--grid);font-size:12px;font-weight:600;position:sticky;left:0}
 .groupe .pastille{width:9px;height:9px;border-radius:2px;flex:none}
 .groupe span{color:var(--ink-muted);font-weight:400}
-.ligne{display:flex;border-bottom:1px solid var(--grid);cursor:pointer;background:transparent}
+.ligne{display:flex;border-bottom:1px solid var(--grid);cursor:pointer}
 .ligne:last-child{border-bottom:0}
-.ligne:hover,.ligne:focus-visible{background:var(--sunk)}
+.ligne:hover{background:var(--sunk)}
 .ligne[aria-selected="true"]{background:var(--sunk);box-shadow:inset 3px 0 0 var(--accent)}
-.lbl{flex:none;width:var(--label-w);padding:8px 14px;border-right:1px solid var(--grid);
-  display:flex;flex-direction:column;gap:1px;min-width:0;position:sticky;left:0;background:inherit;z-index:2}
-.ligne:not(:hover) .lbl{background:var(--surface)}
+.lbl{flex:none;width:300px;padding:8px 14px;border-right:1px solid var(--grid);display:flex;flex-direction:column;
+  gap:1px;min-width:0;position:sticky;left:0;background:var(--surface);z-index:2}
+.ligne:hover .lbl,.ligne[aria-selected="true"] .lbl{background:var(--sunk)}
 .lbl .t{font-size:13px;line-height:1.35;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.lbl .m{font-size:11px;color:var(--ink-muted);display:flex;gap:6px;align-items:center;min-width:0}
+.lbl .m{font-size:11px;color:var(--ink-muted);display:flex;gap:6px;min-width:0}
 .lbl .m b{font-weight:500;color:var(--ink-2);white-space:nowrap}
 .lbl .m i{font-style:normal;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.piste{flex:1;position:relative;min-height:38px;background-image:var(--lignes);background-repeat:repeat}
-.barre{position:absolute;top:50%;transform:translateY(-50%);height:17px;border-radius:4px;
-  box-shadow:0 0 0 2px var(--surface)}
-.dlab{position:absolute;top:50%;transform:translateY(-50%);font-size:10.5px;font-family:var(--mono);
-  color:var(--ink-muted);white-space:nowrap;pointer-events:none}
+.piste{flex:1;position:relative;min-height:36px}
+.barre{position:absolute;top:50%;transform:translateY(-50%);height:16px;border-radius:4px;box-shadow:0 0 0 2px var(--surface)}
 .barre.bloque{background-image:repeating-linear-gradient(135deg,transparent 0 5px,rgba(255,255,255,.45) 5px 10px);
   outline:1.5px solid var(--critical);outline-offset:-1.5px}
-.jalon{position:absolute;top:50%;width:13px;height:13px;transform:translate(-50%,-50%) rotate(45deg);
+.barre.crit{outline:1.5px solid var(--critical);outline-offset:1.5px}
+.dlab{position:absolute;top:50%;transform:translateY(-50%);font-size:10.5px;font-family:var(--mono);
+  color:var(--ink-muted);white-space:nowrap;pointer-events:none}
+.jalon{position:absolute;top:50%;width:12px;height:12px;transform:translate(-50%,-50%) rotate(45deg);
   background:var(--warning);box-shadow:0 0 0 2px var(--surface)}
-.aujourdhui{position:absolute;top:0;bottom:0;width:1px;background:var(--critical);z-index:3;pointer-events:none}
-.aujourdhui::after{content:"aujourd'hui";position:absolute;top:2px;left:4px;font-size:10px;
-  font-family:var(--mono);color:var(--critical);white-space:nowrap}
-
-/* ---------- tableau ---------- */
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{text-align:left;padding:8px 13px;border-bottom:1px solid var(--grid);vertical-align:top}
 th{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-muted);font-weight:500;
   position:sticky;top:0;background:var(--surface);z-index:5}
 td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
-tr.bloque td:first-child{box-shadow:inset 3px 0 0 var(--critical)}
-
-/* ---------- détail ---------- */
-.detail{background:var(--surface);border:1px solid var(--ring);border-radius:11px;padding:18px 20px;margin-block:16px}
-.detail .eyebrow{margin-bottom:5px}
-.detail h2{font-size:17px;margin-bottom:3px}
-.meta{display:flex;flex-wrap:wrap;gap:7px;margin-block:12px}
-.tag{font-size:11.5px;border:1px solid var(--ring);border-radius:999px;padding:3px 10px;color:var(--ink-2);background:var(--plane)}
-.tag.fort{border-color:var(--critical);color:var(--critical);background:var(--critical-wash)}
-.tag.jal{border-color:var(--warning);color:var(--ink-2);background:var(--warning-wash)}
-.liens{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(282px,1fr));margin-top:14px}
-.liens ul{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:7px}
-.liens li{font-size:12.5px;color:var(--ink-2);padding-left:13px;border-left:2px solid var(--grid);line-height:1.45}
-.liens li b{color:var(--ink);font-weight:500;font-family:var(--mono);font-size:11.5px}
-.note{margin-top:13px;padding:11px 13px;background:var(--plane);border-radius:8px;font-size:12.5px;color:var(--ink-2);border:1px solid var(--ring)}
-.vide{color:var(--ink-muted);font-size:12.5px;font-style:italic}
-
-/* ---------- questions ---------- */
-section.bloc{margin-block:26px}
-section.bloc>h2{font-size:17px;margin-bottom:3px}
-section.bloc>p{color:var(--ink-2);margin-block:0 14px;max-width:62ch}
-.qs{display:grid;gap:9px}
-.q{background:var(--surface);border:1px solid var(--ring);border-radius:9px;padding:13px 15px;
-  display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:start}
+.qs{display:grid;gap:8px}
+.q{background:var(--surface);border:1px solid var(--ring);border-radius:9px;padding:12px 14px;
+  display:grid;grid-template-columns:auto 1fr;gap:3px 11px;align-items:start}
 .q .id{font-family:var(--mono);font-size:11.5px;color:var(--ink-muted);padding-top:2px}
 .q .s{font-weight:600;font-size:13.5px}
-.q .txt{grid-column:2;font-size:12.5px;color:var(--ink-2)}
-.q .dest{grid-column:2;font-size:11.5px;color:var(--ink-muted);margin-top:3px}
+.q .txt,.q .dest{grid-column:2;font-size:12.5px;color:var(--ink-2)}
+.q .dest{font-size:11.5px;color:var(--ink-muted);margin-top:2px}
 .q[data-p="critique"]{border-left:3px solid var(--critical)}
 .q[data-p="haute"]{border-left:3px solid var(--warning)}
-
-/* ---------- légende / pied ---------- */
-.legende{display:flex;flex-wrap:wrap;gap:13px;align-items:center;padding-block:12px;font-size:12px;color:var(--ink-2)}
-.legende i{font-style:normal;display:inline-flex;align-items:center;gap:6px}
-.legende .sw{width:15px;height:9px;border-radius:2px;flex:none}
+.q[data-p="resolue"]{opacity:.62}
 footer{border-top:1px solid var(--grid);padding-block:18px 30px;color:var(--ink-muted);font-size:12px}
-footer p{margin:0 0 5px}
-
-.plan-outils{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
-.curseur{flex:1 1 260px;display:flex;align-items:center;gap:11px;min-width:0}
-.curseur input[type=range]{flex:1;min-width:0;accent-color:var(--accent)}
-.semaine{font-family:var(--mono);font-size:13px;white-space:nowrap;min-width:92px;text-align:right}
-.pas{appearance:none;border:1px solid var(--ring);background:var(--surface);color:var(--ink-2);
-  border-radius:7px;width:30px;height:30px;font-size:15px;cursor:pointer;flex:none;line-height:1}
-.pas:hover{color:var(--ink)}
-.plans{display:grid;gap:14px;align-items:start;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr))}
-.niveau{background:var(--surface);border:1px solid var(--ring);border-radius:11px;padding:13px 15px 15px}
-.niveau h3{font-size:13px;display:flex;align-items:baseline;gap:8px;margin-bottom:9px}
-.niveau h3 span{font-weight:400;font-size:11.5px;color:var(--ink-muted)}
-.niveau svg{width:100%;height:clamp(210px,31vw,330px);display:block}
-.piece{cursor:pointer;stroke:var(--surface);vector-effect:non-scaling-stroke;stroke-width:1.2;transition:opacity .12s}
-.piece:hover{opacity:.78}
-.piece.actif{stroke:var(--ink);stroke-width:2}
-.etiq{font-family:var(--mono);fill:var(--ink);paint-order:stroke fill;
-  stroke:var(--surface);stroke-linejoin:round;pointer-events:none;text-anchor:middle;dominant-baseline:middle}
-.hors{fill:none;stroke:var(--ink-muted);vector-effect:non-scaling-stroke;stroke-width:1;
-  stroke-dasharray:2 2.5;pointer-events:none}
-.coact{fill:none;stroke:var(--critical);vector-effect:non-scaling-stroke;stroke-width:1.8;stroke-dasharray:5 3;pointer-events:none}
-.global{background:var(--plane);border:1px solid var(--ring);border-radius:9px;padding:11px 14px;
-  font-size:12.5px;color:var(--ink-2);margin-bottom:13px}
-.global b{color:var(--ink);font-weight:500}
-.occ-leg{display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:12px;color:var(--ink-2);margin-top:12px}
-.occ-leg i{font-style:normal;display:inline-flex;align-items:center;gap:6px}
-.occ-leg .sw{width:15px;height:11px;border-radius:2px;border:1px solid var(--ring);flex:none}
-
-/* ---------- infobulle ---------- */
+footer p{margin:0 0 5px;max-width:74ch}
 #bulle{position:fixed;z-index:50;pointer-events:none;background:var(--surface);color:var(--ink);
-  border:1px solid var(--ring);border-radius:8px;padding:8px 11px;font-size:12px;max-width:290px;
+  border:1px solid var(--ring);border-radius:8px;padding:8px 11px;font-size:12px;max-width:280px;
   box-shadow:0 6px 22px rgba(0,0,0,.17);line-height:1.45}
 #bulle b{display:block;margin-bottom:2px}
 #bulle .n{font-family:var(--mono);color:var(--ink-2);font-size:11.5px}
-
-@media (max-width:760px){
-  :root{--label-w:208px}
-  .inner{min-width:760px}
-  .stat{min-width:103px}
-  .compte{margin-left:0;width:100%}
-}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 
 <div class="wrap">
   <header>
-    <p class="eyebrow" id="ref"></p>
-    <h1 id="titre"></h1>
-    <p class="sub" id="soustitre"></p>
-    <div class="stats" id="stats"></div>
+    <div class="ident">
+      <p class="eyebrow" id="ref"></p>
+      <h1 id="titre"></h1>
+      <p class="sub" id="soustitre"></p>
+    </div>
+    <div class="chiffres" id="chiffres"></div>
   </header>
 
-  <div class="alertes" id="alertes"></div>
-
-  <div class="outils">
-    <div class="seg" role="group" aria-label="Vue">
-      <button id="v-gantt" aria-pressed="true">Planning</button>
-      <button id="v-table" aria-pressed="false">Tableau</button>
+  <div class="temps">
+    <button class="lire" id="t-lire" aria-pressed="false" aria-label="Dérouler le chantier">▶</button>
+    <button class="pas" id="t-prec" aria-label="Semaine précédente">‹</button>
+    <div class="curseur">
+      <input type="range" id="t-curseur" min="0" value="0" aria-label="Semaine affichée">
+      <span class="semaine" id="t-date"></span>
     </div>
-    <div class="seg" role="group" aria-label="Regroupement">
-      <button id="g-phase" aria-pressed="true">Par phase</button>
-      <button id="g-lot" aria-pressed="false">Par lot</button>
-      <button id="g-local" aria-pressed="false">Par local</button>
-    </div>
-    <select id="f-lot" aria-label="Filtrer par lot"></select>
-    <select id="f-phase" aria-label="Filtrer par phase"></select>
-    <input type="search" id="f-txt" placeholder="Rechercher…" aria-label="Rechercher une tâche ou un local">
-    <span class="compte" id="compte"></span>
+    <button class="pas" id="t-suiv" aria-label="Semaine suivante">›</button>
   </div>
 
-  <div class="board" id="board">
-    <div class="scroller"><div class="inner" id="inner"></div></div>
+  <div class="scene">
+    <div class="carte">
+      <div class="niveaux" id="niveaux" role="group" aria-label="Niveau"></div>
+      <div class="plan"><div id="plan"></div></div>
+      <div class="leg" id="legende"></div>
+      <div class="global" id="global"></div>
+    </div>
+    <div class="carte fiche" id="fiche"></div>
   </div>
-
-  <div class="legende" id="legende"></div>
-
-  <div class="detail" id="detail"></div>
 
   <section class="bloc">
-    <h2>Plan d'occupation</h2>
-    <p>Qui occupe quel local, et à quelle date. Déplacez le curseur pour parcourir le chantier
-      semaine par semaine. La teinte donne le nombre d'entreprises présentes dans le local :
-      c'est la co-activité qui fait les conflits, pas l'occupation seule.</p>
-    <div class="plan-outils">
-      <button class="pas" id="p-prec" aria-label="Semaine précédente">‹</button>
-      <div class="curseur">
-        <input type="range" id="p-curseur" min="0" value="0" aria-label="Semaine affichée">
-        <span class="semaine" id="p-date"></span>
+    <h2>Planning</h2>
+    <p class="intro">Les mêmes tâches sur une frise. Le liseré rouge marque le chemin critique :
+      toute journée perdue sur ces tâches est perdue sur la réception.</p>
+    <div class="outils">
+      <div class="seg" role="group" aria-label="Vue">
+        <button id="v-gantt" aria-pressed="true">Frise</button>
+        <button id="v-table" aria-pressed="false">Tableau</button>
       </div>
-      <button class="pas" id="p-suiv" aria-label="Semaine suivante">›</button>
+      <div class="seg" role="group" aria-label="Regroupement">
+        <button id="g-phase" aria-pressed="true">Par phase</button>
+        <button id="g-lot" aria-pressed="false">Par lot</button>
+      </div>
+      <select id="f-lot" aria-label="Filtrer par lot"></select>
+      <input type="search" id="f-txt" placeholder="Rechercher…" aria-label="Rechercher une tâche">
+      <span class="compte" id="compte"></span>
     </div>
-    <div class="global" id="p-global"></div>
-    <div class="plans" id="p-plans"></div>
-    <div class="occ-leg" id="p-legende"></div>
-    <div class="detail" id="p-detail"></div>
+    <div class="board"><div class="scroller"><div class="inner" id="inner"></div></div></div>
   </section>
 
   <section class="bloc">
     <h2>Questions à trancher</h2>
-    <p>Classées par priorité. Chaque question bloque ou fragilise une partie du planning ci-dessus.</p>
+    <p class="intro">Par priorité. Les questions résolues sont conservées avec leur réponse.</p>
     <div class="qs" id="questions"></div>
   </section>
 
   <footer>
-    <p><strong>Les durées ne sont pas validées.</strong> Elles sont proposées par défaut et doivent être
-      corrigées par les entreprises. Les dates affichées sont des dates au plus tôt.</p>
-    <p>Le calcul ne tient compte ni des vacances de fin d'année, ni des délais de livraison des
-      équipements — transformateur, TGBT, PAC — qui déterminent probablement le chemin critique réel.</p>
+    <p><strong>Les durées des locaux relevés avec le maître d'ouvrage sont fermes ; les autres restent
+      des propositions.</strong> Les dates affichées sont des dates au plus tôt.</p>
+    <p>Le calcul ne tient compte ni des vacances de fin d'année, ni des délais de livraison encore
+      inconnus — PAC, groupes froid, variateurs. Seul celui du matériel électrique est intégré.</p>
     <p id="genere"></p>
   </footer>
 </div>
@@ -292,319 +277,280 @@ const jour = 864e5;
 const dt = s => new Date(s + "T00:00:00");
 const D0 = dt(D.debut), D1 = dt(D.fin);
 const TOTAL = Math.max(1, (D1 - D0) / jour + 1);
+const SEMAINES = Math.max(1, Math.ceil(TOTAL / 7));
 const MOIS = ["jan","fév","mar","avr","mai","juin","juil","août","sep","oct","nov","déc"];
 const fdate = s => { const d = dt(s); return `${String(d.getDate()).padStart(2,"0")}.${String(d.getMonth()+1).padStart(2,"0")}.${d.getFullYear()}`; };
-const pct = d => ((dt(d) - D0) / jour) / TOTAL * 100;
+const pct = s => ((dt(s) - D0) / jour) / TOTAL * 100;
 const ALERTE = new Set(["BLOQUE","non_adjuge","HORS_PERIMETRE_CONNU"]);
-const phaseTitre = c => (D.phases.find(p => p.code === c) || {}).titre || c;
+const HORS = new Set(D.horsMarche || []);
 const couleur = c => `var(--p${(c.match(/\d+/)||[0])[0]})`;
+const teinte = n => n === 0 ? "var(--o0)" : n === 1 ? "var(--o1)" : n === 2 ? "var(--o2)" : n === 3 ? "var(--o3)" : "var(--o4)";
 const esc = s => String(s ?? "").replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
-const nomLocal = n => D.locaux[n] ? `${n} ${D.locaux[n].designation}` : (n === "*" ? "tous locaux" : n);
+const L = D.locaux, G = D.geometrie;
+const nomLocal = n => L[n] ? `${n} ${L[n].designation}` : (n === "*" ? "tous locaux" : n);
+const phaseTitre = c => (D.phases.find(p => p.code === c) || {}).titre || c;
 
-let vue = "gantt", groupe = "phase", choisi = null;
+const NIVEAUX = Object.keys(G.niveaux).sort().reverse();
+let sem = 0, niveau = NIVEAUX.find(n => n === "N-2") || NIVEAUX[0];
+let piece = null, vue = "gantt", groupe = "phase", tache = null, lecture = null;
+
+const lundiDe = i => { const d = new Date(D0.getTime() + i * 7 * jour); d.setHours(0,0,0,0); return d; };
+const couvre = (t, d) => dt(t.debut) <= d && d <= dt(t.fin);
+const occupantsDe = (n, d) => D.taches.filter(t => t.locaux.includes(n) && couvre(t, d));
+const globales = d => D.taches.filter(t => t.locaux.includes("*") && couvre(t, d));
+const tachesDe = n => D.taches.filter(t => t.locaux.includes(n)).sort((a,b) => a.debut < b.debut ? -1 : 1);
 
 /* ---------- bandeau ---------- */
-D.projet && (() => {
-  $("#ref").textContent = D.projet.designation_complete || "";
-  $("#titre").textContent = D.projet.ouvrage || "Planning";
-  $("#soustitre").textContent =
-    `${D.projet.lieu} — phase ${D.projet.phase_sia}. Ordonnancement des travaux techniques : qui intervient, où, et dans quel ordre.`;
-})();
-
+$("#ref").textContent = D.projet.designation_complete || "";
+$("#titre").textContent = D.projet.ouvrage || "Planning";
+$("#soustitre").textContent = `${D.projet.lieu} — phase ${D.projet.phase_sia}`;
 const bloques = D.taches.filter(t => ALERTE.has(t.statut));
-const fermes = D.taches.filter(t => t.dateFerme);
-const semaines = Math.round(TOTAL / 7);
-$("#stats").innerHTML = [
+const critiques = D.taches.filter(t => t.critique);
+$("#chiffres").innerHTML = [
   [D.taches.length, "tâches"],
-  [D.taches.reduce((s,t) => s + t.pred.length, 0), "liens de dépendance"],
-  [semaines, "semaines au plus tôt"],
-  [fdate(D.fin), "fin au plus tôt"],
-  [new Set(D.taches.map(t => t.lot)).size, "lots"],
-  [bloques.length, "tâches sans lot attribué", true],
-].map(([v,l,a]) => `<div class="stat${a?" alerte":""}"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("");
+  [Math.round(TOTAL/7), "semaines"],
+  [fdate(D.fin), "réception au plus tôt"],
+  [critiques.length, "tâches critiques"],
+  [bloques.length, "sans lot attribué", true],
+].map(([v,l,a]) => `<div class="ch${a?" alerte":""}"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("");
 
-const alertes = [];
-fermes.forEach(t => alertes.push(["warn","◆",`Jalon ferme — ${t.nom}`,
-  `${fdate(t.debut)}. Seule date ferme du dossier, elle sert d'ancrage à tout le calage.`]));
-const parLot = {};
-bloques.forEach(t => (parLot[t.lot] = parLot[t.lot] || []).push(t));
-Object.entries(parLot).forEach(([lot, ts]) => {
-  const info = D.lots.find(l => l.code === lot) || {};
-  alertes.push(["crit","!", `${lot} — ${esc(info.statut || "non adjugé")}`,
-    `${ts.length} tâche${ts.length>1?"s":""} au planning. Première échéance le ${fdate(ts.map(t=>t.debut).sort()[0])}.` +
-    (info.alerte ? " " + info.alerte : "")]);
-});
-$("#alertes").innerHTML = alertes.map(([k,p,t,c]) =>
-  `<div class="alerte-c${k==="warn"?" warn":""}"><span class="puce">${p}</span><p><strong>${esc(t)}</strong>${esc(c)}</p></div>`).join("");
+/* ---------- plan ---------- */
+$("#niveaux").innerHTML = NIVEAUX.map(n =>
+  `<button data-niv="${esc(n)}" aria-pressed="${n===niveau}">Niveau ${esc(n)}<span data-occ="${esc(n)}"></span></button>`).join("");
 
-/* ---------- filtres ---------- */
-$("#f-lot").innerHTML = `<option value="">Tous les lots</option>` +
-  [...new Set(D.taches.map(t => t.lot))].sort().map(l => `<option>${esc(l)}</option>`).join("");
-$("#f-phase").innerHTML = `<option value="">Toutes les phases</option>` +
-  D.phases.map(p => `<option value="${p.code}">${esc(p.code)} — ${esc(p.titre)}</option>`).join("");
+function rendrePlan(){
+  const d = lundiDe(sem);
+  $("#t-date").innerHTML = `${fdate(d.toISOString().slice(0,10))}<small>semaine ${sem+1} / ${SEMAINES}</small>`;
+  $("#t-curseur").value = sem;
 
-function filtrees(){
-  const lot = $("#f-lot").value, ph = $("#f-phase").value, q = $("#f-txt").value.trim().toLowerCase();
-  return D.taches.filter(t =>
-    (!lot || t.lot === lot) && (!ph || t.phase === ph) &&
-    (!q || (t.nom + " " + t.lot + " " + t.id + " " + t.locaux.map(nomLocal).join(" ")).toLowerCase().includes(q)));
+  for (const n of NIVEAUX){
+    const dn = G.niveaux[n];
+    const occ = dn.locaux.filter(l => occupantsDe(l.numero, d).length).length;
+    const el = document.querySelector(`[data-occ="${n}"]`);
+    if (el) el.textContent = occ ? `${occ} occupé${occ>1?"s":""}` : "—";
+    const b = document.querySelector(`[data-niv="${n}"]`);
+    if (b) b.setAttribute("aria-pressed", String(n === niveau));
+  }
+
+  const n = G.niveaux[niveau];
+  const [x0,, x1, y1] = n.bbox, Lg = x1 - x0, H = y1 - n.bbox[1], m = Math.max(Lg,H)*.02, ft = Math.max(Lg,H)/44;
+  let pieces = "", labels = "", maxOcc = 0;
+  for (const loc of n.locaux){
+    const occ = occupantsDe(loc.numero, d), hm = HORS.has(loc.numero);
+    maxOcc = Math.max(maxOcc, occ.length);
+    const pts = loc.polygone.map(([x,y]) => `${(x-x0).toFixed(2)},${(y1-y).toFixed(2)}`).join(" ");
+    const lots = [...new Set(occ.map(t => t.lot))];
+    pieces += `<polygon class="piece${piece===loc.numero?" actif":""}" points="${pts}" fill="${teinte(occ.length)}"
+      data-loc="${esc(loc.numero)}" tabindex="0" role="button"
+      aria-label="${esc(loc.numero)} ${esc(loc.designation)}"><title>${esc(loc.numero)} ${esc(loc.designation)} — ${hm?"hors marché":occ.length?esc(lots.join(", ")):"libre"}</title></polygon>`;
+    if (hm) pieces += `<polygon class="hors" points="${pts}"></polygon>`;
+    else if (occ.length >= 3) pieces += `<polygon class="coact" points="${pts}"></polygon>`;
+    const cx = loc.polygone.reduce((a,p) => a+p[0], 0)/loc.polygone.length - x0;
+    const cy = y1 - loc.polygone.reduce((a,p) => a+p[1], 0)/loc.polygone.length;
+    labels += `<text class="etiq" x="${cx.toFixed(2)}" y="${cy.toFixed(2)}" font-size="${ft.toFixed(2)}" stroke-width="${(ft*.3).toFixed(2)}">${esc((loc.numero||"").split(".").pop())}</text>`;
+  }
+  $("#plan").innerHTML = `<svg viewBox="${-m} ${-m} ${Lg+2*m} ${H+2*m}" role="img"
+    aria-label="Plan du niveau ${esc(niveau)}">${pieces}${labels}</svg>`;
+
+  const gl = globales(d);
+  $("#global").innerHTML = gl.length
+    ? `<b>${gl.length} tâche${gl.length>1?"s":""} sur l'ensemble du bâtiment</b> cette semaine : `
+      + gl.map(t => `${esc(t.lot)}`).join(", ") + `. Non comptées dans les locaux.`
+    : `<b>Aucune tâche transversale</b> cette semaine.`;
+  rendreFiche();
+}
+
+$("#legende").innerHTML = [[0,"libre"],[1,"1 entreprise"],[2,"2"],[3,"3"],[4,"4+"]]
+  .map(([n,l]) => `<i><span class="sw" style="background:${teinte(n)}"></span>${esc(l)}</i>`).join("")
+  + `<i><span class="sw" style="background:transparent;border:1.5px dashed var(--critical)"></span>co-activité</i>`
+  + `<i><span class="sw" style="background:transparent;border:1.5px dashed var(--ink-muted)"></span>hors marché</i>`;
+
+/* ---------- fiche du local ---------- */
+function rendreFiche(){
+  const c = $("#fiche"), d = lundiDe(sem);
+  if (!piece){
+    c.innerHTML = `<p class="eyebrow">Local</p>
+      <h2>Choisissez un local</h2>
+      <p class="lieu">Cliquez une pièce du plan pour voir ce qu'elle reçoit, qui y intervient et quand.</p>
+      <p class="vide">Le curseur en haut déroule le chantier semaine par semaine ; la teinte des locaux
+      indique combien d'entreprises y travaillent simultanément.</p>`;
+    return;
+  }
+  const info = L[piece] || {}, f = (D.fiches || {})[piece] || {}, r = f.reponse || {};
+  const toutes = tachesDe(piece), ici = toutes.filter(t => couvre(t, d));
+  const nowPct = ((d - D0) / jour) / TOTAL * 100;
+
+  const frise = toutes.length ? `<div class="mini">${toutes.map(t => {
+    const g = pct(t.debut), w = Math.max(1.2, pct(t.fin) + 100/TOTAL - g);
+    const a = couvre(t, d);
+    return `<div class="mini-l"><span class="n"><b>${esc(t.lot)}</b> ${esc(t.nom)}</span>
+      <span class="d">${t.semaines} sem.</span>
+      <span class="mini-piste"><span class="mini-b${a?" encours":""}" style="left:${g}%;width:${w}%;background:${couleur(t.phase)}"></span>
+      <span class="mini-now" style="left:${nowPct}%"></span></span></div>`;
+  }).join("")}</div>` : `<p class="vide">Aucune tâche rattachée à ce local.</p>`;
+
+  const interventions = (r.interventions || []).length ? `<div class="bloc-f">
+    <p class="eyebrow">Ordre relevé avec le maître d'ouvrage</p>
+    <div class="mini">${r.interventions.map(i =>
+      `<div class="mini-l"><span class="n"><b>${esc(i.lot)}</b> ${esc(i.prestation)}${i.remarque?` — ${esc(i.remarque)}`:""}</span>
+       <span class="d">${i.duree_semaines ? i.duree_semaines + " sem." : "—"}</span></div>`).join("")}</div></div>` : "";
+
+  c.innerHTML = `<p class="eyebrow">${esc(piece)} · niveau ${esc(info.niveau || "?")}</p>
+    <h2>${esc(info.designation || piece)}</h2>
+    <p class="lieu">${esc(f.famille || "")}</p>
+    <div class="mesures">
+      ${info.surface ? `<span class="tag">${info.surface.toFixed(1)} m²</span>` : ""}
+      ${info.hauteur ? `<span class="tag">${info.hauteur.toFixed(2)} m sous plafond</span>` : ""}
+      ${HORS.has(piece) ? `<span class="tag fort">hors marché</span>`
+        : f.statut === "rempli" ? `<span class="tag ok">relevé</span>`
+        : f.statut === "partiel" ? `<span class="tag jal">relevé partiel</span>`
+        : `<span class="tag">non relevé</span>`}
+      ${ici.length >= 3 ? `<span class="tag fort">${ici.length} entreprises cette semaine</span>`
+        : ici.length ? `<span class="tag">${ici.length} en cours</span>` : ""}
+    </div>
+    ${r.contenu ? `<div class="bloc-f"><p class="eyebrow">Contenu</p><p class="contenu">${esc(r.contenu)}</p></div>` : ""}
+    ${r.manutention ? `<div class="bloc-f"><p class="eyebrow">Manutention</p><p class="contenu">${esc(r.manutention)}</p></div>` : ""}
+    ${r.co_activite_possible ? `<div class="bloc-f"><p class="eyebrow">Co-activité</p><p class="contenu">${esc(r.co_activite_possible)}</p></div>` : ""}
+    ${interventions}
+    <div class="bloc-f"><p class="eyebrow">Interventions au planning</p>${frise}</div>
+    ${r.remarques ? `<div class="bloc-f"><p class="eyebrow">Remarque</p><p class="contenu">${esc(r.remarques)}</p></div>` : ""}`;
 }
 
 /* ---------- planning ---------- */
+$("#f-lot").innerHTML = `<option value="">Tous les lots</option>` +
+  [...new Set(D.taches.map(t => t.lot))].sort().map(l => `<option>${esc(l)}</option>`).join("");
+
+function filtrees(){
+  const lot = $("#f-lot").value, q = $("#f-txt").value.trim().toLowerCase();
+  return D.taches.filter(t => (!lot || t.lot === lot) &&
+    (!q || (t.nom + " " + t.lot + " " + t.id + " " + t.locaux.map(nomLocal).join(" ")).toLowerCase().includes(q)));
+}
 function axe(){
   let h = `<div class="axe"><div class="axe-pad">Tâche</div><div class="axe-mois">`;
   const d = new Date(D0.getFullYear(), D0.getMonth(), 1), fin = new Date(D1.getFullYear(), D1.getMonth(), 1);
   const cols = [];
   while (d <= fin){
-    const deb = new Date(Math.max(d, D0));
-    const suiv = new Date(d.getFullYear(), d.getMonth() + 1, 1);
-    const f = new Date(Math.min(suiv - jour, D1));
-    cols.push([(f - deb) / jour + 1, d.getMonth(), d.getFullYear()]);
-    d.setMonth(d.getMonth() + 1);
+    const deb = new Date(Math.max(d, D0)), suiv = new Date(d.getFullYear(), d.getMonth()+1, 1);
+    cols.push([(new Date(Math.min(suiv - jour, D1)) - deb)/jour + 1, d.getMonth(), d.getFullYear()]);
+    d.setMonth(d.getMonth()+1);
   }
-  cols.forEach(([n, m, y]) => {
-    const etroit = n < 15;
-    h += `<div class="mois" style="flex:${n} 0 0">${etroit ? "" : `<b>${MOIS[m]}</b>${m===0?` ${String(y).slice(2)}`:""}`}</div>`;
-  });
+  cols.forEach(([n,m,y]) => { h += `<div class="mois" style="flex:${n} 0 0">${n<15?"":`<b>${MOIS[m]}</b>${m===0?` ${String(y).slice(2)}`:""}`}</div>`; });
   return h + `</div></div>`;
 }
-
-function cles(ts){
-  if (groupe === "phase") return D.phases.map(p => [p.code, `${p.code} — ${p.titre}`, couleur(p.code)])
-    .filter(([c]) => ts.some(t => t.phase === c));
-  if (groupe === "lot") return [...new Set(ts.map(t => t.lot))].sort().map(l => [l, l, "var(--axis)"]);
-  const locs = [...new Set(ts.flatMap(t => t.locaux))].sort();
-  return locs.map(l => [l, nomLocal(l), "var(--axis)"]);
-}
-const dansGroupe = (t, c) => groupe === "phase" ? t.phase === c : groupe === "lot" ? t.lot === c : t.locaux.includes(c);
-
 function rendreGantt(ts){
   let h = axe();
-  for (const [c, titre, col] of cles(ts)){
-    const sous = ts.filter(t => dansGroupe(t, c)).sort((a,b) => a.debut < b.debut ? -1 : 1);
+  const cles = groupe === "phase"
+    ? D.phases.map(p => [p.code, `${p.code} — ${p.titre}`, couleur(p.code)]).filter(([c]) => ts.some(t => t.phase === c))
+    : [...new Set(ts.map(t => t.lot))].sort().map(l => [l, l, "var(--axis)"]);
+  for (const [c, titre, col] of cles){
+    const sous = ts.filter(t => groupe === "phase" ? t.phase === c : t.lot === c).sort((a,b) => a.debut < b.debut ? -1 : 1);
     if (!sous.length) continue;
     h += `<div class="groupe"><span class="pastille" style="background:${col}"></span>${esc(titre)}<span>· ${sous.length}</span></div>`;
     for (const t of sous){
-      const g = pct(t.debut), l = Math.max(0.7, pct(t.fin) + (1/TOTAL*100) - g);
-      const bl = ALERTE.has(t.statut);
-      h += `<div class="ligne" role="button" tabindex="0" data-id="${t.id}" aria-selected="${choisi===t.id}">
+      const g = pct(t.debut), w = Math.max(.7, pct(t.fin) + 100/TOTAL - g);
+      h += `<div class="ligne" role="button" tabindex="0" data-id="${t.id}" aria-selected="${tache===t.id}">
         <div class="lbl"><span class="t">${esc(t.nom)}</span>
           <span class="m"><b>${esc(t.lot)}</b>·<i>${esc(t.locaux.map(nomLocal).join(", "))}</i></span></div>
         <div class="piste">
-          <div class="barre${bl?" bloque":""}"
-            style="left:${g}%;width:${l}%;background:${couleur(t.phase)}"></div>
-          ${g + l < 86 ? `<span class="dlab" style="left:calc(${g+l}% + 7px)">${t.semaines} sem.</span>` : ""}
+          <div class="barre${ALERTE.has(t.statut)?" bloque":""}${t.critique?" crit":""}"
+            style="left:${g}%;width:${w}%;background:${couleur(t.phase)}"></div>
+          ${g+w < 86 ? `<span class="dlab" style="left:calc(${g+w}% + 7px)">${t.semaines} sem.</span>` : ""}
           ${t.dateFerme ? `<span class="jalon" style="left:${pct(t.fin)}%"></span>` : ""}
         </div></div>`;
     }
   }
-  const auj = new Date(); auj.setHours(0,0,0,0);
-  if (auj >= D0 && auj <= D1){
-    const p = ((auj - D0) / jour) / TOTAL * 100;
-    h += `<div class="aujourdhui" style="left:calc(var(--label-w) + (100% - var(--label-w)) * ${p/100})"></div>`;
-  }
-  return `<div style="position:relative">${h}</div>`;
+  return h;
 }
-
 function rendreTable(ts){
-  const l = [...ts].sort((a,b) => a.debut < b.debut ? -1 : 1);
-  return `<table><thead><tr><th>Lot</th><th>Tâche</th><th>Locaux</th><th>Début</th><th>Fin</th><th>Sem.</th><th>Phase</th></tr></thead><tbody>` +
-    l.map(t => `<tr class="${ALERTE.has(t.statut)?"bloque":""}" role="button" tabindex="0" data-id="${t.id}">
-      <td>${esc(t.lot)}</td><td>${esc(t.nom)}</td><td>${esc(t.locaux.map(nomLocal).join(", "))}</td>
-      <td class="n">${fdate(t.debut)}</td><td class="n">${fdate(t.fin)}</td><td class="n">${t.semaines}</td>
-      <td class="n">${esc(t.phase)}</td></tr>`).join("") + `</tbody></table>`;
+  return `<table><thead><tr><th>Lot</th><th>Tâche</th><th>Locaux</th><th>Début</th><th>Fin</th><th>Sem.</th><th>Critique</th></tr></thead><tbody>` +
+    [...ts].sort((a,b) => a.debut < b.debut ? -1 : 1).map(t =>
+    `<tr data-id="${t.id}"><td>${esc(t.lot)}</td><td>${esc(t.nom)}</td><td>${esc(t.locaux.map(nomLocal).join(", "))}</td>
+     <td class="n">${fdate(t.debut)}</td><td class="n">${fdate(t.fin)}</td><td class="n">${t.semaines}</td>
+     <td class="n">${t.critique ? "oui" : ""}</td></tr>`).join("") + `</tbody></table>`;
 }
-
-function rendreDetail(){
-  const t = D.taches.find(x => x.id === choisi);
-  if (!t) return `<p class="eyebrow">Détail</p><p class="vide">Sélectionnez une tâche pour voir ses dépendances et la raison de chaque lien.</p>`;
-  const nom = i => (D.taches.find(x => x.id === i) || {}).nom || i;
-  const lot = i => (D.taches.find(x => x.id === i) || {}).lot || "";
-  const lien = c => c === "FD" ? "fin→début" : c === "DD" ? "début→début" : "fin→fin";
-  return `<p class="eyebrow">${esc(t.id)} · ${esc(t.phase)} — ${esc(phaseTitre(t.phase))}</p>
-    <h2>${esc(t.nom)}</h2>
-    <div class="meta">
-      <span class="tag"><b>${esc(t.lot)}</b></span>
-      <span class="tag">${fdate(t.debut)} → ${fdate(t.fin)}</span>
-      <span class="tag">${t.semaines} semaines</span>
-      ${t.dateFerme ? `<span class="tag jal">◆ date ferme</span>` : ""}
-      ${ALERTE.has(t.statut) ? `<span class="tag fort">${esc(t.statut)}</span>` : ""}
-      ${t.locaux.map(l => `<span class="tag">${esc(nomLocal(l))}</span>`).join("")}
-    </div>
-    ${t.notes ? `<div class="note">${esc(t.notes)}</div>` : ""}
-    <div class="liens">
-      <div><p class="eyebrow">Ne peut commencer qu'après</p>
-        ${t.pred.length ? `<ul>${t.pred.map(p =>
-          `<li><b>${esc(p.id)}</b> ${esc(nom(p.id))} <span style="color:var(--ink-muted)">(${lien(p.lien)}, ${esc(lot(p.id))})</span><br>${esc(p.raison)}</li>`).join("")}</ul>`
-          : `<p class="vide">Aucun prédécesseur : peut démarrer dès l'ouverture du chantier.</p>`}</div>
-      <div><p class="eyebrow">Bloque ensuite</p>
-        ${t.succ.length ? `<ul>${t.succ.map(s =>
-          `<li><b>${esc(s.id)}</b> ${esc(nom(s.id))} <span style="color:var(--ink-muted)">(${esc(lot(s.id))})</span></li>`).join("")}</ul>`
-          : `<p class="vide">Aucun successeur.</p>`}</div>
-    </div>`;
-}
-
-function rendre(){
+function rendrePlanning(){
   const ts = filtrees();
-  $("#inner").innerHTML = ts.length
-    ? (vue === "gantt" ? rendreGantt(ts) : rendreTable(ts))
-    : `<p style="padding:26px 16px;color:var(--ink-muted)">Aucune tâche ne correspond à ce filtre.</p>`;
-  $("#compte").textContent = `${ts.length} tâche${ts.length>1?"s":""} sur ${D.taches.length}`;
-  $("#detail").innerHTML = rendreDetail();
+  $("#inner").innerHTML = ts.length ? (vue === "gantt" ? rendreGantt(ts) : rendreTable(ts))
+    : `<p style="padding:24px 16px;color:var(--ink-muted)">Aucune tâche ne correspond.</p>`;
+  $("#compte").textContent = `${ts.length} / ${D.taches.length}`;
 }
-
-/* ---------- légende ---------- */
-$("#legende").innerHTML =
-  D.phases.map(p => `<i><span class="sw" style="background:${couleur(p.code)}"></span>${esc(p.code)} ${esc(p.titre)}</i>`).join("") +
-  `<i><span class="sw" style="background:var(--warning);transform:rotate(45deg);width:10px;height:10px;border-radius:2px"></span>jalon ferme</i>` +
-  `<i><span class="sw" style="background:var(--p3);background-image:repeating-linear-gradient(135deg,transparent 0 5px,rgba(255,255,255,.45) 5px 10px);outline:1.5px solid var(--critical);outline-offset:-1.5px"></span>lot non adjugé</i>`;
 
 /* ---------- questions ---------- */
-const rang = {critique:0, haute:1, moyenne:2, basse:3, resolue:4};
-$("#questions").innerHTML = D.questions
-  .slice().sort((a,b) => (rang[a.priorite] ?? 9) - (rang[b.priorite] ?? 9))
+const rang = {critique:0, haute:1, moyenne:2, basse:3, partielle:4, resolue:5};
+$("#questions").innerHTML = D.questions.slice()
+  .sort((a,b) => (rang[a.priorite] ?? 9) - (rang[b.priorite] ?? 9))
   .map(q => `<div class="q" data-p="${esc(q.priorite)}">
-    <span class="id">${esc(q.id)}</span><span class="s">${esc(q.sujet)} <span style="font-weight:400;color:var(--ink-muted)">· ${esc(q.priorite)}</span></span>
+    <span class="id">${esc(q.id)}</span>
+    <span class="s">${esc(q.sujet)} <span style="font-weight:400;color:var(--ink-muted)">· ${esc(q.priorite)}</span></span>
     <span class="txt">${esc(q.question)}</span>
-    ${q.destinataire ? `<span class="dest">→ ${esc(q.destinataire)}</span>` : ""}
-    ${q.reponse ? `<span class="dest">Réponse : ${esc(q.reponse)}</span>` : ""}</div>`).join("");
-
+    ${q.reponse ? `<span class="dest">Réponse : ${esc(q.reponse)}</span>` : q.destinataire ? `<span class="dest">→ ${esc(q.destinataire)}</span>` : ""}</div>`).join("");
 $("#genere").textContent = `Généré depuis le dépôt planning · démarrage au ${fdate(D.debut)} · ${D.taches.length} tâches`;
 
 /* ---------- interactions ---------- */
+$("#t-curseur").max = SEMAINES - 1;
+const aller = v => { sem = Math.max(0, Math.min(SEMAINES-1, v)); rendrePlan(); };
+$("#t-curseur").addEventListener("input", e => aller(+e.target.value));
+$("#t-prec").addEventListener("click", () => aller(sem-1));
+$("#t-suiv").addEventListener("click", () => aller(sem+1));
+$("#t-lire").addEventListener("click", e => {
+  const b = e.currentTarget;
+  if (lecture){ clearInterval(lecture); lecture = null; b.textContent = "▶"; b.setAttribute("aria-pressed","false"); return; }
+  if (sem >= SEMAINES-1) sem = 0;
+  b.textContent = "❚❚"; b.setAttribute("aria-pressed","true");
+  lecture = setInterval(() => {
+    if (sem >= SEMAINES-1){ clearInterval(lecture); lecture = null; b.textContent = "▶"; b.setAttribute("aria-pressed","false"); return; }
+    aller(sem+1);
+  }, 420);
+});
+$("#niveaux").addEventListener("click", e => {
+  const b = e.target.closest("[data-niv]"); if (!b) return;
+  niveau = b.dataset.niv; piece = null; rendrePlan();
+});
+$("#plan").addEventListener("click", e => {
+  const p = e.target.closest("[data-loc]"); if (!p) return;
+  piece = p.dataset.loc === piece ? null : p.dataset.loc; rendrePlan();
+});
+$("#plan").addEventListener("keydown", e => {
+  if (e.key !== "Enter" && e.key !== " ") return;
+  const p = e.target.closest("[data-loc]"); if (!p) return;
+  e.preventDefault(); piece = p.dataset.loc; rendrePlan();
+});
 const bulle = $("#bulle");
-$("#inner").addEventListener("pointerover", e => {
-  const b = e.target.closest(".barre"); if (!b) return;
-  const t = D.taches.find(x => x.id === b.closest(".ligne").dataset.id); if (!t) return;
-  bulle.innerHTML = `<b>${esc(t.nom)}</b><span class="n">${esc(t.lot)} · ${fdate(t.debut)} → ${fdate(t.fin)} · ${t.semaines} sem.</span>`;
+$("#plan").addEventListener("pointerover", e => {
+  const p = e.target.closest("[data-loc]"); if (!p) return;
+  const n = p.dataset.loc, info = L[n] || {}, occ = occupantsDe(n, lundiDe(sem));
+  bulle.innerHTML = `<b>${esc(n)} ${esc(info.designation||"")}</b><span class="n">${
+    HORS.has(n) ? "hors marché" : occ.length ? esc([...new Set(occ.map(t=>t.lot))].join(", ")) : "libre"}${
+    info.surface ? ` · ${info.surface.toFixed(0)} m²` : ""}</span>`;
   bulle.hidden = false;
 });
-$("#inner").addEventListener("pointermove", e => {
+$("#plan").addEventListener("pointermove", e => {
   if (bulle.hidden) return;
-  const m = 14, w = bulle.offsetWidth, h = bulle.offsetHeight;
-  bulle.style.left = Math.min(e.clientX + m, innerWidth - w - 8) + "px";
-  bulle.style.top = (e.clientY - h - m < 8 ? e.clientY + m : e.clientY - h - m) + "px";
+  const w = bulle.offsetWidth, h = bulle.offsetHeight;
+  bulle.style.left = Math.min(e.clientX + 14, innerWidth - w - 8) + "px";
+  bulle.style.top = (e.clientY - h - 14 < 8 ? e.clientY + 14 : e.clientY - h - 14) + "px";
 });
-$("#inner").addEventListener("pointerout", e => { if (!e.relatedTarget?.closest?.(".barre")) bulle.hidden = true; });
+$("#plan").addEventListener("pointerout", e => { if (!e.relatedTarget?.closest?.("[data-loc]")) bulle.hidden = true; });
 $("#inner").addEventListener("click", e => {
   const r = e.target.closest("[data-id]"); if (!r) return;
-  choisi = r.dataset.id === choisi ? null : r.dataset.id;
-  rendre(); $("#detail").scrollIntoView({block:"nearest", behavior:"smooth"});
+  tache = r.dataset.id === tache ? null : r.dataset.id;
+  const t = D.taches.find(x => x.id === tache);
+  if (t){
+    const loc = t.locaux.find(l => l !== "*");
+    if (loc && L[loc]){ piece = loc; niveau = L[loc].niveau || niveau;
+      const i = Math.max(0, Math.round((dt(t.debut) - D0)/jour/7)); aller(i);
+      $(".scene").scrollIntoView({block:"start", behavior:"smooth"}); }
+  }
+  rendrePlanning();
 });
-$("#inner").addEventListener("keydown", e => {
-  if (e.key !== "Enter" && e.key !== " ") return;
-  const r = e.target.closest("[data-id]"); if (!r) return;
-  e.preventDefault(); choisi = r.dataset.id; rendre();
-});
-const bascule = (ids, set) => ids.forEach(id => $("#" + id).addEventListener("click", () => {
-  ids.forEach(o => $("#" + o).setAttribute("aria-pressed", String(o === id)));
-  set(id.split("-")[1]); rendre();
+const bascule = (ids, set) => ids.forEach(id => $("#"+id).addEventListener("click", () => {
+  ids.forEach(o => $("#"+o).setAttribute("aria-pressed", String(o === id)));
+  set(id.split("-")[1]); rendrePlanning();
 }));
 bascule(["v-gantt","v-table"], v => vue = v === "gantt" ? "gantt" : "table");
-bascule(["g-phase","g-lot","g-local"], g => groupe = g);
-["f-lot","f-phase","f-txt"].forEach(id => $("#" + id).addEventListener("input", rendre));
+bascule(["g-phase","g-lot"], g => groupe = g);
+["f-lot","f-txt"].forEach(id => $("#"+id).addEventListener("input", rendrePlanning));
 
-/* ---------- plan d'occupation ---------- */
-const G = D.geometrie, NIVEAUX = Object.keys(G.niveaux).sort().reverse();
-const SEMAINES = Math.max(1, Math.ceil(TOTAL / 7));
-let sem = 0, pieceActive = null;
-
-const lundiDe = i => new Date(D0.getTime() + i * 7 * jour);
-const couvre = (t, d) => dt(t.debut) <= d && d <= dt(t.fin);
-
-function occupantsDe(numero, d){
-  return D.taches.filter(t => t.locaux.includes(numero) && couvre(t, d));
-}
-function globales(d){ return D.taches.filter(t => t.locaux.includes("*") && couvre(t, d)); }
-const HORS = new Set(D.horsMarche || []);
-const teinte = n => n === 0 ? "var(--o0)" : n === 1 ? "var(--o1)" : n === 2 ? "var(--o2)"
-  : n === 3 ? "var(--o3)" : "var(--o4)";
-
-function rendrePlan(){
-  const d = lundiDe(sem); d.setHours(0,0,0,0);
-  const fin = new Date(Math.min(d.getTime() + 6 * jour, D1.getTime()));
-  $("#p-date").textContent = `${fdate(d.toISOString().slice(0,10))}`;
-  $("#p-curseur").value = sem;
-
-  const gl = globales(d);
-  $("#p-global").innerHTML = gl.length
-    ? `<b>${gl.length} tâche${gl.length>1?"s":""} sur l'ensemble du bâtiment</b> cette semaine : `
-      + gl.map(t => `${esc(t.lot)} (${esc(t.nom.toLowerCase())})`).join(", ")
-      + `. Ces tâches ne sont pas comptées dans les locaux ci-dessous.`
-    : `<b>Aucune tâche transversale</b> cette semaine.`;
-
-  let h = "";
-  for (const niv of NIVEAUX){
-    const n = G.niveaux[niv]; if (!n) continue;
-    const [x0, y0, x1, y1] = n.bbox, L = x1 - x0, H = y1 - y0, m = Math.max(L, H) * .02;
-    const ft = Math.max(L, H) / 48;
-    let pieces = "", labels = "", occupes = 0, maxOcc = 0;
-    for (const loc of n.locaux){
-      const occ = occupantsDe(loc.numero, d);
-      const hm = HORS.has(loc.numero);
-      if (occ.length) occupes++;
-      maxOcc = Math.max(maxOcc, occ.length);
-      const pts = loc.polygone.map(([x, y]) => `${(x - x0).toFixed(2)},${(y1 - y).toFixed(2)}`).join(" ");
-      const lots = [...new Set(occ.map(t => t.lot))];
-      pieces += `<polygon class="piece${pieceActive === loc.numero ? " actif" : ""}" points="${pts}"
-        fill="${teinte(occ.length)}" data-loc="${esc(loc.numero)}"><title>${esc(loc.numero)} ${esc(loc.designation)} — ${hm ? "hors marché" : occ.length ? esc(lots.join(", ")) : "libre"}</title></polygon>`;
-      if (hm) pieces += `<polygon class="hors" points="${pts}"></polygon>`;
-      else if (occ.length >= 3) pieces += `<polygon class="coact" points="${pts}"></polygon>`;
-      const cx = loc.polygone.reduce((a, p) => a + p[0], 0) / loc.polygone.length - x0;
-      const cy = y1 - loc.polygone.reduce((a, p) => a + p[1], 0) / loc.polygone.length;
-      const court = (loc.numero || "").split(".").pop();
-      labels += `<text class="etiq" x="${cx.toFixed(2)}" y="${cy.toFixed(2)}" font-size="${ft.toFixed(2)}" stroke-width="${(ft*.3).toFixed(2)}">${esc(court)}</text>`;
-    }
-    h += `<div class="niveau"><h3>Niveau ${esc(niv)}<span>${occupes} local${occupes>1?"aux":""} occupé${occupes>1?"s":""} sur ${n.locaux.length}${maxOcc>=3?" · co-activité":""}</span></h3>
-      <svg viewBox="${-m} ${-m} ${L+2*m} ${H+2*m}" role="img"
-        aria-label="Plan du niveau ${esc(niv)}, ${occupes} locaux occupés">${pieces}${labels}</svg></div>`;
-  }
-  $("#p-plans").innerHTML = h;
-  rendrePieceDetail(d, fin);
-}
-
-function rendrePieceDetail(d, fin){
-  const cible = $("#p-detail");
-  if (!pieceActive){
-    cible.innerHTML = `<p class="eyebrow">Local</p><p class="vide">Cliquez sur un local du plan pour voir qui y intervient et quand, sur toute la durée du chantier.</p>`;
-    return;
-  }
-  const info = D.locaux[pieceActive] || {};
-  const toutes = D.taches.filter(t => t.locaux.includes(pieceActive))
-    .sort((a, b) => a.debut < b.debut ? -1 : 1);
-  const ici = toutes.filter(t => couvre(t, d));
-  cible.innerHTML = `<p class="eyebrow">${esc(pieceActive)} · niveau ${esc(info.niveau || "?")}</p>
-    <h2>${esc(info.designation || pieceActive)}</h2>
-    <div class="meta">
-      ${info.surface ? `<span class="tag">${info.surface.toFixed(1)} m²</span>` : ""}
-      ${info.hauteur ? `<span class="tag">${info.hauteur.toFixed(2)} m sous plafond</span>` : ""}
-      <span class="tag">${toutes.length} tâche${toutes.length>1?"s":""} au total</span>
-      ${HORS.has(pieceActive) ? `<span class="tag fort">hors marché — équipement reporté</span>` : ""}
-      ${ici.length >= 3 ? `<span class="tag fort">co-activité : ${ici.length} entreprises cette semaine</span>` : ""}
-    </div>
-    <div class="liens"><div><p class="eyebrow">Interventions dans ce local</p>
-      ${toutes.length ? `<ul>${toutes.map(t => {
-        const a = couvre(t, d);
-        return `<li style="border-left-color:${a ? "var(--accent)" : "var(--grid)"}">
-          <b>${esc(t.lot)}</b> ${esc(t.nom)}<br>
-          <span style="color:var(--ink-muted)">${fdate(t.debut)} → ${fdate(t.fin)} · ${t.semaines} sem.${a ? " · en cours cette semaine" : ""}</span></li>`;
-      }).join("")}</ul>` : `<p class="vide">Aucune tâche n'est rattachée à ce local.</p>`}</div></div>`;
-}
-
-$("#p-curseur").max = SEMAINES - 1;
-$("#p-legende").innerHTML = [[0,"libre"],[1,"1 entreprise"],[2,"2"],[3,"3"],[4,"4 et plus"]]
-  .map(([n,l]) => `<i><span class="sw" style="background:${teinte(n)}"></span>${esc(l)}</i>`).join("")
-  + `<i><span class="sw" style="background:transparent;border:1.5px dashed var(--critical)"></span>co-activité (3 entreprises ou plus)</i>`
-  + `<i><span class="sw" style="background:transparent;border:1.5px dashed var(--ink-muted)"></span>hors marché (reporté)</i>`;
-$("#p-curseur").addEventListener("input", e => { sem = +e.target.value; rendrePlan(); });
-$("#p-prec").addEventListener("click", () => { sem = Math.max(0, sem - 1); rendrePlan(); });
-$("#p-suiv").addEventListener("click", () => { sem = Math.min(SEMAINES - 1, sem + 1); rendrePlan(); });
-$("#p-plans").addEventListener("click", e => {
-  const p = e.target.closest("[data-loc]"); if (!p) return;
-  pieceActive = p.dataset.loc === pieceActive ? null : p.dataset.loc;
-  rendrePlan(); $("#p-detail").scrollIntoView({block:"nearest", behavior:"smooth"});
-});
-
-rendre();
 rendrePlan();
+rendrePlanning();
 </script>

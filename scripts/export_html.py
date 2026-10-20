@@ -13,7 +13,7 @@ import sys
 from datetime import date
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from planifier import charger, planifier  # noqa: E402
+from planifier import charger, marges, planifier  # noqa: E402
 
 GABARIT = __file__.rsplit("/", 1)[0] + "/gabarit_planning.html"
 
@@ -28,6 +28,8 @@ def main():
     taches, _ = charger(args.taches)
     a, m, j = map(int, args.debut.split("-"))
     dates = planifier(taches, date(a, m, j))
+    fin = max(f for _, f in dates.values())
+    mg = marges(taches, dates, fin)
 
     phases = json.load(open("data/phases.json", encoding="utf-8"))["phases"]
     entreprises = json.load(open("data/entreprises.json", encoding="utf-8"))
@@ -35,6 +37,8 @@ def main():
     geometrie = json.load(open("data/extracted/geometrie.json", encoding="utf-8"))
     fiches = json.load(open("data/locaux-contenu.json", encoding="utf-8"))["fiches"]
     hors_marche = sorted(f["numero"] for f in fiches if f["statut_fiche"] == "hors_marche")
+    par_local = {f["numero"]: {"statut": f["statut_fiche"], "famille": f["famille_titre"],
+                               "reponse": f["reponse"]} for f in fiches}
     locaux = {x["numero"]: x for x in
               json.load(open("data/extracted/locaux.json", encoding="utf-8"))["locaux"]
               if x["est_local"]}
@@ -53,6 +57,7 @@ def main():
             "locaux": t["locaux"], "debut": d0.isoformat(), "fin": f0.isoformat(),
             "semaines": t.get("duree_semaines"), "statut": t["statut"],
             "dateFerme": t.get("date_connue"), "notes": t.get("notes"),
+            "critique": mg[tid][1] <= 0, "margeJours": mg[tid][1],
             "pred": t["predecesseurs"], "succ": successeurs.get(tid, []),
         })
     sortie_taches.sort(key=lambda x: (x["debut"], x["lot"]))
@@ -67,6 +72,7 @@ def main():
         "questions": questions,
         "geometrie": geometrie,
         "horsMarche": hors_marche,
+        "fiches": par_local,
         "locaux": {k: {"designation": v["designation"], "niveau": v["niveau"],
                        "surface": v.get("surface_nette_m2"),
                        "hauteur": v.get("hauteur_sous_plafond_m")}
