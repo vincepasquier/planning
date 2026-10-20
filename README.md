@@ -20,7 +20,7 @@ surtout **pourquoi**. Chaque lien entre deux tâches porte sa justification.
 | Lots non adjugés | 2 (calorifugeage des conduites, Ansermot) |
 | Périmètre non communiqué | 1 (STAP) |
 
-Version 2.2 — les 36 locaux de la maquette sont relevés lot par lot avec le
+Version 2.3 — les 36 locaux de la maquette sont relevés lot par lot avec le
 maître d'ouvrage : 139 affectations relevées, 2 supposées. Le chantier ouvre
 aux entreprises techniques en décembre 2026, le bâtiment étant réceptionné à
 la mi-novembre.
@@ -63,11 +63,58 @@ scripts/
   planifier.py            Calcul des dates au plus tôt, export CSV
   export_msproject.py     Export MSPDI XML, liens et raisons compris
   export_excel.py         Export et réimport du classeur Excel
-  export_html.py          Génération de la page de visualisation
-  gabarit_planning.html   Gabarit de cette page
+  export_html.py          Génération de l'éditeur et de son donnees.json
+  gabarit_planning.html   Gabarit de l'éditeur
+  importer_json.py        Réintègre dans le dépôt un JSON exporté par l'éditeur
   extract_geometrie.py    IFC -> emprise au sol des locaux, redressée
   coactivite.py           Conflits de co-activité, local par local
 ```
+
+## L'éditeur
+
+`data/extracted/planning.html` est un éditeur de planning autonome, centré sur
+le plan de la centrale. On y fait, sans rien installer :
+
+- **suivre une entreprise** — le plan montre où elle travaille la semaine
+  affichée, où elle passera, où elle n'intervient pas ;
+- **éditer un local** — son contenu, sa limite de co-activité, et toutes ses
+  interventions : durées, retrait, rattachement d'une tâche, tâche nouvelle ;
+- **éditer une tâche** — entreprise, durée, phase, contrainte de début, date
+  ferme, locaux, prédécesseurs et raison de chaque lien. Une boucle est
+  refusée, avec la chaîne qui la causerait ;
+- **gérer les entreprises** — ajout, renommage, prestations, suppression avec
+  réaffectation de leurs tâches ;
+- **annuler** pas à pas (Ctrl+Z) ;
+- **exporter et importer** l'état complet en JSON.
+
+Les dates, les marges et le chemin critique sont recalculés à chaque
+modification, par le même algorithme que `planifier.py` : les deux donnent les
+mêmes dates au jour près sur les 65 tâches.
+
+### Où vivent les modifications
+
+| Où la page est ouverte | Enregistrer | Exporter JSON |
+|---|---|---|
+| claude.ai (artefact) | bouton « Enregistrer » : réécrit `donnees.json` dans l'artefact | demande de téléchargement |
+| fichier local (double-clic) | indisponible : exporter | téléchargement direct |
+
+Les modifications non enregistrées sont gardées en brouillon dans le navigateur
+et proposées à la réouverture.
+
+### Le cycle avec ce dépôt
+
+```bash
+# 1. ramener dans le dépôt ce qui a été modifié dans la page
+python3 -I scripts/importer_json.py planning-centrale-20133-AAAA-MM-JJ.json --essai   # voir les écarts
+python3 -I scripts/importer_json.py planning-centrale-20133-AAAA-MM-JJ.json           # les appliquer
+
+# 2. régénérer la page et les exports
+python3 -I scripts/valider.py
+python3 -I scripts/export_html.py
+```
+
+**Toujours importer avant de régénérer** : la page régénérée repart des
+fichiers du dépôt, et écraserait ce qui n'y a pas été ramené.
 
 ## Utilisation
 
