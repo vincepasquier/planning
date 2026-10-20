@@ -1,0 +1,690 @@
+{
+  "note": "Qui passe où. Chaque affectation porte sa source : « relevé » quand elle vient du maître d'ouvrage, « supposé » quand je l'ai déduite. Les affectations supposées sont à reprendre une par une — c'est l'objet de ce relevé.",
+  "lots_declares_globaux": [
+    "ANSERMOT",
+    "ANTIGLIO",
+    "CALORIFUGEAGE",
+    "DESPRAZ",
+    "ENTRETEC",
+    "GE",
+    "GETECH-IEG",
+    "HALG"
+  ],
+  "locaux": {
+    "CENT.N+0.01": {
+      "designation": "Sortie 1",
+      "niveau": "N+0",
+      "surface_m2": 13.534,
+      "hauteur_m": 3.21,
+      "statut_releve": "a_remplir",
+      "lots": {}
+    },
+    "CENT.N+0.02": {
+      "designation": "Sortie 2",
+      "niveau": "N+0",
+      "surface_m2": 10.559,
+      "hauteur_m": 3.21,
+      "statut_releve": "a_remplir",
+      "lots": {}
+    },
+    "CENT.N+0.03": {
+      "designation": "Surface bituminée",
+      "niveau": "N+0",
+      "surface_m2": 3352.264,
+      "hauteur_m": 3.21,
+      "statut_releve": "a_remplir",
+      "lots": {
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-080"
+          ],
+          "source": "supposé"
+        },
+        "GE": {
+          "taches": [
+            "T-GE-020"
+          ],
+          "source": "supposé"
+        }
+      }
+    },
+    "CENT.N-1.01": {
+      "designation": "Escaliers",
+      "niveau": "N-1",
+      "surface_m2": 44.857,
+      "hauteur_m": 2.62,
+      "statut_releve": "a_remplir",
+      "lots": {}
+    },
+    "CENT.N-1.02": {
+      "designation": "Technique",
+      "niveau": "N-1",
+      "surface_m2": 104.813,
+      "hauteur_m": 2.62,
+      "statut_releve": "a_remplir",
+      "lots": {
+        "HALG": {
+          "taches": [
+            "T-HAL-030"
+          ],
+          "source": "supposé"
+        }
+      }
+    },
+    "CENT.N-1.03": {
+      "designation": "Circulation",
+      "niveau": "N-1",
+      "surface_m2": 207.834,
+      "hauteur_m": 2.62,
+      "statut_releve": "rempli",
+      "lots": {
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-010"
+          ],
+          "source": "relevé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-030"
+          ],
+          "source": "relevé"
+        },
+        "RIEDO": {
+          "taches": [
+            "T-RIE-010"
+          ],
+          "source": "relevé"
+        }
+      }
+    },
+    "CENT.N-1.04": {
+      "designation": "Circulation",
+      "niveau": "N-1",
+      "surface_m2": 422.199,
+      "hauteur_m": 2.62,
+      "statut_releve": "rempli",
+      "lots": {
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-010"
+          ],
+          "source": "relevé"
+        },
+        "RIEDO": {
+          "taches": [
+            "T-RIE-010"
+          ],
+          "source": "relevé"
+        }
+      }
+    },
+    "CENT.N-1.05": {
+      "designation": "Escaliers",
+      "niveau": "N-1",
+      "surface_m2": 26.8,
+      "hauteur_m": 2.62,
+      "statut_releve": "a_remplir",
+      "lots": {}
+    },
+    "CENT.N-1.06": {
+      "designation": "Escaliers",
+      "niveau": "N-1",
+      "surface_m2": 30.519,
+      "hauteur_m": 2.62,
+      "statut_releve": "a_remplir",
+      "lots": {}
+    },
+    "CENT.N-1.07": {
+      "designation": "Technique",
+      "niveau": "N-1",
+      "surface_m2": 37.791,
+      "hauteur_m": 2.62,
+      "statut_releve": "a_remplir",
+      "lots": {
+        "HALG": {
+          "taches": [
+            "T-HAL-020"
+          ],
+          "source": "supposé"
+        }
+      }
+    },
+    "CENT.N-2.01": {
+      "designation": "MT",
+      "niveau": "N-2",
+      "surface_m2": 172.999,
+      "hauteur_m": 7.0,
+      "statut_releve": "rempli",
+      "lots": {
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-090"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-INFRA": {
+          "taches": [
+            "T-GET-010",
+            "T-GET-080"
+          ],
+          "source": "relevé"
+        }
+      }
+    },
+    "CENT.N-2.02": {
+      "designation": "Escaliers",
+      "niveau": "N-2",
+      "surface_m2": 44.502,
+      "hauteur_m": 4.1,
+      "statut_releve": "a_remplir",
+      "lots": {}
+    },
+    "CENT.N-2.03": {
+      "designation": "Refroid. locaux élec.",
+      "niveau": "N-2",
+      "surface_m2": 104.34,
+      "hauteur_m": 4.1,
+      "statut_releve": "rempli",
+      "lots": {
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-090"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-TABLEAU": {
+          "taches": [
+            "T-GET-050"
+          ],
+          "source": "relevé"
+        }
+      }
+    },
+    "CENT.N-2.04": {
+      "designation": "TGBT",
+      "niveau": "N-2",
+      "surface_m2": 85.971,
+      "hauteur_m": 7.0,
+      "statut_releve": "rempli",
+      "lots": {
+        "ANTIGLIO": {
+          "taches": [
+            "T-ANT-025"
+          ],
+          "source": "relevé"
+        },
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-090"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-INFRA": {
+          "taches": [
+            "T-GET-080"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-TABLEAU": {
+          "taches": [
+            "T-GET-020",
+            "T-GET-050"
+          ],
+          "source": "relevé"
+        }
+      }
+    },
+    "CENT.N-2.05": {
+      "designation": "Hydraulique circuit int.",
+      "niveau": "N-2",
+      "surface_m2": 127.995,
+      "hauteur_m": 7.0,
+      "statut_releve": "a_remplir",
+      "lots": {
+        "DESPRAZ": {
+          "taches": [
+            "T-DES-010",
+            "T-DES-050"
+          ],
+          "source": "supposé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-030"
+          ],
+          "source": "supposé"
+        }
+      }
+    },
+    "CENT.N-2.06": {
+      "designation": "Circulation",
+      "niveau": "N-2",
+      "surface_m2": 209.074,
+      "hauteur_m": 4.1,
+      "statut_releve": "a_remplir",
+      "lots": {
+        "DESPRAZ": {
+          "taches": [
+            "T-DES-010"
+          ],
+          "source": "supposé"
+        }
+      }
+    },
+    "CENT.N-2.07": {
+      "designation": "PAC 1",
+      "niveau": "N-2",
+      "surface_m2": 191.584,
+      "hauteur_m": 7.0,
+      "statut_releve": "rempli",
+      "lots": {
+        "ANTIGLIO": {
+          "taches": [
+            "T-ANT-021"
+          ],
+          "source": "relevé"
+        },
+        "DESPRAZ": {
+          "taches": [
+            "T-DES-016"
+          ],
+          "source": "relevé"
+        },
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-041"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-060"
+          ],
+          "source": "relevé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-030"
+          ],
+          "source": "relevé"
+        },
+        "WETTSTEIN": {
+          "taches": [
+            "T-WET-010",
+            "T-WET-050",
+            "T-WET-060"
+          ],
+          "source": "relevé"
+        }
+      }
+    },
+    "CENT.N-2.08": {
+      "designation": "Variateurs 1 et 2",
+      "niveau": "N-2",
+      "surface_m2": 65.7,
+      "hauteur_m": 4.1,
+      "statut_releve": "rempli",
+      "lots": {
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-090"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-TABLEAU": {
+          "taches": [
+            "T-GET-040",
+            "T-GET-050",
+            "T-GET-090"
+          ],
+          "source": "relevé"
+        }
+      }
+    },
+    "CENT.N-2.09": {
+      "designation": "Commande 1 et 2",
+      "niveau": "N-2",
+      "surface_m2": 32.219,
+      "hauteur_m": 4.1,
+      "statut_releve": "rempli",
+      "lots": {
+        "DESPRAZ": {
+          "taches": [
+            "T-DES-005"
+          ],
+          "source": "relevé"
+        }
+      }
+    },
+    "CENT.N-2.10": {
+      "designation": "PAC 2",
+      "niveau": "N-2",
+      "surface_m2": 191.584,
+      "hauteur_m": 7.0,
+      "statut_releve": "rempli",
+      "lots": {
+        "ANTIGLIO": {
+          "taches": [
+            "T-ANT-022"
+          ],
+          "source": "relevé"
+        },
+        "DESPRAZ": {
+          "taches": [
+            "T-DES-017"
+          ],
+          "source": "relevé"
+        },
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-042"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-IEG": {
+          "taches": [
+            "T-GET-060"
+          ],
+          "source": "relevé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-030"
+          ],
+          "source": "relevé"
+        },
+        "WETTSTEIN": {
+          "taches": [
+            "T-WET-020",
+            "T-WET-050",
+            "T-WET-060"
+          ],
+          "source": "relevé"
+        }
+      }
+    },
+    "CENT.N-2.11": {
+      "designation": "Sas",
+      "niveau": "N-2",
+      "surface_m2": 30.126,
+      "hauteur_m": 4.1,
+      "statut_releve": "a_remplir",
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-040"
+          ],
+          "source": "supposé"
+        }
+      }
+    },
+    "CENT.N-2.12": {
+      "designation": "PAC 3",
+      "niveau": "N-2",
+      "surface_m2": 191.584,
+      "hauteur_m": 7.0,
+      "statut_releve": "hors_marche",
+      "lots": {}
+    },
+    "CENT.N-2.13": {
+      "designation": "Variateurs 3 et 4",
+      "niveau": "N-2",
+      "surface_m2": 65.701,
+      "hauteur_m": 4.1,
+      "statut_releve": "hors_marche",
+      "lots": {}
+    },
+    "CENT.N-2.14": {
+      "designation": "Commande 3 et 4",
+      "niveau": "N-2",
+      "surface_m2": 32.219,
+      "hauteur_m": 4.1,
+      "statut_releve": "hors_marche",
+      "lots": {}
+    },
+    "CENT.N-2.15": {
+      "designation": "PAC 4",
+      "niveau": "N-2",
+      "surface_m2": 193.037,
+      "hauteur_m": 7.0,
+      "statut_releve": "hors_marche",
+      "lots": {}
+    },
+    "CENT.N-2.16": {
+      "designation": "Circulation",
+      "niveau": "N-2",
+      "surface_m2": 220.025,
+      "hauteur_m": 4.1,
+      "statut_releve": "a_remplir",
+      "lots": {
+        "DESPRAZ": {
+          "taches": [
+            "T-DES-010"
+          ],
+          "source": "supposé"
+        }
+      }
+    },
+    "CENT.N-2.17": {
+      "designation": "Escaliers",
+      "niveau": "N-2",
+      "surface_m2": 26.726,
+      "hauteur_m": 4.1,
+      "statut_releve": "a_remplir",
+      "lots": {}
+    },
+    "CENT.N-2.18": {
+      "designation": "Pompage PAC",
+      "niveau": "N-2",
+      "surface_m2": 159.069,
+      "hauteur_m": 7.0,
+      "statut_releve": "rempli",
+      "lots": {
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-090",
+            "T-ENT-030"
+          ],
+          "source": "relevé"
+        }
+      }
+    },
+    "CENT.N-2.19": {
+      "designation": "Hydraulique chaud",
+      "niveau": "N-2",
+      "surface_m2": 251.816,
+      "hauteur_m": 7.0,
+      "statut_releve": "rempli",
+      "lots": {
+        "ANTIGLIO": {
+          "taches": [
+            "T-ANT-025"
+          ],
+          "source": "relevé"
+        },
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-090",
+            "T-ENT-010",
+            "T-ENT-020",
+            "T-ENT-055"
+          ],
+          "source": "relevé"
+        },
+        "GETECH-TABLEAU": {
+          "taches": [
+            "T-GET-050"
+          ],
+          "source": "relevé"
+        },
+        "LEVAGE": {
+          "taches": [
+            "T-LEV-010"
+          ],
+          "source": "relevé"
+        }
+      }
+    },
+    "CENT.N-2.20": {
+      "designation": "Escaliers",
+      "niveau": "N-2",
+      "surface_m2": 19.564,
+      "hauteur_m": 4.1,
+      "statut_releve": "a_remplir",
+      "lots": {}
+    },
+    "CENT.N-2.21": {
+      "designation": "Bureau / poste de cde",
+      "niveau": "N-2",
+      "surface_m2": 34.383,
+      "hauteur_m": 4.1,
+      "statut_releve": "a_remplir",
+      "lots": {
+        "ANTIGLIO": {
+          "taches": [
+            "T-ANT-025"
+          ],
+          "source": "supposé"
+        },
+        "GE": {
+          "taches": [
+            "T-GE-030"
+          ],
+          "source": "supposé"
+        },
+        "GETECH-TABLEAU": {
+          "taches": [
+            "T-GET-050"
+          ],
+          "source": "supposé"
+        },
+        "HALG": {
+          "taches": [
+            "T-HAL-020"
+          ],
+          "source": "supposé"
+        }
+      }
+    },
+    "CENT.N-2.22": {
+      "designation": "Circul. / Vestiaire",
+      "niveau": "N-2",
+      "surface_m2": 9.065,
+      "hauteur_m": 4.1,
+      "statut_releve": "a_remplir",
+      "lots": {
+        "HALG": {
+          "taches": [
+            "T-HAL-020"
+          ],
+          "source": "supposé"
+        },
+        "RIEDO": {
+          "taches": [
+            "T-RIE-010"
+          ],
+          "source": "supposé"
+        }
+      }
+    },
+    "CENT.N-2.23": {
+      "designation": "Sanitaire",
+      "niveau": "N-2",
+      "surface_m2": 3.478,
+      "hauteur_m": 4.1,
+      "statut_releve": "a_remplir",
+      "lots": {
+        "HALG": {
+          "taches": [
+            "T-HAL-020"
+          ],
+          "source": "supposé"
+        },
+        "RIEDO": {
+          "taches": [
+            "T-RIE-010"
+          ],
+          "source": "supposé"
+        }
+      }
+    },
+    "CENT.N-2.24": {
+      "designation": "Accumulateur",
+      "niveau": "N-2",
+      "surface_m2": 211.846,
+      "hauteur_m": 7.0,
+      "statut_releve": "a_remplir",
+      "lots": {
+        "BILFINGER": {
+          "taches": [
+            "T-BIL-010",
+            "T-BIL-020"
+          ],
+          "source": "supposé"
+        },
+        "CALORIFUGEAGE": {
+          "taches": [
+            "T-CAL-010"
+          ],
+          "source": "supposé"
+        },
+        "ENTRETEC": {
+          "taches": [
+            "T-ENT-010",
+            "T-ENT-050"
+          ],
+          "source": "supposé"
+        },
+        "GE": {
+          "taches": [
+            "T-GE-010"
+          ],
+          "source": "supposé"
+        }
+      }
+    },
+    "CENT.N-2.25": {
+      "designation": "Couvert",
+      "niveau": "N-2",
+      "surface_m2": 298.832,
+      "hauteur_m": 7.0,
+      "statut_releve": "a_remplir",
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-040"
+          ],
+          "source": "supposé"
+        },
+        "ANTIGLIO": {
+          "taches": [
+            "T-ANT-040"
+          ],
+          "source": "supposé"
+        }
+      }
+    },
+    "CENT.N-2.26": {
+      "designation": "Rampe extérieure",
+      "niveau": "N-2",
+      "surface_m2": 137.243,
+      "hauteur_m": 7.0,
+      "statut_releve": "a_remplir",
+      "lots": {
+        "ANSERMOT": {
+          "taches": [
+            "T-ANS-040"
+          ],
+          "source": "supposé"
+        },
+        "ANTIGLIO": {
+          "taches": [
+            "T-ANT-040"
+          ],
+          "source": "supposé"
+        }
+      }
+    }
+  }
+}
