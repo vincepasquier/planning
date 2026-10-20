@@ -220,13 +220,14 @@
     },
     {
       "id": "Q-01",
-      "priorite": "moyenne",
-      "statut": "ouverte",
+      "priorite": "resolue",
+      "statut": "resolue",
       "sujet": "Itinéraire de manutention",
       "question": "Par où entrent les PAC, l'accumulateur et les vases d'expansion : rampe extérieure et couvert à N-2, trémie, ou quais à N-1 ?",
       "pourquoi": "La maquette montre une rampe extérieure (137 m2) et un couvert (299 m2) à N-2, tous deux à 7,00 m, ce qui suggère un accès direct au niveau bas. Les quais 1 et 2 sont à N-1 sous 2,62 m.",
       "destinataire": "Maître d'ouvrage / Antiglio",
-      "impact": "Détermine le jalon pivot T-WET-040."
+      "impact": "La contrainte de gabarit ne porte plus que sur le TGBT et les vases d'expansion.",
+      "reponse": "Sans objet : les PAC sont montées sur place pièce par pièce. L'itinéraire relevé au plan reste la rampe extérieure, le couvert N-2.25 puis la porte 20 de 3,50 x 4,00 m, mais il ne conditionne plus rien."
     },
     {
       "id": "Q-17",
