@@ -11,3 +11,6 @@ docs/plans/*
 __pycache__/
 *.pyc
 .DS_Store
+
+# Exports régénérables (reconstruits par les scripts)
+data/extracted/planning.xlsx
