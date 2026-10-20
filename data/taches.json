@@ -1,5 +1,5 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "date_etablissement": "2026-10-20",
   "avertissement": "Réseau établi à partir des maquettes IFC (ARC, ELE), de la liste des adjudications et de 9 schémas Groupe E. Les durées sont des ordres de grandeur non validés. Les raisons de lien sont le cœur du document.",
   "corrections_v02": [
@@ -31,9 +31,7 @@
       "systeme": "GC",
       "phase": "P0",
       "locaux": [
-        "CENT.N-2.21",
-        "CENT.N-2.04",
-        "CENT.N-2.19"
+        "*"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -92,8 +90,7 @@
       "systeme": "GC",
       "phase": "P1",
       "locaux": [
-        "CENT.N-2.25",
-        "CENT.N-2.26"
+        "*"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -153,7 +150,7 @@
       "systeme": "ACC",
       "phase": "P4",
       "locaux": [
-        "CENT.N-2.24"
+        "*"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -175,7 +172,7 @@
       "systeme": "ACC",
       "phase": "P5",
       "locaux": [
-        "CENT.N-2.24"
+        "*"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
@@ -202,7 +199,7 @@
       "systeme": "PAC-1",
       "phase": "P0",
       "locaux": [
-        "CENT.N-2.07"
+        "*"
       ],
       "duree_classe": "semaine",
       "duree_semaines": 1,
@@ -224,7 +221,7 @@
       "systeme": "PAC-2",
       "phase": "P0",
       "locaux": [
-        "CENT.N-2.10"
+        "*"
       ],
       "duree_classe": "semaine",
       "duree_semaines": 1,
@@ -350,7 +347,7 @@
       "systeme": "FROID-CO2",
       "phase": "P1",
       "locaux": [
-        "CENT.N-2.09"
+        "*"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -372,9 +369,7 @@
       "systeme": "FROID-CO2",
       "phase": "P2",
       "locaux": [
-        "CENT.N-2.05",
-        "CENT.N-2.06",
-        "CENT.N-2.16"
+        "CENT.N-2.05"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -401,7 +396,6 @@
       "systeme": "FROID-HYD",
       "phase": "P2",
       "locaux": [
-        "CENT.N-2.01",
         "CENT.N-2.03",
         "CENT.N-2.04",
         "CENT.N-2.08",
@@ -541,7 +535,9 @@
       "systeme": "FROID-CO2",
       "phase": "P5",
       "locaux": [
-        "*"
+        "CENT.N-2.05",
+        "CENT.N-2.07",
+        "CENT.N-2.10"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -567,7 +563,9 @@
       "systeme": "FROID-CO2",
       "phase": "P5",
       "locaux": [
-        "*"
+        "CENT.N-2.05",
+        "CENT.N-2.07",
+        "CENT.N-2.10"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -645,7 +643,7 @@
       "systeme": "EXPANSION",
       "phase": "P1",
       "locaux": [
-        "CENT.N-2.19"
+        "*"
       ],
       "duree_classe": "quinzaine",
       "duree_semaines": 2,
@@ -759,7 +757,17 @@
       "systeme": "HYD-CHAUD",
       "phase": "P5",
       "locaux": [
-        "*"
+        "CENT.N-2.03",
+        "CENT.N-2.04",
+        "CENT.N-2.05",
+        "CENT.N-2.06",
+        "CENT.N-2.07",
+        "CENT.N-2.08",
+        "CENT.N-2.09",
+        "CENT.N-2.10",
+        "CENT.N-2.18",
+        "CENT.N-2.19",
+        "CENT.N-2.24"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -791,7 +799,17 @@
       "systeme": "HYD-CHAUD",
       "phase": "P5",
       "locaux": [
-        "*"
+        "CENT.N-2.03",
+        "CENT.N-2.04",
+        "CENT.N-2.05",
+        "CENT.N-2.06",
+        "CENT.N-2.07",
+        "CENT.N-2.08",
+        "CENT.N-2.09",
+        "CENT.N-2.10",
+        "CENT.N-2.18",
+        "CENT.N-2.19",
+        "CENT.N-2.24"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -861,7 +879,19 @@
       "systeme": "VENT-HYG",
       "phase": "P2",
       "locaux": [
-        "*"
+        "CENT.N-2.01",
+        "CENT.N-2.03",
+        "CENT.N-2.04",
+        "CENT.N-2.05",
+        "CENT.N-2.07",
+        "CENT.N-2.08",
+        "CENT.N-2.09",
+        "CENT.N-2.10",
+        "CENT.N-2.18",
+        "CENT.N-2.19",
+        "CENT.N-2.21",
+        "CENT.N-2.22",
+        "CENT.N-2.23"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -954,7 +984,19 @@
       "systeme": "VENT-HYG",
       "phase": "P6",
       "locaux": [
-        "*"
+        "CENT.N-2.01",
+        "CENT.N-2.03",
+        "CENT.N-2.04",
+        "CENT.N-2.05",
+        "CENT.N-2.07",
+        "CENT.N-2.08",
+        "CENT.N-2.09",
+        "CENT.N-2.10",
+        "CENT.N-2.18",
+        "CENT.N-2.19",
+        "CENT.N-2.21",
+        "CENT.N-2.22",
+        "CENT.N-2.23"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -985,7 +1027,19 @@
       "systeme": "VENT-SECU",
       "phase": "P5",
       "locaux": [
-        "*"
+        "CENT.N-2.01",
+        "CENT.N-2.03",
+        "CENT.N-2.04",
+        "CENT.N-2.05",
+        "CENT.N-2.07",
+        "CENT.N-2.08",
+        "CENT.N-2.09",
+        "CENT.N-2.10",
+        "CENT.N-2.18",
+        "CENT.N-2.19",
+        "CENT.N-2.21",
+        "CENT.N-2.22",
+        "CENT.N-2.23"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
@@ -1062,7 +1116,31 @@
       "systeme": "IEG",
       "phase": "P2",
       "locaux": [
-        "*"
+        "CENT.N-2.01",
+        "CENT.N-2.02",
+        "CENT.N-2.03",
+        "CENT.N-2.04",
+        "CENT.N-2.05",
+        "CENT.N-2.06",
+        "CENT.N-2.07",
+        "CENT.N-2.08",
+        "CENT.N-2.09",
+        "CENT.N-2.10",
+        "CENT.N-2.12",
+        "CENT.N-2.13",
+        "CENT.N-2.14",
+        "CENT.N-2.15",
+        "CENT.N-2.16",
+        "CENT.N-2.17",
+        "CENT.N-2.18",
+        "CENT.N-2.19",
+        "CENT.N-2.20",
+        "CENT.N-2.21",
+        "CENT.N-2.22",
+        "CENT.N-2.23",
+        "CENT.N-2.24",
+        "CENT.N-2.25",
+        "CENT.N-2.26"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -1084,7 +1162,7 @@
       "systeme": "TGBT",
       "phase": "P3",
       "locaux": [
-        "CENT.N-2.08"
+        "*"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -1106,11 +1184,7 @@
       "systeme": "MCR",
       "phase": "P3",
       "locaux": [
-        "CENT.N-2.21",
-        "CENT.N-2.04",
-        "CENT.N-2.19",
-        "CENT.N-2.03",
-        "CENT.N-2.08"
+        "CENT.N-2.04"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
@@ -1169,7 +1243,31 @@
       "systeme": "DI",
       "phase": "P4",
       "locaux": [
-        "*"
+        "CENT.N-2.01",
+        "CENT.N-2.02",
+        "CENT.N-2.03",
+        "CENT.N-2.04",
+        "CENT.N-2.05",
+        "CENT.N-2.06",
+        "CENT.N-2.07",
+        "CENT.N-2.08",
+        "CENT.N-2.09",
+        "CENT.N-2.10",
+        "CENT.N-2.12",
+        "CENT.N-2.13",
+        "CENT.N-2.14",
+        "CENT.N-2.15",
+        "CENT.N-2.16",
+        "CENT.N-2.17",
+        "CENT.N-2.18",
+        "CENT.N-2.19",
+        "CENT.N-2.20",
+        "CENT.N-2.21",
+        "CENT.N-2.22",
+        "CENT.N-2.23",
+        "CENT.N-2.24",
+        "CENT.N-2.25",
+        "CENT.N-2.26"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
@@ -1229,7 +1327,7 @@
       "systeme": "TGBT",
       "phase": "P6",
       "locaux": [
-        "CENT.N-2.08"
+        "*"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -1272,7 +1370,7 @@
       "systeme": "MCR",
       "phase": "P4",
       "locaux": [
-        "CENT.N-2.21"
+        "*"
       ],
       "duree_classe": "mois",
       "date_connue": null,
@@ -1434,7 +1532,10 @@
       "systeme": "MEN",
       "phase": "P0",
       "locaux": [
-        "*"
+        "CENT.N-2.02",
+        "CENT.N-2.17",
+        "CENT.N-2.18",
+        "CENT.N-2.20"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
@@ -1456,7 +1557,10 @@
       "systeme": "SER",
       "phase": "P2",
       "locaux": [
-        "*"
+        "CENT.N-2.02",
+        "CENT.N-2.17",
+        "CENT.N-2.18",
+        "CENT.N-2.20"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
@@ -1478,7 +1582,10 @@
       "systeme": "MEN",
       "phase": "P4",
       "locaux": [
-        "*"
+        "CENT.N-2.02",
+        "CENT.N-2.17",
+        "CENT.N-2.18",
+        "CENT.N-2.20"
       ],
       "duree_classe": "quinzaine",
       "date_connue": null,
@@ -1500,9 +1607,7 @@
       "systeme": "MEN",
       "phase": "P5",
       "locaux": [
-        "CENT.N-2.25",
-        "CENT.N-2.26",
-        "CENT.N-2.11"
+        "*"
       ],
       "duree_classe": "semaine",
       "date_connue": null,
@@ -1601,5 +1706,9 @@
   ],
   "corrections_v11": [
     "Le refroidissement des locaux ne dépend plus de l'échangeur de la PAC 2 : les deux branches du froid process sont indépendantes (Q-23 tranchée)."
+  ],
+  "corrections_v12": [
+    "Les locaux de N-2 sont repris exhaustivement avec le maître d'ouvrage : 26 locaux, lot par lot. Les affectations que j'avais déduites sont remplacées par le relevé.",
+    "Les tâches transversales n'occupent plus « tous les locaux » mais ceux où leur lot passe réellement."
   ]
 }
